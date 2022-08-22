@@ -17,7 +17,7 @@ def weightfn(x):
     return 2*sigmoid(1/2*(x-10))+1
 
 
-def construct_reduced_winning_version(data, qval_cutoff=0.05, add_missing_features=False, remove_largest_n=5):
+def construct_reduced_winning_version(data, qval_cutoff=0.10, add_missing_features=False, remove_largest_n=5):
     # This function expects samples in rows, features in columns
     if 'MYD88' in data.index:
         data = data.T

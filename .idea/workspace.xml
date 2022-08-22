@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b092fab0-8de1-4ee0-9187-ec88de6d843d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/NN_evaluation_seeds1_100_folds5_reducedV3.2_removeN5_nfeatures21.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/NN_evaluation_seeds1_100_folds5_reducedV3.2_removeN5_nfeatures21.tsv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src_python/format_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/format_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_python/run_all_experiments_step2A.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/run_all_experiments_step2A.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +18,8 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -37,27 +41,27 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="42" />
-          <entry key="py" value="215" />
-          <entry key="sh" value="16" />
+          <entry key="py" value="217" />
+          <entry key="sh" value="39" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Bash" value="16" />
+          <entry key="Bash" value="39" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="257" />
+          <entry key="Python" value="259" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src_python/format_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="205" column="51" lean-forward="true" selection-start-line="205" selection-start-column="51" selection-end-line="205" selection-end-column="51" />
+            <state relative-caret-position="270">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -65,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src_python/experiment_driver_nn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+            <state relative-caret-position="-140">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -80,7 +84,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src_python/experiment_driver_rf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
+            <state relative-caret-position="315">
               <caret line="27" column="73" selection-start-line="27" selection-start-column="73" selection-end-line="27" selection-end-column="73" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
@@ -92,8 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src_python/evaluate_validation_ensembles.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+            <state relative-caret-position="146">
+              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -104,8 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src_python/calculate_driver_footprint.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="15">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -125,8 +129,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src_python/run_all_experiments_step2A.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+            <state relative-caret-position="375">
+              <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -178,7 +182,6 @@
         <option value="$PROJECT_DIR$/src_python/train_nn.py" />
         <option value="$PROJECT_DIR$/src_python/train_rf.py" />
         <option value="$PROJECT_DIR$/src_python/run_all_experiments_step1.sh" />
-        <option value="$PROJECT_DIR$/src_python/run_all_experiments_step2A.sh" />
         <option value="$PROJECT_DIR$/src_python/run_all_experiments_step2B.sh" />
         <option value="$PROJECT_DIR$/src_python/run_all_experiments_step2C.sh" />
         <option value="$PROJECT_DIR$/src_python/experiment_driver_nn.py" />
@@ -186,12 +189,12 @@
         <option value="$PROJECT_DIR$/src_python/evaluate_validation_ensembles.py" />
         <option value="$PROJECT_DIR$/src_python/calculate_driver_footprint.py" />
         <option value="$PROJECT_DIR$/src_python/format_data.py" />
+        <option value="$PROJECT_DIR$/src_python/run_all_experiments_step2A.sh" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="34" />
-    <option name="y" value="64" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="25" />
     <option name="width" value="1680" />
     <option name="height" value="938" />
   </component>
@@ -200,6 +203,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -210,24 +214,12 @@
             <path>
               <item name="DLBCL-Classifier" type="b2602c69:ProjectViewProjectNode" />
               <item name="DLBCL-Classifier" type="462c0819:PsiDirectoryNode" />
-              <item name="data_tables" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DLBCL-Classifier" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DLBCL-Classifier" type="462c0819:PsiDirectoryNode" />
-              <item name="data_tables" type="462c0819:PsiDirectoryNode" />
-              <item name="feature_bp_counts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DLBCL-Classifier" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DLBCL-Classifier" type="462c0819:PsiDirectoryNode" />
               <item name="src_python" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -251,7 +243,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.calculate_driver_footprint">
+  <component name="RunManager" selected="Python.experiment_driver_nn">
     <configuration name="calculate_driver_footprint" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DLBCL-Classifier" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -307,7 +299,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src_python/experiment_driver_nn.py" />
-      <option name="PARAMETERS" value="--numiter 100 --folds 5 --earlystopping --pca 40" />
+      <option name="PARAMETERS" value="--numiter 100 --folds 5 --earlystopping --reduced 3.2 --remove_largest_n 5 --savemodels --traininghistory" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -366,9 +358,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.calculate_driver_footprint" />
-        <item itemvalue="Python.evaluate_validation_ensembles" />
         <item itemvalue="Python.experiment_driver_nn" />
+        <item itemvalue="Python.evaluate_validation_ensembles" />
+        <item itemvalue="Python.calculate_driver_footprint" />
         <item itemvalue="Python.generate_baseline_probabilities" />
         <item itemvalue="Python.fisher_5x2_parallel" />
       </list>
@@ -388,17 +380,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="34" y="64" width="1680" height="938" extended-state="0" />
+    <frame x="0" y="25" width="1680" height="938" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3297619" />
@@ -406,6 +393,11 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -443,9 +435,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1254">
           <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -453,9 +442,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="17" selection-end-column="128" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -463,9 +449,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="128" selection-start-line="27" selection-start-column="128" selection-end-line="27" selection-end-column="128" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -473,20 +456,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
           <caret line="69" column="56" selection-start-line="69" selection-start-column="56" selection-end-line="69" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src_python/experiment_driver_mnb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src_python/fisher_5x2_parallel.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -499,9 +473,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -512,10 +483,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src_python/run_all_experiments_step2C.sh">
+    <entry file="file://$PROJECT_DIR$/data_tables/feature_bp_counts/footprint_table_Aug_17_2022.tsv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="91" selection-start-line="5" selection-start-column="91" selection-end-line="5" selection-end-column="91" />
+        <state relative-caret-position="-2012" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src_python/experiment_driver_rf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="27" column="73" selection-start-line="27" selection-start-column="73" selection-end-line="27" selection-end-column="73" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src_python/calculate_driver_footprint.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -526,30 +515,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src_python/experiment_driver_nn.py">
+    <entry file="file://$PROJECT_DIR$/src_python/run_all_experiments_step2C.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+        <state relative-caret-position="75">
+          <caret line="5" column="91" selection-start-line="5" selection-start-column="91" selection-end-line="5" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src_python/evaluate_validation_ensembles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src_python/experiment_driver_rf.py">
+    <entry file="file://$PROJECT_DIR$/src_python/format_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="73" selection-start-line="27" selection-start-column="73" selection-end-line="27" selection-end-column="73" />
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src_python/run_all_experiments_step2A.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        <state relative-caret-position="375">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -560,37 +556,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src_python/evaluate_validation_ensembles.py">
+    <entry file="file://$PROJECT_DIR$/src_python/experiment_driver_nn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        <state relative-caret-position="-140">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_tables/feature_bp_counts/footprint_table_Aug_17_2022.tsv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2012" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src_python/calculate_driver_footprint.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src_python/format_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="205" column="51" lean-forward="true" selection-start-line="205" selection-start-column="51" selection-end-line="205" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#0#22#0" expanded="true" />
           </folding>
         </state>
       </provider>
