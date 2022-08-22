@@ -1,0 +1,12 @@
+**/cHL_Analysis_Set_No_Cow_HIV_Samples_Removed.with_noncoding.maf.annotated
+**/CCGD_Lymphoma_Cell_Lines_53.with_noncoding.maf.annotated
+**/PMBL_Combined.final_analysis.maf.annotated
+**/CCGD_Lymphoma_Cell_Lines_53.with_noncoding.maf.annotated
+.Rproj.user
+**/CCLE_mutations.csv
+**/*.maf
+**/*.annotated
+**/*tar.gz
+**/*tar
+**/*gz
+clustering_runs/*/*

@@ -1,0 +1,865 @@
+sample	cohort	included_in_clustering	exclusion_reason
+DLBCL_MC_F729_MAN	Shipp	True	
+DLBCL_C_D_1125_NULLPAIR	Shipp	True	
+DLBCL_MC_F344_CJS	Shipp	True	
+DLBCL_C_D_1118_NULLPAIR	Shipp	True	
+DLBCL_RICOVER_467	Shipp	True	
+DLBCL_RICOVER_1257	Shipp	True	
+DLBCL_RICOVER_150	Shipp	True	
+DLBCL_RICOVER_469	Shipp	True	
+DLBCL_LS3309	Shipp	True	
+DLBCL_RICOVER_780	Shipp	True	
+DLBCL_RICOVER_956	Shipp	True	
+DLBCL_RICOVER_575	Shipp	True	
+DLBCL_C_D_1146_NULLPAIR	Shipp	True	
+DLBCL_MC_F358_WDS	Shipp	True	
+DLBCL_LS148	Shipp	True	
+DLBCL_RICOVER_496	Shipp	True	
+DLBCL_RICOVER_1248	Shipp	True	
+DLBCL_C_D_1132_NULLPAIR	Shipp	True	
+DLBCL_LS3749	Shipp	True	
+DLBCL_LS4618	Shipp	True	
+DLBCL_C_D_1138_NULLPAIR	Shipp	True	
+DLBCL_RICOVER_431	Shipp	True	
+DLBCL_RICOVER_865	Shipp	True	
+DLBCL_LS155	Shipp	True	
+DLBCL_MC_F990_MNA	Shipp	True	
+DLBCL_RICOVER_401	Shipp	True	
+DLBCL_C_D_1120_NULLPAIR	Shipp	True	
+DLBCL_LS3204	Shipp	True	
+DLBCL_LS88	Shipp	True	
+DLBCL_MC_F959_ERM	Shipp	True	
+DLBCL_RICOVER_173	Shipp	True	
+DLBCL_LS378	Shipp	True	
+DLBCL_LS4085	Shipp	True	
+DLBCL_RICOVER_978	Shipp	True	
+DLBCL_RICOVER_336	Shipp	True	
+DLBCL_RICOVER_478	Shipp	True	
+DLBCL_C_D_1140_NULLPAIR	Shipp	True	
+DLBCL_LS146	Shipp	True	
+DLBCL_RICOVER_829	Shipp	True	
+DLBCL_C_D_1124_NULLPAIR	Shipp	True	
+DLBCL_RICOVER_111	Shipp	True	
+DLBCL_LS1683	Shipp	True	
+DLBCL_RICOVER_134	Shipp	True	
+DLBCL_C_D_1148_NULLPAIR	Shipp	True	
+DFCIDL009_DT	Shipp	True	
+DLBCL_RICOVER_107	Shipp	True	
+DLBCL_C_D_1119_NULLPAIR	Shipp	True	
+DFCIDL003_DT	Shipp	True	
+DLBCL_LS2208	Shipp	True	
+DLBCL_LS1921	Shipp	True	
+DLBCL_C_D_PAIR5	Shipp	True	
+DLBCL_C_D_1141_NULLPAIR	Shipp	True	
+DLBCL_RICOVER_597	Shipp	True	
+DLBCL_MC_F739_AMA3	Shipp	True	
+DLBCL_RICOVER_384	Shipp	True	
+DLBCL_LS1899	Shipp	True	
+DLBCL_LS2590	Shipp	True	
+DLBCL_RICOVER_1210	Shipp	True	
+DLBCL_C_D_1105_NULLPAIR	Shipp	True	
+DLBCL_RICOVER_1165	Shipp	True	
+DLBCL_LS1668	Shipp	True	
+DLBCL_RICOVER_267	Shipp	True	
+DLBCL_RICOVER_839	Shipp	True	
+DLBCL_RICOVER_449	Shipp	True	
+DLBCL_RICOVER_585	Shipp	True	
+DLBCL_RICOVER_126	Shipp	True	
+DLBCL_RICOVER_506	Shipp	True	
+DLBCL_C_D_1156_NULLPAIR	Shipp	True	
+DLBCL_C_D_1106_NULLPAIR	Shipp	True	
+DLBCL_RICOVER_299	Shipp	True	
+DLBCL_MC_F218_RAP	Shipp	True	
+DLBCL_C_D_PAIR20	Shipp	True	
+DLBCL_MC_F349_BJJ	Shipp	True	
+DLBCL_RICOVER_1046	Shipp	True	
+DLBCL_LS4054	Shipp	True	
+DLBCL_RICOVER_1169	Shipp	True	
+DLBCL_C_D_1104_NULLPAIR	Shipp	True	
+DLBCL_LS2599	Shipp	True	
+DLBCL_RICOVER_950	Shipp	True	
+DLBCL_MC_F339_JPS2	Shipp	True	
+DLBCL_DFCI_DLBCL_GOE07	Shipp	True	
+DLBCL_RICOVER_320	Shipp	True	
+DLBCL_RICOVER_577	Shipp	True	
+DLBCL_MAYO_DLBCL_234	Shipp	True	
+DLBCL_MC_F064AB	Shipp	True	
+DLBCL_RICOVER_701	Shipp	True	
+DLBCL_LS3245	Shipp	True	
+DLBCL_RICOVER_1045	Shipp	True	
+DLBCL_C_D_PAIR2	Shipp	True	
+DLBCL_RICOVER_850	Shipp	True	
+DLBCL_C_D_1113_NULLPAIR	Shipp	True	
+DLBCL_C_D_1142_NULLPAIR	Shipp	True	
+DLBCL_RICOVER_1106	Shipp	True	
+DLBCL_MC_F139_LJF	Shipp	True	
+DLBCL_RICOVER_678	Shipp	True	
+DLBCL_RICOVER_1150	Shipp	True	
+DLBCL_RICOVER_1235	Shipp	True	
+DLBCL_RICOVER_1190	Shipp	True	
+DLBCL_C_D_PAIR13	Shipp	True	
+DLBCL_RICOVER_208	Shipp	True	
+DLBCL_MC_F496DMP	Shipp	True	
+DLBCL_RICOVER_692	Shipp	True	
+DLBCL_MC_F362_MJB1	Shipp	True	
+DLBCL_RICOVER_174	Shipp	True	
+DLBCL_RICOVER_1204	Shipp	True	
+DLBCL_MC_F500_ECU	Shipp	True	
+DLBCL_MC_F089_MLB	Shipp	True	
+DLBCL_LS4323	Shipp	True	
+DLBCL_MC_F132_MLM	Shipp	True	
+DLBCL_C_D_1107_NULLPAIR	Shipp	True	
+DLBCL_C_D_1103_NULLPAIR	Shipp	True	
+DLBCL_C_D_1109_NULLPAIR	Shipp	True	
+DLBCL_RICOVER_1263	Shipp	True	
+DLBCL_RICOVER_1018	Shipp	True	
+DLBCL_C_D_1133_NULLPAIR	Shipp	True	
+DLBCL_LS3866	Shipp	True	
+DLBCL_C_D_1163_NULLPAIR	Shipp	True	
+DLBCL_LS3499	Shipp	True	
+DLBCL_C_D_1112_NULLPAIR	Shipp	True	
+DLBCL_LS951	Shipp	True	
+DLBCL_RICOVER_685	Shipp	True	
+DLBCL_RICOVER_1283	Shipp	True	
+DLBCL_RICOVER_910	Shipp	True	
+DLBCL_LS2367	Shipp	True	
+DLBCL_LS4616	Shipp	True	
+DLBCL_C_D_1108_NULLPAIR	Shipp	True	
+DLBCL_C_D_1136_NULLPAIR	Shipp	True	
+DLBCL_RICOVER_948	Shipp	True	
+DLBCL_RICOVER_451	Shipp	True	
+DLBCL_RICOVER_1278	Shipp	True	
+DLBCL_C_D_1121_NULLPAIR	Shipp	True	
+DLBCL_RICOVER_338	Shipp	True	
+DLBCL_LS4592	Shipp	True	
+DLBCL_LS2089	Shipp	True	
+DLBCL_C_D_1128_NULLPAIR	Shipp	True	
+DLBCL_RICOVER_1013	Shipp	True	
+DLBCL_LS3809	Shipp	True	
+DLBCL_RICOVER_763	Shipp	True	
+DLBCL_RICOVER_1081	Shipp	True	
+DLBCL_RICOVER_826	Shipp	True	
+DFCIDL004_DT	Shipp	True	
+DLBCL_RICOVER_1072	Shipp	True	
+DLBCL_DFCI_DLBCL_GOE05	Shipp	True	
+DLBCL_C_D_1126_NULLPAIR	Shipp	True	
+DLBCL_LS2357	Shipp	True	
+DLBCL_RICOVER_522	Shipp	True	
+DLBCL_RICOVER_712	Shipp	True	
+DLBCL_LS1098	Shipp	True	
+DLBCL_RICOVER_1237	Shipp	True	
+DLBCL_C_D_1158_NULLPAIR	Shipp	True	
+DLBCL_RICOVER_120	Shipp	True	
+DLBCL_C_D_1129_NULLPAIR	Shipp	True	
+DLBCL_RICOVER_1269	Shipp	True	
+DLBCL_C_D_1117_NULLPAIR	Shipp	True	
+DLBCL_C_D_1149_NULLPAIR	Shipp	True	
+DLBCL_RICOVER_945	Shipp	True	
+DLBCL_RICOVER_744	Shipp	True	
+DLBCL_MC_F300_TBF	Shipp	True	
+DLBCL_RICOVER_288	Shipp	True	
+DLBCL_RICOVER_787	Shipp	True	
+DLBCL_C_D_1155_NULLPAIR	Shipp	True	
+DLBCL_RICOVER_533	Shipp	True	
+DLBCL_RICOVER_440	Shipp	True	
+DLBCL_RICOVER_1061	Shipp	True	
+DLBCL_RICOVER_1199	Shipp	True	
+DLBCL_RICOVER_361	Shipp	True	
+DLBCL_RICOVER_977	Shipp	True	
+DLBCL_MC_F648_JKW	Shipp	True	
+DLBCL_LS2258	Shipp	True	
+DLBCL_RICOVER_463	Shipp	True	
+DLBCL_LS1757	Shipp	True	
+DLBCL_LS2154	Shipp	True	
+DLBCL_LS3615	Shipp	True	
+DLBCL_MC_F815_BAT	Shipp	True	
+DLBCL_RICOVER_543	Shipp	True	
+DLBCL_DFCI_DLBCL_GOE16	Shipp	True	
+DLBCL_RICOVER_221	Shipp	True	
+DLBCL_LS297	Shipp	True	
+DLBCL_RICOVER_1032	Shipp	True	
+DLBCL_LS2978	Shipp	True	
+DLBCL_RICOVER_253	Shipp	True	
+DLBCL_C_D_1123_NULLPAIR	Shipp	True	
+DLBCL_RICOVER_269	Shipp	True	
+DLBCL_RICOVER_1138	Shipp	True	
+DLBCL_RICOVER_1293	Shipp	True	
+DLBCL_LS3808	Shipp	True	
+DLBCL_C_D_1131_NULLPAIR	Shipp	True	
+DFCIDL010_DT	Shipp	True	
+DLBCL_RICOVER_1299	Shipp	True	
+DFCIDL008_DT	Shipp	True	
+DLBCL_C_D_1114_NULLPAIR	Shipp	True	
+DLBCL_MAYO_DLBCL_3653	Shipp	True	
+DLBCL_C_D_1152_NULLPAIR	Shipp	True	
+DLBCL_RICOVER_1192	Shipp	True	
+DFCIDL001_DT	Shipp	True	
+DLBCL_LS1620	Shipp	True	
+DLBCL_RICOVER_224	Shipp	True	
+DLBCL_LS4394	Shipp	True	
+DLBCL_RICOVER_1144	Shipp	True	
+DLBCL_RICOVER_335	Shipp	True	
+DLBCL_C_D_1159_NULLPAIR	Shipp	True	
+DLBCL_MC_F606_DMJ	Shipp	True	
+DLBCL_C_D_1127_NULLPAIR	Shipp	True	
+DLBCL_RICOVER_258	Shipp	True	
+DLBCL_RICOVER_773	Shipp	True	
+DLBCL_RICOVER_99	Shipp	True	
+DLBCL_C_D_1162_NULLPAIR	Shipp	True	
+DLBCL_RICOVER_274	Shipp	True	
+DLBCL_C_D_1144_NULLPAIR	Shipp	True	
+DLBCL_RICOVER_408	Shipp	True	
+DLBCL_C_D_1157_NULLPAIR	Shipp	True	
+DLBCL_RICOVER_290	Shipp	True	
+DLBCL_LS4593	Shipp	True	
+DLBCL_BWH_DLBCL64	Shipp	True	
+DLBCL_LS3387	Shipp	True	
+DLBCL_RICOVER_985	Shipp	True	
+DLBCL_C_D_1130_NULLPAIR	Shipp	True	
+DLBCL_RICOVER_473	Shipp	True	
+DLBCL_LS3200	Shipp	True	
+DLBCL_C_D_1153_NULLPAIR	Shipp	True	
+DLBCL_MC_F519_ALT	Shipp	True	
+DLBCL_LS2305	Shipp	True	
+DLBCL_MC_F502_RFK	Shipp	True	
+DLBCL_C_D_1151_NULLPAIR	Shipp	True	
+DLBCL_MC_F210_GWC	Shipp	True	
+DLBCL_C_D_1110_NULLPAIR	Shipp	True	
+DLBCL_C_D_PAIR23	Shipp	True	
+DLBCL_RICOVER_151	Shipp	True	
+DLBCL_LS2596	Shipp	True	
+DLBCL_LS3820	Shipp	True	
+DLBCL_RICOVER_694	Shipp	True	
+DLBCL_RICOVER_623	Shipp	True	
+DLBCL_LS1546	Shipp	True	
+DLBCL_MAYO_DLBCL_5613	Shipp	True	
+DLBCL_RICOVER_417	Shipp	True	
+DLBCL_LS762	Shipp	True	
+DLBCL_C_D_1139_NULLPAIR	Shipp	True	
+DLBCL_LS2245	Shipp	True	
+DLBCL_RICOVER_583	Shipp	True	
+DLBCL_C_D_PAIR22	Shipp	True	
+DLBCL_RICOVER_720	Shipp	True	
+DLBCL_MAYO_DLBCL_7359	Shipp	True	
+DLBCL_LS1583	Shipp	True	
+DLBCL_RICOVER_314	Shipp	True	
+DLBCL_RICOVER_216	Shipp	True	
+DLBCL_RICOVER_197	Shipp	True	
+DLBCL_LS2328	Shipp	True	
+DLBCL_C_D_1135_NULLPAIR	Shipp	True	
+DLBCL_C_D_PAIR9	Shipp	True	
+DLBCL_RICOVER_704	Shipp	True	
+DLBCL_MC_F262_WLC	Shipp	True	
+DLBCL_MC_F089_HCZ	Shipp	True	
+DLBCL_RICOVER_866	Shipp	True	
+DLBCL_MC_F307_JPS	Shipp	True	
+DLBCL_RICOVER_822	Shipp	True	
+DLBCL_RICOVER_1329	Shipp	True	
+DLBCL_C_D_1166_NULLPAIR	Shipp	True	
+DLBCL_LS4619	Shipp	True	
+DLBCL_RICOVER_617	Shipp	True	
+DLBCL_C_D_1115_NULLPAIR	Shipp	True	
+DLBCL_RICOVER_1287	Shipp	True	
+DLBCL_LS1304	Shipp	True	
+DLBCL_RICOVER_1289	Shipp	True	
+DLBCL_RICOVER_1060	Shipp	True	
+DLBCL_LS1395	Shipp	True	
+DLBCL_C_D_1145_NULLPAIR	Shipp	True	
+DLBCL_LS843	Shipp	True	
+DLBCL_LS1065	Shipp	True	
+DLBCL_RICOVER_1247	Shipp	True	
+DLBCL_MC_F927_JHS	Shipp	True	
+DLBCL_RICOVER_1219	Shipp	True	
+DLBCL_RICOVER_181	Shipp	True	
+DLBCL_LS2325	Shipp	True	
+DLBCL_RICOVER_266	Shipp	True	
+DLBCL_RICOVER_105	Shipp	True	
+DLBCL_RICOVER_711	Shipp	True	
+DLBCL_RICOVER_148	Shipp	True	
+DLBCL11539	Staudt	True	
+DLBCL10879	Staudt	True	
+DLBCL11473	Staudt	True	
+DLBCL10514	Staudt	True	
+DLBCL10881	Staudt	True	
+DLBCL11560	Staudt	True	
+DLBCL11528	Staudt	True	
+DLBCL11482	Staudt	True	
+DLBCL10950	Staudt	True	
+DLBCL10546	Staudt	True	
+DLBCL10459	Staudt	True	
+DLBCL10916	Staudt	True	
+DLBCL10492	Staudt	True	
+DLBCL11657	Staudt	True	
+DLBCL10999	Staudt	True	
+DLBCL11586	Staudt	True	
+DLBCL11496	Staudt	True	
+DLBCL11478	Staudt	True	
+DLBCL10985	Staudt	True	
+DLBCL10977	Staudt	True	
+DLBCL11591	Staudt	True	
+DLBCL11512	Staudt	True	
+DLBCL11534	Staudt	True	
+DLBCL11506	Staudt	True	
+DLBCL10966	Staudt	True	
+DLBCL10951	Staudt	True	
+DLBCL10484	Staudt	True	
+DLBCL11671	Staudt	True	
+DLBCL10883	Staudt	True	
+DLBCL11531	Staudt	True	
+DLBCL11430	Staudt	True	
+DLBCL10460	Staudt	True	
+DLBCL11513	Staudt	True	
+DLBCL10544	Staudt	True	
+DLBCL10521	Staudt	True	
+DLBCL11681	Staudt	True	
+DLBCL11503	Staudt	True	
+DLBCL10914	Staudt	True	
+DLBCL11440	Staudt	True	
+DLBCL10480	Staudt	True	
+DLBCL10862	Staudt	True	
+DLBCL10885	Staudt	True	
+DLBCL10899	Staudt	True	
+DLBCL10548	Staudt	True	
+DLBCL10931	Staudt	True	
+DLBCL10523	Staudt	True	
+DLBCL11454	Staudt	True	
+DLBCL10957	Staudt	True	
+DLBCL10553	Staudt	True	
+DLBCL10963	Staudt	True	
+DLBCL11434	Staudt	True	
+DLBCL10880	Staudt	True	
+DLBCL10458	Staudt	True	
+DLBCL11676	Staudt	True	
+DLBCL10909	Staudt	True	
+DLBCL10476	Staudt	True	
+DLBCL11471	Staudt	True	
+DLBCL10457	Staudt	True	
+DLBCL11194	Staudt	True	
+DLBCL10493	Staudt	True	
+DLBCL10959	Staudt	True	
+DLBCL10990	Staudt	True	
+DLBCL10495	Staudt	True	
+DLBCL11455	Staudt	True	
+DLBCL10473	Staudt	True	
+DLBCL11655	Staudt	True	
+DLBCL11666	Staudt	True	
+DLBCL11432	Staudt	True	
+DLBCL10469	Staudt	True	
+DLBCL10974	Staudt	True	
+DLBCL10871	Staudt	True	
+DLBCL11658	Staudt	True	
+DLBCL10955	Staudt	True	
+DLBCL10927	Staudt	True	
+DLBCL11564	Staudt	True	
+DLBCL10907	Staudt	True	
+DLBCL10969	Staudt	True	
+DLBCL10550	Staudt	True	
+DLBCL10973	Staudt	True	
+DLBCL11677	Staudt	True	
+DLBCL10491	Staudt	True	
+DLBCL10464	Staudt	True	
+DLBCL10904	Staudt	True	
+DLBCL10868	Staudt	True	
+DLBCL10953	Staudt	True	
+DLBCL11476	Staudt	True	
+DLBCL10869	Staudt	True	
+DLBCL10900	Staudt	True	
+DLBCL11508	Staudt	True	
+DLBCL11195	Staudt	True	
+DLBCL11581	Staudt	True	
+DLBCL10858	Staudt	True	
+DLBCL11204	Staudt	True	
+DLBCL10906	Staudt	True	
+DLBCL10452	Staudt	True	
+DLBCL11584	Staudt	True	
+DLBCL10490	Staudt	True	
+DLBCL10864	Staudt	True	
+DLBCL11453	Staudt	True	
+DLBCL11523	Staudt	True	
+DLBCL10541	Staudt	True	
+DLBCL10865	Staudt	True	
+DLBCL11585	Staudt	True	
+DLBCL11196	Staudt	True	
+DLBCL10465	Staudt	True	
+DLBCL10983	Staudt	True	
+DLBCL11450	Staudt	True	
+DLBCL10852	Staudt	True	
+DLBCL10968	Staudt	True	
+DLBCL10483	Staudt	True	
+DLBCL10948	Staudt	True	
+DLBCL11346	Staudt	True	
+DLBCL10472	Staudt	True	
+DLBCL11542	Staudt	True	
+DLBCL10856	Staudt	True	
+DLBCL11202	Staudt	True	
+DLBCL11563	Staudt	True	
+DLBCL11673	Staudt	True	
+DLBCL11579	Staudt	True	
+DLBCL10908	Staudt	True	
+DLBCL10878	Staudt	True	
+DLBCL10537	Staudt	True	
+DLBCL11663	Staudt	True	
+DLBCL10962	Staudt	True	
+DLBCL11541	Staudt	True	
+DLBCL11520	Staudt	True	
+DLBCL11457	Staudt	True	
+DLBCL10877	Staudt	True	
+DLBCL11538	Staudt	True	
+DLBCL10565	Staudt	True	
+DLBCL10876	Staudt	True	
+DLBCL11446	Staudt	True	
+DLBCL10842	Staudt	True	
+DLBCL10481	Staudt	True	
+DLBCL11447	Staudt	True	
+DLBCL10910	Staudt	True	
+DLBCL10834	Staudt	True	
+DLBCL11439	Staudt	True	
+DLBCL11527	Staudt	True	
+DLBCL11667	Staudt	True	
+DLBCL10538	Staudt	True	
+DLBCL10498	Staudt	True	
+DLBCL10515	Staudt	True	
+DLBCL11662	Staudt	True	
+DLBCL11433	Staudt	True	
+DLBCL11459	Staudt	True	
+DLBCL11574	Staudt	True	
+DLBCL10451	Staudt	True	
+DLBCL11669	Staudt	True	
+DLBCL10860	Staudt	True	
+DLBCL10934	Staudt	True	
+DLBCL10497	Staudt	True	
+DLBCL10532	Staudt	True	
+DLBCL11504	Staudt	True	
+DLBCL11498	Staudt	True	
+DLBCL10932	Staudt	True	
+DLBCL11003	Staudt	True	
+DLBCL11526	Staudt	True	
+DLBCL10893	Staudt	True	
+DLBCL10989	Staudt	True	
+DLBCL10781	Staudt	True	
+DLBCL10847	Staudt	True	
+DLBCL11445	Staudt	True	
+DLBCL10844	Staudt	True	
+DLBCL11436	Staudt	True	
+DLBCL10915	Staudt	True	
+DLBCL10542	Staudt	True	
+DLBCL10525	Staudt	True	
+DLBCL10890	Staudt	True	
+DLBCL10535	Staudt	True	
+DLBCL10456	Staudt	True	
+DLBCL10870	Staudt	True	
+DLBCL10896	Staudt	True	
+DLBCL11182	Staudt	True	
+DLBCL11533	Staudt	True	
+DLBCL11203	Staudt	True	
+DLBCL10519	Staudt	True	
+DLBCL10517	Staudt	True	
+DLBCL10889	Staudt	True	
+DLBCL11519	Staudt	True	
+DLBCL10461	Staudt	True	
+DLBCL10965	Staudt	True	
+DLBCL11575	Staudt	True	
+DLBCL11672	Staudt	True	
+DLBCL10533	Staudt	True	
+DLBCL10463	Staudt	True	
+DLBCL10919	Staudt	True	
+DLBCL10884	Staudt	True	
+DLBCL10528	Staudt	True	
+DLBCL11510	Staudt	True	
+DLBCL10988	Staudt	True	
+DLBCL10972	Staudt	True	
+DLBCL10992	Staudt	True	
+DLBCL10854	Staudt	True	
+DLBCL11180	Staudt	True	
+DLBCL10848	Staudt	True	
+DLBCL10956	Staudt	True	
+DLBCL10499	Staudt	True	
+DLBCL10995	Staudt	True	
+DLBCL11005	Staudt	True	
+DLBCL10534	Staudt	True	
+DLBCL10838	Staudt	True	
+DLBCL10836	Staudt	True	
+DLBCL10488	Staudt	True	
+DLBCL11532	Staudt	True	
+DLBCL11562	Staudt	True	
+DLBCL11566	Staudt	True	
+DLBCL11675	Staudt	True	
+DLBCL10918	Staudt	True	
+DLBCL10978	Staudt	True	
+DLBCL11684	Staudt	True	
+DLBCL11483	Staudt	True	
+DLBCL11535	Staudt	True	
+DLBCL10527	Staudt	True	
+DLBCL10901	Staudt	True	
+DLBCL10863	Staudt	True	
+DLBCL11670	Staudt	True	
+DLBCL11479	Staudt	True	
+DLBCL11468	Staudt	True	
+DLBCL10554	Staudt	True	
+DLBCL11472	Staudt	True	
+DLBCL10505	Staudt	True	
+DLBCL10895	Staudt	True	
+DLBCL11652	Staudt	True	
+DLBCL11565	Staudt	True	
+DLBCL11456	Staudt	True	
+DLBCL10945	Staudt	True	
+DLBCL11460	Staudt	True	
+DLBCL11205	Staudt	True	
+DLBCL10961	Staudt	True	
+DLBCL11665	Staudt	True	
+DLBCL11530	Staudt	True	
+DLBCL10997	Staudt	True	
+DLBCL11462	Staudt	True	
+DLBCL10987	Staudt	True	
+DLBCL11661	Staudt	True	
+DLBCL11452	Staudt	True	
+DLBCL10513	Staudt	True	
+DLBCL11507	Staudt	True	
+DLBCL10833	Staudt	True	
+DLBCL10482	Staudt	True	
+DLBCL10500	Staudt	True	
+DLBCL10939	Staudt	True	
+DLBCL11474	Staudt	True	
+DLBCL10902	Staudt	True	
+DLBCL11484	Staudt	True	
+DLBCL11488	Staudt	True	
+DLBCL10529	Staudt	True	
+DLBCL10450	Staudt	True	
+DLBCL11188	Staudt	True	
+DLBCL11495	Staudt	True	
+DLBCL10454	Staudt	True	
+DLBCL10835	Staudt	True	
+DLBCL11558	Staudt	True	
+DLBCL10512	Staudt	True	
+DLBCL11448	Staudt	True	
+DLBCL11509	Staudt	True	
+DLBCL10485	Staudt	True	
+DLBCL10866	Staudt	True	
+DLBCL10859	Staudt	True	
+DLBCL10874	Staudt	True	
+DLBCL10503	Staudt	True	
+DLBCL11242	Staudt	True	
+DLBCL10850	Staudt	True	
+DLBCL11573	Staudt	True	
+DLBCL11431	Staudt	True	
+DLBCL10875	Staudt	True	
+DLBCL10935	Staudt	True	
+DLBCL11470	Staudt	True	
+DLBCL11511	Staudt	True	
+DLBCL11678	Staudt	True	
+DLBCL11680	Staudt	True	
+DLBCL10897	Staudt	True	
+DLBCL11437	Staudt	True	
+DLBCL11685	Staudt	True	
+DLBCL10925	Staudt	True	
+DLBCL10942	Staudt	True	
+DLBCL11578	Staudt	True	
+DLBCL10928	Staudt	True	
+DLBCL10539	Staudt	True	
+DLBCL11659	Staudt	True	
+DLBCL11540	Staudt	True	
+DLBCL10470	Staudt	True	
+DLBCL10549	Staudt	True	
+DLBCL10504	Staudt	True	
+DLBCL10564	Staudt	True	
+DLBCL10530	Staudt	True	
+DLBCL10467	Staudt	True	
+DLBCL11576	Staudt	True	
+DLBCL11477	Staudt	True	
+DLBCL11000	Staudt	True	
+DLBCL10462	Staudt	True	
+DLBCL11651	Staudt	True	
+DLBCL11679	Staudt	True	
+DLBCL10555	Staudt	True	
+DLBCL10487	Staudt	True	
+DLBCL10516	Staudt	True	
+DLBCL11002	Staudt	True	
+DLBCL10780	Staudt	True	
+DLBCL10494	Staudt	True	
+DLBCL10912	Staudt	True	
+DLBCL10936	Staudt	True	
+DLBCL11435	Staudt	True	
+DLBCL10846	Staudt	True	
+DLBCL10851	Staudt	True	
+DLBCL11569	Staudt	True	
+DLBCL11491	Staudt	True	
+DLBCL11429	Staudt	True	
+DLBCL11464	Staudt	True	
+DLBCL11206	Staudt	True	
+DLBCL10545	Staudt	True	
+DLBCL10994	Staudt	True	
+DLBCL11501	Staudt	True	
+DLBCL11660	Staudt	True	
+DLBCL11458	Staudt	True	
+DLBCL10975	Staudt	True	
+DLBCL11515	Staudt	True	
+DLBCL11467	Staudt	True	
+DLBCL10509	Staudt	True	
+DLBCL10540	Staudt	True	
+DLBCL10857	Staudt	True	
+DLBCL10924	Staudt	True	
+DLBCL11187	Staudt	True	
+DLBCL11518	Staudt	True	
+DLBCL10993	Staudt	True	
+DLBCL10471	Staudt	True	
+DLBCL10502	Staudt	True	
+DLBCL10506	Staudt	True	
+DLBCL10453	Staudt	True	
+DLBCL10986	Staudt	True	
+DLBCL10891	Staudt	True	
+DLBCL10921	Staudt	True	
+DLBCL11536	Staudt	True	
+DLBCL11193	Staudt	True	
+DLBCL10947	Staudt	True	
+DLBCL10996	Staudt	True	
+DLBCL10980	Staudt	True	
+DLBCL11208	Staudt	True	
+DLBCL10984	Staudt	True	
+DLBCL10566	Staudt	True	
+DLBCL11443	Staudt	True	
+DLBCL10782	Staudt	True	
+DLBCL10531	Staudt	True	
+DLBCL10938	Staudt	True	
+DLBCL11481	Staudt	True	
+DLBCL10922	Staudt	True	
+DLBCL11480	Staudt	True	
+DLBCL11428	Staudt	True	
+DLBCL10849	Staudt	True	
+DLBCL10552	Staudt	True	
+DLBCL10911	Staudt	True	
+DLBCL11572	Staudt	True	
+DLBCL10964	Staudt	True	
+DLBCL11001	Staudt	True	
+DLBCL10522	Staudt	True	
+DLBCL11664	Staudt	True	
+DLBCL11451	Staudt	True	
+DLBCL11683	Staudt	True	
+DLBCL10894	Staudt	True	
+DLBCL11441	Staudt	True	
+DLBCL11590	Staudt	True	
+DLBCL10967	Staudt	True	
+DLBCL11537	Staudt	True	
+DLBCL10903	Staudt	True	
+DLBCL10954	Staudt	True	
+DLBCL10478	Staudt	True	
+DLBCL10970	Staudt	True	
+DLBCL11461	Staudt	True	
+DLBCL11595	Staudt	True	
+DLBCL11514	Staudt	True	
+DLBCL11525	Staudt	True	
+DLBCL10888	Staudt	True	
+DLBCL10477	Staudt	True	
+DLBCL10837	Staudt	True	
+DLBCL11004	Staudt	True	
+DLBCL10466	Staudt	True	
+DLBCL10486	Staudt	True	
+DLBCL10501	Staudt	True	
+DLBCL10930	Staudt	True	
+DLBCL10853	Staudt	True	
+DLBCL11449	Staudt	True	
+DLBCL10845	Staudt	True	
+DLBCL10524	Staudt	True	
+DLBCL11577	Staudt	True	
+DLBCL10547	Staudt	True	
+DLBCL10926	Staudt	True	
+DLBCL10943	Staudt	True	
+DLBCL11516	Staudt	True	
+DLBCL10933	Staudt	True	
+DLBCL11191	Staudt	True	
+DLBCL10998	Staudt	True	
+DLBCL10843	Staudt	True	
+DLBCL10510	Staudt	True	
+DLBCL11571	Staudt	True	
+DLBCL11559	Staudt	True	
+DLBCL11500	Staudt	True	
+DLBCL10508	Staudt	True	
+DLBCL10917	Staudt	True	
+DLBCL11656	Staudt	True	
+DLBCL11469	Staudt	True	
+DLBCL10867	Staudt	True	
+DLBCL11438	Staudt	True	
+DLBCL10898	Staudt	True	
+DLBCL10913	Staudt	True	
+DLBCL11353	Staudt	True	
+DLBCL10873	Staudt	True	
+DLBCL10981	Staudt	True	
+DLBCL10518	Staudt	True	
+DLBCL11486	Staudt	True	
+DLBCL10536	Staudt	True	
+DLBCL10971	Staudt	True	
+DLBCL10887	Staudt	True	
+DLBCL10507	Staudt	True	
+DLBCL11466	Staudt	True	
+DLBC_FF_A7CQ_TP_NB	TCGA	True	
+DLBC_FF_A7CW_TP_NB	TCGA	True	
+DLBC_FF_8043_TP_NB	TCGA	True	
+DLBC_FF_8042_TP_NB	TCGA	True	
+DLBC_FF_8062_TP_NB	TCGA	True	
+DLBC_FF_A7CX_TP_NB	TCGA	True	
+DLBC_FF_A7CR_TP_NB	TCGA	True	
+DLBC_FF_8046_TP_NB	TCGA	True	
+DLBCL_LS2264	Shipp	False	low_purity
+DLBCL_RICOVER_102	Shipp	False	low_purity
+DLBCL_C_D_1154_NULLPAIR	Shipp	False	low_purity
+DLBCL_LS3271	Shipp	False	low_purity
+DLBCL_LS2595	Shipp	False	low_purity
+DLBCL_RICOVER_215	Shipp	False	low_purity
+DLBCL_MC_F139_AD	Shipp	False	low_purity
+DLBCL_C_D_1150_NULLPAIR	Shipp	False	low_purity
+DLBCL_RICOVER_342	Shipp	False	low_purity
+DLBCL_C_D_1111_NULLPAIR	Shipp	False	low_purity
+DLBCL_RICOVER_554	Shipp	False	low_purity
+DLBCL_LS3085	Shipp	False	low_purity
+DLBCL_DFCI_DLBCL_GOE08	Shipp	False	low_purity
+DLBCL_RICOVER_325	Shipp	False	low_purity
+DLBCL10475	Staudt	False	Missing in probe file
+DLBCL11568	Staudt	False	Missing in probe file
+DLBCL10949	Staudt	False	Missing in probe file
+DLBCL10489	Staudt	False	Missing in probe file
+DLBCL11444	Staudt	False	Missing in probe file
+DLBCL11589	Staudt	False	Missing in probe file
+DLBCL10937	Staudt	False	Missing in probe file
+DLBCL11596	Staudt	False	Missing in probe file
+DLBCL11567	Staudt	False	Missing in probe file
+DLBCL10929	Staudt	False	Missing in probe file
+DLBCL10892	Staudt	False	low_purity
+DLBCL11570	Staudt	False	low_purity
+DLBCL10958	Staudt	False	low_purity
+DLBCL11463	Staudt	False	low_purity
+DLBCL10543	Staudt	False	low_purity
+DLBCL10941	Staudt	False	low_purity
+DLBCL10952	Staudt	False	low_purity
+DLBCL10946	Staudt	False	low_purity
+DLBCL10861	Staudt	False	low_purity
+DLBCL10982	Staudt	False	low_purity
+DLBCL10855	Staudt	False	low_purity
+DLBCL10839	Staudt	False	low_purity
+DLBCL10979	Staudt	False	low_purity
+DLBCL11271	Staudt	False	low_purity
+DLBCL10991	Staudt	False	low_purity
+DLBCL10455	Staudt	False	low_purity
+DLBCL11181	Staudt	False	low_purity
+DLBCL10960	Staudt	False	low_purity
+DLBCL10920	Staudt	False	low_purity
+DLBCL10905	Staudt	False	low_purity
+DLBCL10520	Staudt	False	low_purity
+DLBCL11587	Staudt	False	low_purity
+DLBCL10940	Staudt	False	low_purity
+DLBCL10474	Staudt	False	low_purity
+DLBCL10479	Staudt	False	low_purity
+DLBCL10923	Staudt	False	low_purity
+DLBCL11211	Staudt	False	missing_bam
+DLBCL11309	Staudt	False	missing_bam
+DLBCL11299	Staudt	False	missing_bam
+DLBCL11201	Staudt	False	missing_bam
+DLBCL11350	Staudt	False	missing_bam
+DLBCL11682	Staudt	False	missing_bam
+DLBCL11580	Staudt	False	missing_bam
+DLBCL11351	Staudt	False	missing_bam
+DLBCL11295	Staudt	False	missing_bam
+DLBCL11330	Staudt	False	missing_bam
+DLBCL11328	Staudt	False	missing_bam
+DLBCL11213	Staudt	False	missing_bam
+DLBCL11326	Staudt	False	missing_bam
+DLBCL11312	Staudt	False	missing_bam
+DLBCL11209	Staudt	False	missing_bam
+DLBCL11282	Staudt	False	missing_bam
+DLBCL11285	Staudt	False	missing_bam
+DLBCL11293	Staudt	False	missing_bam
+DLBCL11327	Staudt	False	missing_bam
+DLBCL11280	Staudt	False	missing_bam
+DLBCL11314	Staudt	False	missing_bam
+DLBCL11298	Staudt	False	missing_bam
+DLBCL11308	Staudt	False	missing_bam
+DLBCL11517	Staudt	False	missing_bam
+DLBCL11487	Staudt	False	missing_bam
+DLBCL11315	Staudt	False	missing_bam
+DLBCL11317	Staudt	False	missing_bam
+DLBCL11352	Staudt	False	missing_bam
+DLBCL11279	Staudt	False	missing_bam
+DLBCL11288	Staudt	False	missing_bam
+DLBCL11290	Staudt	False	missing_bam
+DLBCL11284	Staudt	False	missing_bam
+DLBCL11561	Staudt	False	missing_bam
+DLBCL11296	Staudt	False	missing_bam
+DLBCL11349	Staudt	False	missing_bam
+DLBCL11316	Staudt	False	missing_bam
+DLBCL11331	Staudt	False	missing_bam
+DLBCL11311	Staudt	False	missing_bam
+DLBCL11287	Staudt	False	missing_bam
+DLBCL11362	Staudt	False	missing_bam
+DLBCL11668	Staudt	False	missing_bam
+DLBCL11185	Staudt	False	missing_bam
+DLBCL11281	Staudt	False	missing_bam
+DLBCL11292	Staudt	False	missing_bam
+DLBCL11294	Staudt	False	missing_bam
+DLBCL11291	Staudt	False	missing_bam
+DLBCL11286	Staudt	False	missing_bam
+DLBCL11332	Staudt	False	missing_bam
+DLBCL11310	Staudt	False	missing_bam
+DLBCL10496	Staudt	False	missing_bam
+DLBCL11318	Staudt	False	missing_bam
+DLBCL11186	Staudt	False	missing_bam
+DLBCL11674	Staudt	False	missing_bam
+DLBCL11297	Staudt	False	missing_bam
+DLBCL11361	Staudt	False	missing_bam
+DLBCL11197	Staudt	False	missing_bam
+DLBCL11300	Staudt	False	missing_bam
+DLBCL11313	Staudt	False	missing_bam
+DLBCL11289	Staudt	False	missing_bam
+DLBCL11184	Staudt	False	missing_bam
+DLBCL11283	Staudt	False	missing_bam
+DLBCL11319	Staudt	False	missing_bam
+DLBCL11490	Staudt	False	relapse/other/unknown
+DLBCL11493	Staudt	False	relapse/other/unknown
+DLBCL11260	Staudt	False	relapse/other/unknown
+DLBCL11492	Staudt	False	relapse/other/unknown
+DLBCL11648	Staudt	False	relapse/other/unknown
+DLBCL11262	Staudt	False	relapse/other/unknown
+DLBCL11489	Staudt	False	relapse/other/unknown
+DLBCL11497	Staudt	False	relapse/other/unknown
+DLBCL11256	Staudt	False	relapse/other/unknown
+DLBCL11261	Staudt	False	relapse/other/unknown
+DLBCL11499	Staudt	False	relapse/other/unknown
+DLBCL11257	Staudt	False	relapse/other/unknown
+DLBCL11485	Staudt	False	relapse/other/unknown
+DLBCL10872	Staudt	False	relapse/other/unknown
+DLBCL11475	Staudt	False	relapse/other/unknown
+DLBCL11646	Staudt	False	relapse/other/unknown
+DLBCL11649	Staudt	False	relapse/other/unknown
+DLBCL10116	Staudt	False	relapse/other/unknown
+DLBCL11494	Staudt	False	relapse/other/unknown
+DLBCL11259	Staudt	False	relapse/other/unknown
+DLBCL11258	Staudt	False	relapse/other/unknown
+DLBCL11255	Staudt	False	relapse/other/unknown
+DLBC_GS_A9TX_TP_NB	TCGA	False	low_purity
+DLBC_GR_A4D5_TP_NB	TCGA	False	low_purity
+DLBC_GR_A4D4_TP_NB	TCGA	False	missing_SVs
+DLBC_G8_6906_TP_NBM	TCGA	False	missing_SVs
+DLBC_RQ_A6JB_TP_NB	TCGA	False	missing_SVs
+DLBC_FA_A6HO_TP_NB	TCGA	False	missing_SVs
+DLBC_G8_6324_TP_NB	TCGA	False	missing_SVs
+DLBC_GR_A4D6_TP_NB	TCGA	False	missing_SVs
+DLBC_FM_8000_TP_NB	TCGA	False	missing_SVs
+DLBC_GR_A4D9_TP_NB	TCGA	False	missing_SVs
+DLBC_G8_6325_TP_NB	TCGA	False	missing_SVs
+DLBC_GS_A9TW_TP_NB	TCGA	False	missing_SVs
+DLBC_FA_A82F_TP_NB	TCGA	False	missing_SVs
+DLBC_FA_A86F_TP_NB	TCGA	False	missing_SVs
+DLBC_GS_A9TV_TP_NB	TCGA	False	missing_SVs
+DLBC_FA_8693_TP_NB	TCGA	False	missing_SVs
+DLBC_G8_6326_TP_NB	TCGA	False	missing_SVs
+DLBC_RQ_AAAT_TP_NB	TCGA	False	missing_SVs
+DLBC_RQ_A68N_TP_NB	TCGA	False	missing_SVs
+DLBC_GS_A9TZ_TP_NB	TCGA	False	missing_SVs
+DLBC_FA_A7Q1_TP_NB	TCGA	False	missing_SVs
+DLBC_FA_A4BB_TP_NB	TCGA	False	missing_SVs
+DLBC_VB_A8QN_TP_NB	TCGA	False	missing_SVs
+DLBC_G8_6909_TP_NBM	TCGA	False	missing_SVs
+DLBC_FA_A7DS_TP_NB	TCGA	False	missing_SVs
+DLBC_G8_6914_TP_NBM	TCGA	False	missing_SVs
+DLBC_G8_6907_TP_NBM	TCGA	False	missing_SVs
+DLBC_FA_A6HN_TP_NB	TCGA	False	missing_SVs
+DLBC_GS_A9TQ_TP_NB	TCGA	False	missing_SVs
+DLBC_FA_A4XK_TP_NB	TCGA	False	missing_SVs
+DLBC_FF_8041_TP_NB	TCGA	False	missing_SVs
