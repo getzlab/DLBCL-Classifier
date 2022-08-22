@@ -1,0 +1,42 @@
+Format: TRUE labels in ROWS, PREDICTED labels in COLUMNS
+Confusion Matrix All
+   96	  6	  3	  7	  4 
+    6	 97	  4	  4	 13 
+    8	 10	 70	  1	  6 
+    5	  9	  2	 53	  8 
+    8	  7	  3	  3	117  
+Overall Accuracy: 0.7872727272727272
+Confusion Matrix Top 70%
+  75	 1	 1	 3	 0 
+   2	80	 1	 0	 5 
+   2	 3	65	 0	 0 
+   1	 4	 1	32	 3 
+   4	 3	 3	 0	96  
+Accuracy Top 70%: 0.9038961038961039
+Confusion Matrix Above 0.90
+  20	 0	 0	 0 
+   0	11	 0	 2 
+   0	 0	35	 0 
+   0	 0	 1	56  
+Accuracy Above 0.90: 0.976
+Confusion Matrix 0.80_0.90
+  23	 0	 0	 1	 0 
+   2	19	 0	 0	 0 
+   0	 0	15	 0	 0 
+   1	 0	 1	 7	 0 
+   2	 0	 0	 0	18  
+Accuracy 0.80 < Conf <= 0.90: 0.9213483146067416
+Confusion Matrix 0.70_0.80
+  15	 0	 0	 1	 0 
+   0	18	 0	 0	 2 
+   1	 1	 9	 0	 0 
+   0	 1	 0	11	 1 
+   0	 2	 0	 0	11  
+Accuracy 0.70 < Conf <= 0.80: 0.8767123287671232
+Confusion Matrix <= 0.70
+  38	 6	 3	 5	 4 
+   4	49	 4	 4	 9 
+   7	 9	11	 1	 6 
+   4	 8	 1	35	 7 
+   6	 5	 2	 3	32  
+Accuracy Conf <= 0.70: 0.6273764258555133
