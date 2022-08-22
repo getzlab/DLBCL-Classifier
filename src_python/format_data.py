@@ -23,7 +23,7 @@ def construct_reduced_winning_version(data, qval_cutoff=0.05, add_missing_featur
         data = data.T
 
     if remove_largest_n is not None:
-        bptable = pd.read_csv('../data_tables/feature_bp_counts/footprint_table_Mar_28_2022.tsv', sep='\t', index_col=0)
+        bptable = pd.read_csv('../data_tables/feature_bp_counts/footprint_table_Aug_17_2022.tsv', sep='\t', index_col=0)
         bptable.index = bptable.index.str.replace('-', '.')
         features_to_remove = bptable.tail(remove_largest_n).index
         features_to_remove_c = []
@@ -172,7 +172,7 @@ def format_inputs(datafile, target_file, training_set,
 
     # Zero out the largest N features
     if remove_largest_n is not None:
-        bptable = pd.read_csv('../data_tables/feature_bp_counts/footprint_table_Mar_28_2022.tsv', sep='\t', index_col=0)
+        bptable = pd.read_csv('../data_tables/feature_bp_counts/footprint_table_Aug_17_2022.tsv', sep='\t', index_col=0)
         bptable.index = bptable.index.str.replace('-', '.')
         features_to_remove = bptable.tail(remove_largest_n).index
         features_to_remove_c = []
@@ -205,7 +205,7 @@ def format_inputs(datafile, target_file, training_set,
 
     # Zero out features that exceed footprint quota
     if bp_cutoff is not None:
-        bptable = pd.read_csv('../data_tables/feature_bp_counts/footprint_table_Mar_28_2022.tsv', sep='\t', index_col=0)
+        bptable = pd.read_csv('../data_tables/feature_bp_counts/footprint_table_Aug_17_2022.tsv', sep='\t', index_col=0)
         bptable.index = bptable.index.str.replace('-', '.')
         features_to_remove = bptable['integral'][bptable['integral'] >= bp_cutoff].index
         features_to_remove = [x.replace('-', '.') for x in features_to_remove]
