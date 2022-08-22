@@ -1,0 +1,67 @@
+Name	Type	Direction	UniqueName	Descriptor	WidePeakLimits
+1Q:AMP	Arm	AMP		1q	
+3P:AMP	Arm	AMP		3p	
+3Q:AMP	Arm	AMP		3q	
+5P:AMP	Arm	AMP		5p	
+5Q:AMP	Arm	AMP		5q	
+6P:AMP	Arm	AMP		6p	
+7P:AMP	Arm	AMP		7p	
+7Q:AMP	Arm	AMP		7q	
+9Q:AMP	Arm	AMP		9q	
+11P:AMP	Arm	AMP		11p	
+11Q:AMP	Arm	AMP		11q	
+12P:AMP	arm	AMP		12p	
+12Q:AMP	Arm	AMP		12q	
+13Q:AMP	Arm	AMP		13q	
+18P:AMP	Arm	AMP		18p	
+18Q:AMP	Arm	AMP		18q	
+19Q:AMP	Arm	AMP		19q	
+21Q:AMP	Arm	AMP		21q	
+1Q23.3:AMP	Focal	AMP	Amplification Peak  1	1q23.3  	chr1:120510150-174721470(probes 7794:10598)   
+1Q32.1:AMP	Focal	AMP	Amplification Peak  2	1q32.1  	chr1:192545935-215777557(probes 11446:12948)  
+2P16.1:AMP	Focal	AMP	Amplification Peak  3	2p16.1  	chr2:61021878-61175247(probes 16898:16904)      
+3Q28:AMP	Focal	AMP	Amplification Peak  6	3q28    	chr3:187003729-189038510(probes 33633:33642)  
+6P21.1:AMP	Focal	AMP	Amplification Peak  7	6p21.1  	chr6:37446241-43416690(probes 47717:48313)      
+7Q22.1:AMP	Focal	AMP	Amplification Peak  8	7q22.1  	chr7:95864172-105205812(probes 55902:56679)    
+8Q24.22:AMP	Focal	AMP	Amplification Peak 10	8q24.22 	chr8:133879279-134237728(probes 63067:63115)  
+9P24.1:AMP	Focal	AMP	Amplification Peak 11	9p24.1  	chr9:3932415-5720251(probes 63653:63706)          
+11Q23.3:AMP	Focal	AMP	Amplification Peak 14	11q23.3 	chr11:117403164-117948017(probes 82244:82260)
+12P12.1:AMP	Focal	AMP	Amplification Peak 15	12p12.1 	chr12:23999022-25299985(probes 84790:84808)    
+13Q31.3:AMP	Focal	AMP	Amplification Peak 17	13q31.3 	chr13:80122496-115169878(probes 93193:94028)  
+17Q24.3:AMP	Focal	AMP	Amplification Peak 18	17q24.3 	chr17:67040690-67247946(probes 116027:116076)  
+18Q21.33(BCL2):AMP	Focal	AMP	Amplification Peak 20	18q22.2 	chr18:52604127-78077248(probes 119092:119519)  
+19Q13.42:AMP	Focal	AMP	Amplification Peak 21	19q13.42	chr19:53770466-58189902(probes 126585:127071)  
+21Q22.3:AMP	Focal	AMP	Amplification Peak 22	21q22.3 	chr21:43231151-43338273(probes 131760:131780)  
+6Q:DEL	Arm	DEL		6q	
+17P:DEL	Arm	DEL		17p	
+1P36.32:DEL	Focal	DEL	Deletion Peak  1	1p36.32 	chr1:1-3774223(probes 1:93)                       
+1P36.11:DEL	Focal	DEL	Deletion Peak  2	1p36.11 	chr1:26163975-28099876(probes 1972:2293)        
+1P31.1:DEL	Focal	DEL	Deletion Peak  3	1p31.1  	chr1:78470900-84348731(probes 6015:6055)        
+1P13.1:DEL	Focal	DEL	Deletion Peak  4	1p13.1  	chr1:113650298-118166077(probes 7584:7682)    
+1Q42.12:DEL	Focal	DEL	Deletion Peak  5	1q42.12 	chr1:217783703-249250621(probes 13031:14443)  
+2Q22.2:DEL	Focal	DEL	Deletion Peak  7	2q22.2  	chr2:143746425-148693171(probes 19906:19932)  
+3P21.31:DEL	Focal	DEL	Deletion Peak  8	3p21.31 	chr3:47315095-50127874(probes 27534:28339)      
+3Q28:DEL	Focal	DEL	Deletion Peak  9	3q28    	chr3:187003729-198022430(probes 33633:33933)  
+4Q21.22:DEL	Focal	DEL	Deletion Peak 10	4q21.22 	chr4:75316173-94750608(probes 36191:37048)      
+4Q35.1:DEL	Focal	DEL	Deletion Peak 11	4q35.1  	chr4:146076595-191154276(probes 38507:39461)  
+6P21.33:DEL	Focal	DEL	Deletion Peak 15	6p21.33 	chr6:31118570-32917525(probes 47084:47090)      
+6Q14.1:DEL	Focal	DEL	Deletion Peak 16	6q14.1  	chr6:74519802-76532532(probes 49292:49378)      
+6Q14.3:DEL	Focal	DEL	Deletion Peak 17	6q14.3  	chr6:80634709-89790882(probes 49465:49777)      
+6Q21:DEL	Focal	DEL	Deletion Peak 18	6q21    	chr6:97489422-111580915(probes 50009:50508)    
+6Q23.3:DEL	Focal	DEL	Deletion Peak 19	6q23.3  	chr6:137527359-138539327(probes 51409:51418)  
+8Q12.1:DEL	Focal	DEL	Deletion Peak 22	8q12.1  	chr8:59492268-62415991(probes 60818:60897)      
+9P21.3:DEL	Focal	DEL	Deletion Peak 23	9p21.3  	chr9:20448193-26861099(probes 64071:64113)      
+9Q21.13:DEL	Focal	DEL	Deletion Peak 24	9q21.13 	chr9:37948692-103064528(probes 64893:66273)    
+10Q23.31:DEL	Focal	DEL	Deletion Peak 25	10q23.31	chr10:88854304-91099150(probes 72509:72597)    
+12P13.2:DEL	Focal	DEL	Deletion Peak 27	12p13.2 	chr12:10959115-13366459(probes 84326:84386)    
+13Q14.2:DEL	Focal	DEL	Deletion Peak 30	13q14.2 	chr13:47315880-51915354(probes 92608:92770)    
+13Q34:DEL	Focal	DEL	Deletion Peak 31	13q34   	chr13:100201448-115169878(probes 93492:94028)
+14Q32.31:DEL	Focal	DEL	Deletion Peak 32	14q32.31	chr14:102822170-103592910(probes 98639:98693)
+15Q15.3:DEL	Focal	DEL	Deletion Peak 33	15q15.3 	chr15:40861840-45387210(probes 99557:100356)   
+16Q12.1:DEL	Focal	DEL	Deletion Peak 35	16q12.1 	chr16:31512030-61689498(probes 106333:107287)  
+17P11.2:DEL	Focal	DEL	Deletion Peak 36	17p11.2 	chr17:12649313-16285565(probes 110815:110898)  
+17Q25.1:DEL	Focal	DEL	Deletion Peak 38	17q25.1 	chr17:73094205-73497204(probes 116264:116337)  
+18Q23:DEL	Focal	DEL	Deletion Peak 39	18q23   	chr18:74700467-78077248(probes 119500:119519)  
+19P13.3:DEL	Focal	DEL	Deletion Peak 40	19p13.3 	chr19:6422399-7119525(probes 120615:120704)      
+19P13.2:DEL	Focal	DEL	Deletion Peak 41	19p13.2 	chr19:10799290-10934518(probes 121502:121518)  
+19Q13.32:DEL	Focal	DEL	Deletion Peak 42	19q13.32	chr19:45495575-45716469(probes 125299:125321)  
