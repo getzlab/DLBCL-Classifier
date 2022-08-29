@@ -1,0 +1,70 @@
+	0
+Cohort	0
+Target C2	0
+Target C3	0
+Target C4	0
+Target C5	0
+Predicted C1	0
+Predicted C2	0
+Predicted C3	0
+Predicted C5	0
+PredictedCluster	0
+Target C1	0
+Confidence	0
+Top70 Perc. Confident	0
+Above85	0
+Above80	0
+order	0
+Witin.700	0
+MatchID	0
+Gender	0
+Biopsy Type	0
+"LymphGenClass [Wright]
+call"	0
+Above90	0
+Cluster [NMF new]	0
+Predicted C4	0
+Number of WT SVs (0)	0
+Sample Preparation	0
+Mean Target Coverage	0
+Median Target Coverage	0
+Test/Train Set Membership	0
+Purity (ABSOLUTE)	0
+Pair Status (Tumor Only/Normal)	0
+Number of Mutations	0
+Fraction Genome Deleted	0
+Fraction Genome Amplified	0
+Number of Drivers - Mutations	0
+Ploidy (ABSOLUTE)	0
+Number of Drivers - SCNAs	0
+Number of WT Amplifications (0)	0
+Number of Drivers - Non-Silent Mutations	0
+Number of Drivers - Amplifications	0
+Number of Drivers - Deletions	0
+Number of Drivers - SVs	0
+Number of WT Mutations (0)	0
+Number of WT SCNAs (0)	0
+Number of WT Deletions (0)	0
+Age-at first diagnosis	6
+IPI_AGE	6
+"R-CHOp-like
+Chemo"	17
+IPI_EXBM	32
+IPI_STAGE	32
+IPI_ECOG	32
+IPI_LDH	35
+IPI	35
+COO	53
+OS.time	240
+OS.status (1=dead)	240
+PFS_STAT	252
+PFS-years	254
+"LymphGenClass [Schmitz]
+call"	277
+"Dbl.Hit
+Call"	282
+Staudt Only Cluster	285
+OriginalCluster [chapuy et al Nature Med 2018]	422
+Shipp Only Cluster	422
+hodz (Testicular invovlement)	433
+ob24z (CNS involvment)	451

@@ -44,8 +44,8 @@ def construct_reduced_winning_version(data, add_missing_features=False, remove_l
                 exit()
 
     qval_df = pd.read_csv('../data_tables/qval_dfs/fisher_exact_5x2_17-Aug-2022.combined.tsv', sep='\t', low_memory=False, index_col=0)
-    # genes_to_drop = list(data.columns[~data.columns.isin(qval_df.index)])
-    # data = data.drop(genes_to_drop, axis=1)
+    genes_to_drop = list(data.columns[~data.columns.isin(qval_df.index)])
+    data = data.drop(genes_to_drop, axis=1)
     #
     # genes_to_zero = list(qval_df.loc[qval_df['q'] > qval_cutoff].index)
     # genes_to_zero = [x for x in genes_to_zero if x in data.columns]
