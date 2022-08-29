@@ -187,7 +187,7 @@ def evaluate_model(file):
         confF.write(writestr)
         confF.write('\nAccuracy Conf <= 0.70: ' + str(accuracy_below70))
         confF.write('\n')
-        confF.write('Confusion Matrix <= 0.70\n')
+        confF.write('Confusion Matrix > 0.70\n')
         writestr = np.array2string(confusion_matrix_above70, separator='\t')
         writestr = writestr.replace('[', ' ')
         writestr = writestr.replace(']', ' ')
