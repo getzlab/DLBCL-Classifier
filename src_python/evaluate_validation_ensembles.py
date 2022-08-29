@@ -109,6 +109,9 @@ def evaluate_model(file):
     below70conf = confidences <= 0.70
     below70conf_preds = predclus[below70conf]
     below70conf_actuals = trueclus[below70conf]
+    above70conf = confidences > 0.70
+    above70conf_preds = predclus[above70conf]
+    above70conf_actuals = trueclus[above70conf]
 
     confusion_matrix_top = sklearn.metrics.confusion_matrix(top70th_actuals, top70th_preds)
     accuracy_top70 = np.trace(confusion_matrix_top)
@@ -136,6 +139,9 @@ def evaluate_model(file):
 
     confusion_matrix_below70 = sklearn.metrics.confusion_matrix(below70conf_actuals, below70conf_preds)
     accuracy_below70 = np.trace(confusion_matrix_below70) / np.sum(confusion_matrix_below70)
+
+    confusion_matrix_above70 = sklearn.metrics.confusion_matrix(above70conf_actuals, above70conf_preds)
+    accuracy_above70 = np.trace(confusion_matrix_above70) / np.sum(confusion_matrix_above70)
 
     with open('../data_tables/confusion_matrices/' + name + '.txt', 'w+') as confF:
         confF.write('Format: TRUE labels in ROWS, PREDICTED labels in COLUMNS\n')
@@ -180,6 +186,13 @@ def evaluate_model(file):
         writestr = writestr.replace(']', ' ')
         confF.write(writestr)
         confF.write('\nAccuracy Conf <= 0.70: ' + str(accuracy_below70))
+        confF.write('\n')
+        confF.write('Confusion Matrix <= 0.70\n')
+        writestr = np.array2string(confusion_matrix_above70, separator='\t')
+        writestr = writestr.replace('[', ' ')
+        writestr = writestr.replace(']', ' ')
+        confF.write(writestr)
+        confF.write('\nAccuracy Conf > 0.70: ' + str(accuracy_above70))
 
     correctness = np.equal(trueclus, predclus)
     zipped = list(zip(correctness, confidences, samples))
