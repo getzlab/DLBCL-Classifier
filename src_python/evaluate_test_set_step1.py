@@ -59,6 +59,7 @@ above90DF = predDF.loc[predDF['Confidence'] >= 0.90]
 b_80_90DF = predDF.loc[(predDF['Confidence'] >= 0.80) & (predDF['Confidence'] < 0.90)]
 b_70_80DF = predDF.loc[(predDF['Confidence'] > 0.70) & (predDF['Confidence'] < 0.80)]
 below70DF = predDF.loc[predDF['Confidence'] <= 0.70]
+above70DF = predDF.loc[predDF['Confidence'] > 0.70]
 
 confusionMatrixTop = sklearn.metrics.confusion_matrix(top70DF['TrueCluster'], top70DF['PredictedCluster'])
 accuracyTop70 = np.trace(confusionMatrixTop)
@@ -79,6 +80,9 @@ accuracy_b_70_80 = np.trace(confusionMatrix_b_70_80) / np.sum(confusionMatrix_b_
 
 confusionMatrixBelow70 = sklearn.metrics.confusion_matrix(below70DF['TrueCluster'], below70DF['PredictedCluster'])
 accuracyBelow70 = np.trace(confusionMatrixBelow70) / np.sum(confusionMatrixBelow70)
+
+confusionMatrixAbove70 = sklearn.metrics.confusion_matrix(above70DF['TrueCluster'], above70DF['PredictedCluster'])
+accuracyAbove70 = np.trace(confusionMatrixAbove70) / np.sum(confusionMatrixAbove70)
 
 
 print(confusionMatrixAll)
@@ -137,6 +141,13 @@ with open('../data_tables/confusion_matrices/test_set/confusionmatrices' + '.txt
     writestr = writestr.replace(']', ' ')
     confF.write(writestr)
     confF.write('\nAccuracy Conf <= 0.70: ' + str(accuracyBelow70))
+    confF.write('\n')
+    confF.write('Confusion Matrix > 0.70\n')
+    writestr = np.array2string(confusionMatrixAbove70, separator='\t')
+    writestr = writestr.replace('[', ' ')
+    writestr = writestr.replace(']', ' ')
+    confF.write(writestr)
+    confF.write('\nAccuracy Conf > 0.70: ' + str(accuracyAbove70))
 
 lrx = np.array(predDF['Confidence'])
 lry = np.array(predDF['Correctness'])
