@@ -39,3 +39,10 @@ Confusion Matrix <= 0.70
   0	0	0	4	2 
   0	1	0	0	3  
 Accuracy Conf <= 0.70: 0.5333333333333333
+Confusion Matrix > 0.70
+  17	 0	 0	 3	 0 
+   0	24	 0	 0	 0 
+   0	 0	20	 0	 0 
+   0	 0	 0	14	 1 
+   0	 0	 0	 0	22  
+Accuracy Conf > 0.70: 0.9603960396039604
