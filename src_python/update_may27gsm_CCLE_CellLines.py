@@ -5,7 +5,7 @@ import re
 GSM = pd.read_csv('../data_tables/gsm/GSM.depmap.lymphoma.20Jun2020.tsv', sep='\t', index_col=0)
 GSM.drop('Driver_Discovery', axis=1, inplace=True)
 
-dlbcl_mat = pd.read_csv("../data_tables/gsm/DLBCL_Staudt_Shipp_CL.for_classifier_training.classifier_subset.fix_sv.fix_ploidy.17-Aug-2022.txt",
+dlbcl_mat = pd.read_csv("../data_tables/gsm/old_matrices/DLBCL_Staudt_Shipp_CL.for_classifier_training.classifier_subset.fix_sv.fix_ploidy.17-Aug-2022.txt",
                         sep='\t', index_col=0)
 
 qval_file = '../data_tables/qval_dfs/fisher_exact_5x2_17-Aug-2022.combined.tsv'

@@ -52,8 +52,11 @@ p_train = ggplot(plot_df_train, aes(x=ConfidenceCutoff)) +
   geom_line(aes(y=Samples)) +
   scale_y_continuous(name = 'Samples Above Threshold', sec.axis = sec_axis(~./550, name = 'Accuracy of Samples Above Threshold')) +
   theme_bw() +
-  theme(axis.text.y.right = element_text(color = "red"),
+  theme(axis.title.y.right = element_text(color = "red", size=18),
+        axis.text.y.right = element_text(color = "red"),
         axis.ticks.y.right = element_line(color = "red"),
+        axis.title.y.left = element_text(size=18),
+        axis.title.x = element_text(size=18),
         legend.position = "none") +
   ggtitle('Train Set')
 
@@ -63,9 +66,12 @@ p_test = ggplot(plot_df_test, aes(x=ConfidenceCutoff)) +
   geom_line(aes(y=Samples)) +
   scale_y_continuous(name = 'Samples Above Threshold', sec.axis = sec_axis(~./149, name = 'Accuracy of Samples Above Threshold')) +
   theme_bw() +
-  theme(axis.text.y.right = element_text(color = "red"),
-        axis.ticks.y.right = element_line(color = "red"),
-        legend.position = "none") +
+  theme(axis.title.y.right = element_text(color = "red", size=18),
+         axis.text.y.right = element_text(color = "red"),
+         axis.ticks.y.right = element_line(color = "red"),
+         axis.title.y.left = element_text(size=18),
+         axis.title.x = element_text(size=18),
+         legend.position = "none") +
   ggtitle('Test Set')
 
 ggsave('plots/threshold_conf_acc_train.png', p_train)

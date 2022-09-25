@@ -195,3 +195,71 @@ ax.legend(handles=legend_elements, bbox_to_anchor=(1, 1))
 plt.savefig('../plots/umap/umap_longitudinals_hcmarker_trainset.jpeg', bbox_inches='tight')
 plt.savefig('../plots/umap/umap_longitudinals_hcmarker_trainset.pdf', bbox_inches='tight')
 plt.clf()
+
+# ##########################
+# >70% confidence marker   #
+# ##########################
+
+hc_train = list(targets_train.loc[targets_train['confidence'] > 0.70].index)
+hc_lngs = list(preds_lng.loc[preds_lng['Confidence'] > 0.70].index)
+hc_all = hc_train + hc_lngs
+
+samples = sorted(list(set(training_set + list(next_sample_map.keys()) + list(next_sample_map.values()))))
+data_paired = data_all.loc[samples]
+hc_lngs = [x for x in hc_lngs if x in data_paired.index]
+data_paired.loc[hc_lngs, 'set'] = 'Relapse High Confidence'
+
+data_paired = data_paired.loc[data_paired.drop(to_drop_umap, axis=1).astype(bool).sum(axis=1) > 1]
+
+fit = umap.UMAP(n_components=2, n_neighbors=30, min_dist=0.1, metric='manhattan', random_state=seed)
+u = pd.DataFrame(fit.fit_transform(data_paired.drop(to_drop_umap, axis=1)))
+u.index = data_paired.index
+u.columns = ['U1', 'U2']
+u['cluster'] = data_paired['cluster']
+u['set'] = data_paired['set']
+
+fig, ax = plt.subplots()
+fig.set_size_inches(10, 8)
+clusters = set(data_paired['cluster'])
+grps = set(data_paired['set'])
+for g in grps:
+    sub_df = u.loc[u['set'] == g]
+    for clus in clusters:
+        sub_sub_df = sub_df.loc[sub_df['cluster'] == clus]
+        if 'Relapse' in g:
+            ax.scatter(sub_sub_df['U1'], sub_sub_df['U2'], c=[pallet[clus]], label='C' + str(int(clus)), s=75, marker=shapes[g])
+            for idx, row in sub_sub_df.iterrows():
+                currtext = idx
+                if 'R1' in currtext and currtext != 'DLBCL_c_D_pair10_R1':
+                    currtext = 'R1'
+                if 'R2' in currtext:
+                    currtext = 'R2'
+                ax.annotate(currtext, [sub_sub_df.loc[idx, 'U1'] + 0.02, sub_sub_df.loc[idx, 'U2'] + 0.02], fontsize=6)
+        else:
+            ax.scatter(sub_sub_df['U1'], sub_sub_df['U2'], c=[pallet[clus]], label='C' + str(int(clus)), s=15, marker=shapes[g])
+
+for s in next_sample_map:
+    if s not in u.index:
+        continue
+
+    next_s = next_sample_map[s]
+    s_x, s_y = u.loc[s, 'U1'], u.loc[s, 'U2']
+    ns_x, ns_y = u.loc[next_s, 'U1'], u.loc[next_s, 'U2']
+    ax.arrow(x=s_x, y=s_y,
+             dx=(ns_x - s_x) / 2, dy=(ns_y - s_y) / 2,
+             width=0.00, length_includes_head=False, head_width=0.06, head_length=0.06)
+    ax.plot([s_x, ns_x], [s_y, ns_y], c='black')
+
+
+legend_elements = [Line2D([0], [0], marker='o', color='w', markerfacecolor=pallet[1], label='C1', markersize=12),
+                   Line2D([0], [0], marker='o', color='w', markerfacecolor=pallet[2], label='C2', markersize=12),
+                   Line2D([0], [0], marker='o', color='w', markerfacecolor=pallet[3], label='C3', markersize=12),
+                   Line2D([0], [0], marker='o', color='w', markerfacecolor=pallet[4], label='C4', markersize=12),
+                   Line2D([0], [0], marker='o', color='w', markerfacecolor=pallet[5], label='C5', markersize=12),
+                   Line2D([0], [0], marker='X', color='w', markerfacecolor='black', label='Relapse Low Confidence', markersize=12),
+                   Line2D([0], [0], marker='s', color='w', markerfacecolor='black', label='Relapse High Confidence', markersize=12)]
+
+ax.legend(handles=legend_elements, bbox_to_anchor=(1, 1))
+plt.savefig('../plots/umap/umap_longitudinals_70conf_trainset.jpeg', bbox_inches='tight')
+plt.savefig('../plots/umap/umap_longitudinals_70conf_trainset.pdf', bbox_inches='tight')
+plt.clf()

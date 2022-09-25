@@ -30,6 +30,8 @@ def classify_samples_winning_model(data, pMax=None, nets=None, modelname=None):
     pred_df = pd.DataFrame()
     i = 0
     for idx, row in data.iterrows():
+        if idx == 'DLBCL_C_D_PAIR9':
+            print('here')
         net_inputs = torch.tensor(row, dtype=torch.float)
         average_output = None
         for net in nets:

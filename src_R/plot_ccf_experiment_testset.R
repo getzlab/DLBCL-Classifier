@@ -68,7 +68,6 @@ p2 = ggplot(data=melted_df, aes(x=ccf_threshold, y=value, color=MarkerType)) +
   geom_point() +
   geom_line() +
   theme_bw() +
-  theme(panel.grid = element_line(colour = "#C1C1C1")) +
   theme(axis.text.x = element_blank(),
         axis.text.y = element_text(size=10),
         axis.title.x = element_blank(),

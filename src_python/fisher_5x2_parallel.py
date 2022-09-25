@@ -18,7 +18,7 @@ BLACKLIST = ['MUC6', 'HIST1H2BK', 'HIST2H2BE', 'OR51B6', 'OR10V1']
 VERSION_DATE = '17-Aug-2022'
 
 MODE = ['combined', 'staudtonly', 'shipponly']
-MODE = MODE[2]
+MODE = MODE[0]
 
 
 def fisher_exact_2x2(matrix, alt):
@@ -31,7 +31,7 @@ def fisher_exact_5x2(matrix, numiter=100000):
 
 labels = '../data_tables/clustering_labels/GSM699_cluster_Aug_17_2022.bestclus.remapped.txt'
 training_file = '../data_tables/train_test_sets/TrainingSet_550Subset_May2021.txt'
-gsm_file = '../data_tables/gsm/DLBCL_Staudt_Shipp_CL.for_classifier_training.classifier_subset.fix_sv.fix_ploidy.17-Aug-2022.txt'
+gsm_file = '../data_tables/gsm/old_matrices/DLBCL_Staudt_Shipp_CL.for_classifier_training.classifier_subset.fix_sv.fix_ploidy.17-Aug-2022.txt'
 
 cohorts = pd.read_csv('../data_tables/sample_sets/ShippStaudtSets.purity0.2.txt', index_col=0, sep='\t')
 

@@ -40,8 +40,8 @@ def construct_reduced_winning_version(data, add_missing_features=False, remove_l
                 data['X' + fr + '.DEL'] = 0
                 features_to_remove_c.append('X' + fr + '.DEL')
             else:
-                print('Feature', fr, 'not found, exiting!')
-                exit()
+                print('Tried to zero', fr, 'but not found, adding with zeroes.')
+                data[fr] = 0
 
     qval_df = pd.read_csv('../data_tables/qval_dfs/fisher_exact_5x2_17-Aug-2022.combined.tsv', sep='\t', low_memory=False, index_col=0)
     genes_to_drop = list(data.columns[~data.columns.isin(qval_df.index)])
@@ -332,6 +332,7 @@ def format_inputs(datafile, target_file, training_set,
             if not count:
                 print('Feature',  fr, 'not found! Exiting!')
                 exit()
+
         fn = '../data_tables/feature_bp_counts/cutoff_' + str(bp_cutoff) + '_removedfeatures.tsv'
         with open(fn, 'w+') as f:
             for feature in features_to_remove_c:

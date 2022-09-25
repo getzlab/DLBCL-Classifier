@@ -164,11 +164,14 @@ performance, lowerPerf, upperPerf = CM.modelPerformance(allAccuracy, Kappa, lowe
 _, _, _, _ = CP.xyresiduals_window_weighted_fractionPerWindow(  lrx, lry, 'None', seed=123, bootstrapwindows=False,
                                                                  windowsize=WINDOW_SIZE, step=STEP_SIZE, computeplots=True,
                                                                  saveFileName='../plots/test_set/NN_reducedV3.2_removeN5_nfeatures21_testset',
-                                                                 format='png')
+                                                                 format='png',
+                                                                 y_ticks_top=10, y_ticks_bot=5)
 _, _, _, _ = CP.xyresiduals_window_weighted_fractionPerWindow(  lrx, lry, 'None', seed=123, bootstrapwindows=False,
                                                                 windowsize=WINDOW_SIZE, step=STEP_SIZE, computeplots=True,
                                                                 saveFileName='../plots/test_set/NN_reducedV3.2_removeN5_nfeatures21_testset',
-                                                                format='pdf')
+                                                                format='pdf',
+                                                                y_ticks_top=10, y_ticks_bot=5)
+
 
 print('Final Metrics\n Accuracy:', allAccuracy, '\n',
       'Kappa:', Kappa, '\n',

@@ -44,7 +44,7 @@ def makeBins(X, Y, windowsize=10, step=10, residpower=2):
 
 def xyresiduals_window_weighted_fractionPerWindow(X, Y, name, jiggle=None, seed=1, windowsize=20, step=1, format='pdf',
                                 saveFileName=None, computeplots=False, showplots=False, residpower=2, bootstrapwindows=True,
-                                xlabel='Confidence', ylabel='Accuracy'):
+                                xlabel='Confidence', ylabel='Accuracy', y_ticks_top=50, y_ticks_bot=5):
     random.seed(seed)
     X = np.array(X)
     Y = np.array(Y)
@@ -102,7 +102,7 @@ def xyresiduals_window_weighted_fractionPerWindow(X, Y, name, jiggle=None, seed=
         upper_y = y_h.max() + round(y_h.max() * 0.30)
         upper_y = int(round(upper_y/5.0)*5.0)
         axs[0].set_ylim([0, upper_y])
-        axs[0].set_yticks(np.arange(0, upper_y + 1, 50))
+        axs[0].set_yticks(np.arange(0, upper_y + 1, y_ticks_top))
         for tick in xticks_all:
             axs[0].axvline(tick, c='gray', alpha=0.45, lw=1, zorder=0)
 
@@ -114,7 +114,7 @@ def xyresiduals_window_weighted_fractionPerWindow(X, Y, name, jiggle=None, seed=
         upper_y = y_h.max() + round(y_h.max() * 0.30)
         upper_y = int(round(upper_y / 5.0) * 5.0)
         axs[2].set_ylim([0, upper_y])
-        axs[2].set_yticks(np.arange(0, upper_y + 1, 5))
+        axs[2].set_yticks(np.arange(0, upper_y + 1, y_ticks_bot))
         axs[2].invert_yaxis()
         axs[2].grid(alpha=0.45)
         axs[2].set_axisbelow(True)

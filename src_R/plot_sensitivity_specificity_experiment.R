@@ -50,13 +50,12 @@ p = ggplot(resultsDropout_2, aes(x=1-dropout_probability, y=Performance)) +
         axis.text.y = element_text(size=18)) +
   ylim(c(0, 1)) +
   ggtitle('Dropout') +
-  scale_x_reverse(expand = c(0.01, 0), breaks=seq(0, 1, 0.1))
+  scale_x_reverse(expand = c(0.01, 0), breaks=seq(0, 1, 0.1), limits=c(1, 0))
 
 p2 = ggplot(data=melted_df, aes(x=dropout_probability, y=value, color=MarkerType)) +
   geom_point() +
   geom_line() +
   theme_bw() +
-  theme(panel.grid = element_line(colour = "#C1C1C1")) +
   theme(axis.text.x = element_blank(),
         axis.text.y = element_text(size=10),
         axis.title.x = element_blank(),
@@ -136,7 +135,8 @@ p = ggplot(resultsAddIn, aes(x=addInFraction, y=Performance)) +
         axis.title.y = element_text(size=22),
         axis.text.x = element_text(size=18),
         axis.text.y = element_text(size=18)) +
-  ggtitle('Add-In')
+  ggtitle('Add-In') +
+  scale_x_continuous(expand = c(0.01, 0), limits = c(0, 1), breaks=seq(0, 1, 0.1))
 
 newDF = data.frame(resultsAddIn$addInFraction,
                    resultsAddIn$mut_count_total / (resultsAddIn$mut_count_total - resultsAddIn$mut_count_added),
@@ -154,7 +154,6 @@ p2 = ggplot(data=melted_df, aes(x=add_in_fraction, y=value, color=MarkerType)) +
   geom_point() +
   geom_line() +
   theme_bw() +
-  theme(panel.grid = element_line(colour = "#C1C1C1")) +
   theme(axis.text.x = element_blank(),
         axis.text.y = element_text(size=10),
         axis.title.x = element_blank(),

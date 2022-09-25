@@ -16,8 +16,8 @@ targetfile = '../data_tables/confidence_tables/baseline_probabilities.connectivi
 datafile = '../data_tables/gsm/DLBCL_Staudt_Shipp_CL.for_classifier_training.classifier_subset.fix_sv.fix_ploidy.17-Aug-2022.txt'
 training_set = list(pd.read_csv('../data_tables/train_test_sets/TrainingSet_550Subset_May2021.txt', sep='\t', header=None, index_col=0).index)
 qval_file = '../data_tables/qval_dfs/fisher_exact_5x2_17-Aug-2022.combined.tsv'
-ccgd_file = '../data_tables/gsm/GSM.CCGD.updated.Aug-17-2022.tsv'
-ccle_file = '../data_tables/gsm/GSM.Depmap.updated.Aug-17-2022.tsv'
+ccgd_file = '../data_tables/gsm/old_matrices/GSM.CCGD.updated.Aug-17-2022.tsv'
+ccle_file = '../data_tables/gsm/old_matrices/GSM.Depmap.updated.Aug-17-2022.tsv'
 cl_mapping_file = '../data_tables/gsm/cell_lines_mappings.tsv'
 
 targets = pd.read_csv(targetfile, sep='\t', index_col=0)
@@ -110,7 +110,7 @@ plt.clf()
 ########################
 # High confidence only #
 ########################
-confidences = [0.80, 0.90]
+confidences = [0.70, 0.80, 0.90]
 ANNOTATE = True
 for c_cutoff in confidences:
     ccle_highconf = list(ccle_preds.loc[ccle_preds['Confidence'] > c_cutoff].index)

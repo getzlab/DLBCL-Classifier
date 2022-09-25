@@ -1,6 +1,6 @@
 import pandas as pd
 
-gsm = pd.read_csv('../../data_tables/gsm/DLBCL_Staudt_Shipp_CL.for_classifier_training.classifier_subset.fix_sv.fix_ploidy.17-Aug-2022.txt',
+gsm = pd.read_csv('../../data_tables/gsm/old_matrices/DLBCL_Staudt_Shipp_CL.for_classifier_training.classifier_subset.fix_sv.fix_ploidy.17-Aug-2022.txt',
                   sep='\t', index_col=0)
 sig_genes = pd.read_csv('../../data_tables/qval_dfs/fisher_exact_5x2_17-Aug-2022.combined.tsv', sep='\t', index_col=0)
 sig_genes = sig_genes.loc[sig_genes['q'] < 0.10].index

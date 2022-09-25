@@ -1,6 +1,7 @@
 rm(list = ls())
 source("src_R/load_libraries.R")
 library(ggalluvial)
+options(warn=-1)
 
 new_labels = read.csv('data_tables/confidence_tables/baseline_probabilities.connectivity_based.sensitivity_power2.Aug_17_2022.tsv', 
                       sep='\t', row.names=1)
@@ -40,7 +41,7 @@ all_preds = rbind(preds_test[, c('PredictedCluster', 'Confidence'), drop=F],
 all_preds = all_preds[rownames(nm_labels), ,drop=F]
 
 nm_new_allu = data.frame(nm_labels$cluster, new_labels_nmsub$cluster, all_preds$PredictedCluster)
-colnames(nm_new_allu) = c('Combined_Clustering', 'NM_cluster', 'DLBclass')
+colnames(nm_new_allu) = c('NM_cluster', 'Combined_Clustering', 'DLBclass')
 
 nm_new_allu$DLBclass_t = ifelse(all_preds$Confidence > 0.70, all_preds$PredictedCluster, 'Below\nThreshold')
 
@@ -139,6 +140,83 @@ ggsave('plots/paper_figures/nm_newclus_alluvial_2.pdf', p_nm_new_2, width = 12, 
 ggsave('plots/nm_newclus_confmats_2.png', comb_2, width = 6, height=10)
 ggsave('plots/paper_figures/nm_newclus_confmats_2.pdf', comb_2, width = 6, height=10)
 
+######################################
+# clusters, init pred, init pred (t) #
+######################################
+
+tmp = data.frame(paste('C', preds_train$PredictedCluster, sep=''), preds_train$Confidence,
+                 row.names = rownames(preds_train))
+colnames(tmp) = c('PredictedCluster', 'Confidence')
+all_preds = rbind(preds_test[, c('PredictedCluster', 'Confidence'), drop=F],
+                  tmp)
+all_preds = all_preds[rownames(new_labels), ,drop=F]
+
+nm_new_allu = data.frame(new_labels$cluster, all_preds$PredictedCluster)
+colnames(nm_new_allu) = c('Combined_Clustering', 'DLBclass')
+
+nm_new_allu$DLBclass_t = ifelse(all_preds$Confidence > 0.70, all_preds$PredictedCluster, 'Below\nThreshold')
+
+nm_new_counts_2 = nm_new_allu %>% count(Combined_Clustering, DLBclass, DLBclass_t)
+
+nm_new_lodes_2 = to_lodes_form(nm_new_counts_2,
+                               key = "ClusterSet",
+                               axes = 1:(ncol(nm_new_counts_2) - 1))
+
+
+tb_2 = table(paste(nm_new_allu$DLBclass, '_DLBclass   ', sep=''), paste(nm_new_allu$Combined_Clustering, '_Combined', sep=''))
+tb_2 = melt(tb_2)
+
+tb_4 = table(ifelse(grepl('Below', nm_new_allu$DLBclass_t), nm_new_allu$DLBclass_t, paste(nm_new_allu$DLBclass_t, '_DLBclass(t)', sep='')), 
+             paste(nm_new_allu$Combined_Clustering, '_Combined', sep=''))
+tb_4 = melt(tb_4)
+
+p_nm_new_2 = ggplot(data = nm_new_lodes_2,
+                    aes(x = ClusterSet, stratum = stratum, alluvium = alluvium,
+                        y = n, label = stratum)) +
+  geom_alluvium(aes(fill = stratum)) +
+  geom_stratum(color = "black", size = 0.3,
+               fill=c(rep(rev(c("#803e98", "#00a4d1", "#f29123", "#4d872d", "#dd2929")),
+                          (ncol(nm_new_counts_2) - 2)),
+                      rev(c("#803e98", "#00a4d1", "#f29123", "#4d872d", "#dd2929", "#808080"))),
+               alpha=1.0) +
+  geom_text(stat = "stratum") +
+  theme_bw() +
+  scale_fill_manual(values = c("#803e98", "#00a4d1", "#f29123", "#4d872d", "#dd2929", "#808080"), name="Cluster Label") +
+  theme(axis.text.y=element_blank(),
+        axis.text.x = element_text(size=20),
+        axis.ticks.y=element_blank(),
+        axis.title.y = element_blank(),
+        axis.title.x = element_blank(),
+        plot.title = element_text(hjust = 0.5, size=20)
+  ) +
+  ggtitle(paste('Combined_Clustering vs DLBclass (n=', nrow(all_preds) ,')', sep=''))
+
+p_nm_new_2_table_2 = ggplot(data = tb_2, mapping = aes(x = Var2, y = Var1)) +
+  geom_tile(aes(fill = value)) +
+  geom_text(aes(label = value), color="white" , vjust = 1) +
+  theme_bw() + theme(legend.position = "none") + 
+  scale_y_discrete(limits=rev) +
+  theme(axis.title.x = element_blank(),
+        axis.title.y = element_blank())
+
+p_nm_new_2_table_4 = ggplot(data = tb_4, mapping = aes(x = Var2, y = Var1)) +
+  geom_tile(aes(fill = value)) +
+  geom_text(aes(label = value), color="white" , vjust = 1) +
+  theme_bw() + theme(legend.position = "none") + 
+  scale_y_discrete(limits=rev) +
+  theme(axis.title.x = element_blank(),
+        axis.title.y = element_blank())
+
+comb_2 = plot_grid(p_nm_new_2_table_2, p_nm_new_2_table_4,
+                   rel_heights = c(0.20, 0.20, 0.20, 0.20, 0.20),
+                   nrow = 2)
+
+ggsave('plots/newclus_dlbclass(t)_alluvial_2.png', p_nm_new_2, width = 12, height=10)
+ggsave('plots/paper_figures/newclus_dlbclass(t)_alluvial_2.pdf', p_nm_new_2, width = 12, height=10)
+
+ggsave('plots/newclus_dlbclass(t)_confmats_2.png', comb_2, width = 6, height=10)
+ggsave('plots/paper_figures/newclus_dlbclass(t)_confmats_2.pdf', comb_2, width = 6, height=10)
+
 ##############################
 # New clusters vs initial pred
 ##############################
@@ -149,46 +227,45 @@ cf_preds_train = preds_train
 cf_preds_test$PredictedCluster = paste(as.character(cf_preds_test$PredictedCluster),'_Test', sep='')
 cf_preds_train$PredictedCluster = paste('C', as.character(cf_preds_train$PredictedCluster),'_Train', sep='')
 
-test_train_df = rbind(cf_preds_test[, c('PredictedCluster', 'TrueCluster')], cf_preds_train[, c('PredictedCluster', 'TrueCluster')])
-colnames(test_train_df) = c('DLBclass', 'ClusterLabel')
-test_train_df$ClusterLabel = paste('C', test_train_df$ClusterLabel, sep='')
+#test_train_df = rbind(cf_preds_test[, c('PredictedCluster', 'TrueCluster')], cf_preds_train[, c('PredictedCluster', 'TrueCluster')])
+train_df = cf_preds_train[, c('PredictedCluster', 'TrueCluster')]
+test_df = cf_preds_test[, c('PredictedCluster', 'TrueCluster')]
 
-#test_train_df$Set = gsub('C\\w_', '', test_train_df$ClusterLabel)
-#test_train_counts = test_train_df %>% count(ClusterLabel, DLBclass, Set)
+colnames(train_df) = c('DLBclass', 'ClusterLabel')
+colnames(test_df) = c('DLBclass', 'ClusterLabel')
 
-test_train_counts = test_train_df %>% count(DLBclass, ClusterLabel)
-test_train_counts_2 = test_train_df %>% count(ClusterLabel, DLBclass)
+train_df$ClusterLabel = paste('C', train_df$ClusterLabel, sep='')
+test_df$ClusterLabel = paste('C', test_df$ClusterLabel, sep='')
 
-test_train_lodes = to_lodes_form(test_train_counts,
-                                 key = "Xaxis",
-                                 axes = 1:(ncol(test_train_counts) - 1))
+train_counts = train_df %>% count(DLBclass, ClusterLabel)
+test_counts = test_df %>% count(DLBclass, ClusterLabel)
 
-test_train_lodes_2 = to_lodes_form(test_train_counts_2,
-                                 key = "Xaxis",
-                                 axes = 1:(ncol(test_train_counts_2) - 1))
+train_lodes = to_lodes_form(train_counts,
+                            key = "Xaxis",
+                            axes = 1:(ncol(train_counts) - 1))
 
-test_train_lodes$alpha = gsub('C\\w_', '', test_train_lodes$stratum)
-test_train_lodes[39:nrow(test_train_lodes), 'alpha'] = 'Train'
+test_lodes = to_lodes_form(test_counts,
+                           key = "Xaxis",
+                           axes = 1:(ncol(test_counts) - 1))
 
-#test_train_lodes_2$alpha = gsub('C\\w_', '', test_train_lodes_2$stratum)
-#test_train_lodes_2[39:nrow(test_train_lodes_2), 'alpha'] = 'Train'
-
-tb = table(paste(test_train_df$DLBclass, '_DLBclass', sep=''), paste(test_train_df$ClusterLabel, '_ClusLabel', sep=''))
+tb = table(paste(train_df$DLBclass, '_DLBclass', sep=''), paste(train_df$ClusterLabel, '_ClusLabel', sep=''))
 tb = melt(tb)
 
-p_test_train = ggplot(data = test_train_lodes,
-                      aes(x = Xaxis, stratum = stratum, alluvium = alluvium,
-                          y = n, label = stratum, alpha=alpha)) +
+tb_test = table(paste(test_df$DLBclass, '_DLBclass', sep=''), paste(test_df$ClusterLabel, '_ClusLabel', sep=''))
+tb_test = melt(tb_test)
+
+p_train = ggplot(data = train_lodes,
+                 aes(x = Xaxis, stratum = stratum, alluvium = alluvium,
+                     y = n, label = stratum)) +
   geom_flow(aes(fill = stratum)) +
   scale_alpha_discrete(range=c(0.9, 0.4)) +
   geom_stratum(color = "black", size = 0.3,
-               fill=c(rev(c("#803e98", "#803e98", "#00a4d1", "#00a4d1", "#f29123", "#f29123", "#4d872d", "#4d872d", "#dd2929", "#dd2929")),
+               fill=c(rev(c("#803e98", "#00a4d1", "#f29123", "#4d872d", "#dd2929")),
                       rev(c("#803e98", "#00a4d1", "#f29123", "#4d872d", "#dd2929"))),
                alpha=1.0) +
   geom_text(stat = "stratum") +
   theme_bw() +
-  scale_fill_manual(values = c("#803e98", "#803e98", "#00a4d1", "#00a4d1", "#f29123", "#f29123", 
-                               "#4d872d", "#4d872d", "#dd2929", "#dd2929",
+  scale_fill_manual(values = c("#803e98", "#00a4d1", "#f29123", "#4d872d", "#dd2929",
                                "#803e98", "#00a4d1", "#f29123", "#4d872d", "#dd2929"), name="Cluster Label") +
   theme(axis.text.y=element_blank(),
         axis.text.x = element_text(size=20),
@@ -197,23 +274,21 @@ p_test_train = ggplot(data = test_train_lodes,
         axis.title.x = element_blank(),
         plot.title = element_text(hjust = 0.5, size=20)
   ) +
-  ggtitle('Cluster Labels vs DLBclass')
+  ggtitle(paste('Cluster Labels vs DLBclass (Train Set n=', nrow(train_df) ,')', sep=''))
 
-
-p_test_train_2 = ggplot(data = test_train_lodes_2,
-                      aes(x = Xaxis, stratum = stratum, alluvium = alluvium,
-                          y = n, label = stratum)) +
+p_test = ggplot(data = test_lodes,
+                 aes(x = Xaxis, stratum = stratum, alluvium = alluvium,
+                     y = n, label = stratum)) +
   geom_flow(aes(fill = stratum)) +
   scale_alpha_discrete(range=c(0.9, 0.4)) +
   geom_stratum(color = "black", size = 0.3,
                fill=c(rev(c("#803e98", "#00a4d1", "#f29123", "#4d872d", "#dd2929")),
-                      rev(c("#803e98", "#803e98", "#00a4d1", "#00a4d1", "#f29123", "#f29123", "#4d872d", "#4d872d", "#dd2929", "#dd2929"))),
+                      rev(c("#803e98", "#00a4d1", "#f29123", "#4d872d", "#dd2929"))),
                alpha=1.0) +
   geom_text(stat = "stratum") +
   theme_bw() +
-   scale_fill_manual(values = c("#803e98", "#00a4d1", "#f29123", "#4d872d", "#dd2929",
-                                "#803e98", "#803e98", "#00a4d1", "#00a4d1", "#f29123", "#f29123", 
-                                "#4d872d", "#4d872d", "#dd2929", "#dd2929"), name="Cluster Label") +
+  scale_fill_manual(values = c("#803e98", "#00a4d1", "#f29123", "#4d872d", "#dd2929",
+                               "#803e98", "#00a4d1", "#f29123", "#4d872d", "#dd2929"), name="Cluster Label") +
   theme(axis.text.y=element_blank(),
         axis.text.x = element_text(size=20),
         axis.ticks.y=element_blank(),
@@ -221,22 +296,30 @@ p_test_train_2 = ggplot(data = test_train_lodes_2,
         axis.title.x = element_blank(),
         plot.title = element_text(hjust = 0.5, size=20)
   ) +
-  ggtitle(paste('Cluster Labels vs DLBclass (n=', nrow(test_train_df) ,')', sep=''))
+  ggtitle(paste('Cluster Labels vs DLBclass (Test Set n=', nrow(test_df) ,')', sep=''))
 
-p_test_train_2_table = ggplot(data = tb, mapping = aes(x = Var1, y = Var2)) +
+p_train_table = ggplot(data = tb, mapping = aes(x = Var1, y = Var2)) +
   geom_tile(aes(fill = value)) +
   geom_text(aes(label = value), color="white" , vjust = 1) +
   theme_bw() + theme(legend.position = "none",
                      axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + 
   scale_y_discrete(limits=rev)
 
-comb_2 = plot_grid(p_test_train_2, p_test_train_2_table, rel_heights = c(0.50, 0.50), nrow = 2)
+p_test_table = ggplot(data = tb_test, mapping = aes(x = Var1, y = Var2)) +
+  geom_tile(aes(fill = value)) +
+  geom_text(aes(label = value), color="white" , vjust = 1) +
+  theme_bw() + theme(legend.position = "none",
+                     axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + 
+  scale_y_discrete(limits=rev)
 
-ggsave('plots/newclus_initpred_alluvial.png', p_test_train, width = 12, height=8)
-ggsave('plots/paper_figures/newclus_initpred_alluvial.pdf', p_test_train, width = 12, height=8)
+comb_train = plot_grid(p_train, p_train_table, rel_heights = c(0.50, 0.50), nrow = 2)
+comb_test = plot_grid(p_test, p_test_table, rel_heights = c(0.50, 0.50), nrow = 2)
 
-ggsave('plots/newclus_initpred_alluvial_2.png', comb_2, width = 12, height=12)
-ggsave('plots/paper_figures/newclus_initpred_alluvial_2.pdf', comb_2, width = 12, height=12)
+ggsave('plots/newclus_initpred_train_alluvial.png', comb_train, width = 12, height=8)
+ggsave('plots/paper_figures/newclus_initpred_train_alluvial.pdf', comb_train, width = 12, height=8)
+
+ggsave('plots/newclus_initpred_test_alluvial.png', comb_test, width = 12, height=8)
+ggsave('plots/paper_figures/newclus_initpred_test_alluvial.pdf', comb_test, width = 12, height=8)
 
 ##############################
 # initial pred vs coo
@@ -444,12 +527,14 @@ ggsave('plots/paper_figures/initpred_newclus_hclc_alluvial_2.pdf', comb_2, width
 # initial pred vs lymphgen
 ######################################
 
+HC_THRESH = 0.70
+
 lg_preds_train = preds_train
-lg_preds_train$HC = ifelse(lg_preds_train$Confidence > 0.80, 'HC', 'LC')
+lg_preds_train$HC = ifelse(lg_preds_train$Confidence > HC_THRESH, 'HC', 'LC')
 lg_preds_train$PredictedCluster = paste('C', lg_preds_train$PredictedCluster, '_', lg_preds_train$HC, sep='')
 
 lg_preds_test = preds_test
-lg_preds_test$HC = ifelse(lg_preds_test$Confidence > 0.80, 'HC', 'LC')
+lg_preds_test$HC = ifelse(lg_preds_test$Confidence > HC_THRESH, 'HC', 'LC')
 lg_preds_test$PredictedCluster = paste(lg_preds_test$PredictedCluster, '_', lg_preds_test$HC, sep='')
 
 all_preds = rbind(lg_preds_test[,'PredictedCluster',drop=FALSE], lg_preds_train[, 'PredictedCluster', drop=FALSE])
@@ -532,8 +617,11 @@ p_lg_hc_only_table = ggplot(data = tb, mapping = aes(x = Var1, y = Var2)) +
 
 comb_2 = plot_grid(p_lg_hc_only, p_lg_hc_only_table, rel_heights = c(0.50, 0.50), nrow = 2)
 
-ggsave('plots/initpred_lg_alluvial_hconly.png', comb_2, width = 8, height=12)
-ggsave('plots/paper_figures/initpred_lg_alluvial_hconly.pdf', comb_2, width = 8, height=12)
+ggsave(paste('plots/initpred_lg_alluvial_hconly_', HC_THRESH ,'.png', sep=''), comb_2, width = 8, height=12)
+ggsave(paste('plots/paper_figures/initpred_lg_alluvial_hconly_', HC_THRESH ,'.pdf', sep=''), comb_2, width = 8, height=12)
+
+ggsave(paste('plots/initpred_lg_alluvial_hconly_', HC_THRESH ,'_notable.png', sep=''), p_lg_hc_only, width = 8, height=12)
+ggsave(paste('plots/paper_figures/initpred_lg_alluvial_hconly_', HC_THRESH ,'_notable.pdf', sep=''), p_lg_hc_only, width = 8, height=12)
 
 ggsave('plots/initpred_lg_alluvial.png', p_lg, width = 8, height=12)
 ggsave('plots/paper_figures/initpred_lg_alluvial.pdf', p_lg, width = 8, height=12)

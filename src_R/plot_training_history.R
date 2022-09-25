@@ -44,17 +44,21 @@ write.table(averageloss, 'model_training_history/traininghistory_binned.txt', se
 
 traininghistory_epochs = read.csv('model_training_history/combinedtrainhistory_epochs.txt', sep='\t')
 std_devs = c(traininghistory_epochs$stdTrain, traininghistory_epochs$stdValidation)
+std_errs = c(traininghistory_epochs$stdTrain / sqrt(traininghistory_epochs$num_models), 
+             traininghistory_epochs$stdValidation / sqrt(traininghistory_epochs$num_models))
 num_models = traininghistory_epochs$num_models
+
 traininghistory_epochs = subset(traininghistory_epochs, select = -c(stdTrain, stdValidation, num_models))
 meltedDF = melt(traininghistory_epochs, id.vars = c('Epoch'))
 meltedDF$stdDev = std_devs
+meltedDF$stdErr = std_errs
 
 p<-ggplot(data=meltedDF, aes(x=Epoch, y=value, color=variable)) +
   geom_line() + 
-  geom_point() +
-  geom_errorbar(aes(ymin=value-stdDev, ymax=value+stdDev), width=0.0) +
+  geom_point(size=0.5) +
+  geom_errorbar(aes(ymin=value-stdErr, ymax=value+stdErr), width=0.0) +
   xlab('Epoch') +
-  ylab('Average Ensemble Loss') +
+  ylab('Average Ensemble Error') +
   scale_colour_discrete(name="Model Loss",
                         breaks=c("trainingloss", "validationloss"),
                         labels=c("Training", "Validation")) + 
