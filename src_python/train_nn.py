@@ -24,8 +24,8 @@ def main(seed, folds, no_sv=False, no_cna=False, ploidy=False, no_silent=False, 
 
     print('CUDA:' + str(torch.cuda.is_available()))
 
-    datafile = "../data_tables/gsm/DLBCL_Staudt_Shipp_CL.for_classifier_training.classifier_subset.fix_sv.fix_ploidy.17-Aug-2022.txt"
-    targetfile = "../data_tables/confidence_tables/baseline_probabilities.connectivity_based.sensitivity_power2.Aug_17_2022.tsv"
+    datafile = "../data_tables/gsm/DLBCL.699.fullGSM.Sep_23_2022.tsv"
+    targetfile = "../data_tables/confidence_tables/baseline_probabilities.connectivity_based.sensitivity_power2.Sep_23_2022.tsv"
 
     train_samples = list(pd.read_csv(training_file, sep='\t', header=None, index_col=0).index)
 

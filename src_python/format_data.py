@@ -463,7 +463,7 @@ def format_inputs(datafile, target_file, training_set,
 
         list_SGK1_vec = ["SGK1", "TET2", "NFKBIA", "STAT3", "PTPN6", "BRAF",
                          "KRAS", "CD83", "SF3B1", "CD274", "MEF2C", "KLHL6",
-                         "CXCR4", "PTEN", "RAC2" "SESN3", "SOCS1", "METAP1D"]
+                         "CXCR4", "PTEN", "RAC2", "SESN3", "SOCS1", "METAP1D"]
         SGK1_vec = data[list_SGK1_vec].sum(axis=1)
 
         list_DUSP2_vec = ["DUSP2", "ZFP36L1", "CRIP1", "ACTB", "LTB", "YY1", "PABPC1"]
