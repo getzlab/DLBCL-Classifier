@@ -3,13 +3,13 @@ source('src_R/load_libraries.R')
 
 NUM_ITER = 200
 
-conn_mat_2 = read.csv('clustering_runs/full_dir_combined/k2/GSM699_cluster_Aug_17_2022.k2.connectivity.matrix.txt', sep='\t')
-conn_mat_3 = read.csv('clustering_runs/full_dir_combined/k3/GSM699_cluster_Aug_17_2022.k3.connectivity.matrix.txt', sep='\t')
-conn_mat_4 = read.csv('clustering_runs/full_dir_combined/k4/GSM699_cluster_Aug_17_2022.k4.connectivity.matrix.txt', sep='\t')
-conn_mat_5 = read.csv('clustering_runs/full_dir_combined/k5/GSM699_cluster_Aug_17_2022.k5.connectivity.matrix.txt', sep='\t')
-conn_mat_6 = read.csv('clustering_runs/full_dir_combined/k6/GSM699_cluster_Aug_17_2022.k6.connectivity.matrix.txt', sep='\t')
-conn_mat_7 = read.csv('clustering_runs/full_dir_combined/k7/GSM699_cluster_Aug_17_2022.k7.connectivity.matrix.txt', sep='\t')
-conn_mat_8 = read.csv('clustering_runs/full_dir_combined/k8/GSM699_cluster_Aug_17_2022.k8.connectivity.matrix.txt', sep='\t')
+conn_mat_2 = read.csv('clustering_runs/full_dir_combined/k2/GSM699_cluster_Sep_23_2022.k2.connectivity.matrix.txt', sep='\t')
+conn_mat_3 = read.csv('clustering_runs/full_dir_combined/k3/GSM699_cluster_Sep_23_2022.k3.connectivity.matrix.txt', sep='\t')
+conn_mat_4 = read.csv('clustering_runs/full_dir_combined/k4/GSM699_cluster_Sep_23_2022.k4.connectivity.matrix.txt', sep='\t')
+conn_mat_5 = read.csv('clustering_runs/full_dir_combined/k5/GSM699_cluster_Sep_23_2022.k5.connectivity.matrix.txt', sep='\t')
+conn_mat_6 = read.csv('clustering_runs/full_dir_combined/k6/GSM699_cluster_Sep_23_2022.k6.connectivity.matrix.txt', sep='\t')
+conn_mat_7 = read.csv('clustering_runs/full_dir_combined/k7/GSM699_cluster_Sep_23_2022.k7.connectivity.matrix.txt', sep='\t')
+conn_mat_8 = read.csv('clustering_runs/full_dir_combined/k8/GSM699_cluster_Sep_23_2022.k8.connectivity.matrix.txt', sep='\t')
 
 c_mats = list(conn_mat_2, conn_mat_3, conn_mat_4, conn_mat_5, conn_mat_6, conn_mat_7, conn_mat_8)
 
@@ -60,13 +60,13 @@ p = ggplot(data=current_table, aes(x=k, y=rho_means, color=color)) +
         axis.title.y = element_text(colour="grey20",size=15,angle=0,hjust=.5,vjust=0.5,face="plain"),
         legend.position = "none")
 
-conn_mat_2 = read.csv('clustering_runs/full_dir_staudt/k2/GSM699_cluster_Aug_17_2022_STAUDT.k2.connectivity.matrix.txt', sep='\t')
-conn_mat_3 = read.csv('clustering_runs/full_dir_staudt/k3/GSM699_cluster_Aug_17_2022_STAUDT.k3.connectivity.matrix.txt', sep='\t')
-conn_mat_4 = read.csv('clustering_runs/full_dir_staudt/k4/GSM699_cluster_Aug_17_2022_STAUDT.k4.connectivity.matrix.txt', sep='\t')
-conn_mat_5 = read.csv('clustering_runs/full_dir_staudt/k5/GSM699_cluster_Aug_17_2022_STAUDT.k5.connectivity.matrix.txt', sep='\t')
-conn_mat_6 = read.csv('clustering_runs/full_dir_staudt/k6/GSM699_cluster_Aug_17_2022_STAUDT.k6.connectivity.matrix.txt', sep='\t')
-conn_mat_7 = read.csv('clustering_runs/full_dir_staudt/k7/GSM699_cluster_Aug_17_2022_STAUDT.k7.connectivity.matrix.txt', sep='\t')
-conn_mat_8 = read.csv('clustering_runs/full_dir_staudt/k8/GSM699_cluster_Aug_17_2022_STAUDT.k8.connectivity.matrix.txt', sep='\t')
+conn_mat_2 = read.csv('clustering_runs/full_dir_staudt/k2/GSM699_cluster_Sep_23_2022_STAUDT.k2.connectivity.matrix.txt', sep='\t')
+conn_mat_3 = read.csv('clustering_runs/full_dir_staudt/k3/GSM699_cluster_Sep_23_2022_STAUDT.k3.connectivity.matrix.txt', sep='\t')
+conn_mat_4 = read.csv('clustering_runs/full_dir_staudt/k4/GSM699_cluster_Sep_23_2022_STAUDT.k4.connectivity.matrix.txt', sep='\t')
+conn_mat_5 = read.csv('clustering_runs/full_dir_staudt/k5/GSM699_cluster_Sep_23_2022_STAUDT.k5.connectivity.matrix.txt', sep='\t')
+conn_mat_6 = read.csv('clustering_runs/full_dir_staudt/k6/GSM699_cluster_Sep_23_2022_STAUDT.k6.connectivity.matrix.txt', sep='\t')
+conn_mat_7 = read.csv('clustering_runs/full_dir_staudt/k7/GSM699_cluster_Sep_23_2022_STAUDT.k7.connectivity.matrix.txt', sep='\t')
+conn_mat_8 = read.csv('clustering_runs/full_dir_staudt/k8/GSM699_cluster_Sep_23_2022_STAUDT.k8.connectivity.matrix.txt', sep='\t')
 
 c_mats = list(conn_mat_2, conn_mat_3, conn_mat_4, conn_mat_5, conn_mat_6, conn_mat_7, conn_mat_8)
 
@@ -116,13 +116,13 @@ p_st = ggplot(data=current_table_staudt, aes(x=k, y=rho_means)) +
         legend.position = "none")
 
 
-conn_mat_2 = read.csv('clustering_runs/full_dir_shipp/k2/GSM699_cluster_Aug_17_2022_SHIPP.k2.connectivity.matrix.txt', sep='\t')
-conn_mat_3 = read.csv('clustering_runs/full_dir_shipp/k3/GSM699_cluster_Aug_17_2022_SHIPP.k3.connectivity.matrix.txt', sep='\t')
-conn_mat_4 = read.csv('clustering_runs/full_dir_shipp/k4/GSM699_cluster_Aug_17_2022_SHIPP.k4.connectivity.matrix.txt', sep='\t')
-conn_mat_5 = read.csv('clustering_runs/full_dir_shipp/k5/GSM699_cluster_Aug_17_2022_SHIPP.k5.connectivity.matrix.txt', sep='\t')
-conn_mat_6 = read.csv('clustering_runs/full_dir_shipp/k6/GSM699_cluster_Aug_17_2022_SHIPP.k6.connectivity.matrix.txt', sep='\t')
-conn_mat_7 = read.csv('clustering_runs/full_dir_shipp/k7/GSM699_cluster_Aug_17_2022_SHIPP.k7.connectivity.matrix.txt', sep='\t')
-conn_mat_8 = read.csv('clustering_runs/full_dir_shipp/k8/GSM699_cluster_Aug_17_2022_SHIPP.k8.connectivity.matrix.txt', sep='\t')
+conn_mat_2 = read.csv('clustering_runs/full_dir_shipp/k2/GSM699_cluster_Sep_23_2022_SHIPP.k2.connectivity.matrix.txt', sep='\t')
+conn_mat_3 = read.csv('clustering_runs/full_dir_shipp/k3/GSM699_cluster_Sep_23_2022_SHIPP.k3.connectivity.matrix.txt', sep='\t')
+conn_mat_4 = read.csv('clustering_runs/full_dir_shipp/k4/GSM699_cluster_Sep_23_2022_SHIPP.k4.connectivity.matrix.txt', sep='\t')
+conn_mat_5 = read.csv('clustering_runs/full_dir_shipp/k5/GSM699_cluster_Sep_23_2022_SHIPP.k5.connectivity.matrix.txt', sep='\t')
+conn_mat_6 = read.csv('clustering_runs/full_dir_shipp/k6/GSM699_cluster_Sep_23_2022_SHIPP.k6.connectivity.matrix.txt', sep='\t')
+conn_mat_7 = read.csv('clustering_runs/full_dir_shipp/k7/GSM699_cluster_Sep_23_2022_SHIPP.k7.connectivity.matrix.txt', sep='\t')
+conn_mat_8 = read.csv('clustering_runs/full_dir_shipp/k8/GSM699_cluster_Sep_23_2022_SHIPP.k8.connectivity.matrix.txt', sep='\t')
 
 c_mats = list(conn_mat_2, conn_mat_3, conn_mat_4, conn_mat_5, conn_mat_6, conn_mat_7, conn_mat_8)
 

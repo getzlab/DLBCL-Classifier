@@ -3,12 +3,12 @@ import re
 import math
 
 qval_cutoff = 0.10
-datafile = "../data_tables/gsm/DLBCL_Staudt_Shipp_CL.for_classifier_training.classifier_subset.fix_sv.fix_ploidy.17-Aug-2022.txt"
+datafile = "../data_tables/gsm/DLBCL.699.fullGSM.Sep_23_2022.tsv"
 sv_bedfile = "../data_tables/feature_bp_counts/DLBCL_Rearrangm_probes_v1_AllTracks-REFORMAT.bed"
 scnas_file = "../data_tables/feature_bp_counts/SCNAs_regions.tsv"
-qval_file = '../data_tables/qval_dfs/fisher_exact_5x2_17-Aug-2022.combined.tsv'
+qval_file = '../data_tables/qval_dfs/fisher_exact_5x2.Sep_23_2022.combined.tsv'
 arm_file = '../data_tables/feature_bp_counts/hg19.GISTIC.arms.tsv'
-sig_genes = '../data_tables/mutsig2cv_gistic_qvalues/DLBCL_551_training.sig_genes.txt'
+sig_genes = '../data_tables/mutsig2cv_gistic_qvalues/DLBCL_550_training_noPDE4DIP_noHISTartifacts.sig_genes.txt'
 
 qvalDF = pd.read_csv(qval_file, sep='\t', index_col=0)
 armDF = pd.read_csv(arm_file, sep='\t')
@@ -86,8 +86,6 @@ for idx, row in scnas.iterrows():
         curr_region = 'X19Q13.32.1.DEL'
     if curr_region == 'X18Q21.33(BCL2).AMP':
         curr_region = 'X18Q22.2.AMP'
-    if curr_region == 'X4Q35.1.DEL':
-        print('here')
 
     if curr_region not in footprintSizes:
             continue
@@ -167,5 +165,5 @@ footprintDF.columns = ['Classifier Footprint', 'integral', 'Total BP Count']
 footprintDF.loc['MYD88.OTHER', 'integral'] = footprintDF.loc['MYD88', 'integral']
 footprintDF.loc['MYD88.L265P', 'integral'] = footprintDF.loc['MYD88', 'integral']
 footprintDF.index.name = 'Driver'
-footprintDF.to_csv('../data_tables/feature_bp_counts/footprint_table_Aug_17_2022.tsv', sep='\t', header=True, index=True)
+footprintDF.to_csv('../data_tables/feature_bp_counts/footprint_table_Sep_23_2022.tsv', sep='\t', header=True, index=True)
 

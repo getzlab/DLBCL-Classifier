@@ -1,10 +1,12 @@
 import pandas as pd
 from matplotlib import pyplot as plt
 
+VERSION = 'Sep_23_2022'
+
 for k in range(2, 9):
     curr_k = str(k)
-    k_conn = pd.read_csv('../clustering_runs/full_dir_combined/k' + curr_k + '/GSM699_cluster_Aug_17_2022.k' + curr_k + '.connectivity.matrix.txt', sep='\t')
-    k_labels = pd.read_csv('../clustering_runs/full_dir_combined/k' + curr_k + '/GSM699_cluster_Aug_17_2022.k' + curr_k + '.clustering', sep='\t')
+    k_conn = pd.read_csv('../clustering_runs/full_dir_combined/k' + curr_k + '/GSM699_cluster_' + VERSION + '.k' + curr_k + '.connectivity.matrix.txt', sep='\t')
+    k_labels = pd.read_csv('../clustering_runs/full_dir_combined/k' + curr_k + '/GSM699_cluster_' + VERSION + '.k' + curr_k + '.clustering', sep='\t')
     k_labels = k_labels.sort_values(by=k_labels.columns[-1])
 
     k_conn = k_conn.loc[k_labels.index, k_labels.index]

@@ -20,6 +20,7 @@ full_gsm = full_gsm.drop('19Q13.32_1.DEL.CCF', axis=0)
 # Make names compatible with R... unfortunately..
 full_gsm.index = full_gsm.index.str.replace('-', '.')
 full_gsm.index = ['X' + x if '.AMP' in x or '.DEL' in x else x for x in full_gsm.index]
+full_gsm.loc['COO'] = full_gsm.loc['COO'].str.replace('Unclassified', 'UNC').str.replace('Unclass', 'UNC')
 
 full_gsm = full_gsm[samples]
 full_gsm.to_csv(OUTPUT_FN, sep='\t')

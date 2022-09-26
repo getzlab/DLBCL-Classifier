@@ -24,9 +24,9 @@ sv_bcl2_samples = set(SV.loc[SV['genes'].str.contains('BCL2'), 'individual']).in
 sv_myc_samples = set(SV.loc[SV['genes'].str.contains('MYC'), 'individual']).intersection(sample_set)
 sv_bcl6_samples = set(SV.loc[SV['genes'].str.contains('BCL6'), 'individual']).intersection(sample_set)
 
-sv_myc_ccfs = SV.loc[SV['individual'].isin(sv_myc_samples)].groupby('individual')['CCF'].max()
-sv_bcl2_ccfs = SV.loc[SV['individual'].isin(sv_bcl2_samples)].groupby('individual')['CCF'].max()
-sv_bcl6_ccfs = SV.loc[SV['individual'].isin(sv_bcl6_samples)].groupby('individual')['CCF'].max()
+sv_myc_ccfs = SV.loc[SV['individual'].isin(sv_myc_samples) & SV['genes'].str.contains('MYC')].groupby('individual')['CCF'].max()
+sv_bcl2_ccfs = SV.loc[SV['individual'].isin(sv_bcl2_samples) & SV['genes'].str.contains('BCL2')].groupby('individual')['CCF'].max()
+sv_bcl6_ccfs = SV.loc[SV['individual'].isin(sv_bcl6_samples) & SV['genes'].str.contains('BCL6')].groupby('individual')['CCF'].max()
 
 sv_df.loc['SV.BCL2', sv_bcl2_samples] = 3
 sv_df.loc['SV.BCL6', sv_bcl6_samples] = 3
@@ -35,4 +35,8 @@ sv_df.loc['SV.BCL2.CCF', sv_bcl2_ccfs.index] = sv_bcl2_ccfs
 sv_df.loc['SV.BCL6.CCF', sv_bcl6_ccfs.index] = sv_bcl6_ccfs
 sv_df.loc['SV.MYC.CCF', sv_myc_ccfs.index] = sv_myc_ccfs
 
+# TCGA SV fix............
+tcga_svs = pd.read_csv('../../data_tables/gsm/tcga_svs.tsv', sep='\t', index_col=0)
+
+sv_df[tcga_svs.columns] = tcga_svs
 sv_df.to_csv(OUTPUT_FN, sep='\t')

@@ -2,6 +2,8 @@ import argparse
 import pandas as pd
 import numpy as np
 
+# --maf ../../data_tables/maf_files/DLBCL_combined_699.hg38B.noPDE4DIP.noHISTartifacts.maf --mutsig_sig_genes ../../data_tables/mutsig2cv_gistic_qvalues/DLBCL_550_training_noPDE4DIP_noHISTartifacts.sig_genes.txt --mutsig_q_thresh 0.10 --output_fn ../../data_tables/gsm/DLBCL.699.mutationsGSM.Sep_23_2022.tsv --additional_sig_genes ../../data_tables/additional_gsm_inputs/NatMed_104_sig_genes.tableS3.tsv --include_myd88_L265P --include_ccf CCF_hat --blacklist ../../data_tables/additional_gsm_inputs/dlbclass_blacklist.tsv --ploidy ../../data_tables/purities_ploidies/PloidyDataFrame.txt --purity ../../data_tables/purities_ploidies/ALLPurities_fixednames.tsv --coo ../../data_tables/phenotypes/COO_and_genetic_lables.txt
+
 # this list is hard-defined for now to allow subsetting to non-silent events.
 NOT_NONSILENT = ["Silent", "3'UTR", "5'Flank", "5'UTR",
                  "IGR", "Intron", "RNA", "lincRNA",

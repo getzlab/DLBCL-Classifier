@@ -15,7 +15,7 @@ R.r('set.seed')(1)
 
 R_STATS = importr('stats')
 BLACKLIST = ['MUC6', 'HIST1H2BK', 'HIST2H2BE', 'OR51B6', 'OR10V1']
-VERSION_DATE = '17-Aug-2022'
+VERSION_DATE = 'Sep_23_2022'
 
 MODE = ['combined', 'staudtonly', 'shipponly']
 MODE = MODE[0]
@@ -29,34 +29,32 @@ def fisher_exact_5x2(matrix, numiter=100000):
     return R_STATS.fisher_test(matrix, simulate_p_value=True, B=numiter)
 
 
-labels = '../data_tables/clustering_labels/GSM699_cluster_Aug_17_2022.bestclus.remapped.txt'
+labels = '../data_tables/clustering_labels/GSM699_cluster_Sep_23_2022.bestclus.remapped.txt'
 training_file = '../data_tables/train_test_sets/TrainingSet_550Subset_May2021.txt'
-gsm_file = '../data_tables/gsm/old_matrices/DLBCL_Staudt_Shipp_CL.for_classifier_training.classifier_subset.fix_sv.fix_ploidy.17-Aug-2022.txt'
+gsm_file = '../data_tables/gsm/DLBCL.699.fullGSM.Sep_23_2022.tsv'
 
 cohorts = pd.read_csv('../data_tables/sample_sets/ShippStaudtSets.purity0.2.txt', index_col=0, sep='\t')
 
 clusters = pd.read_csv(labels, sep='\t', index_col=0)
 gsm = pd.read_csv(gsm_file, sep='\t', index_col=0)
 training_samples = list(pd.read_csv(training_file, sep='\t', index_col=0, header=None).index)
-staudt_samples = cohorts.loc[cohorts['cohort'] == 'Staudt'].index
+staudt_samples = cohorts.loc[cohorts['cohort'] != 'Shipp'].index
 shipp_samples = cohorts.loc[cohorts['cohort'] == 'Shipp'].index
 
 if MODE == 'staudtonly':
     gsm = gsm[gsm.columns.intersection(staudt_samples)]
-    clusters = pd.read_csv('../data_tables/clustering_labels/GSM699_cluster_Aug_17_2022_STAUDT.bestclus.txt', sep='\t', index_col=0)
+    clusters = pd.read_csv('../data_tables/clustering_labels/GSM699_cluster_Sep_23_2022_STAUDT.bestclus.txt', sep='\t', index_col=0)
 if MODE == 'shipponly':
     gsm = gsm[gsm.columns.intersection(shipp_samples)]
-    clusters = pd.read_csv('../data_tables/clustering_labels/GSM699_cluster_Aug_17_2022_SHIPP.bestclus.remapped.txt', sep='\t', index_col=0)
-if MODE == 'staudtonly_k5':
-    gsm = gsm[gsm.columns.intersection(staudt_samples)]
-    clusters = pd.read_csv('../data_tables/clustering_labels/GSM699_cluster_Aug_17_2022_STAUDT.bestclus.txt', sep='\t', index_col=0)
+    clusters = pd.read_csv('../data_tables/clustering_labels/GSM699_cluster_Sep_23_2022_SHIPP.bestclus.remapped.txt', sep='\t', index_col=0)
 
 gsm.loc['PLOIDY'] = (gsm.loc['PLOIDY'].astype(float) > 2.5).astype(int)
 gsm.loc['COO_ABC'] = gsm.loc['COO'].map({'ABC': 1, 'GCB': 0, 'UNC': 0, 'na': 'na'})
 gsm.loc['COO_GCB'] = gsm.loc['COO'].map({'ABC': 0, 'GCB': 1, 'UNC': 0, 'na': 'na'})
 gsm.loc['COO_UNC'] = gsm.loc['COO'].map({'ABC': 0, 'GCB': 0, 'UNC': 1, 'na': 'na'})
 gsm = gsm.drop('COO')
-gsm = gsm.dropna(axis=0)
+gsm = gsm.drop('PURITY')
+gsm = gsm.loc[~gsm.index.str.contains('CCF')]
 
 rows = [i for i in gsm.index if i not in ['COO_ABC', 'COO_GCB', 'COO_UNC']]
 for idx in rows:
@@ -124,7 +122,7 @@ for event in coo_ploidy:
         stats_table_coo.loc[event, '!C' + cluster + '_wt'] = non_wt
 
 
-stats_table_coo.to_csv('../data_tables/qval_dfs/fisher_exact_2x2_coo_ploidy_' + VERSION_DATE + '.' + MODE + '.tsv', sep='\t')
+stats_table_coo.to_csv('../data_tables/qval_dfs/fisher_exact_2x2.coo_ploidy.' + VERSION_DATE + '.' + MODE + '.tsv', sep='\t')
 
 # 5x2 tests
 
@@ -178,7 +176,7 @@ for f_c in clus_names:
     stats_table[f_c + '_nf'] = stats_table[f_c + '_f'] / denom
 
 # Drop genes in the BLACKLIST or genes < 1% frequency.
-# Drop COO rows and PLOIDY as well
+# Drop COO rows and PLOIDY as well, since we calculated these separately
 
 o_f = 0
 for f_c in clus_names:
@@ -186,7 +184,6 @@ for f_c in clus_names:
 
 stats_table.insert(1, 'overall_frequency', o_f)
 
-stats_table = stats_table.drop(BLACKLIST, axis=0)
 stats_table = stats_table.drop(coo_ploidy)
 stats_table = stats_table.loc[stats_table['overall_frequency'] >= 0.01]
 
@@ -204,7 +201,7 @@ for c in clus_names:
     clus_order += c_o
 
 stats_table = stats_table.loc[clus_order]
-stats_table.to_csv('../data_tables/qval_dfs/fisher_exact_5x2_' + VERSION_DATE + '.' + MODE + '.tsv', sep='\t')
+stats_table.to_csv('../data_tables/qval_dfs/fisher_exact_5x2.' + VERSION_DATE + '.' + MODE + '.tsv', sep='\t')
 
 
 # How to parallelize for the future

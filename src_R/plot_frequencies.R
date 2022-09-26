@@ -2,9 +2,9 @@ rm(list = ls())
 
 source('src_R/load_libraries.R')
 
-fullDF = read.csv('data_tables/gsm/DLBCL_Staudt_Shipp_CL.for_classifier_training.classifier_subset.fix_sv.fix_ploidy.17-Aug-2022.txt', 
+fullDF = read.csv('data_tables/gsm/DLBCL.699.fullGSM.Sep_23_2022.tsv', 
                   sep='\t', row.names = 1)
-qvalDF = read.csv('data_tables/qval_dfs/fisher_exact_5x2_17-Aug-2022.combined.tsv', sep='\t', row.names=1)
+qvalDF = read.csv('data_tables/qval_dfs/fisher_exact_5x2.Sep_23_2022.combined.tsv', sep='\t', row.names=1)
 
 qvalDF = qvalDF[!rownames(qvalDF) %in% c("OR10V1" ,"OR51B6"),]
 qvalDF = qvalDF[qvalDF$q <= 0.10,]
@@ -15,7 +15,8 @@ train_set = read.csv('data_tables/train_test_sets/TrainingSet_550Subset_May2021.
 train_set = train_set$V1
 
 fullDF = data.frame(t(fullDF))
-#fullDF = fullDF[, colnames(fullDF) %in% rownames(qvalDF)]
+fullDF = fullDF[, !grepl('.CCF', colnames(fullDF))]
+fullDF = fullDF[, ]
 fullDF = fullDF[, !colnames(fullDF) %in% c('PLOIDY', 'EBV', 'COO')]
 cohorts = cohorts[cohorts$included_in_clustering == 'True',]
 
@@ -69,12 +70,10 @@ for(i in rownames(plotDF)){
 
 plotDF$X = rownames(plotDF)
 
-natmedgenes = read.csv('~/Desktop/DLBCL-Classifier-Pre-Public/data_tables/gsm/DLBCL_significant_event_matrix_NatMed.txt',
+natmedgenes = read.csv('data_tables/gsm/DLBCL_significant_event_matrix_NatMed.txt',
                        sep='\t', row.names = 1)
 rownames(natmedgenes)[97] = "X18Q21.32.AMP"
-rownames(natmedgenes)[131] = "X19Q13.32.1.DEL"
-
-
+#rownames(natmedgenes)[131] = "X19Q13.32.1.DEL"
 
 
 rownames(natmedgenes) = toupper(make.names(rownames(natmedgenes)))

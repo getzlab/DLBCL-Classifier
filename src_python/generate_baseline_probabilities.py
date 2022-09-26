@@ -6,7 +6,7 @@ from matplotlib import pyplot as plt
 ALPHA = 1
 POWER = 2
 
-version = 'Aug_17_2022'
+version = 'Sep_23_2022'
 
 connFile = '../clustering_runs/full_dir_combined/k5/GSM699_cluster_' + version + '.k5.connectivity.matrix.txt'
 clusterFile = '../data_tables/clustering_labels/GSM699_cluster_' + version + '.bestclus.remapped.txt'
