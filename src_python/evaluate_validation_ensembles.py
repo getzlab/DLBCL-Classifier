@@ -44,7 +44,7 @@ def evaluate_model(file):
     random.seed(DEFAULT_SEED)
     np.random.seed(DEFAULT_SEED)
     # Make regex for files in EnsembleValidationEvaluation
-    targetfile = "../data_tables/confidence_tables/baseline_probabilities.connectivity_based.sensitivity_power2.Aug_17_2022.tsv"
+    targetfile = "../data_tables/confidence_tables/baseline_probabilities.connectivity_based.sensitivity_power2.Sep_23_2022.tsv"
     labels = pd.read_csv(targetfile, sep='\t', index_col=0)
     labels = pd.DataFrame(labels['cluster'] - 1)
 
@@ -60,7 +60,6 @@ def evaluate_model(file):
             name = name2
 
     name = '%s_%s' % (name[0][0], name[0][1])
-    name = name.replace('reducedV4', 'qval0.10')
 
     print('Evaluating', name)
     predictions_df = pd.read_csv(file, sep='\t', index_col=0)

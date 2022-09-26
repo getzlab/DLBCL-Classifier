@@ -3,10 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="b092fab0-8de1-4ee0-9187-ec88de6d843d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/format_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/format_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/train_nb.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/train_nb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/train_nn.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/train_nn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/train_rf.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/train_rf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_R/plot_step1.R" beforeDir="false" afterPath="$PROJECT_DIR$/src_R/plot_step1.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_python/correlation_plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/correlation_plot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_python/evaluate_validation_ensembles.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/evaluate_validation_ensembles.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_python/run_all_experiments_step2A.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/run_all_experiments_step2A.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_python/run_all_experiments_step2B.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/run_all_experiments_step2B.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_python/run_all_experiments_step2C.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/run_all_experiments_step2C.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +171,7 @@
       <recent name="$PROJECT_DIR$/data_tables/gsm/old_matrices" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.experiment_driver_nn">
+  <component name="RunManager" selected="Python.evaluate_validation_ensembles">
     <configuration name="connectivity_heatmaps" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DLBCL-Classifier" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -183,6 +185,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src_python/connectivity_heatmaps.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="evaluate_validation_ensembles" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DLBCL-Classifier" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src_python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src_python/evaluate_validation_ensembles.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -254,41 +277,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="remap_labels" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DLBCL-Classifier" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src_python" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src_python/remap_labels.py" />
-      <option name="PARAMETERS" value="../data_tables/clustering_labels/GSM699_cluster_Sep_23_2022_SHIPP.bestclus.txt" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
+      <item itemvalue="Python.evaluate_validation_ensembles" />
       <item itemvalue="Python.connectivity_heatmaps" />
       <item itemvalue="Python.experiment_driver_nn" />
       <item itemvalue="Python.fisher_5x2_parallel" />
       <item itemvalue="Python.generate_baseline_probabilities" />
-      <item itemvalue="Python.remap_labels" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.evaluate_validation_ensembles" />
         <item itemvalue="Python.experiment_driver_nn" />
         <item itemvalue="Python.fisher_5x2_parallel" />
         <item itemvalue="Python.generate_baseline_probabilities" />
         <item itemvalue="Python.connectivity_heatmaps" />
-        <item itemvalue="Python.remap_labels" />
       </list>
     </recent_temporary>
   </component>
@@ -336,11 +338,6 @@
           <url>file://$PROJECT_DIR$/src_python/random_add_in_experiment.py</url>
           <line>84</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src_python/correlation_plot.py</url>
-          <line>96</line>
-          <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src_python/classify_ccgd.py</url>

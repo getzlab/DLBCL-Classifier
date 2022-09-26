@@ -18,7 +18,7 @@ performancetable$Model = gsub('RF', 'Random Forest', performancetable$Model)
 
 step1_models = rownames(performancetable)[!rownames(performancetable) %in% 
                                             rownames(performancetable)[grep('reduced|qval', rownames(performancetable))]]
-step1_models = c(step1_models, 'RF_reducedV3.2_nfeatures21', 'MNB_reducedV3.2_nfeatures21', 'NN_reducedV3.2_nfeatures21')
+step1_models = c(step1_models, 'RF_reducedV3.3_nfeatures21', 'MNB_reducedV3.3_nfeatures21', 'NN_reducedV3.3_nfeatures21')
 
 current_table = performancetable[step1_models, ]
 

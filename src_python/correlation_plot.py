@@ -33,7 +33,7 @@ def makeBins(X, Y, windowsize=10, step=10, residpower=2):
         currWeight = meanCurr_X * (float(currBinSize) / float(windowsize))
 
         worstcaseresid = np.max([(np.abs(meanCurr_X - 1) ** residpower), (np.abs(meanCurr_X) ** residpower)])
-        bestcaseresid = np.min(np.abs(possibleXs - meanCurr_X))
+        bestcaseresid = np.min(np.abs(possibleXs - meanCurr_X) ** residpower)
 
         allWindows.append((meanCurr_X, meanCurr_Y, probability_aboveX, worstcaseresid, bestcaseresid, currWeight, lowerError, upperError, minBin, maxBin))
 
