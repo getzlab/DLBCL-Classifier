@@ -21,10 +21,10 @@ performancetable$experiment <-
 
 step2A_models = rownames(performancetable)[grep('qval|removeN', rownames(performancetable))]
 step2A_models = step2A_models[!grepl('coo|ploidy|no', step2A_models)]
-step2A_models = c(step2A_models, 'NN_reducedV3.2_nfeatures21')
+step2A_models = c(step2A_models, 'NN_reducedV3.3_nfeatures21')
 
 current_table = performancetable[step2A_models, ]
-current_table['NN_reducedV3.2_nfeatures21', 'Model'] = 'Step1 Winner'
+current_table['NN_reducedV3.3_nfeatures21', 'Model'] = 'Step1 Winner'
 current_colors = c("#000000","#E3140F")
 output_fn = 'plots/combined_performance_step2A'
 widths = c(1.9,1,1)

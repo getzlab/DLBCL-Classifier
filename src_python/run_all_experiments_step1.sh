@@ -3,7 +3,7 @@ nohup python3 experiment_driver_nn.py --numiter 100 --folds 5 --earlystopping --
 nohup python3 experiment_driver_rf.py --numiter 100 --folds 5 --fullfeatures &
 nohup python3 experiment_driver_mnb.py --numiter 100 --folds 5 --fullfeatures &
 
-nohup python3 experiment_driver_nn.py --numiter 100 --folds 5 --earlystopping --reduced 3.3 &
+nohup python3 experiment_driver_nn.py --numiter 100 --folds 5 --earlystopping --reduced 3.3 --savemodels --traininghistory &
 nohup python3 experiment_driver_rf.py --numiter 100 --folds 5 --reduced 3.3 &
 nohup python3 experiment_driver_mnb.py --numiter 100 --folds 5 --reduced 3.3 &
 

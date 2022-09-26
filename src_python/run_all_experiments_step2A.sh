@@ -10,7 +10,7 @@ for n in "5" "20" "80"
 do
         if [[ "$n" == "5" ]]
         then
-            nohup python3 experiment_driver_nn.py --numiter 100 --folds 5 --earlystopping --reduced 3.3 --remove_largest_n $n --savemodels --traininghistory &
+            nohup python3 experiment_driver_nn.py --numiter 100 --folds 5 --earlystopping --reduced 3.3 --remove_largest_n $n &
         else
             nohup python3 experiment_driver_nn.py --numiter 100 --folds 5 --earlystopping --reduced 3.3 --remove_largest_n $n &
         fi
