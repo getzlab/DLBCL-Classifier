@@ -15,19 +15,15 @@ NUM_CORRELATION_ITERS = 1000
 random.seed(DEFAULT_SEED)
 np.random.seed(DEFAULT_SEED)
 
-GSM = "../data_tables/gsm/DLBCL_Staudt_Shipp_CL.for_classifier_training.classifier_subset.fix_sv.fix_ploidy.17-Aug-2022.txt"
-targetfile = "../data_tables/confidence_tables/baseline_probabilities.connectivity_based.sensitivity_power2.Aug_17_2022.tsv"
+GSM = '../data_tables/gsm/DLBCL.699.fullGSM.Sep_23_2022.tsv'
+targetfile = '../data_tables/confidence_tables/baseline_probabilities.connectivity_based.sensitivity_power2.Sep_23_2022.tsv'
 training_file = '../data_tables/train_test_sets/TrainingSet_550Subset_May2021.txt'
 samples_file = '../data_tables/sample_sets/ShippStaudtSets.purity0.2.txt'
-qval_file = '../data_tables/qval_dfs/fisher_exact_5x2_17-Aug-2022.combined.tsv'
-ccf_file = '../data_tables/gsm/DLBCL_700.17-Dec-2021.txt'
+qval_file = '../data_tables/qval_dfs/fisher_exact_5x2.Sep_23_2022.combined.tsv'
 
-ccf_gsm = pd.read_csv(ccf_file, sep='\t', index_col=0)
 
-ccf_gsm.index = ['X' + driver if ('.AMP' in driver or '.DEL' in driver) else driver for driver in ccf_gsm.index]
-ccf_gsm.index = ccf_gsm.index.str.replace('_', '.').str.replace('-', '.')
-
-ccf_gsm.loc['MYD88.CCF'] = ccf_gsm.loc[['MYD88.L265P.CCF', 'MYD88.OTHER.CCF']].max(axis=0)
+ccf_gsm = pd.read_csv(GSM, sep='\t', index_col=0)
+ccf_gsm = ccf_gsm.loc[ccf_gsm.index.str.contains('.CCF')].astype(float)
 
 ccf_gsm = ccf_gsm.fillna(0)
 
@@ -51,7 +47,7 @@ for file in files:
     netnum = int(file.split('_')[-1]) - 1
     curriter = int(np.floor(netnum/5))
     currfold = (netnum % 5)
-    validationfile = '../all_validation_sets/NN_evaluation_seeds1_100_folds5_reducedV3.2_removeN5/NN_evaluation_seeds1_100_folds5_reducedV3.2_removeN5' \
+    validationfile = '../all_validation_sets/NN_evaluation_seeds1_100_folds5_reducedV3.3/NN_evaluation_seeds1_100_folds5_reducedV3.3' \
                      + '_' + str(curriter + 1) + '_' + str(currfold)
     validationSamples = list(pd.read_csv(validationfile, sep='\t', index_col=0, header=None).index)
     validation_sets[netnum] = validationSamples
@@ -127,7 +123,7 @@ for step in steps:
     datafile = '../ccf_threshold_experiment/experiment_gsms/thresholded_gsm_thresh' + str(round(step, 2)) + '.txt'
     df.to_csv(datafile, sep='\t', header=True, index=True)
     data, targets = format_data.format_inputs(datafile, targetfile, training_set,
-                                              reduced_version='3.2', remove_largest_n=5,
+                                              reduced_version='3.3',
                                               drop_empty_vectors=False)
 
     targets = targets.loc[data.index]

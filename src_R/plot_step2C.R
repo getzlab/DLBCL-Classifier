@@ -19,14 +19,14 @@ performancetable$Model = gsub('RF', 'Random Forest', performancetable$Model)
 performancetable$experiment <- 
   factor(performancetable$experiment, levels = performancetable$experiment[order(performancetable$performance)])
 
-step2B_models = c('NN_reducedV3.2_removeN5_nfeatures21',
-                  'NN_ploidy_reducedV3.2_coo_removeN5_nfeatures23',
-                  'NN_reducedV3.2_coo_removeN5_nfeatures22',
-                  'NN_ploidy_reducedV3.2_removeN5_nfeatures22')
+step2B_models = c('NN_reducedV3.3_nfeatures21',
+                  'NN_ploidy_reducedV3.3_coo_nfeatures23',
+                  'NN_reducedV3.3_coo_nfeatures22',
+                  'NN_ploidy_reducedV3.3_nfeatures22')
 
 current_table = performancetable[step2B_models, ]
 
-current_table['NN_reducedV3.2_removeN5_nfeatures21', 'Model'] = 'Step2B winner'
+current_table['NN_reducedV3.3_nfeatures21', 'Model'] = 'Step2B winner'
 current_colors = c("#000000","#E3140F")
 
 rownames(current_table) = gsub('reducedV...', 'R', rownames(current_table))

@@ -16,10 +16,10 @@ TEST_MODE = False
 random.seed(DEFAULT_SEED)
 np.random.seed(DEFAULT_SEED)
 
-GSM = "../data_tables/gsm/DLBCL_Staudt_Shipp_CL.for_classifier_training.classifier_subset.fix_sv.fix_ploidy.17-Aug-2022.txt"
-targetfile = "../data_tables/confidence_tables/baseline_probabilities.connectivity_based.sensitivity_power2.Aug_17_2022.tsv"
+GSM = '../data_tables/gsm/DLBCL.699.fullGSM.Sep_23_2022.tsv'
+targetfile = '../data_tables/confidence_tables/baseline_probabilities.connectivity_based.sensitivity_power2.Sep_23_2022.tsv'
 training_file = '../data_tables/train_test_sets/TrainingSet_550Subset_May2021.txt'
-qval_file = '../data_tables/qval_dfs/fisher_exact_5x2_17-Aug-2022.combined.tsv'
+qval_file = '../data_tables/qval_dfs/fisher_exact_5x2.Sep_23_2022.combined.tsv'
 
 training_set = list(pd.read_csv(training_file, sep='\t', header=None, index_col=0).index)
 qval_df = pd.read_csv(qval_file, sep='\t', index_col=0)
@@ -34,7 +34,7 @@ for file in files:
     netnum = int(file.split('_')[-1]) - 1
     curriter = int(np.floor(netnum/5))
     currfold = (netnum % 5)
-    validationfile = '../all_validation_sets/NN_evaluation_seeds1_100_folds5_reducedV3.2_removeN5/NN_evaluation_seeds1_100_folds5_reducedV3.2_removeN5' \
+    validationfile = '../all_validation_sets/NN_evaluation_seeds1_100_folds5_reducedV3.3/NN_evaluation_seeds1_100_folds5_reducedV3.3' \
                      + '_' + str(curriter + 1) + '_' + str(currfold)
     validationSamples = list(pd.read_csv(validationfile, sep='\t', index_col=0, header=None).index)
     validation_sets[netnum] = validationSamples
@@ -80,7 +80,7 @@ df_original = format_data.construct_reduced_winning_version(df_original)
 
 masks = []
 for step in steps:
-    mask = np.random.binomial(1, step, (162, 550))
+    mask = np.random.binomial(1, step, (163, 550))
     masks.append(mask)
 
 results_df = pd.DataFrame(columns=['dropout_probability', 'accuracyAll', 'accuracyTop',
@@ -106,7 +106,7 @@ for step in steps:
     datafile = '../random_dropout_experiment/experiment_gsms/tmpRandomDroppedGSM_fullfeatures_step' + str(round(1-step, 2)) + '.txt'
     df.to_csv(datafile, sep='\t', header=True, index=True)
     data, targets = format_data.format_inputs(datafile, targetfile, training_set,
-                                              reduced_version='3.2', remove_largest_n=5,
+                                              reduced_version='3.3',
                                               drop_empty_vectors=False)
 
     mut_count_new = (df.loc[mut_events] != 0).sum().sum()

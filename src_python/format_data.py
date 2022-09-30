@@ -17,39 +17,14 @@ def weightfn(x):
     return 2*sigmoid(1/2*(x-10))+1
 
 
-def construct_reduced_winning_version(data, add_missing_features=False, remove_largest_n=5):
+def construct_reduced_winning_version(data, add_missing_features=False):
     # This function expects samples in rows, features in columns
     if 'MYD88' in data.index:
         data = data.T
 
-    if remove_largest_n is not None:
-        bptable = pd.read_csv('../data_tables/feature_bp_counts/footprint_table_Aug_17_2022.tsv', sep='\t', index_col=0)
-        bptable.index = bptable.index.str.replace('-', '.')
-        features_to_remove = bptable.tail(remove_largest_n).index
-        features_to_remove_c = []
-        for fr in features_to_remove:
-            if 'SV' in fr:
-                continue
-            if fr in data.columns:
-                data[fr] = 0
-                features_to_remove_c.append(fr)
-            elif 'X' + fr + '.AMP' in data.columns:
-                data['X' + fr + '.AMP'] = 0
-                features_to_remove_c.append('X' + fr + '.AMP')
-            elif 'X' + fr + '.DEL' in data.columns:
-                data['X' + fr + '.DEL'] = 0
-                features_to_remove_c.append('X' + fr + '.DEL')
-            else:
-                print('Tried to zero', fr, 'but not found, adding with zeroes.')
-                data[fr] = 0
-
-    qval_df = pd.read_csv('../data_tables/qval_dfs/fisher_exact_5x2_17-Aug-2022.combined.tsv', sep='\t', low_memory=False, index_col=0)
+    qval_df = pd.read_csv('../data_tables/qval_dfs/fisher_exact_5x2.Sep_23_2022.combined.tsv', sep='\t', low_memory=False, index_col=0)
     genes_to_drop = list(data.columns[~data.columns.isin(qval_df.index)])
     data = data.drop(genes_to_drop, axis=1)
-    #
-    # genes_to_zero = list(qval_df.loc[qval_df['q'] > qval_cutoff].index)
-    # genes_to_zero = [x for x in genes_to_zero if x in data.columns]
-    # data[genes_to_zero] = 0
 
     if add_missing_features:
         missing_f = [x for x in qval_df.index if (x not in data.columns) and (qval_df.loc[x, 'q'] <= 0.10)]
@@ -58,20 +33,6 @@ def construct_reduced_winning_version(data, add_missing_features=False, remove_l
             data[feature] = 0
 
     data = data.astype(float).astype(int)
-
-    # if qval_cutoff <= 0.10:
-    #     genes_to_drop = list(qval_df.loc[qval_df['q'] > qval_cutoff].index)
-    #     genes_to_drop = [x for x in genes_to_drop if x in data.columns]
-    #     genes_to_keep = [x for x in data.columns if x not in genes_to_drop]
-    #     data[genes_to_drop] = 0
-    #
-    #     fn = '../data_tables/feature_bp_counts/reduced_cutoff_qval' + str(qval_cutoff) + '_removedfeatures.tsv'
-    #     with open(fn, 'w+') as f:
-    #         f.write('\n'.join(genes_to_drop))
-    #
-    #     fn = '../data_tables/feature_bp_counts/reduced_cutoff_qval' + str(qval_cutoff) + '_keptfeatures.tsv'
-    #     with open(fn, 'w+') as f:
-    #         f.write('\n'.join(genes_to_keep))
 
     # C1 ##############
 
@@ -84,13 +45,12 @@ def construct_reduced_winning_version(data, add_missing_features=False, remove_l
     list_M88O_vec = ["MYD88.OTHER", "TNFAIP3", "TNIP1", "BCL10", "NFKBIE"]
     M88O_vec = data[list_M88O_vec].sum(axis=1)
 
-    list_C1_vec4 = ["UBE2A", "TMEM30A", "ZEB2", "GNAI2", "X5P.AMP", "X5Q.AMP",
-                    "POU2F2", "IKZF3", "X3Q28.DEL", "EBF1", "LYN", "HIST1H2BC",
-                    "BCL7A", "CXCR4", "CCDC27", "TUBGCP5", "SMG7", "RHOA",
-                    "BTG2", "HLA.B", "ETS1"]
+    list_C1_vec4 = ["UBE2A", "TMEM30A", "ZEB2", "GNAI2", "X5P.AMP",
+                    "X5Q.AMP", "POU2F2", "IKZF3", "X3Q28.DEL", "EBF1",
+                    "LYN", "BCL7A", "CXCR4", "CCDC27", "TUBGCP5", "SMG7", "RHOA", "BTG2"]
     C1_vec4 = data[list_C1_vec4].sum(axis=1)
 
-    list_CD70_vec = ["CD70", "FAS", "CD58", "B2M", "FADD"]
+    list_CD70_vec = ["CD70", "FAS", "CD58", "B2M", "FADD", "HLA.B"]
     CD70_vec = data[list_CD70_vec].sum(axis=1)
 
     # C2 ##############
@@ -100,8 +60,10 @@ def construct_reduced_winning_version(data, add_missing_features=False, remove_l
 
     X21Q_AMP = data["X21Q.AMP"]
 
-    list_C2_sum_arm = ["X17P.DEL", "X21Q.AMP", "X11Q.AMP", "X6P.AMP", "X11P.AMP", "X6Q.DEL", "X7P.AMP", "X13Q.AMP", "X7Q.AMP",
-                       "X3Q.AMP", "X5P.AMP", "X5Q.AMP", "X18P.AMP", "X3P.AMP", "X19Q.AMP", "X9Q.AMP", "X1Q.AMP", "X12P.AMP"]
+    list_C2_sum_arm = ["X17P.DEL", "X21Q.AMP", "X11Q.AMP", "X6P.AMP",
+                       "X11P.AMP", "X6Q.DEL", "X7P.AMP", "X13Q.AMP", "X7Q.AMP",
+                       "X3Q.AMP", "X5P.AMP", "X5Q.AMP", "X18P.AMP", "X3P.AMP",
+                       "X19Q.AMP", "X9Q.AMP", "X1Q.AMP", "X12P.AMP", "X12Q.AMP"]
     Sum_C2_ARM = data[list_C2_sum_arm].sum(axis=1)
 
     list_C2_sum_focal = ["X1P36.11.DEL", "X1P31.1.DEL", "X1P13.1.DEL", "X2Q22.2.DEL",
@@ -112,8 +74,8 @@ def construct_reduced_winning_version(data, add_missing_features=False, remove_l
                          "X18Q23.DEL", "X19P13.3.DEL", "X13Q34.DEL", "X7Q22.1.AMP",
                          "X10Q23.31.DEL", "X9P24.1.AMP", "X1Q23.3.AMP", "X3Q28.AMP",
                          "X11Q23.3.AMP", "X17Q24.3.AMP", "X3Q28.DEL", "X13Q14.2.DEL",
-                         "X18Q21.32.AMP", "X19Q13.32.1.DEL", "X6P21.1.AMP", "X18Q22.2.AMP",
-                         "EP300", "CD274", "ZNF423"]
+                         "X18Q21.32.AMP", "X19Q13.32.DEL", "X6P21.1.AMP", "X18Q22.2.AMP",
+                         "EP300", "ZNF423"]
     Sum_C2_FOCAL = data[list_C2_sum_focal].sum(axis=1)
 
     # C3 ##############
@@ -124,8 +86,9 @@ def construct_reduced_winning_version(data, add_missing_features=False, remove_l
     list_CREBBP = ["CREBBP", "EZH2", "KMT2D", "EP300"]
     CREBBP_vec = data[list_CREBBP].sum(axis=1)
 
-    list_GNA13 = ["GNA13", "TNFRSF14", "MAP2K1", "MEF2B", "IRF8", "HVCN1", "GNAI2",
-                  "MEF2C", "POU2AF1", "RAC2", "X12P.AMP", "X12Q.AMP", "X6Q14.1.DEL"]
+    list_GNA13 = ["GNA13", "TNFRSF14", "MAP2K1", "MEF2B", "IRF8", "HVCN1",
+                  "GNAI2", "MEF2C", "SOCS1", "EEF1A1", "RAC2",
+                  "X12Q.AMP", "POU2AF1"]
     GNA13_vec = data[list_GNA13].sum(axis=1)
 
     PTEN = data["PTEN"] + data["X10Q23.31.DEL"] + data["X13Q14.2.DEL"]
@@ -135,31 +98,32 @@ def construct_reduced_winning_version(data, add_missing_features=False, remove_l
     # C4 ##############
 
     list_Hist_comp = ["HIST1H2AC", "HIST1H1E", "HIST1H1B", "HIST1H2AM",
-                      "HIST1H1C", "HIST1H1D", "HIST1H2BC", "HIST1H2BD"]
+                      "HIST1H1C", "HIST1H1D", "HIST1H2BC"]
     Hist_comp = data[list_Hist_comp].sum(axis=1)
 
-    list_SGK1_vec = ["SGK1", "TET2", "NFKBIA", "STAT3", "PTPN6", "BRAF", "KRAS", "CD83",
-                     "SF3B1", "CD274", "MEF2C", "KLHL6", "CXCR4", "PTEN", "RAC2", "SESN3"]
+    list_SGK1_vec = ["SGK1", "TET2", "NFKBIA", "STAT3", "PTPN6", "BRAF",
+                     "KRAS", "CD83", "SF3B1", "CD274", "MEF2C", "KLHL6",
+                     "CXCR4", "PTEN", "RAC2", "SESN3", "SOCS1", "METAP1D"]
     SGK1_vec = data[list_SGK1_vec].sum(axis=1)
 
-    list_DUSP2_vec = ["DUSP2", "SOCS1", "ZFP36L1", "CRIP1", "ACTB", "LTB",
-                      "YY1", "ZNF608", "PABPC1", "EEF1A1"]
+    list_DUSP2_vec = ["DUSP2", "ZFP36L1", "CRIP1", "ACTB", "LTB", "YY1", "PABPC1"]
     DUSP2_vec = data[list_DUSP2_vec].sum(axis=1)
 
     # C5 ##############
 
-    list_TBL1XR1_vec = ["TBL1XR1", "PIM1", "PRDM1", "ETV6", "ZC3H12A", "BTG1", "BTG2",
-                        "IGLL5", "TMSB4X", "GRHPR", "HLA.C", "MYD88", "TOX", "LYN", "POU2F2",
-                        "IKZF3", "HLA.A", "ZFP36L1", "CARD11", "SF3B1", "HLA.B",
-                        "IRF2BP2", "OSBPL10", "VMP1", "ATP2A2", "CCDC27", "ETS1"]
+    list_TBL1XR1_vec = ["TBL1XR1", "PIM1", "PRDM1", "ETV6", "ZC3H12A",
+                        "BTG1", "BTG2", "IGLL5", "TMSB4X", "GRHPR",
+                        "HLA.C", "MYD88", "TOX", "LYN", "POU2F2", "IKZF3",
+                        "HLA.A", "ZFP36L1", "CARD11", "SF3B1", "HLA.B",
+                        "IRF2BP2", "OSBPL10", "ATP2A2", "PIM2", "IRF4", "BCL11A", "METAP1D"]
     TBL1XR1_vec = data[list_TBL1XR1_vec].sum(axis=1)
 
     MYD88_L265P_CD79B = data["MYD88.L265P"] + data["CD79B"]
 
-    list_Sum_C5_sig = ["X18Q.AMP", "X3Q.AMP", "X3P.AMP", "X19Q13.42.AMP", "X6Q21.DEL",
-                       "X18P.AMP", "X19Q.AMP", "X8Q12.1.DEL", "X6Q14.1.DEL", "X19P13.2.DEL",
-                       "X9P21.3.DEL", "X18Q21.32.AMP", "X18Q22.2.AMP", "X13Q.AMP",
-                       "X1Q42.12.DEL", "X9Q.AMP", "X1Q32.1.AMP", "X6P21.33.DEL"]
+    list_Sum_C5_sig = ["X18Q.AMP", "X3Q.AMP", "X3P.AMP", "X19Q13.42.AMP",
+                       "X6Q21.DEL", "X18P.AMP", "X19Q.AMP", "X8Q12.1.DEL",
+                       "X6Q14.1.DEL", "X19P13.2.DEL", "X9P21.3.DEL", "X18Q21.32.AMP",
+                       "X18Q22.2.AMP", "X1Q42.12.DEL", "X1Q32.1.AMP", "X6P21.33.DEL"]
     Sum_C5_CNA = data[list_Sum_C5_sig].sum(axis=1)
 
     # MISC ############

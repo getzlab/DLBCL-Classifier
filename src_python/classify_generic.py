@@ -7,7 +7,7 @@ import format_data
 
 
 def classify_samples_winning_model(data, pMax=None, nets=None, modelname=None):
-    modelpath = '../saved_models/FINALMODEL_NN_evaluation_seeds1_100_folds5_reducedV3.2_removeN5/*'
+    modelpath = '../saved_models/FINALMODEL_NN_evaluation_seeds1_100_folds5_reducedV3.3/*'
     files = glob.glob(modelpath)
 
     if not nets:
@@ -24,7 +24,7 @@ def classify_samples_winning_model(data, pMax=None, nets=None, modelname=None):
 
     if not pMax and nets:
         NFEATURES = nets[0].inputLayer.in_features
-        pMax = pd.read_csv('../evaluation_validation_set/NN_evaluation_seeds1_100_folds5_reducedV3.2_removeN5_nfeatures'+str(NFEATURES)+'.tsv',
+        pMax = pd.read_csv('../evaluation_validation_set/NN_evaluation_seeds1_100_folds5_reducedV3.3_nfeatures'+str(NFEATURES)+'.tsv',
                            sep='\t', index_col=0).max().max()
 
     pred_df = pd.DataFrame()

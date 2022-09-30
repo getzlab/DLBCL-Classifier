@@ -16,10 +16,10 @@ TEST_MODE = False
 random.seed(DEFAULT_SEED)
 np.random.seed(DEFAULT_SEED)
 
-GSM = "../data_tables/gsm/DLBCL_Staudt_Shipp_CL.for_classifier_training.classifier_subset.fix_sv.fix_ploidy.17-Aug-2022.txt"
-targetfile = "../data_tables/confidence_tables/baseline_probabilities.connectivity_based.sensitivity_power2.Aug_17_2022.tsv"
+GSM = '../data_tables/gsm/DLBCL.699.fullGSM.Sep_23_2022.tsv'
+targetfile = '../data_tables/confidence_tables/baseline_probabilities.connectivity_based.sensitivity_power2.Sep_23_2022.tsv'
 testing_file = '../data_tables/train_test_sets/TestingSet_149Subset_May2021.txt'
-qval_file = '../data_tables/qval_dfs/fisher_exact_5x2_17-Aug-2022.combined.tsv'
+qval_file = '../data_tables/qval_dfs/fisher_exact_5x2.Sep_23_2022.combined.tsv'
 
 test_set = list(pd.read_csv(testing_file, sep='\t', header=None, index_col=0).index)
 qval_df = pd.read_csv(qval_file, sep='\t', index_col=0)
@@ -120,7 +120,7 @@ for step in steps:
     datafile = '../random_add_in_experiment/tmpAddInGSM_fullfeatures_testset.txt'
     df.to_csv(datafile, sep='\t', header=True, index=True)
     data, targets = format_data.format_inputs(datafile, targetfile, test_set,
-                                              reduced_version='3.2', remove_largest_n=5, drop_empty_vectors=False)
+                                              reduced_version='3.3', drop_empty_vectors=False)
 
     targets = targets.loc[data.index]
     targets['cluster'] = targets.iloc[:, 0:5].idxmax(axis=1)
@@ -161,9 +161,6 @@ for step in steps:
     predictionsDF['True Cluster'] = correspondingTargets
     predictionsDF['Predicted Cluster'] = predictionsDF.iloc[:, 0:5].idxmax(axis=1).map({'C1': 0, 'C2': 1, 'C3': 2, 'C4': 3, 'C5': 4})
     predictionsDF = predictionsDF.sort_values(by=['Confidence'])
-
-    print(predictionsDF['True Cluster'].value_counts())
-    print(predictionsDF['Predicted Cluster'].value_counts())
 
     meanconfidence = np.mean(predictionsDF['Confidence'])
     stdconfidence = np.std(predictionsDF['Confidence'])
