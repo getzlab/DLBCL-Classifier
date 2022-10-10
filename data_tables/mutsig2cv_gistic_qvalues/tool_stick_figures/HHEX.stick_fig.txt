@@ -1,0 +1,10 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=HHEX; Synonyms=HEX, PRH, PRHX;	1	270	Name=HHEX; Synonyms=HEX, PRH, PRHX;	0.7	0.9	0.9	-	-
+domain	Homeobox. {ECO:0000255|PROSITE- ProRule:PRU00108}.	137	196	Homeobox. {ECO:0000255|PROSITE- ProRule:PRU00108}.	0.39	0.72	0.62	-	-
+mutation	Silent	114	114	p.L114L	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	115	115	p.L115F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	15	15	p.V15G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	15	15	p.V15G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	98	98	p.G98D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	109	109	p.D109N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	15	15	p.V15G	1.0	1.0	0.0	circle	up

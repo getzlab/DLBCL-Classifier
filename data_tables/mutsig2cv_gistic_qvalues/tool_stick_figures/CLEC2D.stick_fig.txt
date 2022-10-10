@@ -1,0 +1,9 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=CLEC2D; Synonyms=CLAX, LLT1, OCIL;	1	191	Name=CLEC2D; Synonyms=CLAX, LLT1, OCIL;	0.7	0.9	0.9	-	-
+mutation	Missense_Mutation	35	35	p.I35F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	165	165	p.Y165C	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	65	65	p.Q65*	1.0	0.0	0.0	triangle	up
+mutation	In_Frame_Del	39	39	p.FF39del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	39	39	p.FF39del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	87	87	p.F87V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	127	127	p.G127D	1.0	1.0	0.0	circle	up

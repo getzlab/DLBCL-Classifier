@@ -1,0 +1,37 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=HIST1H1D; Synonyms=H1F3;	1	221	Name=HIST1H1D; Synonyms=H1F3;	0.7	0.9	0.9	-	-
+domain	Histone H1.3.	2	221	Histone H1.3.	0.44	0.32	0.69	-	-
+mutation	Missense_Mutation	208	208	p.P208A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	104	104	p.G104D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	186	186	p.A186V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	90	90	p.S90R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	90	90	p.S90N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	64	64	p.K64N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	112	112	p.A112V	1.0	1.0	0.0	circle	up
+mutation	Silent	110	110	p.K110K	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	162	162	p.P162S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	162	162	p.P162S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	191	191	p.A191V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	191	191	p.A191P	1.0	1.0	0.0	circle	up
+mutation	Silent	97	97	p.T97T	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	191	191	p.A191T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	102	102	p.A102V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	90	90	p.S90I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	129	129	p.P129S	1.0	1.0	0.0	circle	up
+mutation	Silent	87	87	p.S87S	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	119	119	p.P119S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	214	214	p.K214N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	102	102	p.A102T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	211	211	p.T211A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	210	210	p.V210I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	119	119	p.P119S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	83	83	p.L83F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	99	99	p.G99R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	211	211	p.T211A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	80	80	p.R80H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	80	80	p.R80H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	104	104	p.G104D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	147	147	p.T147I	1.0	1.0	0.0	circle	up
+mutation	Silent	65	65	p.K65K	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	211	211	p.T211A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	82	82	p.K82N	1.0	1.0	0.0	circle	up

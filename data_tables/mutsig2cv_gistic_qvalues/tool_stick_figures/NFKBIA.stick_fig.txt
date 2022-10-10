@@ -1,0 +1,36 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=NFKBIA; Synonyms=IKBA, MAD3, NFKBI;	1	317	Name=NFKBIA; Synonyms=IKBA, MAD3, NFKBI;	0.7	0.9	0.9	-	-
+domain	Destruction motif.	30	36	Destruction motif.	0.64	0.39	0.32	-	-
+domain	Nuclear export signal.	45	54	Nuclear export signal.	0.22	0.73	0.27	-	-
+domain	Nuclear import signal.	110	120	Nuclear import signal.	0.68	0.47	0.77	-	-
+mutation	Frame_Shift_Del	49	49	p.L49fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	130	130	p.L130P	1.0	1.0	0.0	circle	up
+mutation	Silent	68	68	p.Q68Q	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	130	130	p.L130P	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	148	148	p.L148fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	71	71	p.T71I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	118	118	p.A118T	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	152	152	p.C152*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	150	150	p.L150R	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	66	66	p.W66*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	66	66	p.W66*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	68	68	p.Q68*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	2	2	p.F2V	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	69	69	p.Q69*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	68	68	p.Q68*	1.0	0.0	0.0	triangle	up
+mutation	Silent	280	280	p.L280L	0.8	0.8	0.8	circle	up
+mutation	Frame_Shift_Del	291	291	p.T291fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	71	71	p.T71S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	70	70	p.L70F	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	50	50	p.Q50*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	247	247	p.T247I	1.0	1.0	0.0	circle	up
+mutation	Silent	83	83	p.I83I	0.8	0.8	0.8	circle	up
+mutation	Splice_Site	76	76	p.SHRFLH76fs	0.6	0.0	0.6	inv_triangle	up
+mutation	Nonsense_Mutation	44	44	p.Q44*	1.0	0.0	0.0	triangle	up
+mutation	Splice_Site	76	76	p.S76S	0.6	0.0	0.6	inv_triangle	up
+mutation	Nonsense_Mutation	69	69	p.Q69*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	44	44	p.Q44*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	42	42	p.Y42*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Del	55	55	p.EPQEVPRGS55fs	1.0	0.0	0.0	square	up
+mutation	Silent	147	147	p.P147P	0.8	0.8	0.8	circle	up
+mutation	Nonsense_Mutation	69	69	p.Q69*	1.0	0.0	0.0	triangle	up

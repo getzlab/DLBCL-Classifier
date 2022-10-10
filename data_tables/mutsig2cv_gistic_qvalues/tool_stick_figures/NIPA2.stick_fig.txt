@@ -1,0 +1,12 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=NIPA2;	1	360	Name=NIPA2;	0.7	0.9	0.9	-	-
+mutation	In_Frame_Ins	334	334	p.334_334N>TY	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	200	200	p.R200S	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Ins	334	334	p.334_334N>TY	0.0	0.0	1.0	square	up
+mutation	Silent	37	37	p.R37R	0.8	0.8	0.8	circle	up
+mutation	In_Frame_Ins	334	334	p.334_334N>TY	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	200	200	p.R200S	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Ins	334	334	p.334_334N>TY	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	334	334	p.334_334N>TY	0.0	0.0	1.0	square	up
+mutation	Silent	349	349	p.N349N	0.8	0.8	0.8	circle	up
+mutation	Frame_Shift_Del	31	31	p.I31fs	1.0	0.0	0.0	square	up

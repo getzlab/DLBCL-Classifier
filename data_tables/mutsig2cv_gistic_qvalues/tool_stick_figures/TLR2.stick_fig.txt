@@ -1,0 +1,17 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=TLR2; Synonyms=TIL4;	1	784	Name=TLR2; Synonyms=TIL4;	0.7	0.9	0.9	-	-
+domain	Toll-like receptor 2.	21	784	Toll-like receptor 2.	0.44	0.65	0.23	-	-
+domain	ATG16L1-binding motif.	761	778	ATG16L1-binding motif.	0.25	0.55	0.55	-	-
+mutation	Missense_Mutation	328	328	p.L328R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	327	327	p.D327V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	748	748	p.R748G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	375	375	p.E375Q	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	356	356	p.S356*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	696	696	p.S696R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	327	327	p.D327V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	225	225	p.E225K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	122	122	p.P122S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	327	327	p.D327V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	514	514	p.F514L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	40	40	p.S40L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	769	769	p.A769D	1.0	1.0	0.0	circle	up

@@ -22,6 +22,9 @@ parser.add_argument('--mutsig_q_thresh',
 parser.add_argument('--output_fn',
                     help='Output filename.',
                     required=True, type=str)
+parser.add_argument('--alt_count_fn',
+                    help='Alt counts output filename.',
+                    required=False, type=str, default=False)
 parser.add_argument('--sample_set',
                     help='A file with one column with the samples to call events for. No header.' +
                          '\nIf none provided, all samples from the column \'Tumor_Sample_Barcode\' will be used',
@@ -55,6 +58,9 @@ if args.include_ccf:
     ccf_col = args.include_ccf
     cols = cols + [ccf_col]
 
+if args.alt_count_fn:
+    cols = cols + ['t_alt_count']
+
 maf = pd.read_csv(args.maf, sep='\t', dtype=str, low_memory=False, usecols=cols)
 
 if args.include_ccf:
@@ -74,7 +80,7 @@ genes_to_call = genes_to_call.union(additional_genes)
 # determine which samples to call events for
 samples = set(maf['Tumor_Sample_Barcode'])
 if args.sample_set:
-    samples = set(pd.read_csv(args.sample_set, header=None).iloc[:, 0].values)
+    samples = sorted(list(set(pd.read_csv(args.sample_set, header=None).iloc[:, 0].values)))
 
 # determine blacklist
 blacklist = set([])
@@ -89,6 +95,9 @@ GSM = pd.DataFrame(0, index=genes_to_call, columns=samples)
 if args.include_myd88_L265P:
     GSM.loc['MYD88.L265P'] = 0
     GSM.loc['MYD88.OTHER'] = 0
+
+if args.alt_count_fn:
+    alt_count_df = GSM.copy(deep=True)
 
 if args.include_ccf:
     ccf_GSM = pd.DataFrame(-1, index=GSM.index, columns=samples)
@@ -112,24 +121,36 @@ for _, event in non_sil_maf.iterrows():
             if args.include_ccf:
                 if np.isnan(GSM.loc['MYD88.L265P' + '.CCF', s]) or GSM.loc['MYD88.L265P' + '.CCF', s] == -1:
                     GSM.loc['MYD88.L265P' + '.CCF', s] = event[ccf_col]
+                    if args.alt_count_fn:
+                        alt_count_df.loc['MYD88.L265P', s] = event['t_alt_count']
                 elif not np.isnan(event[ccf_col]):
                     GSM.loc['MYD88.L265P' + '.CCF', s] = max(GSM.loc['MYD88.L265P' + '.CCF', s], event[ccf_col])
+                    if event[ccf_col] > GSM.loc['MYD88.L265P' + '.CCF', s]:
+                        alt_count_df.loc['MYD88.L265P', s] = event['t_alt_count']
         else:
             GSM.loc['MYD88.OTHER', s] = 2
             if args.include_ccf:
                 if np.isnan(GSM.loc['MYD88.OTHER' + '.CCF', s]) or GSM.loc['MYD88.OTHER' + '.CCF', s] == -1:
                     GSM.loc['MYD88.OTHER' + '.CCF', s] = event[ccf_col]
+                    if args.alt_count_fn:
+                        alt_count_df.loc['MYD88.OTHER', s] = event['t_alt_count']
                 elif not np.isnan(event[ccf_col]):
                     GSM.loc['MYD88.OTHER' + '.CCF', s] = max(GSM.loc['MYD88.OTHER' + '.CCF', s], event[ccf_col])
+                    if event[ccf_col] > GSM.loc['MYD88.OTHER' + '.CCF', s]:
+                        alt_count_df.loc['MYD88.OTHER', s] = event['t_alt_count']
 
     if args.include_ccf:
         if np.isnan(GSM.loc[gene + '.CCF', s]) or GSM.loc[gene + '.CCF', s] == -1:
             GSM.loc[gene + '.CCF', s] = event[ccf_col]
+            if args.alt_count_fn:
+                alt_count_df.loc[gene, s] = event['t_alt_count']
         elif not np.isnan(event[ccf_col]):
             GSM.loc[gene + '.CCF', s] = max(GSM.loc[gene + '.CCF', s], event[ccf_col])
+            if event[ccf_col] > GSM.loc[gene + '.CCF', s]:
+                alt_count_df.loc[gene, s] = event['t_alt_count']
 
 
-# Next call silents. Don't clobber non silent events if there.
+            # Next call silents. Don't clobber non silent events if there.
 
 sil_maf = maf.loc[(maf['Hugo_Symbol'].isin(genes_to_call)) &
                   (maf['Variant_Classification'] == 'Silent')]
@@ -143,8 +164,12 @@ for _, event in sil_maf.iterrows():
         if args.include_ccf:
             if np.isnan(GSM.loc['MYD88.OTHER' + '.CCF', s]) or GSM.loc['MYD88.OTHER' + '.CCF', s] == -1:
                 GSM.loc['MYD88.OTHER' + '.CCF', s] = event[ccf_col]
+                if args.alt_count_fn:
+                    alt_count_df.loc['MYD88.OTHER', s] = event['t_alt_count']
             elif not np.isnan(event[ccf_col]):
                 GSM.loc['MYD88.OTHER' + '.CCF', s] = max(GSM.loc['MYD88.OTHER' + '.CCF', s], event[ccf_col])
+                if event[ccf_col] > GSM.loc['MYD88.OTHER' + '.CCF', s]:
+                    alt_count_df.loc['MYD88.OTHER', s] = event['t_alt_count']
 
     if GSM.loc[gene, s] == 2:
         continue
@@ -154,8 +179,12 @@ for _, event in sil_maf.iterrows():
     if args.include_ccf:
         if np.isnan(GSM.loc[gene + '.CCF', s]) or GSM.loc[gene + '.CCF', s] == -1:
             GSM.loc[gene + '.CCF', s] = event[ccf_col]
+            if args.alt_count_fn:
+                alt_count_df.loc[gene, s] = event['t_alt_count']
         elif not np.isnan(event[ccf_col]):
             GSM.loc[gene + '.CCF', s] = max(GSM.loc[gene + '.CCF', s], event[ccf_col])
+            if event[ccf_col] > GSM.loc[gene + '.CCF', s]:
+                alt_count_df.loc[gene, s] = event['t_alt_count']
 
 
 GSM = GSM.round(4)
@@ -172,6 +201,10 @@ if args.purity:
 if args.coo:
     coo_df = pd.read_csv(args.coo, sep='\t', index_col=0)
     GSM.loc['COO'] = coo_df.loc[GSM.columns, 'COO'].values
+
+if args.alt_count_fn:
+    alt_count_df.index = alt_count_df.index.str.upper()
+    alt_count_df.to_csv(args.alt_count_fn, sep='\t')
 
 GSM.index = GSM.index.str.upper()
 GSM.to_csv(args.output_fn, sep='\t')

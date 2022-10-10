@@ -1,0 +1,10 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=TSR1; Synonyms=KIAA1401;	1	804	Name=TSR1; Synonyms=KIAA1401;	0.7	0.9	0.9	-	-
+mutation	Splice_Site	553	553	p.E553G	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	201	201	p.I201T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	250	250	p.R250W	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	783	783	p.V783I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	201	201	p.I201T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	751	751	p.M751V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	759	759	p.L759R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	330	330	p.A330V	1.0	1.0	0.0	circle	up

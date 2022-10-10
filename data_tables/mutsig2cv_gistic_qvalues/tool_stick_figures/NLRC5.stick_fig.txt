@@ -1,0 +1,27 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=NLRC5; Synonyms=NOD27, NOD4;	1	1866	Name=NLRC5; Synonyms=NOD27, NOD4;	0.7	0.9	0.9	-	-
+domain	ATP. {ECO:0000255|PROSITE- ProRule:PRU00136}.	228	235	ATP. {ECO:0000255|PROSITE- ProRule:PRU00136}.	0.38	0.77	0.63	-	-
+mutation	Missense_Mutation	328	328	p.F328Y	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	262	262	p.R262H	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	558	558	p.S558*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	1197	1197	p.D1197N	1.0	1.0	0.0	circle	up
+mutation	Silent	1336	1336	p.R1336R	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	880	880	p.N880S	1.0	1.0	0.0	circle	up
+mutation	Silent	101	101	p.T101T	0.8	0.8	0.8	circle	up
+mutation	Silent	12	12	p.N12N	0.8	0.8	0.8	circle	up
+mutation	Nonsense_Mutation	1213	1213	p.E1213*	1.0	0.0	0.0	triangle	up
+mutation	Silent	274	274	p.S274S	0.8	0.8	0.8	circle	up
+mutation	Frame_Shift_Del	1572	1572	p.H1572fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	272	272	p.T272I	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	549	549	p.Q549*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	255	255	p.A255V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1020	1020	p.G1020D	1.0	1.0	0.0	circle	up
+mutation	Silent	447	447	p.S447S	0.8	0.8	0.8	circle	up
+mutation	Frame_Shift_Ins	126	126	p.-126fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	407	407	p.A407S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	198	198	p.D198N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	900	900	p.A900T	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Ins	1460	1460	p.-1460fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	347	347	p.R347P	1.0	1.0	0.0	circle	up
+mutation	Silent	1541	1541	p.A1541A	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	152	152	p.R152Q	1.0	1.0	0.0	circle	up

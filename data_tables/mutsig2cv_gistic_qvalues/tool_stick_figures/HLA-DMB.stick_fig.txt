@@ -1,0 +1,30 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=HLA-DMB; Synonyms=DMB, RING7;	1	263	Name=HLA-DMB; Synonyms=DMB, RING7;	0.7	0.9	0.9	-	-
+domain	HLA class II histocompatibility antigen, DM beta chain.	19	263	HLA class II histocompatibility antigen, DM beta chain.	0.38	0.63	0.74	-	-
+domain	Beta-1.	19	112	Beta-1.	0.67	0.22	0.76	-	-
+domain	Beta-2.	113	207	Beta-2.	0.68	0.72	0.48	-	-
+domain	Connecting peptide. {ECO:0000255}.	208	218	Connecting peptide. {ECO:0000255}.	0.22	0.31	0.47	-	-
+domain	YXXZ motif.	248	251	YXXZ motif.	0.39	0.76	0.24	-	-
+mutation	Missense_Mutation	196	196	p.H196Y	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	208	208	p.S208R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	122	122	p.T122P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	102	102	p.Q102R	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	107	107	p.S107*	1.0	0.0	0.0	triangle	up
+mutation	Silent	90	90	p.L90L	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	226	226	p.L226P	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Ins	214	214	p.M214fs	1.0	0.0	0.0	square	up
+mutation	Silent	189	189	p.T189T	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	110	110	p.N110K	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	190	190	p.Y190*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Ins	147	147	p.I147fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Ins	41	41	p.T41fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	133	133	p.L133P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	208	208	p.S208N	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	31	31	p.L31*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Del	235	235	p.L235fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	54	54	p.W54R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	207	207	p.W207R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	18	18	p.A18P	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Ins	185	185	p.S185fs	1.0	0.0	0.0	square	up
+mutation	Silent	235	235	p.L235L	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	226	226	p.L226R	1.0	1.0	0.0	circle	up

@@ -1,0 +1,93 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=TNFAIP3; Synonyms=OTUD7C;	1	790	Name=TNFAIP3; Synonyms=OTUD7C;	0.7	0.9	0.9	-	-
+domain	Tumor necrosis factor alpha-induced protein 3.	2	790	Tumor necrosis factor alpha-induced protein 3.	0.58	0.27	0.51	-	-
+domain	A20p50.	2	439	A20p50.	0.35	0.73	0.41	-	-
+domain	A20p37.	440	790	A20p37.	0.21	0.4	0.67	-	-
+domain	TRAF-binding.	58	300	TRAF-binding.	0.79	0.76	0.57	-	-
+domain	Interaction with ubiquitin. {ECO:0000305}.	157	159	Interaction with ubiquitin. {ECO:0000305}.	0.26	0.34	0.3	-	-
+domain	Interaction with ubiquitin. {ECO:0000305}.	190	192	Interaction with ubiquitin. {ECO:0000305}.	0.26	0.34	0.3	-	-
+domain	Interaction with ubiquitin. {ECO:0000305}.	224	227	Interaction with ubiquitin. {ECO:0000305}.	0.26	0.34	0.3	-	-
+domain	2 X approximate repeats.	286	356	2 X approximate repeats.	0.71	0.24	0.78	-	-
+domain	Interaction with TNIP1. {ECO:0000250}.	369	775	Interaction with TNIP1. {ECO:0000250}.	0.78	0.52	0.76	-	-
+domain	Interaction with RIPK1. {ECO:0000269|PubMed:19131965}.	386	453	Interaction with RIPK1. {ECO:0000269|PubMed:19131965}.	0.76	0.46	0.24	-	-
+domain	Required for proteosomal degradation of UBE2N and UBE2D3, TRAF6 deubiquitination, and TAX1BP1 interaction with UBE2N. {ECO:0000250}.	605	655	Required for proteosomal degradation of UBE2N and UBE2D3, TRAF6 deubiquitination, and TAX1BP1 interaction with UBE2N. {ECO:0000250}.	0.62	0.72	0.2	-	-
+domain	Sufficient for inhibitory activity of TNF-induced NF-kappa-B activity. {ECO:0000250}.	606	790	Sufficient for inhibitory activity of TNF-induced NF-kappa-B activity. {ECO:0000250}.	0.26	0.76	0.78	-	-
+domain	Required for lysosomal localization and for TRAF2 lysosomal degradation.	697	790	Required for lysosomal localization and for TRAF2 lysosomal degradation.	0.52	0.67	0.69	-	-
+mutation	Frame_Shift_Del	626	626	p.L626fs	1.0	0.0	0.0	square	up
+mutation	Splice_Site	99	99	p.G99fs	0.6	0.0	0.6	inv_triangle	up
+mutation	Frame_Shift_Del	245	245	p.RYP245fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	383	383	p.M383V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	516	516	p.L516W	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Ins	262	262	p.T262fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	630	630	p.E630*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Ins	84	84	p.N84fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	83	83	p.L83fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	781	781	p.E781*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	538	538	p.T538A	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	87	87	p.REVRKLVA87fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Ins	439	439	p.R439fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	772	772	p.N772K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	778	778	p.Y778N	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	364	364	p.RR364fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	286	286	p.L286fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	322	322	p.TH322fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	183	183	p.R183Q	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	183	183	p.R183*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	661	661	p.E661*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	401	401	p.Q401*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	536	536	p.C536*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	82	82	p.K82*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Del	134	134	p.D134fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	564	564	p.KSDPSRL564fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	392	392	p.C392fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Ins	455	455	p.G455fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	559	559	p.C559*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	633	633	p.E633*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Del	626	626	p.L626fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	404	404	p.CHECSE404fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	286	286	p.L286fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	373	373	p.M373fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	44	44	p.H44fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	31	31	p.K31*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Del	362	362	p.Q362fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	483	483	p.CPFT483fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	356	356	p.W356*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	114	114	p.G114D	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Ins	214	214	p.M214fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	134	134	p.D134fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	415	415	p.QN415fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	132	132	p.E132*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Del	237	237	p.H237fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	200	200	p.C200Y	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	183	183	p.R183*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	345	345	p.Y345*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Ins	779	779	p.C779fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Ins	781	781	p.E781fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	159	159	p.Y159*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	478	478	p.C478*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	362	362	p.Q362*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	122	122	p.L122P	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	22	22	p.R22fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	143	143	p.Q143*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Del	626	626	p.L626fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	203	203	p.L203R	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	438	438	p.S438fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Ins	513	513	p.T513fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	17	17	p.KA17fs	1.0	0.0	0.0	square	up
+mutation	Splice_Site	93	93	p.VALKTNG93fs	0.6	0.0	0.6	inv_triangle	up
+mutation	Frame_Shift_Del	56	56	p.FCPQ56fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	526	526	p.Q526*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	139	139	p.K139*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	301	301	p.K301*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Del	87	87	p.R87fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	265	265	p.D265V	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	213	213	p.K213*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Ins	756	756	p.DP756fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Ins	132	132	p.E132fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	87	87	p.R87*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	275	275	p.L275P	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	448	448	p.W448*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	139	139	p.K139*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	250	250	p.L250R	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	269	269	p.E269fs	0.6	0.0	0.6	inv_triangle	up
+mutation	Frame_Shift_Del	83	83	p.L83fs	1.0	0.0	0.0	square	up

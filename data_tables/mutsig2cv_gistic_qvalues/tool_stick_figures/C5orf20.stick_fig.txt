@@ -1,0 +1,8 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=DCANP1 {ECO:0000312|HGNC:HGNC:24459}; Synonyms=C5orf20, DCNP1 {ECO:0000303|PubMed:11798177};	1	244	Name=DCANP1 {ECO:0000312|HGNC:HGNC:24459}; Synonyms=C5orf20, DCNP1 {ECO:0000303|PubMed:11798177};	0.7	0.9	0.9	-	-
+mutation	Missense_Mutation	119	119	p.K119R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	119	119	p.K119R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	119	119	p.K119R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	119	119	p.K119R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	196	196	p.R196C	1.0	1.0	0.0	circle	up
+mutation	Silent	140	140	p.P140P	0.8	0.8	0.8	circle	up

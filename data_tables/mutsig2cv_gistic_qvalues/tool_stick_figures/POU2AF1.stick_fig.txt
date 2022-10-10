@@ -1,0 +1,8 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=POU2AF1; Synonyms=OBF1;	1	256	Name=POU2AF1; Synonyms=OBF1;	0.7	0.9	0.9	-	-
+mutation	Missense_Mutation	5	5	p.K5E	1.0	1.0	0.0	circle	up
+mutation	Silent	189	189	p.S189S	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	2	2	p.L2F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	2	2	p.L2F	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	3	3	p.W3*	1.0	0.0	0.0	triangle	up
+mutation	Silent	2	2	p.L2L	0.8	0.8	0.8	circle	up

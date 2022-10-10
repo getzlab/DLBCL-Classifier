@@ -1,0 +1,96 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=CREBBP; Synonyms=CBP;	1	2442	Name=CREBBP; Synonyms=CBP;	0.7	0.9	0.9	-	-
+domain	CREB-binding protein.	2	2442	CREB-binding protein.	0.57	0.75	0.24	-	-
+domain	Interaction with SRCAP. {ECO:0000269|PubMed:10347196}.	227	410	Interaction with SRCAP. {ECO:0000269|PubMed:10347196}.	0.35	0.6	0.69	-	-
+domain	Interaction with histone. {ECO:0000269|PubMed:24361270}.	1124	1170	Interaction with histone. {ECO:0000269|PubMed:24361270}.	0.55	0.23	0.4	-	-
+domain	Interaction with ASF1A. {ECO:0000269|PubMed:24616510}.	1162	1180	Interaction with ASF1A. {ECO:0000269|PubMed:24616510}.	0.65	0.68	0.57	-	-
+domain	Interaction with histone. {ECO:0000250|UniProtKB:Q09472}.	1433	1435	Interaction with histone. {ECO:0000250|UniProtKB:Q09472}.	0.25	0.25	0.67	-	-
+domain	Acetyl-CoA binding. {ECO:0000250|UniProtKB:Q09472}.	1434	1436	Acetyl-CoA binding. {ECO:0000250|UniProtKB:Q09472}.	0.25	0.45	0.28	-	-
+domain	Acetyl-CoA binding. {ECO:0000250|UniProtKB:Q09472}.	1446	1447	Acetyl-CoA binding. {ECO:0000250|UniProtKB:Q09472}.	0.25	0.45	0.28	-	-
+domain	Interaction with TRERF1. {ECO:0000269|PubMed:11349124}.	1460	1891	Interaction with TRERF1. {ECO:0000269|PubMed:11349124}.	0.28	0.72	0.2	-	-
+mutation	Missense_Mutation	1503	1503	p.Y1503S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1371	1371	p.V1371D	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	1629	1629	p.K1629*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	117	117	p.A117V	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	1173	1173	p.R1173*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	1446	1446	p.R1446C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1435	1435	p.D1435G	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	1680	1680	p.S1680del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	1482	1482	p.Y1482N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1730	1730	p.I1730V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	418	418	p.H418R	1.0	1.0	0.0	circle	up
+mutation	Silent	129	129	p.S129S	0.8	0.8	0.8	circle	up
+mutation	Nonsense_Mutation	508	508	p.Q508*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	118	118	p.M118L	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	370	370	p.R370*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	1488	1488	p.P1488R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1435	1435	p.D1435G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1502	1502	p.W1502C	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Ins	662	662	p.Q662fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	311	311	p.P311fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	1075	1075	p.T1075P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1025	1025	p.D1025V	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	413	413	p.R413*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	1482	1482	p.Y1482H	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	1071	1071	p.A1071fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	1503	1503	p.Y1503C	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	1521	1521	p.D1521V	0.6	0.0	0.6	inv_triangle	up
+mutation	Nonsense_Mutation	1079	1079	p.Q1079*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	254	254	p.A254T	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Ins	1208	1208	p.P1208fs	1.0	0.0	0.0	square	up
+mutation	Silent	2385	2385	p.P2385P	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	1664	1664	p.R1664H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	766	766	p.P766L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1907	1907	p.A1907T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1488	1488	p.P1488L	1.0	1.0	0.0	circle	up
+mutation	Silent	374	374	p.N374N	0.8	0.8	0.8	circle	up
+mutation	Frame_Shift_Ins	937	937	p.P937fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Ins	1035	1035	p.E1035fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	1060	1060	p.K1060Q	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	982	982	p.E982*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	1192	1192	p.V1192I	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	233	233	p.G233fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	2199	2199	p.Q2199L	1.0	1.0	0.0	circle	up
+mutation	Silent	645	645	p.N645N	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	1105	1105	p.D1105N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1484	1484	p.F1484S	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	75	75	p.R75*	1.0	0.0	0.0	triangle	up
+mutation	Silent	2096	2096	p.L2096L	0.8	0.8	0.8	circle	up
+mutation	Frame_Shift_Ins	1649	1649	p.I1649fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	732	732	p.V732I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	624	624	p.R624C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	18	18	p.S18N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1368	1368	p.T1368M	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	901	901	p.P901L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	2196	2196	p.Q2196L	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	1680	1680	p.S1680del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	1680	1680	p.S1680del	0.0	0.0	1.0	square	up
+mutation	Nonsense_Mutation	413	413	p.R413*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	1319	1319	p.R1319*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Del	1126	1126	p.F1126fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	1482	1482	p.Y1482N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1471	1471	p.I1471V	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	1118	1118	p.Q1118*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	278	278	p.Q278P	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	1466	1466	p.Y1466*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	1499	1499	p.L1499Q	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	520	520	p.T520fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	1410	1410	p.F1410fs	1.0	0.0	0.0	square	up
+mutation	In_Frame_Ins	1541	1541	p.1541_1542insDFE	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	1436	1436	p.S1436R	1.0	1.0	0.0	circle	up
+mutation	Silent	925	925	p.Q925Q	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	2114	2114	p.G2114S	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	1386	1386	p.S1386fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	1483	1483	p.I1483F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1847	1847	p.K1847N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1755	1755	p.S1755C	1.0	1.0	0.0	circle	up
+mutation	Silent	1943	1943	p.P1943P	0.8	0.8	0.8	circle	up
+mutation	Nonsense_Mutation	2082	2082	p.Q2082*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	1606	1606	p.K1606*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Del	1322	1322	p.NK1322fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	1435	1435	p.D1435N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1472	1472	p.W1472R	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	749	749	p.H749fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	1483	1483	p.I1483T	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	1453	1453	p.ILIGY1453del	0.0	0.0	1.0	square	up
+mutation	Nonsense_Mutation	1104	1104	p.Q1104*	1.0	0.0	0.0	triangle	up

@@ -1,0 +1,10 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=FBXW7 {ECO:0000312|HGNC:HGNC:16712}; Synonyms=FBW7 {ECO:0000312|EMBL:AAK57547.1}, FBX30 {ECO:0000312|EMBL:AAK60269.1}, SEL10 {ECO:0000312|EMBL:AAL07271.1};	1	707	Name=FBXW7 {ECO:0000312|HGNC:HGNC:16712}; Synonyms=FBW7 {ECO:0000312|EMBL:AAK57547.1}, FBX30 {ECO:0000312|EMBL:AAK60269.1}, SEL10 {ECO:0000312|EMBL:AAL07271.1};	0.7	0.9	0.9	-	-
+mutation	Missense_Mutation	604	604	p.K604Q	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	505	505	p.R505C	1.0	1.0	0.0	circle	up
+mutation	Silent	222	222	p.R222R	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	479	479	p.R479Q	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	465	465	p.R465H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	465	465	p.R465C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	460	460	p.H460Q	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	600	600	p.D600N	1.0	1.0	0.0	circle	up

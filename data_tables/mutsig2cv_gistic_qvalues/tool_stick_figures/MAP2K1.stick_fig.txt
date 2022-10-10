@@ -1,0 +1,27 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=MAP2K1; Synonyms=MEK1, PRKMK1;	1	393	Name=MAP2K1; Synonyms=MEK1, PRKMK1;	0.7	0.9	0.9	-	-
+domain	ATP. {ECO:0000255|PROSITE- ProRule:PRU00159, ECO:0000269|PubMed:15543157, ECO:0000269|PubMed:17880056, ECO:0000269|PubMed:18951019, ECO:0000269|PubMed:19019675, ECO:0000269|PubMed:19706763, ECO:0000269|PubMed:21310613}.	74	82	ATP. {ECO:0000255|PROSITE- ProRule:PRU00159, ECO:0000269|PubMed:15543157, ECO:0000269|PubMed:17880056, ECO:0000269|PubMed:18951019, ECO:0000269|PubMed:19019675, ECO:0000269|PubMed:19706763, ECO:0000269|PubMed:21310613}.	0.77	0.21	0.38	-	-
+domain	ATP. {ECO:0000255|PROSITE- ProRule:PRU00159, ECO:0000269|PubMed:15543157, ECO:0000269|PubMed:17880056, ECO:0000269|PubMed:18951019, ECO:0000269|PubMed:19019675, ECO:0000269|PubMed:19706763, ECO:0000269|PubMed:21310613}.	143	146	ATP. {ECO:0000255|PROSITE- ProRule:PRU00159, ECO:0000269|PubMed:15543157, ECO:0000269|PubMed:17880056, ECO:0000269|PubMed:18951019, ECO:0000269|PubMed:19019675, ECO:0000269|PubMed:19706763, ECO:0000269|PubMed:21310613}.	0.77	0.21	0.38	-	-
+domain	ATP. {ECO:0000255|PROSITE- ProRule:PRU00159, ECO:0000269|PubMed:15543157, ECO:0000269|PubMed:17880056, ECO:0000269|PubMed:18951019, ECO:0000269|PubMed:19019675, ECO:0000269|PubMed:19706763, ECO:0000269|PubMed:21310613}.	150	153	ATP. {ECO:0000255|PROSITE- ProRule:PRU00159, ECO:0000269|PubMed:15543157, ECO:0000269|PubMed:17880056, ECO:0000269|PubMed:18951019, ECO:0000269|PubMed:19019675, ECO:0000269|PubMed:19706763, ECO:0000269|PubMed:21310613}.	0.77	0.21	0.38	-	-
+domain	ATP. {ECO:0000255|PROSITE- ProRule:PRU00159, ECO:0000269|PubMed:15543157, ECO:0000269|PubMed:17880056, ECO:0000269|PubMed:18951019, ECO:0000269|PubMed:19019675, ECO:0000269|PubMed:19706763, ECO:0000269|PubMed:21310613}.	192	195	ATP. {ECO:0000255|PROSITE- ProRule:PRU00159, ECO:0000269|PubMed:15543157, ECO:0000269|PubMed:17880056, ECO:0000269|PubMed:18951019, ECO:0000269|PubMed:19019675, ECO:0000269|PubMed:19706763, ECO:0000269|PubMed:21310613}.	0.77	0.21	0.38	-	-
+domain	Inhibitor binding.	77	78	Inhibitor binding.	0.35	0.36	0.31	-	-
+domain	Inhibitor binding.	144	146	Inhibitor binding.	0.35	0.36	0.31	-	-
+domain	Inhibitor binding.	208	212	Inhibitor binding.	0.35	0.36	0.31	-	-
+domain	RAF1-binding. {ECO:0000250}.	270	307	RAF1-binding. {ECO:0000250}.	0.47	0.79	0.6	-	-
+mutation	Missense_Mutation	53	53	p.F53L	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	28	28	p.T28A	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	53	53	p.F53V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	53	53	p.F53L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	53	53	p.F53L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	57	57	p.K57T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	121	121	p.C121S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	121	121	p.C121S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	176	176	p.G176S	1.0	1.0	0.0	circle	up
+mutation	Silent	156	156	p.K156K	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	121	121	p.C121S	1.0	1.0	0.0	circle	up
+mutation	Silent	121	121	p.C121C	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	67	67	p.D67N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	46	46	p.Q46L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	53	53	p.F53Y	1.0	1.0	0.0	circle	up
+mutation	Silent	89	89	p.P89P	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	245	245	p.D245Y	1.0	1.0	0.0	circle	up

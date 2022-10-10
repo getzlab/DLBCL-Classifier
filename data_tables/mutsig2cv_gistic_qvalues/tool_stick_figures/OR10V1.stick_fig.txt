@@ -1,0 +1,10 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=OR10V1;	1	309	Name=OR10V1;	0.7	0.9	0.9	-	-
+mutation	Missense_Mutation	230	230	p.R230Q	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	123	123	p.Q123*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	123	123	p.Q123*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	18	18	p.S18A	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	123	123	p.Q123*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	123	123	p.Q123*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	123	123	p.Q123*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	123	123	p.Q123*	1.0	0.0	0.0	triangle	up

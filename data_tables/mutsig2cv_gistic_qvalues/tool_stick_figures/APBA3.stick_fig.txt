@@ -1,0 +1,12 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=APBA3; Synonyms=MINT3, X11L2;	1	575	Name=APBA3; Synonyms=MINT3, X11L2;	0.7	0.9	0.9	-	-
+domain	Required for interaction with NECAB3. {ECO:0000269|PubMed:26948053}.	215	364	Required for interaction with NECAB3. {ECO:0000269|PubMed:26948053}.	0.38	0.72	0.64	-	-
+mutation	Missense_Mutation	449	449	p.G449R	1.0	1.0	0.0	circle	up
+mutation	Silent	187	187	p.P187P	0.8	0.8	0.8	circle	up
+mutation	Silent	300	300	p.I300I	0.8	0.8	0.8	circle	up
+mutation	Splice_Site	505	505	p.I505I	0.6	0.0	0.6	inv_triangle	up
+mutation	Silent	179	179	p.V179V	0.8	0.8	0.8	circle	up
+mutation	Nonsense_Mutation	571	571	p.Q571*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	286	286	p.M286V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	252	252	p.R252C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	242	242	p.R242H	1.0	1.0	0.0	circle	up

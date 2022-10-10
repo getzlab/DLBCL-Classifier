@@ -1,0 +1,28 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=INO80; Synonyms=INO80A, INOC1, KIAA1259;	1	1556	Name=INO80; Synonyms=INO80A, INOC1, KIAA1259;	0.7	0.9	0.9	-	-
+domain	ATP. {ECO:0000255|PROSITE- ProRule:PRU00541}.	543	550	ATP. {ECO:0000255|PROSITE- ProRule:PRU00541}.	0.44	0.23	0.43	-	-
+domain	Assembles INO80 complex module with putative regulatory components INO80E, INO80F, UCHL5, NFRKB, MCRS1 and IN80D.	1	266	Assembles INO80 complex module with putative regulatory components INO80E, INO80F, UCHL5, NFRKB, MCRS1 and IN80D.	0.71	0.26	0.32	-	-
+domain	Assembles INO80 complex module consisting of conserved components ACTR8, ACTL6A and YY1.	212	526	Assembles INO80 complex module consisting of conserved components ACTR8, ACTL6A and YY1.	0.28	0.61	0.66	-	-
+domain	Assembles INO80 complex module consisting of conserved components INO80B, INO80C, ACTR5, RVBL1, RVBL2.	521	1556	Assembles INO80 complex module consisting of conserved components INO80B, INO80C, ACTR5, RVBL1, RVBL2.	0.35	0.74	0.23	-	-
+mutation	Nonsense_Mutation	36	36	p.R36*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	1303	1303	p.K1303R	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	1177	1177	p.R1177*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	482	482	p.R482W	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	65	65	p.S65F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1209	1209	p.R1209S	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	1293	1293	p.R1293*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	1013	1013	p.A1013G	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	702	702	p.L702del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	1182	1182	p.G1182D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1233	1233	p.R1233C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1163	1163	p.F1163I	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	268	268	p.L268*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	361	361	p.A361P	1.0	1.0	0.0	circle	up
+mutation	Silent	353	353	p.V353V	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	1395	1395	p.R1395Q	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	1417	1417	p.Q1417*	1.0	0.0	0.0	triangle	up
+mutation	Silent	884	884	p.E884E	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	539	539	p.G539D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	482	482	p.R482W	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	347	347	p.W347*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	1515	1515	p.S1515T	1.0	1.0	0.0	circle	up

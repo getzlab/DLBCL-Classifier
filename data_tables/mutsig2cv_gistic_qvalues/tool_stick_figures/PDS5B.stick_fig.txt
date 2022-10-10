@@ -1,0 +1,17 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=PDS5B; Synonyms=APRIN, AS3 {ECO:0000312|EMBL:AAD22134.2}, KIAA0979 {ECO:0000312|EMBL:BAA76823.2};	1	1447	Name=PDS5B; Synonyms=APRIN, AS3 {ECO:0000312|EMBL:AAD22134.2}, KIAA0979 {ECO:0000312|EMBL:BAA76823.2};	0.7	0.9	0.9	-	-
+domain	A.T hook 1. {ECO:0000255}.	1249	1261	A.T hook 1. {ECO:0000255}.	0.48	0.43	0.34	-	-
+domain	A.T hook 2. {ECO:0000255}.	1287	1299	A.T hook 2. {ECO:0000255}.	0.22	0.23	0.6	-	-
+domain	A.T hook 3. {ECO:0000255}.	1372	1384	A.T hook 3. {ECO:0000255}.	0.55	0.8	0.67	-	-
+mutation	Nonsense_Mutation	419	419	p.Y419*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	137	137	p.W137G	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	452	452	p.R452*	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	653	653	p.L653R	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	803	803	p.L803P	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	1229	1229	p.L1229V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	303	303	p.K303E	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Ins	722	722	p.P722fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	994	994	p.Y994N	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	498	498	p.C498*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	963	963	p.V963M	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	289	289	p.R289H	1.0	1.0	0.0	circle	up

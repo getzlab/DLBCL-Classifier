@@ -1,0 +1,5 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=SKP1; Synonyms=EMC19, OCP2, SKP1A, TCEB1L;	1	163	Name=SKP1; Synonyms=EMC19, OCP2, SKP1A, TCEB1L;	0.7	0.9	0.9	-	-
+domain	S-phase kinase-associated protein 1.	2	163	S-phase kinase-associated protein 1.	0.37	0.78	0.76	-	-
+domain	Interaction with the F-box domain of F- box proteins. {ECO:0000250}.	104	163	Interaction with the F-box domain of F- box proteins. {ECO:0000250}.	0.52	0.3	0.55	-	-
+mutation	Silent	149	149	p.E149E	0.8	0.8	0.8	circle	up

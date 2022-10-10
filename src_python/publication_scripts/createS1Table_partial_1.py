@@ -3,9 +3,9 @@ import numpy as np
 
 natmed_tableS1 = pd.read_csv('../../data_tables/2017_11_14_Table_S1.txt',
                              sep='\t', index_col=0, header=0, skiprows=1)
-gsm = pd.read_csv("../../data_tables/gsm/old_matrices/DLBCL_Staudt_Shipp_CL.for_classifier_training.classifier_subset.fix_sv.fix_ploidy.17-Aug-2022.txt",
+gsm = pd.read_csv("../../data_tables/gsm/DLBCL.699.fullGSM.Sep_23_2022.tsv",
                   sep='\t', index_col=0)
-qval_df = pd.read_csv('../../data_tables/qval_dfs/fisher_exact_5x2_17-Aug-2022.combined.tsv',
+qval_df = pd.read_csv('../../data_tables/qval_dfs/fisher_exact_5x2.Sep_23_2022.combined.tsv',
                       sep='\t', low_memory=False, index_col=0)
 coverages = pd.read_csv('../../data_tables/clustering_labels/per_sample_tumor_coverage_formatted.txt',
                         sep='\t', index_col=0)
@@ -14,8 +14,9 @@ cootable = pd.read_csv('../../data_tables/survival_data/COOtable.txt',
 purities = pd.read_csv('../../data_tables/purities_ploidies/ALLPurities_fixednames.tsv',
                        sep='\t', index_col=0, header=None)
 ploidies = pd.read_csv('../../data_tables/purities_ploidies/PloidyDataFrame.txt',
-                       sep='\t', index_col=0)
-labels = pd.read_csv('../../data_tables/confidence_tables/baseline_probabilities.connectivity_based.sensitivity_power2.Aug_17_2022.tsv',
+                       sep='\t', index_col=0, header=None)
+ploidies.columns = ['PLOIDY']
+labels = pd.read_csv('../../data_tables/confidence_tables/baseline_probabilities.connectivity_based.sensitivity_power2.Sep_23_2022.tsv',
                      sep='\t', index_col=0)
 nci_samples = list(pd.read_csv('../../data_tables/purities_ploidies/NCIsamples.txt',
                                sep='\t', index_col=0).index)
@@ -26,17 +27,17 @@ training_set = list(pd.read_csv('../../data_tables/train_test_sets/TrainingSet_5
 test_set = list(pd.read_csv('../../data_tables/train_test_sets/TestingSet_149Subset_May2021.txt',
                             sep='\t', index_col=0, header=None).index)
 
-train_preds = pd.read_csv('../../evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.2_removeN5_nfeatures21_pMax0.94248563.tsv',
+train_preds = pd.read_csv('../../evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.3_nfeatures21_pMax0.93344957.tsv',
                           sep='\t', index_col=0)
 
-test_preds = pd.read_csv('../../evaluation_test_set/NN_reducedV3.2_removeN5_nfeatures21_testsetEval.tsv',
+test_preds = pd.read_csv('../../evaluation_test_set/NN_reducedV3.3_nfeatures21_testsetEval.tsv',
                           sep='\t', index_col=0)
 
 raw_counts = pd.read_csv('../../data_tables/raw_muts_cnas_counts.tsv', sep='\t', index_col=0)
 
 
-staudt_only_labels = pd.read_csv('../../data_tables/clustering_labels/GSM699_cluster_Aug_17_2022_STAUDT.bestclus.txt', sep='\t', index_col=0)
-shipp_only_labels = pd.read_csv('../../data_tables/clustering_labels/GSM699_cluster_Aug_17_2022_SHIPP.bestclus.remapped.txt', sep='\t', index_col=0)
+staudt_only_labels = pd.read_csv('../../data_tables/clustering_labels/GSM699_cluster_Sep_23_2022_STAUDT.bestclus.txt', sep='\t', index_col=0)
+shipp_only_labels = pd.read_csv('../../data_tables/clustering_labels/GSM699_cluster_Sep_23_2022_SHIPP.bestclus.remapped.txt', sep='\t', index_col=0)
 
 train_preds['Confidence'] = train_preds.max(axis=1)
 train_preds['PredictedCluster'] = train_preds.iloc[:, 0:5].idxmax(axis=1).astype(int) + 1

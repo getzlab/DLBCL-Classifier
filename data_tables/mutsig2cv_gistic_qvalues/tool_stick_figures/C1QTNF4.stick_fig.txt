@@ -1,0 +1,13 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=C1QTNF4; Synonyms=CTRP4;	1	329	Name=C1QTNF4; Synonyms=CTRP4;	0.7	0.9	0.9	-	-
+domain	Complement C1q tumor necrosis factor- related protein 4.	17	329	Complement C1q tumor necrosis factor- related protein 4.	0.45	0.63	0.74	-	-
+mutation	In_Frame_Del	11	11	p.11_19PAACWALGP>P	0.0	0.0	1.0	square	up
+mutation	Silent	190	190	p.S190S	0.8	0.8	0.8	circle	up
+mutation	Frame_Shift_Del	12	12	p.AACWAL12fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	12	12	p.AACWAL12fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	166	166	p.A166G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	324	324	p.G324R	1.0	1.0	0.0	circle	up
+mutation	Silent	207	207	p.F207F	0.8	0.8	0.8	circle	up
+mutation	Frame_Shift_Del	12	12	p.AACWAL12fs	1.0	0.0	0.0	square	up
+mutation	Silent	317	317	p.P317P	0.8	0.8	0.8	circle	up
+mutation	Silent	19	19	p.P19P	0.8	0.8	0.8	circle	up

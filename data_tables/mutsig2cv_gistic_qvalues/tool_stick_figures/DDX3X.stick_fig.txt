@@ -1,0 +1,35 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=DDX3X; Synonyms=DBX, DDX3;	1	662	Name=DDX3X; Synonyms=DBX, DDX3;	0.7	0.9	0.9	-	-
+domain	ATP-dependent RNA helicase DDX3X.	2	662	ATP-dependent RNA helicase DDX3X.	0.72	0.74	0.25	-	-
+domain	ATP.	200	207	ATP.	0.7	0.22	0.32	-	-
+domain	ATP.	224	231	ATP.	0.7	0.22	0.32	-	-
+domain	Required for TBK1 and IKBKE-dependent IFN-beta activation.	2	139	Required for TBK1 and IKBKE-dependent IFN-beta activation.	0.25	0.72	0.34	-	-
+domain	Interaction with EIF4E.	2	100	Interaction with EIF4E.	0.32	0.23	0.59	-	-
+domain	Required for interaction with VACV protein K7.	81	90	Required for interaction with VACV protein K7.	0.62	0.7	0.64	-	-
+domain	Interaction with GSK3B. {ECO:0000269|PubMed:18846110}.	100	662	Interaction with GSK3B. {ECO:0000269|PubMed:18846110}.	0.2	0.41	0.34	-	-
+domain	Required for interaction with IKBKE.	100	110	Required for interaction with IKBKE.	0.53	0.56	0.38	-	-
+domain	Involved in stimulation of ATPase activity by DNA and RNA, nucleic acid binding and unwinding and HIV-1 replication.	250	259	Involved in stimulation of ATPase activity by DNA and RNA, nucleic acid binding and unwinding and HIV-1 replication.	0.21	0.55	0.66	-	-
+domain	Necessary for interaction with XPO1. {ECO:0000269|PubMed:15507209}.	260	517	Necessary for interaction with XPO1. {ECO:0000269|PubMed:15507209}.	0.73	0.33	0.7	-	-
+domain	Q motif.	180	208	Q motif.	0.44	0.42	0.77	-	-
+domain	DEAD box.	347	350	DEAD box.	0.8	0.54	0.49	-	-
+mutation	Missense_Mutation	206	206	p.V206L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	231	231	p.T231P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	568	568	p.P568S	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	41	41	p.P41del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	487	487	p.F487L	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	572	572	p.ENMAYEHH572fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	205	205	p.P205A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	234	234	p.F234S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	601	601	p.D601A	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	442	442	p.S442*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	445	445	p.L445*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	182	182	p.F182L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	534	534	p.R534C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	603	603	p.R603Q	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	534	534	p.R534C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	475	475	p.R475C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	601	601	p.D601N	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Ins	490	490	p.GK490fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	489	489	p.S489*	1.0	0.0	0.0	triangle	up
+mutation	Silent	490	490	p.G490G	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	487	487	p.F487I	1.0	1.0	0.0	circle	up

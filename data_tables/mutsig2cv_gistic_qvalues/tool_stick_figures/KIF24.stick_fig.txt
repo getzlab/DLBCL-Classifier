@@ -1,0 +1,15 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=KIF24; Synonyms=C9orf48;	1	1368	Name=KIF24; Synonyms=C9orf48;	0.7	0.9	0.9	-	-
+domain	ATP. {ECO:0000255|PROSITE- ProRule:PRU00283}.	313	320	ATP. {ECO:0000255|PROSITE- ProRule:PRU00283}.	0.44	0.55	0.74	-	-
+mutation	Missense_Mutation	50	50	p.D50E	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	847	847	p.T847A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	653	653	p.R653C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	986	986	p.T986S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	736	736	p.D736G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	53	53	p.R53H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	818	818	p.A818T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	64	64	p.M64I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	429	429	p.H429R	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	661	661	p.K661fs	1.0	0.0	0.0	square	up
+mutation	Silent	1040	1040	p.T1040T	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	696	696	p.R696C	1.0	1.0	0.0	circle	up

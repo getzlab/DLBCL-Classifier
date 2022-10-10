@@ -1,0 +1,12 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=VEZF1; Synonyms=DB1, ZNF161;	1	521	Name=VEZF1; Synonyms=DB1, ZNF161;	0.7	0.9	0.9	-	-
+domain	4 X 7 AA repeats of P-[LV]-T-[IL]-T-[ST]- P.	394	485	4 X 7 AA repeats of P-[LV]-T-[IL]-T-[ST]- P.	0.46	0.46	0.72	-	-
+mutation	Frame_Shift_Ins	309	309	p.G309fs	1.0	0.0	0.0	square	up
+mutation	In_Frame_Ins	354	354	p.354_355insQ	0.0	0.0	1.0	square	up
+mutation	Silent	129	129	p.V129V	0.8	0.8	0.8	circle	up
+mutation	In_Frame_Ins	354	354	p.354_355insQ	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	354	354	p.354_355insQ	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	354	354	p.354_355insQ	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	313	313	p.S313R	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Ins	354	354	p.354_355insQ	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	354	354	p.354_355insQ	0.0	0.0	1.0	square	up

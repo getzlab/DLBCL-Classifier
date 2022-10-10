@@ -1,0 +1,13 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=GGN;	1	652	Name=GGN;	0.7	0.9	0.9	-	-
+domain	Interaction with GGNBP1. {ECO:0000250}.	123	486	Interaction with GGNBP1. {ECO:0000250}.	0.4	0.64	0.44	-	-
+domain	Interactions with ZNF403/GGNBP2 and OAZ3. {ECO:0000250}.	491	652	Interactions with ZNF403/GGNBP2 and OAZ3. {ECO:0000250}.	0.62	0.37	0.29	-	-
+mutation	Missense_Mutation	286	286	p.A286T	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Ins	148	148	p.148_148P>PP	0.0	0.0	1.0	square	up
+mutation	Silent	375	375	p.A375A	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	141	141	p.P141L	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Ins	148	148	p.148_148P>PP	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	85	85	p.P85T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	84	84	p.M84I	1.0	1.0	0.0	circle	up
+mutation	Silent	94	94	p.S94S	0.8	0.8	0.8	circle	up
+mutation	Frame_Shift_Ins	487	487	p.A487fs	1.0	0.0	0.0	square	up

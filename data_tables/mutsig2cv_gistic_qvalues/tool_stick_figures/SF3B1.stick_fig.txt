@@ -1,0 +1,17 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=SF3B1; Synonyms=SAP155;	1	1304	Name=SF3B1; Synonyms=SAP155;	0.7	0.9	0.9	-	-
+domain	U2AF homology region; mediates interaction with RBM39. {ECO:0000269|PubMed:24795046}.	190	342	U2AF homology region; mediates interaction with RBM39. {ECO:0000269|PubMed:24795046}.	0.7	0.44	0.6	-	-
+domain	Interaction with PPP1R8. {ECO:0000269|PubMed:12105215}.	223	491	Interaction with PPP1R8. {ECO:0000269|PubMed:12105215}.	0.27	0.61	0.57	-	-
+domain	Interaction with SF3B14.	529	568	Interaction with SF3B14.	0.72	0.68	0.25	-	-
+domain	Interaction with PHF5A. {ECO:0000269|PubMed:27720643}.	547	550	Interaction with PHF5A. {ECO:0000269|PubMed:27720643}.	0.45	0.23	0.31	-	-
+domain	Interaction with PHF5A. {ECO:0000269|PubMed:27720643}.	1156	1157	Interaction with PHF5A. {ECO:0000269|PubMed:27720643}.	0.45	0.23	0.31	-	-
+domain	Interaction with SF3B3 and SF3B5. {ECO:0000269|PubMed:27720643}.	1248	1304	Interaction with SF3B3 and SF3B5. {ECO:0000269|PubMed:27720643}.	0.28	0.29	0.73	-	-
+mutation	Silent	1146	1146	p.G1146G	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	364	364	p.A364T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	855	855	p.D855V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	862	862	p.E862K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	714	714	p.E714G	1.0	1.0	0.0	circle	up
+mutation	Silent	7	7	p.T7T	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	425	425	p.R425Q	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	434	434	p.T434A	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	583	583	p.IDE583fs	1.0	0.0	0.0	square	up

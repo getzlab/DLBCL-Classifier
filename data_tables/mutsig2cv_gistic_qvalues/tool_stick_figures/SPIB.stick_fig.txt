@@ -1,0 +1,24 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=SPIB;	1	262	Name=SPIB;	0.7	0.9	0.9	-	-
+domain	ETS. {ECO:0000255|PROSITE- ProRule:PRU00237}.	169	252	ETS. {ECO:0000255|PROSITE- ProRule:PRU00237}.	0.28	0.3	0.53	-	-
+domain	TAD1 (Acidic).	1	31	TAD1 (Acidic).	0.4	0.61	0.42	-	-
+domain	TAD2.	41	61	TAD2.	0.79	0.79	0.55	-	-
+mutation	Missense_Mutation	106	106	p.P106S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	2	2	p.L2F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	71	71	p.P71L	1.0	1.0	0.0	circle	up
+mutation	Silent	245	245	p.R245R	0.8	0.8	0.8	circle	up
+mutation	Silent	152	152	p.L152L	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	2	2	p.L2F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	88	88	p.N88K	1.0	1.0	0.0	circle	up
+mutation	Silent	180	180	p.T180T	0.8	0.8	0.8	circle	up
+mutation	Frame_Shift_Del	213	213	p.G213fs	1.0	0.0	0.0	square	up
+mutation	Silent	149	149	p.D149D	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	178	178	p.L178P	1.0	1.0	0.0	circle	up
+mutation	Silent	158	158	p.G158G	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	2	2	p.L2V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	2	2	p.L2H	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	164	164	p.G164E	0.6	0.0	0.6	inv_triangle	up
+mutation	Silent	64	64	p.A64A	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	2	2	p.L2F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	217	217	p.G217W	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	230	230	p.A230P	1.0	1.0	0.0	circle	up

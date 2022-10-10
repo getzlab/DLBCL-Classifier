@@ -1,0 +1,27 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=KRAS; Synonyms=KRAS2, RASK2;	1	189	Name=KRAS; Synonyms=KRAS2, RASK2;	0.7	0.9	0.9	-	-
+domain	GTPase KRas.	1	186	GTPase KRas.	0.55	0.5	0.38	-	-
+domain	GTPase KRas, N-terminally processed.	2	186	GTPase KRas, N-terminally processed.	0.76	0.63	0.61	-	-
+domain	GTP. {ECO:0000269|PubMed:22431598, ECO:0000269|PubMed:22566140}.	10	18	GTP. {ECO:0000269|PubMed:22431598, ECO:0000269|PubMed:22566140}.	0.69	0.35	0.69	-	-
+domain	GTP. {ECO:0000269|PubMed:22431598, ECO:0000269|PubMed:22566140}.	29	35	GTP. {ECO:0000269|PubMed:22431598, ECO:0000269|PubMed:22566140}.	0.69	0.35	0.69	-	-
+domain	GTP. {ECO:0000269|PubMed:22431598, ECO:0000269|PubMed:22566140}.	59	60	GTP. {ECO:0000269|PubMed:22431598, ECO:0000269|PubMed:22566140}.	0.69	0.35	0.69	-	-
+domain	GTP. {ECO:0000269|PubMed:22431598, ECO:0000269|PubMed:22566140}.	116	119	GTP. {ECO:0000269|PubMed:22431598, ECO:0000269|PubMed:22566140}.	0.69	0.35	0.69	-	-
+domain	Hypervariable region.	166	185	Hypervariable region.	0.31	0.8	0.61	-	-
+domain	Effector region.	32	40	Effector region.	0.65	0.78	0.22	-	-
+mutation	Missense_Mutation	14	14	p.V14I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	61	61	p.Q61H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	119	119	p.D119G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	111	111	p.M111V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	119	119	p.D119G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	119	119	p.D119N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	19	19	p.L19F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	12	12	p.G12R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	22	22	p.Q22K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	13	13	p.G13D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	12	12	p.G12S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	12	12	p.G12R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	13	13	p.G13D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	13	13	p.G13D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	160	160	p.V160M	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	146	146	p.A146T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	13	13	p.G13D	1.0	1.0	0.0	circle	up

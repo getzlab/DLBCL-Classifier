@@ -1,0 +1,35 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=TIAM2; Synonyms=KIAA2016, STEF;	1	1701	Name=TIAM2; Synonyms=KIAA2016, STEF;	0.7	0.9	0.9	-	-
+domain	T-lymphoma invasion and metastasis- inducing protein 2.	2	1701	T-lymphoma invasion and metastasis- inducing protein 2.	0.27	0.66	0.4	-	-
+mutation	Missense_Mutation	532	532	p.R532Q	1.0	1.0	0.0	circle	up
+mutation	Silent	194	194	p.P194P	0.8	0.8	0.8	circle	up
+mutation	Splice_Site	788	788	p.788_789insV	0.6	0.0	0.6	inv_triangle	up
+mutation	Silent	908	908	p.A908A	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	271	271	p.G271S	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	1058	1058	p.AEQI1058fs	1.0	0.0	0.0	square	up
+mutation	Silent	1074	1074	p.N1074N	0.8	0.8	0.8	circle	up
+mutation	Splice_Site	788	788	p.-788fs	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	98	98	p.A98T	1.0	1.0	0.0	circle	up
+mutation	Silent	93	93	p.T93T	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	868	868	p.A868V	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	1523	1523	p.L1523*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	725	725	p.G725S	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	1523	1523	p.L1523*	1.0	0.0	0.0	triangle	up
+mutation	Silent	347	347	p.H347H	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	890	890	p.D890H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	285	285	p.D285N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1630	1630	p.G1630W	1.0	1.0	0.0	circle	up
+mutation	Silent	337	337	p.S337S	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	412	412	p.R412H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	612	612	p.V612I	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	1610	1610	p.Q1610del	0.0	0.0	1.0	square	up
+mutation	Silent	1399	1399	p.A1399A	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	162	162	p.L162R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	412	412	p.R412H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1522	1522	p.S1522T	1.0	1.0	0.0	circle	up
+mutation	Silent	1523	1523	p.L1523L	0.8	0.8	0.8	circle	up
+mutation	Nonsense_Mutation	1523	1523	p.L1523*	1.0	0.0	0.0	triangle	up
+mutation	Silent	482	482	p.T482T	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	1522	1522	p.S1522T	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	1523	1523	p.L1523*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	476	476	p.I476V	1.0	1.0	0.0	circle	up

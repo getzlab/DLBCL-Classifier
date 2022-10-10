@@ -1,0 +1,49 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=NOTCH2 {ECO:0000312|HGNC:HGNC:7882};	1	2471	Name=NOTCH2 {ECO:0000312|HGNC:HGNC:7882};	0.7	0.9	0.9	-	-
+domain	Neurogenic locus notch homolog protein 2.	26	2471	Neurogenic locus notch homolog protein 2.	0.34	0.44	0.38	-	-
+domain	Notch 2 extracellular truncation. {ECO:0000250}.	1666	2471	Notch 2 extracellular truncation. {ECO:0000250}.	0.77	0.22	0.69	-	-
+domain	Notch 2 intracellular domain. {ECO:0000250}.	1697	2471	Notch 2 intracellular domain. {ECO:0000250}.	0.75	0.52	0.75	-	-
+domain	Negative regulatory region (NRR).	1425	1677	Negative regulatory region (NRR).	0.48	0.6	0.67	-	-
+mutation	Frame_Shift_Del	274	274	p.VC274fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	2409	2409	p.Q2409*	1.0	0.0	0.0	triangle	up
+mutation	Silent	1099	1099	p.D1099D	0.8	0.8	0.8	circle	up
+mutation	Nonsense_Mutation	2290	2290	p.E2290*	1.0	0.0	0.0	triangle	up
+mutation	Silent	1639	1639	p.C1639C	0.8	0.8	0.8	circle	up
+mutation	Nonsense_Mutation	2409	2409	p.Q2409*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	2053	2053	p.R2053C	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	2409	2409	p.Q2409*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	2361	2361	p.Q2361*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	2409	2409	p.Q2409*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	2364	2364	p.Q2364*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	2325	2325	p.Q2325*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Del	2410	2410	p.G2410fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	681	681	p.I681N	1.0	1.0	0.0	circle	up
+mutation	Silent	1759	1759	p.V1759V	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	1794	1794	p.L1794I	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	2400	2400	p.R2400*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	2400	2400	p.R2400Q	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1293	1293	p.R1293H	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	2415	2415	p.L2415fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	1200	1200	p.G1200fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Ins	2304	2304	p.I2304fs	1.0	0.0	0.0	square	up
+mutation	Silent	374	374	p.H374H	0.8	0.8	0.8	circle	up
+mutation	Nonsense_Mutation	2400	2400	p.R2400*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	2400	2400	p.R2400*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Ins	2133	2133	p.K2133fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	2400	2400	p.R2400*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Ins	2273	2273	p.A2273fs	1.0	0.0	0.0	square	up
+mutation	Silent	2162	2162	p.S2162S	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	1365	1365	p.R1365H	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	2388	2388	p.S2388*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Del	2285	2285	p.QSRP2285fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	2400	2400	p.R2400*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Del	2261	2261	p.ETQYNEM2261fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	2340	2340	p.Y2340*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	2400	2400	p.R2400*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Del	2136	2136	p.SE2136fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Ins	2285	2285	p.Q2285fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	1607	1607	p.R1607H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	621	621	p.R621H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	2121	2121	p.K2121N	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	2400	2400	p.R2400*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Del	2361	2361	p.Q2361fs	1.0	0.0	0.0	square	up

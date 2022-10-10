@@ -1,0 +1,15 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=HLA-DMA; Synonyms=DMA, RING6;	1	261	Name=HLA-DMA; Synonyms=DMA, RING6;	0.7	0.9	0.9	-	-
+domain	HLA class II histocompatibility antigen, DM alpha chain.	27	261	HLA class II histocompatibility antigen, DM alpha chain.	0.65	0.38	0.5	-	-
+domain	Alpha-1.	27	124	Alpha-1.	0.57	0.52	0.77	-	-
+domain	Alpha-2.	125	217	Alpha-2.	0.73	0.79	0.36	-	-
+domain	Connecting peptide. {ECO:0000255}.	218	233	Connecting peptide. {ECO:0000255}.	0.31	0.7	0.22	-	-
+mutation	Nonsense_Mutation	111	111	p.Q111*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	210	210	p.R210H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	181	181	p.G181A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	181	181	p.G181A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	14	14	p.M14T	1.0	1.0	0.0	circle	up
+mutation	Silent	12	12	p.L12L	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	101	101	p.D101G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	20	20	p.L20Q	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	14	14	p.M14K	1.0	1.0	0.0	circle	up

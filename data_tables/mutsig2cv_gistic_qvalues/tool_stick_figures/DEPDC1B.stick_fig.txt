@@ -1,0 +1,13 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=DEPDC1B; Synonyms=XTP8;	1	529	Name=DEPDC1B; Synonyms=XTP8;	0.7	0.9	0.9	-	-
+mutation	Missense_Mutation	464	464	p.K464N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	23	23	p.L23V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	291	291	p.L291F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	23	23	p.L23V	1.0	1.0	0.0	circle	up
+mutation	Silent	256	256	p.C256C	0.8	0.8	0.8	circle	up
+mutation	Silent	199	199	p.G199G	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	83	83	p.H83Y	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	266	266	p.G266E	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	23	23	p.L23V	1.0	1.0	0.0	circle	up
+mutation	Silent	505	505	p.P505P	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	462	462	p.D462Y	1.0	1.0	0.0	circle	up

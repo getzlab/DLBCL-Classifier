@@ -1,0 +1,16 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=ATP2A2; Synonyms=ATP2B;	1	1042	Name=ATP2A2; Synonyms=ATP2B;	0.7	0.9	0.9	-	-
+domain	Interaction with phospholamban 1. {ECO:0000250|UniProtKB:P04191}.	370	400	Interaction with phospholamban 1. {ECO:0000250|UniProtKB:P04191}.	0.62	0.23	0.77	-	-
+domain	Interaction with HAX1. {ECO:0000269|PubMed:18971376}.	575	594	Interaction with HAX1. {ECO:0000269|PubMed:18971376}.	0.25	0.52	0.46	-	-
+domain	Interaction with phospholamban 2. {ECO:0000250|UniProtKB:P04191}.	787	807	Interaction with phospholamban 2. {ECO:0000250|UniProtKB:P04191}.	0.73	0.27	0.49	-	-
+domain	Interaction with TMEM64 and PDIA3. {ECO:0000250|UniProtKB:O55143}.	788	1042	Interaction with TMEM64 and PDIA3. {ECO:0000250|UniProtKB:O55143}.	0.58	0.74	0.46	-	-
+mutation	Missense_Mutation	366	366	p.M366I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	263	263	p.V263G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	505	505	p.R505G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	194	194	p.V194L	1.0	1.0	0.0	circle	up
+mutation	Silent	797	797	p.V797V	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	1009	1009	p.A1009T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1009	1009	p.A1009T	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	366	366	p.M366V	0.6	0.0	0.6	inv_triangle	up
+mutation	Silent	705	705	p.N705N	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	198	198	p.R198Q	1.0	1.0	0.0	circle	up

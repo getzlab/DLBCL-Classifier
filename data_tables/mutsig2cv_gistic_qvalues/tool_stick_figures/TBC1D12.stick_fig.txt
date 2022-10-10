@@ -1,0 +1,20 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=TBC1D12; Synonyms=KIAA0608;	1	775	Name=TBC1D12; Synonyms=KIAA0608;	0.7	0.9	0.9	-	-
+mutation	Missense_Mutation	606	606	p.D606N	1.0	1.0	0.0	circle	up
+mutation	Silent	657	657	p.S657S	0.8	0.8	0.8	circle	up
+mutation	Silent	10	10	p.C10C	0.8	0.8	0.8	circle	up
+mutation	In_Frame_Del	56	56	p.EEADEE56del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	56	56	p.EEADEE56del	0.0	0.0	1.0	square	up
+mutation	Silent	126	126	p.R126R	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	188	188	p.P188S	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	56	56	p.EEADEE56del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	56	56	p.EEADEE56del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	56	56	p.EEADEE56del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	513	513	p.L513H	1.0	1.0	0.0	circle	up
+mutation	Silent	610	610	p.A610A	0.8	0.8	0.8	circle	up
+mutation	In_Frame_Del	423	423	p.EMVA423del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	56	56	p.EEADEE56del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	56	56	p.EEADEE56del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	288	288	p.H288Y	1.0	1.0	0.0	circle	up
+mutation	Silent	299	299	p.P299P	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	152	152	p.A152T	1.0	1.0	0.0	circle	up

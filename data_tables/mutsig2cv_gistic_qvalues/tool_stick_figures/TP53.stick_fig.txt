@@ -1,0 +1,123 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=TP53; Synonyms=P53;	1	393	Name=TP53; Synonyms=P53;	0.7	0.9	0.9	-	-
+domain	DNA-binding (experimentally determined)	102	292	DNA-binding (experimentally determined)	0.78	0.78	0.31	-	-
+domain	Interaction with CCAR2. {ECO:0000269|PubMed:25732823}.	1	320	Interaction with CCAR2. {ECO:0000269|PubMed:25732823}.	0.2	0.68	0.77	-	-
+domain	Interaction with HRMT1L2. {ECO:0000269|PubMed:15186775}.	1	83	Interaction with HRMT1L2. {ECO:0000269|PubMed:15186775}.	0.6	0.52	0.26	-	-
+domain	Transcription activation (acidic).	1	44	Transcription activation (acidic).	0.41	0.21	0.49	-	-
+domain	Interaction with WWOX.	66	110	Interaction with WWOX.	0.52	0.75	0.44	-	-
+domain	Interaction with HIPK1. {ECO:0000250}.	100	370	Interaction with HIPK1. {ECO:0000250}.	0.22	0.57	0.31	-	-
+domain	Required for interaction with ZNF385A. {ECO:0000269|PubMed:17719541}.	100	300	Required for interaction with ZNF385A. {ECO:0000269|PubMed:17719541}.	0.49	0.6	0.7	-	-
+domain	Required for interaction with FBXO42. {ECO:0000269|PubMed:19509332}.	113	236	Required for interaction with FBXO42. {ECO:0000269|PubMed:19509332}.	0.79	0.26	0.63	-	-
+domain	Interaction with AXIN1. {ECO:0000250}.	116	292	Interaction with AXIN1. {ECO:0000250}.	0.78	0.57	0.72	-	-
+domain	Interaction with the 53BP2 SH3 domain.	241	248	Interaction with the 53BP2 SH3 domain.	0.43	0.32	0.79	-	-
+domain	Interaction with E4F1. {ECO:0000269|PubMed:10644996}.	256	294	Interaction with E4F1. {ECO:0000269|PubMed:10644996}.	0.63	0.23	0.25	-	-
+domain	Interaction with DNA.	273	280	Interaction with DNA.	0.32	0.32	0.22	-	-
+domain	Interaction with CARM1. {ECO:0000269|PubMed:15186775}.	300	393	Interaction with CARM1. {ECO:0000269|PubMed:15186775}.	0.23	0.43	0.58	-	-
+domain	Interaction with HIPK2.	319	360	Interaction with HIPK2.	0	0.86	0.97	-	-
+domain	Oligomerization.	325	356	Oligomerization.	0.22	0.78	0.5	-	-
+domain	Interaction with USP7.	359	363	Interaction with USP7.	0.64	0	0.99	-	-
+domain	Basic (repression of DNA-binding).	368	387	Basic (repression of DNA-binding).	0.77	0.92	0	-	-
+domain	TADI.	17	25	TADI.	0.94	0	0.84	-	-
+domain	TADII.	48	56	TADII.	0.76	0.62	0	-	-
+domain	Bipartite nuclear localization signal.	305	321	Bipartite nuclear localization signal.	0	0.93	0.61	-	-
+domain	Nuclear export signal.	339	350	Nuclear export signal.	0.66	0	0.67	-	-
+domain	[KR]-[STA]-K motif.	370	372	[KR]-[STA]-K motif.	0.0	1.0	0.0	-	-
+mutation	Nonsense_Mutation	171	171	p.E171*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	282	282	p.R282W	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	126	126	p.Y126D	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	216	216	p.V216M	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	209	209	p.R209*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	220	220	p.Y220C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	151	151	p.P151H	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	342	342	p.R342*	1.0	0.0	0.0	triangle	up
+mutation	Silent	36	36	p.P36P	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	175	175	p.R175H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	273	273	p.R273C	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	306	306	p.R306*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	248	248	p.R248Q	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	205	205	p.Y205D	1.0	1.0	0.0	circle	up
+mutation	Silent	213	213	p.R213R	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	215	215	p.S215R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	175	175	p.R175H	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	93	93	p.L93fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	93	93	p.L93fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	152	152	p.P152L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	234	234	p.Y234N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	244	244	p.G244S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	266	266	p.G266E	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	273	273	p.R273G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	274	274	p.V274L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	245	245	p.G245D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	176	176	p.C176R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	273	273	p.R273C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	280	280	p.R280I	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	213	213	p.R213*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	214	214	p.H214Y	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	205	205	p.Y205D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	254	254	p.I254S	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	229	229	p.C229*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	173	173	p.V173A	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Ins	283	283	p.R283fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	234	234	p.Y234N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	220	220	p.Y220C	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	126	126	p.Y126C	0.6	0.0	0.6	inv_triangle	up
+mutation	Splice_Site	125	125	p.T125T	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	179	179	p.H179R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	173	173	p.V173M	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	244	244	p.G244V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	195	195	p.I195T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	236	236	p.Y236D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	234	234	p.Y234H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	175	175	p.R175H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	141	141	p.C141Y	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	331	331	p.Q331fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	248	248	p.R248Q	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	103	103	p.Y103*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	337	337	p.R337C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	234	234	p.Y234N	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	153	153	p.P153fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	273	273	p.R273C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	176	176	p.C176Y	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Ins	155	155	p.155_156insRT	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	246	246	p.M246I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	175	175	p.R175H	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	252	252	p.LTI252del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	262	262	p.G262V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	173	173	p.V173M	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	306	306	p.R306*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Del	149	149	p.S149fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	176	176	p.C176R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	175	175	p.R175H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	181	181	p.R181C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	176	176	p.C176F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	257	257	p.L257P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	282	282	p.R282W	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	151	151	p.P151H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	282	282	p.R282G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	248	248	p.R248W	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	176	176	p.C176W	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	205	205	p.Y205C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	248	248	p.R248Q	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	135	135	p.C135Y	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	105	105	p.G105D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	161	161	p.A161T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	232	232	p.I232T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	245	245	p.G245S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	282	282	p.R282W	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	248	248	p.R248Q	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	152	152	p.P152L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	234	234	p.Y234N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	262	262	p.G262V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	248	248	p.R248Q	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	244	244	p.G244R	1.0	1.0	0.0	circle	up
+mutation	Silent	338	338	p.F338F	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	282	282	p.R282W	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	229	229	p.C229*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	238	238	p.C238G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	245	245	p.G245D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	213	213	p.R213Q	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	282	282	p.R282G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	273	273	p.R273C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	234	234	p.Y234C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	273	273	p.R273H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	179	179	p.H179R	1.0	1.0	0.0	circle	up

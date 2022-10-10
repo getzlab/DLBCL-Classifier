@@ -1,0 +1,17 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=RC3H1; Synonyms=KIAA2025, RNF198;	1	1133	Name=RC3H1; Synonyms=KIAA2025, RNF198;	0.7	0.9	0.9	-	-
+domain	ROQ.	181	232	ROQ.	0.59	0.76	0.67	-	-
+mutation	Missense_Mutation	234	234	p.F234I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	867	867	p.L867V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1041	1041	p.R1041Q	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	373	373	p.T373A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	934	934	p.I934K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	201	201	p.E201K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	225	225	p.F225S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	225	225	p.F225C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	899	899	p.M899V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	202	202	p.E202K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	731	731	p.S731L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	212	212	p.E212K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	180	180	p.S180F	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	343	343	p.R343*	1.0	0.0	0.0	triangle	up

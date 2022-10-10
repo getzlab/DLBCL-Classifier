@@ -1,0 +1,18 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=KIR3DL3; Synonyms=CD158Z, KIR3DL7, KIRC1;	1	410	Name=KIR3DL3; Synonyms=CD158Z, KIR3DL7, KIRC1;	0.7	0.9	0.9	-	-
+domain	Killer cell immunoglobulin-like receptor 3DL3. {ECO:0000255}.	26	410	Killer cell immunoglobulin-like receptor 3DL3. {ECO:0000255}.	0.53	0.47	0.27	-	-
+mutation	Silent	67	67	p.P67P	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	184	184	p.P184S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	72	72	p.Y72H	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	219	219	p.G219D	0.6	0.0	0.6	inv_triangle	up
+mutation	Splice_Site	219	219	p.G219D	0.6	0.0	0.6	inv_triangle	up
+mutation	Splice_Site	219	219	p.G219D	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	218	218	p.V218I	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	219	219	p.G219D	0.6	0.0	0.6	inv_triangle	up
+mutation	Silent	174	174	p.A174A	0.8	0.8	0.8	circle	up
+mutation	Splice_Site	219	219	p.G219D	0.6	0.0	0.6	inv_triangle	up
+mutation	Splice_Site	219	219	p.G219D	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	308	308	p.S308R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	168	168	p.V168I	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	351	351	p.K351K	0.6	0.0	0.6	inv_triangle	up
+mutation	Splice_Site	219	219	p.G219D	0.6	0.0	0.6	inv_triangle	up

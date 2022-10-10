@@ -1,0 +1,16 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=TCL1A; Synonyms=TCL1;	1	114	Name=TCL1A; Synonyms=TCL1;	0.7	0.9	0.9	-	-
+mutation	Missense_Mutation	44	44	p.R44T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	38	38	p.T38S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	83	83	p.R83Q	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	101	101	p.DGVEDMLLELL101fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	112	112	p.P112S	1.0	1.0	0.0	circle	up
+mutation	Silent	31	31	p.Q31Q	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	37	37	p.L37S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	53	53	p.R53G	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	34	34	p.W34*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	29	29	p.E29G	1.0	1.0	0.0	circle	up
+mutation	Silent	46	46	p.Q46Q	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	33	33	p.A33G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	38	38	p.T38I	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	40	40	p.E40D	0.6	0.0	0.6	inv_triangle	up

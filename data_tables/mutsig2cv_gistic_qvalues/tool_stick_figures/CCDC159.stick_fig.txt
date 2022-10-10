@@ -1,0 +1,14 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=CCDC159;	1	412	Name=CCDC159;	0.7	0.9	0.9	-	-
+mutation	In_Frame_Del	261	261	p.261_262GH>D	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	263	263	p.QCLSPP263del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	261	261	p.261_262GH>D	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	263	263	p.QCLSPP263del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	261	261	p.261_262GH>D	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	263	263	p.QCLSPP263del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	115	115	p.T115I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	115	115	p.T115I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	226	226	p.L226V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	240	240	p.I240R	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	261	261	p.261_262GH>D	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	263	263	p.QCLSPP263del	0.0	0.0	1.0	square	up

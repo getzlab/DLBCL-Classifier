@@ -1,0 +1,12 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=CDC42;	1	191	Name=CDC42;	0.7	0.9	0.9	-	-
+domain	Cell division control protein 42 homolog.	1	188	Cell division control protein 42 homolog.	0.69	0.64	0.48	-	-
+domain	GTP.	10	17	GTP.	0.24	0.35	0.71	-	-
+domain	GTP. {ECO:0000250}.	57	61	GTP. {ECO:0000250}.	0.22	0.71	0.49	-	-
+domain	GTP.	115	118	GTP.	0.24	0.35	0.71	-	-
+domain	Effector region. {ECO:0000255}.	32	40	Effector region. {ECO:0000255}.	0.61	0.52	0.75	-	-
+mutation	Missense_Mutation	44	44	p.V44A	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Ins	52	52	p.52_53insT	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	20	20	p.L20P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	130	130	p.A130S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	157	157	p.C157W	1.0	1.0	0.0	circle	up

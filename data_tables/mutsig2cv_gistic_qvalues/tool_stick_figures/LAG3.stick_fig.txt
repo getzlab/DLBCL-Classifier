@@ -1,0 +1,13 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=LAG3; Synonyms=FDC;	1	525	Name=LAG3; Synonyms=FDC;	0.7	0.9	0.9	-	-
+domain	Lymphocyte activation gene 3 protein.	29	525	Lymphocyte activation gene 3 protein.	0.29	0.46	0.42	-	-
+domain	12 X 2 AA tandem repeats of E-X.	501	524	12 X 2 AA tandem repeats of E-X.	0.75	0.8	0.37	-	-
+mutation	Splice_Site	433	433	p.P433P	0.6	0.0	0.6	inv_triangle	up
+mutation	In_Frame_Ins	506	506	p.506_506P>PEP	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	283	283	p.R283H	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Ins	506	506	p.506_506P>PEP	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	283	283	p.R283H	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	204	204	p.R204fs	1.0	0.0	0.0	square	up
+mutation	Silent	511	511	p.E511E	0.8	0.8	0.8	circle	up
+mutation	Silent	455	455	p.I455I	0.8	0.8	0.8	circle	up
+mutation	In_Frame_Ins	506	506	p.506_506P>PEP	0.0	0.0	1.0	square	up

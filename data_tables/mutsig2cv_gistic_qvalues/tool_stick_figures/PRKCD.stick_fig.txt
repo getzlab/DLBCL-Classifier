@@ -1,0 +1,19 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=PRKCD;	1	676	Name=PRKCD;	0.7	0.9	0.9	-	-
+domain	Protein kinase C delta type regulatory subunit. {ECO:0000250}.	1	329	Protein kinase C delta type regulatory subunit. {ECO:0000250}.	0.65	0.33	0.61	-	-
+domain	Protein kinase C delta type catalytic subunit. {ECO:0000250}.	330	676	Protein kinase C delta type catalytic subunit. {ECO:0000250}.	0.34	0.71	0.57	-	-
+domain	ATP. {ECO:0000255|PROSITE- ProRule:PRU00159}.	355	363	ATP. {ECO:0000255|PROSITE- ProRule:PRU00159}.	0.69	0.64	0.4	-	-
+mutation	Missense_Mutation	632	632	p.N632D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	25	25	p.Q25R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	310	310	p.V310I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	494	494	p.M494R	1.0	1.0	0.0	circle	up
+mutation	Silent	35	35	p.A35A	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	591	591	p.L591R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	12	12	p.Y12D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	51	51	p.M51K	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Ins	54	54	p.E54fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	561	561	p.R561H	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	635	635	p.Q635*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	494	494	p.M494K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	494	494	p.M494K	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	451	451	p.T451P	0.6	0.0	0.6	inv_triangle	up

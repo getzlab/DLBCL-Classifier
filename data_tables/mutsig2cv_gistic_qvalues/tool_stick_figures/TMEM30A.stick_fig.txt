@@ -1,0 +1,33 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=TMEM30A; Synonyms=C6orf67, CDC50A;	1	361	Name=TMEM30A; Synonyms=C6orf67, CDC50A;	0.7	0.9	0.9	-	-
+domain	Cell cycle control protein 50A.	2	361	Cell cycle control protein 50A.	0.51	0.32	0.33	-	-
+mutation	Nonsense_Mutation	226	226	p.R226*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	138	138	p.R138*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	307	307	p.R307*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Ins	325	325	p.L325fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	118	118	p.V118A	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	226	226	p.R226*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Del	262	262	p.RT262fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	102	102	p.C102Y	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	226	226	p.R226*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Del	325	325	p.L325fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	306	306	p.G306fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	290	290	p.R290*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	157	157	p.C157*	1.0	0.0	0.0	triangle	up
+mutation	In_Frame_Del	336	336	p.SFLLGVVLL336del	0.0	0.0	1.0	square	up
+mutation	Nonsense_Mutation	193	193	p.Y193*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	191	191	p.D191E	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	317	317	p.W317*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	307	307	p.R307*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Del	30	30	p.NTAFKQQRL30fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	161	161	p.R161*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	260	260	p.W260*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Del	325	325	p.L325fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	290	290	p.R290*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Ins	34	34	p.K34fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	308	308	p.K308T	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	18	18	p.A18fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	226	226	p.R226*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	333	333	p.G333R	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	45	45	p.L45fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	239	239	p.P239L	1.0	1.0	0.0	circle	up

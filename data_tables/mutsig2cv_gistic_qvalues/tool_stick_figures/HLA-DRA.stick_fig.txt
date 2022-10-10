@@ -1,0 +1,14 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=HLA-DRA; Synonyms=HLA-DRA1;	1	254	Name=HLA-DRA; Synonyms=HLA-DRA1;	0.7	0.9	0.9	-	-
+domain	HLA class II histocompatibility antigen, DR alpha chain.	26	254	HLA class II histocompatibility antigen, DR alpha chain.	0.36	0.49	0.41	-	-
+domain	Alpha-1.	26	109	Alpha-1.	0.64	0.79	0.35	-	-
+domain	Alpha-2.	110	203	Alpha-2.	0.58	0.27	0.76	-	-
+domain	Connecting peptide.	204	216	Connecting peptide.	0.41	0.75	0.6	-	-
+mutation	Silent	14	14	p.I14I	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	91	91	p.D91H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	66	66	p.T66M	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	113	113	p.E113V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	89	89	p.A89V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	91	91	p.D91A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	16	16	p.V16L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	90	90	p.V90A	1.0	1.0	0.0	circle	up

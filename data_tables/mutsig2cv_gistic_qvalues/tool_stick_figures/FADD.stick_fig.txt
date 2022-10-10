@@ -1,0 +1,14 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=FADD; Synonyms=MORT1; ORFNames=GIG3;	1	208	Name=FADD; Synonyms=MORT1; ORFNames=GIG3;	0.7	0.9	0.9	-	-
+mutation	Splice_Site	86	86	p.AAAGAAPGEEG86fs	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	113	113	p.R113T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	117	117	p.R117H	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	42	42	p.GLDLF42fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	52	52	p.Q52*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	117	117	p.R117H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	33	33	p.K33Q	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	80	80	p.D80V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	110	110	p.K110E	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	74	74	p.D74G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	72	72	p.R72H	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	152	152	p.E152fs	1.0	0.0	0.0	square	up

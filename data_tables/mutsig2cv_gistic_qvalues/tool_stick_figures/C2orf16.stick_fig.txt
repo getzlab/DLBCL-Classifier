@@ -1,0 +1,25 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=C2orf16;	1	1984	Name=C2orf16;	0.7	0.9	0.9	-	-
+domain	27 X 8 AA approximate tandem repeat of P- S-E-R-S-H-H-S.	1593	1935	27 X 8 AA approximate tandem repeat of P- S-E-R-S-H-H-S.	0.23	0.52	0.77	-	-
+mutation	Missense_Mutation	482	482	p.L482P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	739	739	p.L739P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1181	1181	p.Y1181H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	834	834	p.L834P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1816	1816	p.S1816N	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	1641	1641	p.PSQRRHHS1641del	0.0	0.0	1.0	square	up
+mutation	Nonsense_Mutation	568	568	p.L568*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	1217	1217	p.L1217S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1765	1765	p.S1765R	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	1641	1641	p.PSQRRHHS1641del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	1723	1723	p.R1723W	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	74	74	p.V74I	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	1641	1641	p.PSQRRHHS1641del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	1641	1641	p.PSQRRHHS1641del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	1641	1641	p.PSQRRHHS1641del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	1641	1641	p.PSQRRHHS1641del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	1457	1457	p.P1457S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	17	17	p.L17S	1.0	1.0	0.0	circle	up
+mutation	Silent	1463	1463	p.G1463G	0.8	0.8	0.8	circle	up
+mutation	In_Frame_Del	1641	1641	p.PSQRRHHS1641del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	231	231	p.I231F	1.0	1.0	0.0	circle	up
+mutation	Silent	368	368	p.S368S	0.8	0.8	0.8	circle	up

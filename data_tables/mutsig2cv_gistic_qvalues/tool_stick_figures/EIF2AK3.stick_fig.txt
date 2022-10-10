@@ -1,0 +1,17 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=EIF2AK3; Synonyms=PEK, PERK;	1	1116	Name=EIF2AK3; Synonyms=PEK, PERK;	0.7	0.9	0.9	-	-
+domain	Eukaryotic translation initiation factor 2-alpha kinase 3.	30	1116	Eukaryotic translation initiation factor 2-alpha kinase 3.	0.4	0.32	0.51	-	-
+domain	ATP. {ECO:0000255|PROSITE- ProRule:PRU00159}.	599	607	ATP. {ECO:0000255|PROSITE- ProRule:PRU00159}.	0.56	0.74	0.68	-	-
+mutation	Silent	537	537	p.T537T	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	895	895	p.N895S	1.0	1.0	0.0	circle	up
+mutation	Silent	315	315	p.A315A	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	251	251	p.R251H	1.0	1.0	0.0	circle	up
+mutation	Silent	150	150	p.N150N	0.8	0.8	0.8	circle	up
+mutation	Silent	195	195	p.V195V	0.8	0.8	0.8	circle	up
+mutation	Frame_Shift_Ins	92	92	p.P92fs	1.0	0.0	0.0	square	up
+mutation	Splice_Site	1029	1029	p.R1029T	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	856	856	p.S856F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	59	59	p.V59I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	203	203	p.Y203C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	11	11	p.V11L	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	212	212	p.R*GI212fs	0.6	0.0	0.6	inv_triangle	up

@@ -1,0 +1,19 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=OGT;	1	1046	Name=OGT;	0.7	0.9	0.9	-	-
+domain	UDP-N-acetylglucosamine--peptide N- acetylglucosaminyltransferase 110 kDa subunit.	2	1046	UDP-N-acetylglucosamine--peptide N- acetylglucosaminyltransferase 110 kDa subunit.	0.77	0.35	0.53	-	-
+domain	UDP.	905	908	UDP.	0.6	0.2	0.71	-	-
+domain	UDP.	911	914	UDP.	0.6	0.2	0.71	-	-
+domain	UDP.	929	931	UDP.	0.6	0.2	0.71	-	-
+domain	Required for phosphatidylinositol 3,4,5- triphosphate binding.	991	1010	Required for phosphatidylinositol 3,4,5- triphosphate binding.	0.35	0.61	0.38	-	-
+domain	Nuclear localization signal. {ECO:0000255}.	487	503	Nuclear localization signal. {ECO:0000255}.	0.48	0.21	0.32	-	-
+mutation	Missense_Mutation	671	671	p.A671V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	96	96	p.G96E	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	392	392	p.P392T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	96	96	p.G96R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	491	491	p.S491N	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Ins	84	84	p.84_85QN>QLN	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	629	629	p.H629N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	359	359	p.E359G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	796	796	p.Q796E	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	601	601	p.F601V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1002	1002	p.I1002T	1.0	1.0	0.0	circle	up

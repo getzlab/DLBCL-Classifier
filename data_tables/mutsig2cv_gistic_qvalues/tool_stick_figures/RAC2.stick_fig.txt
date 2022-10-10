@@ -1,0 +1,20 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=RAC2;	1	192	Name=RAC2;	0.7	0.9	0.9	-	-
+domain	Ras-related C3 botulinum toxin substrate 2.	1	189	Ras-related C3 botulinum toxin substrate 2.	0.56	0.6	0.76	-	-
+domain	GTP. {ECO:0000250}.	10	17	GTP. {ECO:0000250}.	0.28	0.74	0.69	-	-
+domain	GTP. {ECO:0000250}.	57	61	GTP. {ECO:0000250}.	0.28	0.74	0.69	-	-
+domain	GTP. {ECO:0000250}.	115	118	GTP. {ECO:0000250}.	0.28	0.74	0.69	-	-
+domain	Effector region. {ECO:0000255}.	32	40	Effector region. {ECO:0000255}.	0.55	0.26	0.44	-	-
+mutation	Missense_Mutation	11	11	p.D11N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	63	63	p.D63N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	11	11	p.D11N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	32	32	p.Y32H	1.0	1.0	0.0	circle	up
+mutation	Silent	117	117	p.L117L	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	11	11	p.D11N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	92	92	p.N92K	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	12	12	p.G12W	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	92	92	p.N92S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	63	63	p.D63N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	63	63	p.D63E	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	92	92	p.N92T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	174	174	p.R174L	1.0	1.0	0.0	circle	up

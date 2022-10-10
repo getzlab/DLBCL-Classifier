@@ -1,0 +1,11 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=RANGAP1; Synonyms=KIAA1835, SD;	1	587	Name=RANGAP1; Synonyms=KIAA1835, SD;	0.7	0.9	0.9	-	-
+domain	Ran GTPase-activating protein 1.	2	587	Ran GTPase-activating protein 1.	0.65	0.4	0.61	-	-
+domain	SUMO conjugation.	523	526	SUMO conjugation.	0.54	0.64	0.3	-	-
+mutation	Missense_Mutation	338	338	p.C338R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	212	212	p.E212G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	284	284	p.I284V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	63	63	p.V63A	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	384	384	p.384_385EE>E	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	381	381	p.381_382EE>E	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	395	395	p.395_395E>EEE	0.0	0.0	1.0	square	up

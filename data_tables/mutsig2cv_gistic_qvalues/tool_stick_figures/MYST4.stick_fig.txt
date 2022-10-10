@@ -1,0 +1,31 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=KAT6B; Synonyms=KIAA0383, MORF, MOZ2, MYST4;	1	2073	Name=KAT6B; Synonyms=KIAA0383, MORF, MOZ2, MYST4;	0.7	0.9	0.9	-	-
+domain	Negatively regulates HAT activity.	361	717	Negatively regulates HAT activity.	0.66	0.55	0.23	-	-
+domain	Catalytic.	718	1008	Catalytic.	0.62	0.22	0.79	-	-
+domain	Interaction with BRPF1. {ECO:0000269|PubMed:18794358}.	752	1008	Interaction with BRPF1. {ECO:0000269|PubMed:18794358}.	0.54	0.25	0.21	-	-
+domain	Acetyl-CoA binding. {ECO:0000250|UniProtKB:Q92794}.	856	860	Acetyl-CoA binding. {ECO:0000250|UniProtKB:Q92794}.	0.52	0.5	0.8	-	-
+domain	Acetyl-CoA binding. {ECO:0000250|UniProtKB:Q92794}.	865	871	Acetyl-CoA binding. {ECO:0000250|UniProtKB:Q92794}.	0.52	0.5	0.8	-	-
+domain	Interaction with RUNX1 and RUNX2. {ECO:0000269|PubMed:11965546}.	1560	2073	Interaction with RUNX1 and RUNX2. {ECO:0000269|PubMed:11965546}.	0.21	0.21	0.57	-	-
+mutation	Missense_Mutation	1543	1543	p.Q1543R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1604	1604	p.H1604R	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	1628	1628	p.Q1628*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	1976	1976	p.A1976T	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	1083	1083	p.EEEE1083del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	1083	1083	p.EEEE1083del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	1404	1404	p.R1404S	1.0	1.0	0.0	circle	up
+mutation	Silent	1547	1547	p.S1547S	0.8	0.8	0.8	circle	up
+mutation	Silent	766	766	p.R766R	0.8	0.8	0.8	circle	up
+mutation	Silent	618	618	p.A618A	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	1094	1094	p.E1094K	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	1083	1083	p.EEEE1083del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	1083	1083	p.EEEE1083del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	1083	1083	p.EEEE1083del	0.0	0.0	1.0	square	up
+mutation	Silent	1602	1602	p.S1602S	0.8	0.8	0.8	circle	up
+mutation	Frame_Shift_Del	1879	1879	p.T1879fs	1.0	0.0	0.0	square	up
+mutation	Silent	2033	2033	p.Y2033Y	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	1229	1229	p.S1229G	1.0	1.0	0.0	circle	up
+mutation	Silent	1626	1626	p.Y1626Y	0.8	0.8	0.8	circle	up
+mutation	In_Frame_Del	1074	1074	p.EEED1074del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	1305	1305	p.I1305T	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	1083	1083	p.EEEE1083del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	1099	1099	p.EEEE1099del	0.0	0.0	1.0	square	up

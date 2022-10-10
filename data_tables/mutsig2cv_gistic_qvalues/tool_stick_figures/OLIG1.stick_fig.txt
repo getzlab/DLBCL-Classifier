@@ -1,0 +1,12 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=OLIG1; Synonyms=BHLHB6, BHLHE21;	1	271	Name=OLIG1; Synonyms=BHLHB6, BHLHE21;	0.7	0.9	0.9	-	-
+mutation	Silent	260	260	p.L260L	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	234	234	p.L234V	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Ins	48	48	p.48_49insS	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	234	234	p.L234V	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Ins	48	48	p.48_49insS	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	176	176	p.G176D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	176	176	p.G176D	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Ins	48	48	p.48_49insS	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	174	174	p.A174T	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Ins	48	48	p.48_49insS	0.0	0.0	1.0	square	up

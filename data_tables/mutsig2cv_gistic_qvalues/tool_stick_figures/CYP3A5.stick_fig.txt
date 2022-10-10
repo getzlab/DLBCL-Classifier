@@ -1,0 +1,10 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=CYP3A5;	1	502	Name=CYP3A5;	0.7	0.9	0.9	-	-
+mutation	Frame_Shift_Del	339	339	p.L339fs	1.0	0.0	0.0	square	up
+mutation	Splice_Site	224	224	p.I224M	0.6	0.0	0.6	inv_triangle	up
+mutation	Splice_Site	266	266	p.K266K	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	228	228	p.F228L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	82	82	p.L82R	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	268	268	p.R268*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	473	473	p.P473L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	178	178	p.A178T	1.0	1.0	0.0	circle	up

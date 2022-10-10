@@ -1,0 +1,8 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=ARHGEF6; Synonyms=COOL2, KIAA0006, PIXA;	1	776	Name=ARHGEF6; Synonyms=COOL2, KIAA0006, PIXA;	0.7	0.9	0.9	-	-
+mutation	Nonsense_Mutation	296	296	p.Q296*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	407	407	p.A407V	1.0	1.0	0.0	circle	up
+mutation	Silent	429	429	p.L429L	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	40	40	p.V40F	1.0	1.0	0.0	circle	up
+mutation	Silent	124	124	p.S124S	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	19	19	p.S19P	1.0	1.0	0.0	circle	up

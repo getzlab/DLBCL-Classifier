@@ -1,0 +1,24 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=CXCR5; Synonyms=BLR1, MDR15;	1	372	Name=CXCR5; Synonyms=BLR1, MDR15;	0.7	0.9	0.9	-	-
+mutation	Missense_Mutation	354	354	p.S354N	1.0	1.0	0.0	circle	up
+mutation	Silent	6	6	p.T6T	0.8	0.8	0.8	circle	up
+mutation	Silent	245	245	p.L245L	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	155	155	p.V155I	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	360	360	p.L360fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	360	360	p.L360fs	1.0	0.0	0.0	square	up
+mutation	Silent	15	15	p.E15E	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	68	68	p.G68A	1.0	1.0	0.0	circle	up
+mutation	Silent	364	364	p.E364E	0.8	0.8	0.8	circle	up
+mutation	Frame_Shift_Ins	362	362	p.E362fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	371	371	p.T371R	1.0	1.0	0.0	circle	up
+mutation	Silent	291	291	p.D291D	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	353	353	p.P353S	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Ins	361	361	p.S361fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	350	350	p.Q350*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Ins	362	362	p.E362fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	360	360	p.L360fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	360	360	p.L360fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	62	62	p.F62L	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Ins	362	362	p.E362fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	360	360	p.L360fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	350	350	p.Q350*	1.0	0.0	0.0	triangle	up

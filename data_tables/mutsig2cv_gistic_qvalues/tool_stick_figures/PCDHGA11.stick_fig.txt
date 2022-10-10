@@ -1,0 +1,16 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=PCDHGA11;	1	935	Name=PCDHGA11;	0.7	0.9	0.9	-	-
+domain	Protocadherin gamma-A11.	30	935	Protocadherin gamma-A11.	0.64	0.47	0.41	-	-
+mutation	Missense_Mutation	552	552	p.F552L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	175	175	p.P175A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	41	41	p.E41Q	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	41	41	p.E41Q	1.0	1.0	0.0	circle	up
+mutation	Silent	743	743	p.G743G	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	97	97	p.C97G	1.0	1.0	0.0	circle	up
+mutation	Silent	750	750	p.F750F	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	28	28	p.R28W	1.0	1.0	0.0	circle	up
+mutation	Silent	2	2	p.A2A	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	362	362	p.P362L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	638	638	p.A638V	1.0	1.0	0.0	circle	up
+mutation	Silent	623	623	p.H623H	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	638	638	p.A638V	1.0	1.0	0.0	circle	up

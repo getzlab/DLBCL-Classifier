@@ -1,0 +1,20 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=XPO1; Synonyms=CRM1;	1	1071	Name=XPO1; Synonyms=CRM1;	0.7	0.9	0.9	-	-
+domain	Necessary for HTLV-1 Rex-mediated mRNA export.	1	679	Necessary for HTLV-1 Rex-mediated mRNA export.	0.36	0.77	0.32	-	-
+domain	Interaction with Ran and nuclear export complex formation.	327	450	Interaction with Ran and nuclear export complex formation.	0.28	0.25	0.23	-	-
+domain	Interaction with RANBP3.	411	481	Interaction with RANBP3.	0.25	0.25	0.79	-	-
+domain	Necessary for HTLV-1 Rex multimerization.	411	414	Necessary for HTLV-1 Rex multimerization.	0.32	0.57	0.54	-	-
+domain	Interaction with HIV-1 Rev.	800	820	Interaction with HIV-1 Rev.	0.63	0.31	0.33	-	-
+mutation	Missense_Mutation	669	669	p.I669M	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	571	571	p.E571K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	571	571	p.E571K	1.0	1.0	0.0	circle	up
+mutation	Silent	647	647	p.Q647Q	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	624	624	p.D624G	1.0	1.0	0.0	circle	up
+mutation	Silent	396	396	p.G396G	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	303	303	p.N303S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	571	571	p.E571K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	571	571	p.E571K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	571	571	p.E571K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	571	571	p.E571K	1.0	1.0	0.0	circle	up
+mutation	Silent	408	408	p.L408L	0.8	0.8	0.8	circle	up
+mutation	Silent	341	341	p.L341L	0.8	0.8	0.8	circle	up

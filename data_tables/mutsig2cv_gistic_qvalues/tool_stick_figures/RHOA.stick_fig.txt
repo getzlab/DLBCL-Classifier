@@ -1,0 +1,23 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=RHOA; Synonyms=ARH12, ARHA, RHO12;	1	193	Name=RHOA; Synonyms=ARH12, ARHA, RHO12;	0.7	0.9	0.9	-	-
+domain	Transforming protein RhoA.	1	190	Transforming protein RhoA.	0.79	0.78	0.43	-	-
+domain	GTP. {ECO:0000269|PubMed:10748207, ECO:0000269|PubMed:12777804}.	12	19	GTP. {ECO:0000269|PubMed:10748207, ECO:0000269|PubMed:12777804}.	0.32	0.51	0.27	-	-
+domain	GTP. {ECO:0000250}.	59	63	GTP. {ECO:0000250}.	0.69	0.32	0.8	-	-
+domain	GTP. {ECO:0000269|PubMed:10748207, ECO:0000269|PubMed:12777804}.	117	120	GTP. {ECO:0000269|PubMed:10748207, ECO:0000269|PubMed:12777804}.	0.32	0.51	0.27	-	-
+domain	Effector region. {ECO:0000255}.	34	42	Effector region. {ECO:0000255}.	0.52	0.25	0.31	-	-
+mutation	In_Frame_Del	143	143	p.E143del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	61	61	p.A61V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	26	26	p.S26N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	5	5	p.R5W	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	69	69	p.L69P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	42	42	p.Y42F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	69	69	p.L69P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	44	44	p.A44V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	161	161	p.A161V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	26	26	p.S26N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	38	38	p.V38G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	83	83	p.C83Y	1.0	1.0	0.0	circle	up
+mutation	Silent	77	77	p.T77T	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	61	61	p.A61V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	42	42	p.Y42C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	5	5	p.R5Q	1.0	1.0	0.0	circle	up

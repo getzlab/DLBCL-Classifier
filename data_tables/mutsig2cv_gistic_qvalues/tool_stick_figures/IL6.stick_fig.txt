@@ -1,0 +1,16 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=IL6; Synonyms=IFNB2;	1	212	Name=IL6; Synonyms=IFNB2;	0.7	0.9	0.9	-	-
+domain	Interleukin-6.	30	212	Interleukin-6.	0.5	0.46	0.33	-	-
+mutation	Missense_Mutation	28	28	p.A28V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	69	69	p.K69N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	152	152	p.Q152H	1.0	1.0	0.0	circle	up
+mutation	Nonstop_Mutation	213	213	p.*213Y	0.95	0	0.71	circle	up
+mutation	Missense_Mutation	48	48	p.T48I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	52	52	p.R52G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	105	105	p.G105V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	47	47	p.L47F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	63	63	p.G63S	1.0	1.0	0.0	circle	up
+mutation	Nonstop_Mutation	213	213	p.*213Q	0.95	0	0.71	circle	up
+mutation	Missense_Mutation	152	152	p.Q152H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	155	155	p.Q155R	1.0	1.0	0.0	circle	up
+mutation	Nonstop_Mutation	213	213	p.*213Q	0.95	0	0.71	circle	up

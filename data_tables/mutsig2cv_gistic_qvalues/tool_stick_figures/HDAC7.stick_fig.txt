@@ -1,0 +1,30 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=HDAC7; Synonyms=HDAC7A;	1	952	Name=HDAC7; Synonyms=HDAC7A;	0.7	0.9	0.9	-	-
+domain	Transcription repression 1. {ECO:0000250}.	1	268	Transcription repression 1. {ECO:0000250}.	0.69	0.68	0.69	-	-
+domain	Interaction with MEF2C. {ECO:0000250}.	1	98	Interaction with MEF2C. {ECO:0000250}.	0.22	0.62	0.43	-	-
+domain	Interaction with MEF2A. {ECO:0000250}.	49	149	Interaction with MEF2A. {ECO:0000250}.	0.5	0.22	0.37	-	-
+domain	Transcription repression 2. {ECO:0000250}.	218	546	Transcription repression 2. {ECO:0000250}.	0.73	0.63	0.24	-	-
+domain	Histone deacetylase.	518	865	Histone deacetylase.	0.4	0.42	0.77	-	-
+domain	Interaction with SIN3A. {ECO:0000250}.	877	952	Interaction with SIN3A. {ECO:0000250}.	0.42	0.77	0.61	-	-
+domain	Nuclear export signal. {ECO:0000250}.	918	952	Nuclear export signal. {ECO:0000250}.	0.74	0.34	0.27	-	-
+mutation	Silent	702	702	p.L702L	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	242	242	p.P242T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	201	201	p.S201R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	838	838	p.A838S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	432	432	p.G432V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	735	735	p.G735S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	370	370	p.P370S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	291	291	p.P291T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	786	786	p.A786T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	362	362	p.P362L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	183	183	p.P183T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	652	652	p.V652E	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	354	354	p.S354R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	355	355	p.R355W	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	155	155	p.S155C	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	872	872	p.W872*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	181	181	p.S181R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	501	501	p.S501N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	299	299	p.G299R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	483	483	p.R483W	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	155	155	p.S155F	1.0	1.0	0.0	circle	up

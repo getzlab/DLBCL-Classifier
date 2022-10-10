@@ -1,0 +1,12 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=CNOT4; Synonyms=NOT4;	1	575	Name=CNOT4; Synonyms=NOT4;	0.7	0.9	0.9	-	-
+mutation	Missense_Mutation	255	255	p.S255F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	638	638	p.L638P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	694	694	p.P694A	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	243	243	p.E243*	1.0	0.0	0.0	triangle	up
+mutation	In_Frame_Del	508	508	p.I508del	0.0	0.0	1.0	square	up
+mutation	Silent	614	614	p.A614A	0.8	0.8	0.8	circle	up
+mutation	Silent	560	560	p.S560S	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	3	3	p.R3H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	277	277	p.D277V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	205	205	p.C205Y	1.0	1.0	0.0	circle	up

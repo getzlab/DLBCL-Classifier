@@ -1,0 +1,13 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=OLFML2A; ORFNames=UNQ9394/PRO34319;	1	652	Name=OLFML2A; ORFNames=UNQ9394/PRO34319;	0.7	0.9	0.9	-	-
+domain	Olfactomedin-like protein 2A.	28	652	Olfactomedin-like protein 2A.	0.22	0.57	0.74	-	-
+mutation	Missense_Mutation	46	46	p.D46E	1.0	1.0	0.0	circle	up
+mutation	Silent	23	23	p.R23R	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	25	25	p.T25A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	70	70	p.R70H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	25	25	p.T25A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	209	209	p.A209T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	25	25	p.T25A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	209	209	p.A209T	1.0	1.0	0.0	circle	up
+mutation	Silent	242	242	p.S242S	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	489	489	p.Y489C	1.0	1.0	0.0	circle	up

@@ -1,0 +1,23 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=NTRK1; Synonyms=MTC, TRK {ECO:0000303|PubMed:2927393}, TRKA {ECO:0000303|PubMed:9290260};	1	796	Name=NTRK1; Synonyms=MTC, TRK {ECO:0000303|PubMed:2927393}, TRKA {ECO:0000303|PubMed:9290260};	0.7	0.9	0.9	-	-
+domain	High affinity nerve growth factor receptor.	33	796	High affinity nerve growth factor receptor.	0.7	0.31	0.35	-	-
+domain	ATP. {ECO:0000255|PROSITE- ProRule:PRU00159}.	516	524	ATP. {ECO:0000255|PROSITE- ProRule:PRU00159}.	0.62	0.62	0.3	-	-
+domain	Interaction with SQSTM1. {ECO:0000250}.	469	490	Interaction with SQSTM1. {ECO:0000250}.	0.21	0.54	0.34	-	-
+mutation	Silent	577	577	p.G577G	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	51	51	p.T51I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	707	707	p.E707D	1.0	1.0	0.0	circle	up
+mutation	Silent	577	577	p.G577G	0.8	0.8	0.8	circle	up
+mutation	Splice_Site	96	96	p.L96L	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	51	51	p.T51I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	705	705	p.T705S	1.0	1.0	0.0	circle	up
+mutation	Silent	105	105	p.F105F	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	398	398	p.V398A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	220	220	p.R220W	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	649	649	p.R649W	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	161	161	p.R161H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	504	504	p.H504R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	161	161	p.R161H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	613	613	p.G613V	1.0	1.0	0.0	circle	up
+mutation	Silent	614	614	p.G614G	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	360	360	p.T360M	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	280	280	p.V280F	1.0	1.0	0.0	circle	up

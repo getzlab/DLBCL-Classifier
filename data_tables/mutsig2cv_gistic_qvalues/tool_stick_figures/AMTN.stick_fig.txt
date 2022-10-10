@@ -1,0 +1,6 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=AMTN; ORFNames=UNQ689/PRO1329;	1	209	Name=AMTN; ORFNames=UNQ689/PRO1329;	0.7	0.9	0.9	-	-
+domain	Amelotin.	17	209	Amelotin.	0.32	0.48	0.67	-	-
+mutation	Missense_Mutation	33	33	p.P33L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	3	3	p.S3N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	54	54	p.I54L	1.0	1.0	0.0	circle	up

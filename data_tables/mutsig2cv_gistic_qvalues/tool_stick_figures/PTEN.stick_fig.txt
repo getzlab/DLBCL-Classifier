@@ -1,0 +1,24 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=PTEN; Synonyms=MMAC1, TEP1;	1	403	Name=PTEN; Synonyms=MMAC1, TEP1;	0.7	0.9	0.9	-	-
+domain	Phosphatidylinositol 3,4,5-trisphosphate 3-phosphatase and dual-specificity protein phosphatase PTEN.	2	403	Phosphatidylinositol 3,4,5-trisphosphate 3-phosphatase and dual-specificity protein phosphatase PTEN.	0.77	0.59	0.72	-	-
+domain	Required for interaction with NOP53. {ECO:0000269|PubMed:15355975}.	338	348	Required for interaction with NOP53. {ECO:0000269|PubMed:15355975}.	0.31	0.7	0.73	-	-
+domain	PDZ domain-binding.	401	403	PDZ domain-binding.	0.46	0.22	0.65	-	-
+mutation	Missense_Mutation	57	57	p.L57W	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	134	134	p.M134I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	15	15	p.R15G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	6	6	p.K6N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	123	123	p.H123Y	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	10	10	p.S10N	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	27	27	p.Y27N	0.6	0.0	0.6	inv_triangle	up
+mutation	In_Frame_Del	15	15	p.R15del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	92	92	p.D92V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	247	247	p.L247S	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	333	333	p.AN333fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	17	17	p.Q17*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	356	356	p.N356K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	13	13	p.K13E	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	24	24	p.D24E	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	135	135	p.I135R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	93	93	p.H93R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	98	98	p.L98P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	102	102	p.K102N	1.0	1.0	0.0	circle	up

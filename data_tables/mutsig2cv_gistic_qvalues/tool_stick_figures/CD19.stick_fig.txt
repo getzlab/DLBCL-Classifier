@@ -1,0 +1,21 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=CD19;	1	556	Name=CD19;	0.7	0.9	0.9	-	-
+domain	B-lymphocyte antigen CD19.	20	556	B-lymphocyte antigen CD19.	0.34	0.23	0.55	-	-
+mutation	Silent	147	147	p.P147P	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	124	124	p.W124R	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	348	348	p.Y348*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Ins	91	91	p.MG91fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	17	17	p.E17K	1.0	1.0	0.0	circle	up
+mutation	Silent	155	155	p.K155K	0.8	0.8	0.8	circle	up
+mutation	Silent	35	35	p.V35V	0.8	0.8	0.8	circle	up
+mutation	Nonsense_Mutation	224	224	p.S224*	1.0	0.0	0.0	triangle	up
+mutation	Silent	537	537	p.P537P	0.8	0.8	0.8	circle	up
+mutation	Nonsense_Mutation	345	345	p.Q345*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	159	159	p.W159C	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	261	261	p.CHRGNL261fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	526	526	p.E526V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	188	188	p.L188F	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	502	502	p.D502fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	207	207	p.V207fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	238	238	p.DMWV238fs	1.0	0.0	0.0	square	up
+mutation	Silent	125	125	p.N125N	0.8	0.8	0.8	circle	up

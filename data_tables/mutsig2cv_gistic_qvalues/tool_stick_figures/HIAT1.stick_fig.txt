@@ -1,0 +1,10 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=MFSD14A {ECO:0000312|HGNC:HGNC:23363}; Synonyms=HIAT1 {ECO:0000312|HGNC:HGNC:23363};	1	490	Name=MFSD14A {ECO:0000312|HGNC:HGNC:23363}; Synonyms=HIAT1 {ECO:0000312|HGNC:HGNC:23363};	0.7	0.9	0.9	-	-
+mutation	Silent	446	446	p.L446L	0.8	0.8	0.8	circle	up
+mutation	Silent	67	67	p.P67P	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	210	210	p.P210S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	44	44	p.I44V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	405	405	p.I405V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	249	249	p.I249M	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	405	405	p.I405V	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	222	222	p.W222*	1.0	0.0	0.0	triangle	up

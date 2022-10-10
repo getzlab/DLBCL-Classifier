@@ -1,0 +1,7 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=PFN1;	1	140	Name=PFN1;	0.7	0.9	0.9	-	-
+domain	Profilin-1.	2	140	Profilin-1.	0.63	0.77	0.37	-	-
+mutation	Silent	13	13	p.A13A	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	66	66	p.L66H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	134	134	p.H134R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	72	72	p.S72L	1.0	1.0	0.0	circle	up

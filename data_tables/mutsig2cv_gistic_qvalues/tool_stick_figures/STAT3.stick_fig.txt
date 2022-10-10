@@ -1,0 +1,45 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=STAT3 {ECO:0000312|HGNC:HGNC:11364}; Synonyms=APRF {ECO:0000312|HGNC:HGNC:11364};	1	770	Name=STAT3 {ECO:0000312|HGNC:HGNC:11364}; Synonyms=APRF {ECO:0000312|HGNC:HGNC:11364};	0.7	0.9	0.9	-	-
+domain	Signal transducer and activator of transcription 3.	2	770	Signal transducer and activator of transcription 3.	0.25	0.44	0.52	-	-
+domain	Essential for nuclear import.	150	162	Essential for nuclear import.	0.63	0.78	0.28	-	-
+mutation	Missense_Mutation	614	614	p.S614R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	271	271	p.A271V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	103	103	p.R103W	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	616	616	p.E616del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	550	550	p.C550R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	384	384	p.F384C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	567	567	p.N567K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	553	553	p.N553K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	570	570	p.D570G	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	616	616	p.E616del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	382	382	p.R382W	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	616	616	p.E616K	1.0	1.0	0.0	circle	up
+mutation	Silent	165	165	p.V165V	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	711	711	p.I711T	1.0	1.0	0.0	circle	up
+mutation	Silent	617	617	p.G617G	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	616	616	p.E616G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	570	570	p.D570N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	742	742	p.E742K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	614	614	p.S614R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	518	518	p.R518G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	425	425	p.N425K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	614	614	p.S614R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	661	661	p.D661Y	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	360	360	p.Y360S	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	584	584	p.Y584N	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	567	567	p.N567K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	553	553	p.N553K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	653	653	p.I653V	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	715	715	p.P715L	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	566	566	p.D566V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	566	566	p.D566Y	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	567	567	p.N567K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	472	472	p.N472K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	292	292	p.S292Y	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	566	566	p.D566N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	616	616	p.E616G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	637	637	p.V637A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	570	570	p.D570G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	637	637	p.V637M	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	616	616	p.E616del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	616	616	p.E616del	0.0	0.0	1.0	square	up

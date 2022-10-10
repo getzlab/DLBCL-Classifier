@@ -1,0 +1,15 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=SESN3 {ECO:0000312|HGNC:HGNC:23060}; Synonyms=SEST3 {ECO:0000303|PubMed:12607115};	1	492	Name=SESN3 {ECO:0000312|HGNC:HGNC:23060}; Synonyms=SEST3 {ECO:0000303|PubMed:12607115};	0.7	0.9	0.9	-	-
+domain	C-terminal domain; mediates TORC1 regulation. {ECO:0000250|UniProtKB:P58004}.	310	492	C-terminal domain; mediates TORC1 regulation. {ECO:0000250|UniProtKB:P58004}.	0.23	0.46	0.72	-	-
+domain	Leucine-binding. {ECO:0000250|UniProtKB:P58004}.	386	389	Leucine-binding. {ECO:0000250|UniProtKB:P58004}.	0.63	0.79	0.57	-	-
+mutation	Splice_Site	465	465	p.V465I	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	402	402	p.R402H	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	21	21	p.RKVLR21fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	18	18	p.T18I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	13	13	p.N13K	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	8	8	p.PS8fs	1.0	0.0	0.0	square	up
+mutation	Silent	283	283	p.Q283Q	0.8	0.8	0.8	circle	up
+mutation	Splice_Site	26	26	p.K26K	0.6	0.0	0.6	inv_triangle	up
+mutation	Splice_Site	26	26	p.K26N	0.6	0.0	0.6	inv_triangle	up
+mutation	Nonsense_Mutation	475	475	p.R475*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	18	18	p.T18S	1.0	1.0	0.0	circle	up

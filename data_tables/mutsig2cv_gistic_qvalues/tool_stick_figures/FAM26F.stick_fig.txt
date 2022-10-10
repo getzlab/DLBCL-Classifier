@@ -1,0 +1,9 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=FAM26F; Synonyms=C6orf187;	1	315	Name=FAM26F; Synonyms=C6orf187;	0.7	0.9	0.9	-	-
+mutation	Missense_Mutation	310	310	p.N310K	1.0	1.0	0.0	circle	up
+mutation	Silent	115	115	p.A115A	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	144	144	p.R144S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	95	95	p.G95S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	144	144	p.R144S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	144	144	p.R144S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	144	144	p.R144S	1.0	1.0	0.0	circle	up

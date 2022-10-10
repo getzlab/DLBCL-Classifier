@@ -1,0 +1,11 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=MFSD4B {ECO:0000312|HGNC:HGNC:21053}; Synonyms=KIAA1919, NAGLT1; ORFNames=HSPC100;	1	518	Name=MFSD4B {ECO:0000312|HGNC:HGNC:21053}; Synonyms=KIAA1919, NAGLT1; ORFNames=HSPC100;	0.7	0.9	0.9	-	-
+mutation	Nonsense_Mutation	182	182	p.L182*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	182	182	p.L182F	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	182	182	p.L182*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	182	182	p.L182F	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	182	182	p.L182*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	182	182	p.L182F	1.0	1.0	0.0	circle	up
+mutation	Silent	26	26	p.N26N	0.8	0.8	0.8	circle	up
+mutation	Silent	281	281	p.C281C	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	31	31	p.I31T	1.0	1.0	0.0	circle	up

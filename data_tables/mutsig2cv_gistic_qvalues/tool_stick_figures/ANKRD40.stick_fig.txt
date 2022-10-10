@@ -1,0 +1,12 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=ANKRD40;	1	368	Name=ANKRD40;	0.7	0.9	0.9	-	-
+mutation	Missense_Mutation	316	316	p.T316A	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Ins	106	106	p.106_106D>DD	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	354	354	p.T354I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	11	11	p.Q11L	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Ins	106	106	p.106_106D>DD	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	61	61	p.S61F	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Ins	106	106	p.106_106D>DD	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	211	211	p.P211L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	273	273	p.R273Q	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Ins	106	106	p.106_106D>DD	0.0	0.0	1.0	square	up

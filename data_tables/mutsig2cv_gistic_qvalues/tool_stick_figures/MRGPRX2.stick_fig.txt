@@ -1,0 +1,9 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=MRGPRX2; Synonyms=MRGX2;	1	330	Name=MRGPRX2; Synonyms=MRGX2;	0.7	0.9	0.9	-	-
+mutation	Missense_Mutation	161	161	p.S161G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	270	270	p.L270R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	108	108	p.V108A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	108	108	p.V108A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	322	322	p.P322L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	33	33	p.P33R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	108	108	p.V108A	1.0	1.0	0.0	circle	up

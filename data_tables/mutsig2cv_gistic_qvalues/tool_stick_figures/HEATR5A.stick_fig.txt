@@ -1,0 +1,23 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=HEATR5A; Synonyms=C14orf125, KIAA1316;	1	2040	Name=HEATR5A; Synonyms=C14orf125, KIAA1316;	0.7	0.9	0.9	-	-
+mutation	In_Frame_Ins	968	968	p.968_969insI	0.0	0.0	1.0	square	up
+mutation	Frame_Shift_Del	969	969	p.Y969fs	1.0	0.0	0.0	square	up
+mutation	Silent	1348	1348	p.S1348S	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	783	783	p.S783C	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	1470	1470	p.Q1470*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	404	404	p.G404C	1.0	1.0	0.0	circle	up
+mutation	Silent	433	433	p.A433A	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	1698	1698	p.N1698T	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	672	672	p.Y672fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	849	849	p.R849K	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Ins	968	968	p.968_969insI	0.0	0.0	1.0	square	up
+mutation	Frame_Shift_Del	969	969	p.Y969fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	1745	1745	p.I1745V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	965	965	p.G965D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1898	1898	p.C1898S	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	1376	1376	p.E1376*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	549	549	p.R549H	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	615	615	p.A615S	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	353	353	p.R353H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1745	1745	p.I1745V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1539	1539	p.G1539E	1.0	1.0	0.0	circle	up

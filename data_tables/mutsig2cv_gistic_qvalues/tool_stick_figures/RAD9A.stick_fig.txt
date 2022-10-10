@@ -1,0 +1,7 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=RAD9A;	1	391	Name=RAD9A;	0.7	0.9	0.9	-	-
+domain	Possesses 3'-5' exonuclease activity.	51	91	Possesses 3'-5' exonuclease activity.	0.69	0.36	0.73	-	-
+domain	Sufficient for interaction with ABL1. {ECO:0000269|PubMed:11971963}.	266	391	Sufficient for interaction with ABL1. {ECO:0000269|PubMed:11971963}.	0.33	0.52	0.71	-	-
+mutation	Missense_Mutation	31	31	p.P31S	1.0	1.0	0.0	circle	up
+mutation	Silent	362	362	p.R362R	0.8	0.8	0.8	circle	up
+mutation	Silent	337	337	p.P337P	0.8	0.8	0.8	circle	up

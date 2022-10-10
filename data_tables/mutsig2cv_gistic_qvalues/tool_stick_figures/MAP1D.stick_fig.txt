@@ -1,0 +1,10 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=METAP1D; Synonyms=MAP1D;	1	335	Name=METAP1D; Synonyms=MAP1D;	0.7	0.9	0.9	-	-
+domain	Methionine aminopeptidase 1D, mitochondrial.	20	335	Methionine aminopeptidase 1D, mitochondrial.	0.31	0.23	0.23	-	-
+mutation	Missense_Mutation	150	150	p.S150F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	167	167	p.R167Q	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	218	218	p.I218T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	92	92	p.D92N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	118	118	p.D118N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	317	317	p.T317M	1.0	1.0	0.0	circle	up
+mutation	Silent	270	270	p.D270D	0.8	0.8	0.8	circle	up

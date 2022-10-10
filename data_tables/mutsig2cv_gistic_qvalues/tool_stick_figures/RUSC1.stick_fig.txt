@@ -1,0 +1,16 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=RUSC1; Synonyms=NESCA;	1	902	Name=RUSC1; Synonyms=NESCA;	0.7	0.9	0.9	-	-
+domain	Interaction with TRAF6. {ECO:0000269|PubMed:19365808}.	470	605	Interaction with TRAF6. {ECO:0000269|PubMed:19365808}.	0.35	0.71	0.3	-	-
+domain	Interaction with IKBKG. {ECO:0000269|PubMed:19365808}.	606	672	Interaction with IKBKG. {ECO:0000269|PubMed:19365808}.	0.63	0.64	0.41	-	-
+mutation	Missense_Mutation	757	757	p.R757C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	586	586	p.L586V	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Ins	352	352	p.LP352fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	111	111	p.D111N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	405	405	p.P405A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	380	380	p.A380P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	791	791	p.P791S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	380	380	p.A380P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	380	380	p.A380P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	380	380	p.A380P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	380	380	p.A380P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	380	380	p.A380P	1.0	1.0	0.0	circle	up

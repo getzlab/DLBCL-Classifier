@@ -6,7 +6,7 @@ library(ggalluvial)
 CONFIDENCE_THRESHOLD = 0.8
 
 resultspurity = read.csv('reduce_purity_experiment/resultstable_reducepurity.txt', sep='\t', row.names=1)
-labels = read.csv('data_tables/confidence_tables/baseline_probabilities.connectivity_based.sensitivity_power2.Aug_17_2022.tsv', sep='\t', row.names=1)
+labels = read.csv('data_tables/confidence_tables/baseline_probabilities.connectivity_based.sensitivity_power2.Sep_23_2022.tsv', sep='\t', row.names=1)
 labels = labels[rownames(resultspurity), ]
 countspurity = read.csv('reduce_purity_experiment/countstable_reducepurity.txt', sep='\t')
 

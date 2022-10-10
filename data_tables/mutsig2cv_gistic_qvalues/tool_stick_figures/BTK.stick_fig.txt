@@ -1,0 +1,19 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=BTK; Synonyms=AGMX1, ATK, BPK;	1	659	Name=BTK; Synonyms=AGMX1, ATK, BPK;	0.7	0.9	0.9	-	-
+domain	Tyrosine-protein kinase BTK.	2	659	Tyrosine-protein kinase BTK.	0.65	0.62	0.63	-	-
+domain	ATP. {ECO:0000255|PROSITE- ProRule:PRU00159}.	408	416	ATP. {ECO:0000255|PROSITE- ProRule:PRU00159}.	0.79	0.56	0.25	-	-
+domain	Inositol-(1,3,4,5)-tetrakisphosphate 1- binding.	12	24	Inositol-(1,3,4,5)-tetrakisphosphate 1- binding.	0.34	0.34	0.42	-	-
+domain	Inhibitor-binding.	474	479	Inhibitor-binding.	0.57	0.31	0.72	-	-
+domain	CAV1-binding.	581	588	CAV1-binding.	0.34	0.7	0.49	-	-
+mutation	Missense_Mutation	385	385	p.P385S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	66	66	p.T66S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	562	562	p.R562W	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	389	389	p.G389C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	7	7	p.E7K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	331	331	p.I331R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	439	439	p.E439K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	7	7	p.E7K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	385	385	p.P385S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	169	169	p.E169D	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	563	563	p.W563*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	112	112	p.Y112N	1.0	1.0	0.0	circle	up

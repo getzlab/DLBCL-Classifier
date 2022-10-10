@@ -1,0 +1,13 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=ZYX;	1	572	Name=ZYX;	0.7	0.9	0.9	-	-
+domain	Zyxin.	2	572	Zyxin.	0.34	0.77	0.48	-	-
+mutation	Silent	466	466	p.H466H	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	157	157	p.D157A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	475	475	p.R475H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	475	475	p.R475H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	157	157	p.D157N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	108	108	p.P108L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	60	60	p.V60M	1.0	1.0	0.0	circle	up
+mutation	Silent	397	397	p.A397A	0.8	0.8	0.8	circle	up
+mutation	Silent	257	257	p.A257A	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	60	60	p.V60M	1.0	1.0	0.0	circle	up

@@ -1,0 +1,13 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=SYPL2;	1	272	Name=SYPL2;	0.7	0.9	0.9	-	-
+mutation	Missense_Mutation	263	263	p.A263V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	89	89	p.I89V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	247	247	p.D247G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	138	138	p.R138H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	247	247	p.D247G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	117	117	p.F117V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	14	14	p.S14L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	247	247	p.D247G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	247	247	p.D247G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	65	65	p.R65H	1.0	1.0	0.0	circle	up
+mutation	Silent	176	176	p.T176T	0.8	0.8	0.8	circle	up

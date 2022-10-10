@@ -1,0 +1,9 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=COPS6; Synonyms=CSN6, HVIP;	1	327	Name=COPS6; Synonyms=CSN6, HVIP;	0.7	0.9	0.9	-	-
+domain	Interaction with Vpr.	211	327	Interaction with Vpr.	0.34	0.23	0.69	-	-
+mutation	Missense_Mutation	83	83	p.V83A	1.0	1.0	0.0	circle	up
+mutation	Silent	243	243	p.K243K	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	227	227	p.A227T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	231	231	p.L231V	1.0	1.0	0.0	circle	up
+mutation	Silent	202	202	p.H202H	0.8	0.8	0.8	circle	up
+mutation	Silent	317	317	p.G317G	0.8	0.8	0.8	circle	up

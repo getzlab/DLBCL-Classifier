@@ -1,0 +1,23 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=YY1; Synonyms=INO80S;	1	414	Name=YY1; Synonyms=INO80S;	0.7	0.9	0.9	-	-
+domain	Interaction with the SMAD1/SMAD4 complex.	1	170	Interaction with the SMAD1/SMAD4 complex.	0.77	0.48	0.41	-	-
+domain	Involved in nuclear matrix association.	257	341	Involved in nuclear matrix association.	0.32	0.8	0.67	-	-
+domain	Binding to DNA.	295	414	Binding to DNA.	0.45	0.75	0.31	-	-
+domain	Involved in repression of activated transcription.	333	371	Involved in repression of activated transcription.	0.56	0.22	0.31	-	-
+domain	Involved in masking transactivation domain.	371	397	Involved in masking transactivation domain.	0.57	0.38	0.65	-	-
+mutation	Silent	390	390	p.C390C	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	342	342	p.R342Q	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	148	148	p.Q148*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	283	283	p.K283*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	83	83	p.M83I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	320	320	p.H320R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	367	367	p.D367G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	403	403	p.H403D	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	375	375	p.R375*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Ins	106	106	p.V106fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	326	326	p.V326F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	163	163	p.G163D	1.0	1.0	0.0	circle	up
+mutation	Silent	98	98	p.H98H	0.8	0.8	0.8	circle	up
+mutation	Nonsense_Mutation	207	207	p.Q207*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	369	369	p.N369S	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	304	304	p.T304fs	1.0	0.0	0.0	square	up

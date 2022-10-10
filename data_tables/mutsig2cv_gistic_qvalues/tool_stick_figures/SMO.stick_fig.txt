@@ -1,0 +1,31 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=SMO; Synonyms=SMOH;	1	787	Name=SMO; Synonyms=SMOH;	0.7	0.9	0.9	-	-
+domain	Smoothened homolog.	28	787	Smoothened homolog.	0.32	0.44	0.46	-	-
+domain	Interaction with BBS5 and BBS7. {ECO:0000269|PubMed:22072986}.	538	569	Interaction with BBS5 and BBS7. {ECO:0000269|PubMed:22072986}.	0.79	0.73	0.59	-	-
+domain	Interaction with DLG5. {ECO:0000250|UniProtKB:P56726}.	581	593	Interaction with DLG5. {ECO:0000250|UniProtKB:P56726}.	0.65	0.4	0.36	-	-
+mutation	In_Frame_Ins	23	23	p.23_24insL	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	23	23	p.L23del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	23	23	p.23_24insL	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	23	23	p.23_24insL	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	745	745	p.Q745R	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Ins	23	23	p.23_24insL	0.0	0.0	1.0	square	up
+mutation	Silent	783	783	p.A783A	0.8	0.8	0.8	circle	up
+mutation	In_Frame_Ins	23	23	p.23_24insLL	0.0	0.0	1.0	square	up
+mutation	Silent	640	640	p.T640T	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	54	54	p.V54M	1.0	1.0	0.0	circle	up
+mutation	Silent	342	342	p.S342S	0.8	0.8	0.8	circle	up
+mutation	In_Frame_Ins	23	23	p.23_24insL	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	23	23	p.23_24insL	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	23	23	p.23_24insL	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	600	600	p.V600M	1.0	1.0	0.0	circle	up
+mutation	Silent	259	259	p.S259S	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	562	562	p.R562Q	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	538	538	p.T538I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	647	647	p.P647S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	32	32	p.S32P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	240	240	p.V240I	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	179	179	p.T179M	0.6	0.0	0.6	inv_triangle	up
+mutation	In_Frame_Ins	23	23	p.23_24insL	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	97	97	p.D97G	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Ins	23	23	p.23_24insL	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	9	9	p.G9E	1.0	1.0	0.0	circle	up

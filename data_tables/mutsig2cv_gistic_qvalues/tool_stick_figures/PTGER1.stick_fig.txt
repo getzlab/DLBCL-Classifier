@@ -1,0 +1,7 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=PTGER1;	1	402	Name=PTGER1;	0.7	0.9	0.9	-	-
+mutation	Missense_Mutation	395	395	p.R395W	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	100	100	p.T100A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	126	126	p.L126P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	126	126	p.L126P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	234	234	p.W234R	1.0	1.0	0.0	circle	up

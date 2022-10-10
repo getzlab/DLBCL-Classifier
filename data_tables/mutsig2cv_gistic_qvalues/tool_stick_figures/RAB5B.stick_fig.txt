@@ -1,0 +1,15 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=RAB5B;	1	215	Name=RAB5B;	0.7	0.9	0.9	-	-
+domain	Ras-related protein Rab-5B.	2	215	Ras-related protein Rab-5B.	0.72	0.26	0.39	-	-
+domain	GTP. {ECO:0000244|PDB:2HEI, ECO:0000269|Ref.14}.	27	35	GTP. {ECO:0000244|PDB:2HEI, ECO:0000269|Ref.14}.	0.38	0.61	0.48	-	-
+domain	GTP. {ECO:0000244|PDB:2HEI, ECO:0000269|Ref.14}.	46	52	GTP. {ECO:0000244|PDB:2HEI, ECO:0000269|Ref.14}.	0.38	0.61	0.48	-	-
+domain	GTP. {ECO:0000250|UniProtKB:P20339}.	75	79	GTP. {ECO:0000250|UniProtKB:P20339}.	0.72	0.56	0.76	-	-
+domain	GTP. {ECO:0000244|PDB:2HEI, ECO:0000269|Ref.14}.	133	136	GTP. {ECO:0000244|PDB:2HEI, ECO:0000269|Ref.14}.	0.38	0.61	0.48	-	-
+domain	GTP. {ECO:0000244|PDB:2HEI, ECO:0000269|Ref.14}.	163	165	GTP. {ECO:0000244|PDB:2HEI, ECO:0000269|Ref.14}.	0.38	0.61	0.48	-	-
+domain	Effector region. {ECO:0000255}.	49	57	Effector region. {ECO:0000255}.	0.33	0.26	0.69	-	-
+mutation	In_Frame_Del	191	191	p.G191del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	97	97	p.I97V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	197	197	p.R197W	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	191	191	p.G191del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	191	191	p.G191del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	100	100	p.Y100N	1.0	1.0	0.0	circle	up

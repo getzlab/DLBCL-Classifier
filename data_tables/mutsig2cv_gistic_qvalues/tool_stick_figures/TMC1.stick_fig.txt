@@ -1,0 +1,14 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=TMC1;	1	760	Name=TMC1;	0.7	0.9	0.9	-	-
+mutation	Missense_Mutation	125	125	p.K125Q	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	125	125	p.K125Q	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	14	14	p.E14del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	125	125	p.K125Q	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	6	6	p.V6V	0.6	0.0	0.6	inv_triangle	up
+mutation	Silent	741	741	p.N741N	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	49	49	p.I49L	1.0	1.0	0.0	circle	up
+mutation	Silent	292	292	p.V292V	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	141	141	p.R141W	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	715	715	p.Y715F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	617	617	p.M617I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	608	608	p.S608F	1.0	1.0	0.0	circle	up

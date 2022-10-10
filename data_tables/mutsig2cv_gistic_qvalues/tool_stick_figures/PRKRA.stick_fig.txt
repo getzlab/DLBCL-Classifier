@@ -1,0 +1,10 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=PRKRA; Synonyms=PACT, RAX; ORFNames=HSD-14, HSD14;	1	313	Name=PRKRA; Synonyms=PACT, RAX; ORFNames=HSD-14, HSD14;	0.7	0.9	0.9	-	-
+domain	Sufficient for self-association and interaction with TARBP2.	1	103	Sufficient for self-association and interaction with TARBP2.	0.59	0.67	0.69	-	-
+domain	Sufficient for self-association and interaction with TARBP2.	102	195	Sufficient for self-association and interaction with TARBP2.	0.59	0.67	0.69	-	-
+domain	Sufficient for self-association and interaction with TARBP2.	195	313	Sufficient for self-association and interaction with TARBP2.	0.59	0.67	0.69	-	-
+mutation	Missense_Mutation	28	28	p.T28A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	27	27	p.I27K	1.0	1.0	0.0	circle	up
+mutation	Silent	222	222	p.P222P	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	176	176	p.S176P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	176	176	p.S176P	1.0	1.0	0.0	circle	up

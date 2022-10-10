@@ -1,0 +1,15 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=CCDC27;	1	656	Name=CCDC27;	0.7	0.9	0.9	-	-
+mutation	Frame_Shift_Del	639	639	p.L639fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	639	639	p.L639fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	639	639	p.L639fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	639	639	p.L639fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	43	43	p.R43C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	466	466	p.T466M	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	43	43	p.R43C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	43	43	p.R43C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	475	475	p.R475S	1.0	1.0	0.0	circle	up
+mutation	Silent	22	22	p.P22P	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	466	466	p.T466M	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	639	639	p.L639fs	1.0	0.0	0.0	square	up
+mutation	Silent	326	326	p.P326P	0.8	0.8	0.8	circle	up

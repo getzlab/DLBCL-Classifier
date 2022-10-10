@@ -1,0 +1,7 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=WDFY1; Synonyms=KIAA1435, WDF1, ZFYVE17;	1	410	Name=WDFY1; Synonyms=KIAA1435, WDF1, ZFYVE17;	0.7	0.9	0.9	-	-
+mutation	Splice_Site	355	355	p.D355G	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	212	212	p.R212Q	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	404	404	p.A404V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	404	404	p.A404V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	97	97	p.V97I	1.0	1.0	0.0	circle	up

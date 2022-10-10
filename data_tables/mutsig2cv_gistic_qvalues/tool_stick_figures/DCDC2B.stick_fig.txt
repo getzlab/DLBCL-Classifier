@@ -1,0 +1,8 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=DCDC2B;	1	349	Name=DCDC2B;	0.7	0.9	0.9	-	-
+mutation	Frame_Shift_Ins	17	17	p.G17fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Ins	17	17	p.G17fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Ins	17	17	p.G17fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	299	299	p.A299V	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	84	84	p.R84*	1.0	0.0	0.0	triangle	up
+mutation	Silent	62	62	p.G62G	0.8	0.8	0.8	circle	up

@@ -1,0 +1,14 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=OR6K2;	1	324	Name=OR6K2;	0.7	0.9	0.9	-	-
+mutation	Frame_Shift_Del	224	224	p.A224fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Ins	223	223	p.V223fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	224	224	p.A224fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Ins	223	223	p.V223fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	224	224	p.A224fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Ins	223	223	p.V223fs	1.0	0.0	0.0	square	up
+mutation	Silent	261	261	p.L261L	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	103	103	p.F103S	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	224	224	p.A224fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Ins	223	223	p.V223fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	224	224	p.A224fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Ins	223	223	p.V223fs	1.0	0.0	0.0	square	up

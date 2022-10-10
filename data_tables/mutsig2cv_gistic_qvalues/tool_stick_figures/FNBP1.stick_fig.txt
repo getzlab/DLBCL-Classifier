@@ -1,0 +1,25 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=FNBP1; Synonyms=FBP17, KIAA0554;	1	617	Name=FNBP1; Synonyms=FBP17, KIAA0554;	0.7	0.9	0.9	-	-
+domain	Interaction with microtubules. {ECO:0000250}.	1	335	Interaction with microtubules. {ECO:0000250}.	0.7	0.41	0.64	-	-
+domain	Required for self-association and induction of membrane tubulation.	1	79	Required for self-association and induction of membrane tubulation.	0.29	0.37	0.76	-	-
+domain	Required for self-association and induction of membrane tubulation.	251	617	Required for self-association and induction of membrane tubulation.	0.29	0.37	0.76	-	-
+domain	Interaction with RND2. {ECO:0000250}.	400	552	Interaction with RND2. {ECO:0000250}.	0.75	0.58	0.3	-	-
+domain	Interaction with PDE6G. {ECO:0000250}.	495	617	Interaction with PDE6G. {ECO:0000250}.	0.41	0.66	0.29	-	-
+domain	Required for interaction with TNKS. {ECO:0000269|PubMed:14596906}.	514	617	Required for interaction with TNKS. {ECO:0000269|PubMed:14596906}.	0.36	0.27	0.22	-	-
+domain	Interaction with DNM1 and DNM3. {ECO:0000269|PubMed:15252009}.	535	617	Interaction with DNM1 and DNM3. {ECO:0000269|PubMed:15252009}.	0.37	0.67	0.78	-	-
+domain	Interaction with ARHGAP17, DAAM1, DIAPH1 and DIAPH2. {ECO:0000269|PubMed:11431473, ECO:0000269|PubMed:16630611}.	550	617	Interaction with ARHGAP17, DAAM1, DIAPH1 and DIAPH2. {ECO:0000269|PubMed:11431473, ECO:0000269|PubMed:16630611}.	0.65	0.27	0.34	-	-
+domain	Interaction with FASLG.	553	610	Interaction with FASLG.	0.73	0.77	0.57	-	-
+domain	Interaction with DNM2 and WASL.	553	609	Interaction with DNM2 and WASL.	0.44	0.35	0.52	-	-
+mutation	Missense_Mutation	2	2	p.S2N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	2	2	p.S2N	1.0	1.0	0.0	circle	up
+mutation	Silent	2	2	p.S2S	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	2	2	p.S2N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	2	2	p.S2R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	2	2	p.S2N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	293	293	p.R293H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	2	2	p.S2N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	2	2	p.S2T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	489	489	p.R489C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	356	356	p.G356S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	219	219	p.M219L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	402	402	p.F402L	1.0	1.0	0.0	circle	up

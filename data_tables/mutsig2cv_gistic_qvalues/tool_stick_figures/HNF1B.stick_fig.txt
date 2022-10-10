@@ -1,0 +1,19 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=HNF1B; Synonyms=TCF2;	1	557	Name=HNF1B; Synonyms=TCF2;	0.7	0.9	0.9	-	-
+domain	Homeobox; HNF1-type. {ECO:0000255|PROSITE-ProRule:PRU00108}.	231	311	Homeobox; HNF1-type. {ECO:0000255|PROSITE-ProRule:PRU00108}.	0.45	0.72	0.55	-	-
+domain	Dimerization. {ECO:0000250}.	1	31	Dimerization. {ECO:0000250}.	0.57	0.49	0.72	-	-
+mutation	Missense_Mutation	471	471	p.P471L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	165	165	p.R165H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	143	143	p.T143A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	317	317	p.A317V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	204	204	p.F204S	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	10	10	p.Q10*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	100	100	p.T100I	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	80	80	p.SEDGD80del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	353	353	p.S353G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	157	157	p.G157D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	82	82	p.D82N	1.0	1.0	0.0	circle	up
+mutation	Silent	172	172	p.Y172Y	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	492	492	p.G492S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	82	82	p.D82N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	366	366	p.I366M	1.0	1.0	0.0	circle	up

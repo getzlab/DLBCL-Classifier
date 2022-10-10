@@ -1,0 +1,5 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=PHF23 {ECO:0000303|PubMed:25484098};	1	403	Name=PHF23 {ECO:0000303|PubMed:25484098};	0.7	0.9	0.9	-	-
+mutation	Silent	186	186	p.R186R	0.8	0.8	0.8	circle	up
+mutation	In_Frame_Del	254	254	p.254_257EEEE>E	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	254	254	p.254_257EEEE>E	0.0	0.0	1.0	square	up

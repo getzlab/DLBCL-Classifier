@@ -1,0 +1,23 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=IKZF3; Synonyms=ZNFN1A3;	1	509	Name=IKZF3; Synonyms=ZNFN1A3;	0.7	0.9	0.9	-	-
+mutation	Splice_Site	237	237	p.A237V	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	264	264	p.A264V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	235	235	p.D235V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	134	134	p.M134K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	253	253	p.A253T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	162	162	p.L162R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	238	238	p.S238C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	218	218	p.E218K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	138	138	p.R138L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	162	162	p.L162R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	390	390	p.D390G	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	237	237	p.A237G	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	213	213	p.Q213K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	253	253	p.A253V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	218	218	p.E218K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	162	162	p.L162R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	175	175	p.K175N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	175	175	p.K175R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	160	160	p.N160H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	162	162	p.L162R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	219	219	p.E219K	1.0	1.0	0.0	circle	up

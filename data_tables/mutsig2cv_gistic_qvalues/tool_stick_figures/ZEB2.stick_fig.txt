@@ -1,0 +1,27 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=ZEB2; Synonyms=KIAA0569, SIP1, ZFHX1B, ZFX1B; ORFNames=HRIHFB2411;	1	1214	Name=ZEB2; Synonyms=KIAA0569, SIP1, ZFHX1B, ZFX1B; ORFNames=HRIHFB2411;	0.7	0.9	0.9	-	-
+domain	Homeobox; atypical.	644	703	Homeobox; atypical.	0.64	0.36	0.76	-	-
+domain	SMAD-MH2 binding domain. {ECO:0000250}.	437	487	SMAD-MH2 binding domain. {ECO:0000250}.	0.25	0.72	0.35	-	-
+mutation	Frame_Shift_Del	365	365	p.AITQ365fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Ins	752	752	p.T752fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	285	285	p.T285fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	892	892	p.K892fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	1044	1044	p.E1044K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	8	8	p.D8Y	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Ins	184	184	p.S184fs	1.0	0.0	0.0	square	up
+mutation	Silent	688	688	p.V688V	0.8	0.8	0.8	circle	up
+mutation	Silent	2	2	p.K2K	0.8	0.8	0.8	circle	up
+mutation	Nonsense_Mutation	939	939	p.Y939*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Del	278	278	p.GNRK278fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	125	125	p.T125M	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Ins	382	382	p.S382fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	1208	1208	p.D1208fs	1.0	0.0	0.0	square	up
+mutation	Silent	12	12	p.C12C	0.8	0.8	0.8	circle	up
+mutation	Nonsense_Mutation	921	921	p.R921*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Del	246	246	p.C246fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	499	499	p.EEQGVT499fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	16	16	p.K16*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	3	3	p.Q3*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Ins	625	625	p.A625fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	618	618	p.E618*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	12	12	p.C12F	1.0	1.0	0.0	circle	up

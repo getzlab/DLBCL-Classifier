@@ -1,0 +1,8 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=NANOG;	1	305	Name=NANOG;	0.7	0.9	0.9	-	-
+domain	Homeobox. {ECO:0000255|PROSITE- ProRule:PRU00108}.	95	154	Homeobox. {ECO:0000255|PROSITE- ProRule:PRU00108}.	0.31	0.21	0.6	-	-
+domain	Required for DNA-binding. {ECO:0000269|PubMed:25825768}.	122	151	Required for DNA-binding. {ECO:0000269|PubMed:25825768}.	0.76	0.68	0.51	-	-
+domain	8 X repeats starting with a Trp in each unit.	196	240	8 X repeats starting with a Trp in each unit.	0.6	0.38	0.63	-	-
+domain	Sufficient for transactivation activity. {ECO:0000250}.	196	240	Sufficient for transactivation activity. {ECO:0000250}.	0.58	0.25	0.36	-	-
+domain	Sufficient for strong transactivation activity. {ECO:0000250}.	241	305	Sufficient for strong transactivation activity. {ECO:0000250}.	0.46	0.64	0.63	-	-
+mutation	Missense_Mutation	11	11	p.L11F	1.0	1.0	0.0	circle	up

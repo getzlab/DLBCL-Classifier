@@ -1,0 +1,17 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=CCDC105;	1	499	Name=CCDC105;	0.7	0.9	0.9	-	-
+mutation	Missense_Mutation	15	15	p.R15H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	474	474	p.Y474C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	82	82	p.G82S	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	401	401	p.Y401fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	23	23	p.E23K	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	401	401	p.Y401fs	1.0	0.0	0.0	square	up
+mutation	Silent	490	490	p.P490P	0.8	0.8	0.8	circle	up
+mutation	Frame_Shift_Del	18	18	p.A18fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	18	18	p.A18fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	261	261	p.R261C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	75	75	p.V75L	1.0	1.0	0.0	circle	up
+mutation	Silent	15	15	p.R15R	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	258	258	p.Q258H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	329	329	p.S329R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	492	492	p.R492C	1.0	1.0	0.0	circle	up

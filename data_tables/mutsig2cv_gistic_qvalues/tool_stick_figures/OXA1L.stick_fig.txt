@@ -1,0 +1,13 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=OXA1L;	1	435	Name=OXA1L;	0.7	0.9	0.9	-	-
+mutation	Silent	33	33	p.H33H	0.8	0.8	0.8	circle	up
+mutation	Silent	44	44	p.G44G	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	15	15	p.L15M	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Ins	52	52	p.AK52fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	4	4	p.G4R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	27	27	p.R27W	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Ins	52	52	p.AK52fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	73	73	p.E73K	1.0	1.0	0.0	circle	up
+mutation	Silent	15	15	p.L15L	0.8	0.8	0.8	circle	up
+mutation	Nonsense_Mutation	15	15	p.L15*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	4	4	p.W4*	1.0	0.0	0.0	triangle	up

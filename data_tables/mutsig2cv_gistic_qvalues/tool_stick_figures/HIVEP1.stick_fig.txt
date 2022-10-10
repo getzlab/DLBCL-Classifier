@@ -1,0 +1,26 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=HIVEP1; Synonyms=ZNF40;	1	2718	Name=HIVEP1; Synonyms=ZNF40;	0.7	0.9	0.9	-	-
+mutation	Silent	231	231	p.R231R	0.8	0.8	0.8	circle	up
+mutation	Silent	1007	1007	p.Q1007Q	0.8	0.8	0.8	circle	up
+mutation	Silent	1978	1978	p.L1978L	0.8	0.8	0.8	circle	up
+mutation	Silent	1007	1007	p.Q1007Q	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	1170	1170	p.K1170N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	2692	2692	p.A2692G	1.0	1.0	0.0	circle	up
+mutation	Silent	1562	1562	p.L1562L	0.8	0.8	0.8	circle	up
+mutation	Silent	2597	2597	p.T2597T	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	1658	1658	p.I1658R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1662	1662	p.Q1662E	1.0	1.0	0.0	circle	up
+mutation	Silent	1007	1007	p.Q1007Q	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	1170	1170	p.K1170N	1.0	1.0	0.0	circle	up
+mutation	Silent	2096	2096	p.R2096R	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	2229	2229	p.D2229V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1612	1612	p.S1612L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	577	577	p.S577G	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	2611	2611	p.A2611fs	1.0	0.0	0.0	square	up
+mutation	Silent	1007	1007	p.Q1007Q	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	1170	1170	p.K1170N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	2692	2692	p.A2692G	1.0	1.0	0.0	circle	up
+mutation	Silent	1004	1004	p.G1004G	0.8	0.8	0.8	circle	up
+mutation	Silent	337	337	p.T337T	0.8	0.8	0.8	circle	up
+mutation	Silent	1007	1007	p.Q1007Q	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	1170	1170	p.K1170N	1.0	1.0	0.0	circle	up

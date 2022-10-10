@@ -1,0 +1,53 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=EZH2 {ECO:0000312|HGNC:HGNC:3527}; Synonyms=KMT6;	1	746	Name=EZH2 {ECO:0000312|HGNC:HGNC:3527}; Synonyms=KMT6;	0.7	0.9	0.9	-	-
+domain	Interaction with DNMT1, DNMT3A and DNMT3B.	1	340	Interaction with DNMT1, DNMT3A and DNMT3B.	0.29	0.62	0.21	-	-
+domain	Interaction with EED. {ECO:0000250}.	39	68	Interaction with EED. {ECO:0000250}.	0.69	0.32	0.23	-	-
+domain	Interaction with CDYL. {ECO:0000269|PubMed:22009739}.	329	522	Interaction with CDYL. {ECO:0000269|PubMed:22009739}.	0.73	0.74	0.47	-	-
+mutation	Missense_Mutation	641	641	p.Y641N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	641	641	p.Y641N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	641	641	p.Y641N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	641	641	p.Y641N	1.0	1.0	0.0	circle	up
+mutation	Silent	620	620	p.D620D	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	641	641	p.Y641F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	641	641	p.Y641S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	641	641	p.Y641H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	641	641	p.Y641N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	641	641	p.Y641F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	641	641	p.Y641F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	687	687	p.A687V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	641	641	p.Y641C	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Ins	725	725	p.D725fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	641	641	p.Y641N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	641	641	p.Y641S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	53	53	p.T53M	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	641	641	p.Y641F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	641	641	p.Y641C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	591	591	p.A591T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	641	641	p.Y641N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	641	641	p.Y641H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	447	447	p.Y447H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	185	185	p.D185H	1.0	1.0	0.0	circle	up
+mutation	Silent	405	405	p.S405S	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	687	687	p.A687V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	687	687	p.A687S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	641	641	p.Y641F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	677	677	p.A677G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	641	641	p.Y641H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	335	335	p.A335T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	641	641	p.Y641S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	55	55	p.I55M	1.0	1.0	0.0	circle	up
+mutation	Silent	677	677	p.A677A	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	677	677	p.A677G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	641	641	p.Y641H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	641	641	p.Y641C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	641	641	p.Y641S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	641	641	p.Y641N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	687	687	p.A687V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	641	641	p.Y641C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	641	641	p.Y641N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	641	641	p.Y641F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	641	641	p.Y641N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	641	641	p.Y641N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	641	641	p.Y641N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	641	641	p.Y641H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	641	641	p.Y641F	1.0	1.0	0.0	circle	up

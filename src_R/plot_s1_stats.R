@@ -1,12 +1,12 @@
 rm(list = ls())
 source('src_R/load_libraries.R')
 
-s1_table = read.csv('data_tables/tableS1_classifier.tsv', sep='\t', row.names = 1)
-full_set = read.csv('data_tables/confidence_tables/baseline_probabilities.connectivity_based.sensitivity_power2.Aug_17_2022.tsv', 
+s1_table = read.csv('data_tables/tableS1_classifier_merged.tsv', sep='\t', row.names = 1)
+full_set = read.csv('data_tables/confidence_tables/baseline_probabilities.connectivity_based.sensitivity_power2.Sep_23_2022.tsv', 
                     sep='\t', row.names=1)
-gsm = read.csv('data_tables/gsm/DLBCL_Staudt_Shipp_CL.for_classifier_training.classifier_subset.fix_sv.fix_ploidy.17-Aug-2022.txt',
+gsm = read.csv('data_tables/gsm/DLBCL.699.fullGSM.Sep_23_2022.tsv',
                sep='\t', row.names=1)
-drivers = read.csv('data_tables/qval_dfs/fisher_exact_5x2_17-Aug-2022.combined.tsv', sep='\t', row.names=1)
+drivers = read.csv('data_tables/qval_dfs/fisher_exact_5x2.Sep_23_2022.combined.tsv', sep='\t', row.names=1)
 
 raw_counts = read.csv('data_tables/raw_muts_cnas_counts.tsv', sep='\t', row.names=1)
 raw_sv = read.csv('data_tables/raw_sv_counts.tsv', sep='\t', row.names=1)

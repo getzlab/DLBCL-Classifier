@@ -1,0 +1,103 @@
+#!/bin/bash
+
+cd /cromwell_root
+tmpDir=$(mkdir -p "/cromwell_root/tmp.d3f8a38a" && echo "/cromwell_root/tmp.d3f8a38a")
+chmod 777 "$tmpDir"
+export _JAVA_OPTIONS=-Djava.io.tmpdir="$tmpDir"
+export TMPDIR="$tmpDir"
+export HOME="$HOME"
+(
+cd /cromwell_root
+
+)
+out38c35235="${tmpDir}/out.$$" err38c35235="${tmpDir}/err.$$"
+mkfifo "$out38c35235" "$err38c35235"
+trap 'rm "$out38c35235" "$err38c35235"' EXIT
+touch '/cromwell_root/stdout' '/cromwell_root/stderr'
+tee '/cromwell_root/stdout' < "$out38c35235" &
+tee '/cromwell_root/stderr' < "$err38c35235" >&2 &
+(
+cd /cromwell_root
+
+
+set -euo pipefail
+python /src/generate_figs.py \
+	 \
+	--jpg \
+	--pdf \
+	/cromwell_root/fc-secure-359a6793-cdf6-4459-a54d-d3a7481811e5/submissions/c1fa8780-6e0e-4e55-afef-a2e39cf9194e/mutation_mutsig2cv_hg19/38c35235-dd76-4d8a-bc4b-55309cd27785/call-tool_mutsig2cv_hg19/Combined_699_nopde4dip.final_analysis_set.maf \
+	/cromwell_root/fc-secure-359a6793-cdf6-4459-a54d-d3a7481811e5/submissions/c1fa8780-6e0e-4e55-afef-a2e39cf9194e/mutation_mutsig2cv_hg19/38c35235-dd76-4d8a-bc4b-55309cd27785/call-tool_mutsig2cv_hg19/sig_genes.txt \
+	/cromwell_root/broad-institute-gdac/reference/UniProt/Uniprot_SWISS_human_Release_2017_10_25.shelf \
+	/cromwell_root/broad-institute-gdac/reference/UniProt/UniProtKB_AC_to_ID_human_Release_2017_10_25.shelf \
+	/src/mutfig
+
+if true; then
+	zip -r tool_stick_figures . -x \
+		"fc-[a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9]-[a-f0-9][a-f0-9][a-f0-9][a-f0-9]-[a-f0-9][a-f0-9][a-f0-9][a-f0-9]-[a-f0-9][a-f0-9][a-f0-9][a-f0-9]-[a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9]/*" \
+		lost+found/\* \
+		broad-institute-gdac/\* \
+		"tmp.[a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9]/*" \
+		exec.sh
+fi
+
+# Extract the pertinent parts of generatedStickFigurePaths.txt so that
+# it can be reassembled with correct paths downstream.
+
+tail -n +2 generatedStickFigurePaths.txt | cut -f1 > SIGNIFICANT_GENE.txt
+
+head -n 1 generatedStickFigurePaths.txt > headers.txt
+)  > "$out38c35235" 2> "$err38c35235"
+echo $? > /cromwell_root/rc.tmp
+(
+# add a .file in every empty directory to facilitate directory delocalization on the cloud
+cd /cromwell_root
+find . -type d -exec sh -c '[ -z "$(ls -A '"'"'{}'"'"')" ] && touch '"'"'{}'"'"'/.file' \;
+)
+(
+cd /cromwell_root
+sync
+# make the directory which will keep the matching files
+mkdir /cromwell_root/glob-4466f33a453176965b33627aab60511d
+
+# create the glob control file that will allow for the globbing to succeed even if there is 0 match
+echo "This file is used by Cromwell to allow for globs that would not match any file.
+By its presence it works around the limitation of some backends that do not allow empty globs.
+Regardless of the outcome of the glob, this file will not be part of the final list of globbed files." > /cromwell_root/glob-4466f33a453176965b33627aab60511d/cromwell_glob_control_file
+
+# hardlink or symlink all the files into the glob directory
+( ln -L /cromwell_root/*.stick_fig.txt /cromwell_root/glob-4466f33a453176965b33627aab60511d 2> /dev/null ) || ( ln /cromwell_root/*.stick_fig.txt /cromwell_root/glob-4466f33a453176965b33627aab60511d )
+
+# list all the files (except the control file) that match the glob into a file called glob-[md5 of glob].list
+ls -1 /cromwell_root/glob-4466f33a453176965b33627aab60511d | grep -v cromwell_glob_control_file > /cromwell_root/glob-4466f33a453176965b33627aab60511d.list
+
+# make the directory which will keep the matching files
+mkdir /cromwell_root/glob-f80cb913ca112b475335441c416fc0d7
+
+# create the glob control file that will allow for the globbing to succeed even if there is 0 match
+echo "This file is used by Cromwell to allow for globs that would not match any file.
+By its presence it works around the limitation of some backends that do not allow empty globs.
+Regardless of the outcome of the glob, this file will not be part of the final list of globbed files." > /cromwell_root/glob-f80cb913ca112b475335441c416fc0d7/cromwell_glob_control_file
+
+# hardlink or symlink all the files into the glob directory
+( ln -L /cromwell_root/*.stick_fig.jpg /cromwell_root/glob-f80cb913ca112b475335441c416fc0d7 2> /dev/null ) || ( ln /cromwell_root/*.stick_fig.jpg /cromwell_root/glob-f80cb913ca112b475335441c416fc0d7 )
+
+# list all the files (except the control file) that match the glob into a file called glob-[md5 of glob].list
+ls -1 /cromwell_root/glob-f80cb913ca112b475335441c416fc0d7 | grep -v cromwell_glob_control_file > /cromwell_root/glob-f80cb913ca112b475335441c416fc0d7.list
+
+# make the directory which will keep the matching files
+mkdir /cromwell_root/glob-69618c4b568004fbc5f5e1b777d50fb8
+
+# create the glob control file that will allow for the globbing to succeed even if there is 0 match
+echo "This file is used by Cromwell to allow for globs that would not match any file.
+By its presence it works around the limitation of some backends that do not allow empty globs.
+Regardless of the outcome of the glob, this file will not be part of the final list of globbed files." > /cromwell_root/glob-69618c4b568004fbc5f5e1b777d50fb8/cromwell_glob_control_file
+
+# hardlink or symlink all the files into the glob directory
+( ln -L /cromwell_root/*.stick_fig.pdf /cromwell_root/glob-69618c4b568004fbc5f5e1b777d50fb8 2> /dev/null ) || ( ln /cromwell_root/*.stick_fig.pdf /cromwell_root/glob-69618c4b568004fbc5f5e1b777d50fb8 )
+
+# list all the files (except the control file) that match the glob into a file called glob-[md5 of glob].list
+ls -1 /cromwell_root/glob-69618c4b568004fbc5f5e1b777d50fb8 | grep -v cromwell_glob_control_file > /cromwell_root/glob-69618c4b568004fbc5f5e1b777d50fb8.list
+
+
+)
+mv /cromwell_root/rc.tmp /cromwell_root/rc

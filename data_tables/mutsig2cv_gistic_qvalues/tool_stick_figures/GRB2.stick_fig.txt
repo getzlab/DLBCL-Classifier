@@ -1,0 +1,16 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=GRB2; Synonyms=ASH;	1	217	Name=GRB2; Synonyms=ASH;	0.7	0.9	0.9	-	-
+mutation	Splice_Site	100	100	p.K100E	0.6	0.0	0.6	inv_triangle	up
+mutation	Nonsense_Mutation	64	64	p.K64*	1.0	0.0	0.0	triangle	up
+mutation	Splice_Site	60	60	p.W60R	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	209	209	p.Y209H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	208	208	p.N208H	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	36	36	p.W36*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	145	145	p.Q145*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	36	36	p.W36*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	184	184	p.H184P	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	128	128	p.L128fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	151	151	p.I151K	1.0	1.0	0.0	circle	up
+mutation	Silent	101	101	p.F101F	0.8	0.8	0.8	circle	up
+mutation	Nonsense_Mutation	121	121	p.W121*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	118	118	p.Y118S	1.0	1.0	0.0	circle	up

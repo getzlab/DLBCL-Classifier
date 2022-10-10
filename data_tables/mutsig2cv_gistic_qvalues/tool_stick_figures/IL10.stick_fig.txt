@@ -1,0 +1,10 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=IL10;	1	178	Name=IL10;	0.7	0.9	0.9	-	-
+domain	Interleukin-10.	19	178	Interleukin-10.	0.27	0.46	0.47	-	-
+mutation	Missense_Mutation	51	51	p.V51A	1.0	1.0	0.0	circle	up
+mutation	Silent	70	70	p.L70L	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	41	41	p.L41F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	120	120	p.R120G	1.0	1.0	0.0	circle	up
+mutation	Silent	60	60	p.Q60Q	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	5	5	p.A5T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	80	80	p.C80W	1.0	1.0	0.0	circle	up

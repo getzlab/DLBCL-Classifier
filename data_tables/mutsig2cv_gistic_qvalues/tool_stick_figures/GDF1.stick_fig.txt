@@ -1,0 +1,25 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=GDF1;	1	372	Name=GDF1;	0.7	0.9	0.9	-	-
+domain	Embryonic growth/differentiation factor 1.	254	372	Embryonic growth/differentiation factor 1.	0.77	0.25	0.64	-	-
+mutation	In_Frame_Ins	157	157	p.157_157A>AA	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	12	12	p.H12Y	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	104	104	p.H104R	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Ins	157	157	p.157_157A>AA	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	157	157	p.157_157A>AA	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	157	157	p.157_157A>AA	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	157	157	p.157_157A>AA	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	157	157	p.157_157A>AA	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	157	157	p.157_157A>AA	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	157	157	p.157_157A>AA	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	304	304	p.V304I	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Ins	157	157	p.157_157A>AA	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	157	157	p.157_157A>AA	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	157	157	p.157_157A>AA	0.0	0.0	1.0	square	up
+mutation	Silent	300	300	p.C300C	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	287	287	p.A287V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	287	287	p.A287T	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Ins	157	157	p.157_157A>AA	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	157	157	p.157_157A>AA	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	157	157	p.157_157A>AA	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	75	75	p.R75M	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Ins	157	157	p.157_157A>AA	0.0	0.0	1.0	square	up

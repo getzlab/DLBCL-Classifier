@@ -1,0 +1,19 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=GBP5; ORFNames=UNQ2427/PRO4987;	1	586	Name=GBP5; ORFNames=UNQ2427/PRO4987;	0.7	0.9	0.9	-	-
+domain	Guanylate-binding protein 5.	1	583	Guanylate-binding protein 5.	0.73	0.26	0.5	-	-
+domain	GTP. {ECO:0000250}.	45	52	GTP. {ECO:0000250}.	0.47	0.35	0.71	-	-
+domain	GTP. {ECO:0000250}.	67	69	GTP. {ECO:0000250}.	0.47	0.35	0.71	-	-
+domain	GTP. {ECO:0000250}.	97	101	GTP. {ECO:0000250}.	0.47	0.35	0.71	-	-
+domain	GTPase domain (Globular). {ECO:0000250}.	1	309	GTPase domain (Globular). {ECO:0000250}.	0.47	0.54	0.36	-	-
+domain	NLRP3-binding. {ECO:0000269|PubMed:22461501}.	1	306	NLRP3-binding. {ECO:0000269|PubMed:22461501}.	0.23	0.21	0.35	-	-
+domain	Required for tetramerization, but not for dimerization. {ECO:0000269|PubMed:22461501}.	529	586	Required for tetramerization, but not for dimerization. {ECO:0000269|PubMed:22461501}.	0.79	0.79	0.46	-	-
+mutation	Missense_Mutation	70	70	p.T70M	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	488	488	p.K488fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	70	70	p.T70A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	584	584	p.V584I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	584	584	p.V584I	1.0	1.0	0.0	circle	up
+mutation	Silent	501	501	p.A501A	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	321	321	p.E321D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	510	510	p.Q510R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	456	456	p.E456D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	70	70	p.T70M	1.0	1.0	0.0	circle	up

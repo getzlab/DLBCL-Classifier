@@ -1,0 +1,17 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=SLC27A6; Synonyms=ACSVL2, FACVL2, FATP1;	1	619	Name=SLC27A6; Synonyms=ACSVL2, FACVL2, FATP1;	0.7	0.9	0.9	-	-
+domain	AMP. {ECO:0000255}.	221	232	AMP. {ECO:0000255}.	0.3	0.72	0.33	-	-
+mutation	Missense_Mutation	404	404	p.E404D	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	21	21	p.KL21fs	1.0	0.0	0.0	square	up
+mutation	Silent	363	363	p.A363A	0.8	0.8	0.8	circle	up
+mutation	Frame_Shift_Del	21	21	p.KL21fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	21	21	p.KL21fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	619	619	p.L619I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	196	196	p.K196R	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	21	21	p.KL21fs	1.0	0.0	0.0	square	up
+mutation	Silent	165	165	p.T165T	0.8	0.8	0.8	circle	up
+mutation	Frame_Shift_Del	21	21	p.KL21fs	1.0	0.0	0.0	square	up
+mutation	Silent	197	197	p.L197L	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	411	411	p.G411V	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	21	21	p.KL21fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	522	522	p.R522K	1.0	1.0	0.0	circle	up

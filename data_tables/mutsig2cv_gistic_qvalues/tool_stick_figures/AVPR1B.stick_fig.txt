@@ -1,0 +1,16 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=AVPR1B; Synonyms=AVPR3, VPR3;	1	424	Name=AVPR1B; Synonyms=AVPR3, VPR3;	0.7	0.9	0.9	-	-
+mutation	Missense_Mutation	130	130	p.P130R	1.0	1.0	0.0	circle	up
+mutation	Nonstop_Mutation	186	186	p.*186W	0.6	0.88	0	circle	up
+mutation	Missense_Mutation	130	130	p.P130R	1.0	1.0	0.0	circle	up
+mutation	Nonstop_Mutation	186	186	p.*186W	0.6	0.88	0	circle	up
+mutation	Missense_Mutation	224	224	p.H224R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	373	373	p.S373L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	364	364	p.R364C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	373	373	p.S373L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	65	65	p.T65R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	224	224	p.H224R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	130	130	p.P130R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	224	224	p.H224R	1.0	1.0	0.0	circle	up
+mutation	Silent	365	365	p.R365R	0.8	0.8	0.8	circle	up
+mutation	Silent	273	273	p.S273S	0.8	0.8	0.8	circle	up

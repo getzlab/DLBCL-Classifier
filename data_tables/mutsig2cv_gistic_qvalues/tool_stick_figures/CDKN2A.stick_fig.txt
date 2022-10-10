@@ -1,0 +1,26 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=CDKN2A {ECO:0000312|HGNC:HGNC:1787}; Synonyms=CDKN2, MTS1;	1	156	Name=CDKN2A {ECO:0000312|HGNC:HGNC:1787}; Synonyms=CDKN2, MTS1;	0.7	0.9	0.9	-	-
+mutation	Nonsense_Mutation	80	80	p.R80*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	129	129	p.Y129*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	80	80	p.R80*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	80	80	p.R80*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	129	129	p.Y129*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	58	58	p.R58*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	110	110	p.W110*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	129	129	p.Y129*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	80	80	p.R80*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	80	80	p.R80*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	80	80	p.R80*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	80	80	p.R80*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	80	80	p.R80*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	19	19	p.R19*	1.0	0.0	0.0	triangle	up
+mutation	Silent	46	46	p.R46R	0.8	0.8	0.8	circle	up
+mutation	Nonsense_Mutation	58	58	p.R58*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	80	80	p.R80*	1.0	0.0	0.0	triangle	up
+mutation	Silent	45	45	p.L45L	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	68	68	p.A68T	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	58	58	p.R58*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	80	80	p.R80*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	42	42	p.M42L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	25	25	p.V25I	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	58	58	p.R58*	1.0	0.0	0.0	triangle	up

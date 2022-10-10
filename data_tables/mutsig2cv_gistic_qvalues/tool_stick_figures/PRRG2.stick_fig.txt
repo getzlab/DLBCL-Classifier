@@ -1,0 +1,7 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=PRRG2; Synonyms=PRGP2, TMG2;	1	202	Name=PRRG2; Synonyms=PRGP2, TMG2;	0.7	0.9	0.9	-	-
+domain	Transmembrane gamma-carboxyglutamic acid protein 2.	50	202	Transmembrane gamma-carboxyglutamic acid protein 2.	0.61	0.65	0.31	-	-
+mutation	Missense_Mutation	194	194	p.P194S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	194	194	p.P194R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	194	194	p.P194S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	194	194	p.P194R	1.0	1.0	0.0	circle	up

@@ -1,0 +1,25 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=PRKCB; Synonyms=PKCB, PRKCB1;	1	671	Name=PRKCB; Synonyms=PKCB, PRKCB1;	0.7	0.9	0.9	-	-
+domain	Protein kinase C beta type.	2	671	Protein kinase C beta type.	0.46	0.4	0.54	-	-
+domain	ATP. {ECO:0000255|PROSITE- ProRule:PRU00159}.	348	356	ATP. {ECO:0000255|PROSITE- ProRule:PRU00159}.	0.78	0.77	0.33	-	-
+mutation	Missense_Mutation	24	24	p.G24D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	352	352	p.S352G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	388	388	p.M388V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	546	546	p.E546G	1.0	1.0	0.0	circle	up
+mutation	Silent	471	471	p.N471N	0.8	0.8	0.8	circle	up
+mutation	Silent	171	171	p.D171D	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	376	376	p.D376V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	384	384	p.V384M	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	22	22	p.R22H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	405	405	p.Q405H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	427	427	p.D427N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	262	262	p.G262R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	110	110	p.S110F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	29	29	p.K29E	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	25	25	p.A25V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	51	51	p.S51C	1.0	1.0	0.0	circle	up
+mutation	Silent	171	171	p.D171D	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	22	22	p.R22H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	427	427	p.D427N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	55	55	p.D55H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	376	376	p.D376Y	1.0	1.0	0.0	circle	up

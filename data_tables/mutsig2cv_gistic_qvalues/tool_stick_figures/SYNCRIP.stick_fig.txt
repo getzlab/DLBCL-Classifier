@@ -1,0 +1,21 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=SYNCRIP; Synonyms=HNRPQ, NSAP1;	1	623	Name=SYNCRIP; Synonyms=HNRPQ, NSAP1;	0.7	0.9	0.9	-	-
+domain	Heterogeneous nuclear ribonucleoprotein Q.	2	623	Heterogeneous nuclear ribonucleoprotein Q.	0.23	0.26	0.77	-	-
+domain	Interaction with APOBEC1.	400	561	Interaction with APOBEC1.	0.34	0.52	0.75	-	-
+domain	8 X 3 AA repeats of R-G-G.	448	559	8 X 3 AA repeats of R-G-G.	0.35	0.7	0.5	-	-
+domain	3 X 4 AA repeats of Y-Y-G-Y.	460	488	3 X 4 AA repeats of Y-Y-G-Y.	0.65	0.62	0.42	-	-
+domain	Interaction with SMN. {ECO:0000269|PubMed:11574476}.	518	549	Interaction with SMN. {ECO:0000269|PubMed:11574476}.	0.33	0.34	0.37	-	-
+domain	Bipartite nuclear localization signal. {ECO:0000255}.	564	578	Bipartite nuclear localization signal. {ECO:0000255}.	0.67	0.21	0.28	-	-
+mutation	Missense_Mutation	548	548	p.R548H	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Ins	285	285	p.N285fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	191	191	p.L191P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	5	5	p.H5Y	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	331	331	p.P331fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	286	286	p.R286fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Ins	441	441	p.P441fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Ins	285	285	p.N285fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	366	366	p.R366*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	189	189	p.W189*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Ins	95	95	p.L95fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	234	234	p.I234fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	259	259	p.I259F	1.0	1.0	0.0	circle	up

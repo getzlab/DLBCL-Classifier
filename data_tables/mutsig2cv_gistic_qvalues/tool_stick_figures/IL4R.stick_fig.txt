@@ -1,0 +1,16 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=IL4R; Synonyms=IL4RA; ORFNames=582J2.1;	1	825	Name=IL4R; Synonyms=IL4RA; ORFNames=582J2.1;	0.7	0.9	0.9	-	-
+domain	Interleukin-4 receptor subunit alpha.	26	825	Interleukin-4 receptor subunit alpha.	0.62	0.57	0.63	-	-
+domain	Required for IRS1 activation and IL4- induced cell growth.	437	557	Required for IRS1 activation and IL4- induced cell growth.	0.35	0.36	0.25	-	-
+domain	Required for IL4-induced gene expression.	558	657	Required for IL4-induced gene expression.	0.21	0.63	0.31	-	-
+domain	WSXWS motif.	212	216	WSXWS motif.	0.53	0.26	0.48	-	-
+domain	Box 1 motif.	262	270	Box 1 motif.	0.25	0.35	0.75	-	-
+domain	ITIM motif.	711	716	ITIM motif.	0.35	0.66	0.71	-	-
+mutation	Silent	107	107	p.Q107Q	0.8	0.8	0.8	circle	up
+mutation	Nonsense_Mutation	108	108	p.Q108*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	364	364	p.L364*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	242	242	p.I242N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	86	86	p.C86R	1.0	1.0	0.0	circle	up
+mutation	Silent	656	656	p.G656G	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	761	761	p.A761T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	242	242	p.I242N	1.0	1.0	0.0	circle	up

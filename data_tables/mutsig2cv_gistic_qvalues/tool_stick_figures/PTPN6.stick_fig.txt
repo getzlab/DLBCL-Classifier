@@ -1,0 +1,30 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=PTPN6; Synonyms=HCP, PTP1C;	1	595	Name=PTPN6; Synonyms=HCP, PTP1C;	0.7	0.9	0.9	-	-
+domain	Substrate binding. {ECO:0000250}.	453	459	Substrate binding. {ECO:0000250}.	0.74	0.78	0.48	-	-
+mutation	Missense_Mutation	419	419	p.D419N	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	3	3	p.R3K	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	419	419	p.D419V	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	55	55	p.Q55*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	105	105	p.P105L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	511	511	p.A511T	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	109	109	p.R109K	0.6	0.0	0.6	inv_triangle	up
+mutation	Frame_Shift_Del	87	87	p.QDRDGTII87fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	361	361	p.C361R	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	252	252	p.Q252*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	216	216	p.T216K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	138	138	p.S138I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	59	59	p.D59N	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	76	76	p.VEYYTQ76fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	419	419	p.D419V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	458	458	p.G458D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	101	101	p.N101K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	26	26	p.S26N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	419	419	p.D419G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	453	453	p.C453R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	192	192	p.E192D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	534	534	p.S534L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	136	136	p.R136C	1.0	1.0	0.0	circle	up
+mutation	Silent	247	247	p.E247E	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	453	453	p.C453G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	498	498	p.M498R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	515	515	p.F515V	1.0	1.0	0.0	circle	up

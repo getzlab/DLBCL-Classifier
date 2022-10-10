@@ -1,0 +1,23 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=TUBGCP5; Synonyms=GCP5, KIAA1899;	1	1024	Name=TUBGCP5; Synonyms=GCP5, KIAA1899;	0.7	0.9	0.9	-	-
+mutation	Missense_Mutation	269	269	p.P269L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	269	269	p.P269L	1.0	1.0	0.0	circle	up
+mutation	Silent	921	921	p.N921N	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	269	269	p.P269L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	691	691	p.R691P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	535	535	p.C535Y	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	430	430	p.G430D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	820	820	p.I820M	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	269	269	p.P269L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	686	686	p.T686M	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	269	269	p.P269L	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	843	843	p.Y843fs	1.0	0.0	0.0	square	up
+mutation	Silent	363	363	p.A363A	0.8	0.8	0.8	circle	up
+mutation	Silent	368	368	p.L368L	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	269	269	p.P269L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	47	47	p.Y47D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	269	269	p.P269L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	535	535	p.C535Y	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	269	269	p.P269L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	815	815	p.M815V	1.0	1.0	0.0	circle	up
+mutation	Nonstop_Mutation	557	557	p.*557E	0.82	0.64	0	circle	up

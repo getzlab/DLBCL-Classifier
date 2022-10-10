@@ -1,0 +1,11 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=LMNTD2; Synonyms=C11orf35;	1	634	Name=LMNTD2; Synonyms=C11orf35;	0.7	0.9	0.9	-	-
+mutation	Silent	290	290	p.P290P	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	348	348	p.P348A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	42	42	p.H42Q	1.0	1.0	0.0	circle	up
+mutation	Silent	307	307	p.R307R	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	435	435	p.S435F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	333	333	p.P333T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	79	79	p.R79Q	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	79	79	p.R79Q	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	422	422	p.G422D	1.0	1.0	0.0	circle	up

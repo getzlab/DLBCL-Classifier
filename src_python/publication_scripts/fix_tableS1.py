@@ -54,8 +54,7 @@ combined_s1.isna().sum(axis=0).sort_values().to_csv('../../data_tables/na_counts
 
 # add mut density
 
-mut_dens = pd.read_csv('../../data_tables/mutsig2cv_gistic_qvalues/DLBCL_551_training.patient_counts_and_rates.txt', sep='\t', index_col=0)
-mut_dens = mut_dens.drop('DLBCL11493')
+mut_dens = pd.read_csv('../../data_tables/mutsig2cv_gistic_qvalues/DLBCL_550_training_noPDE4DIP_noHISTartifacts.patient_counts_and_rates.txt', sep='\t', index_col=0)
 combined_s1['Mutation Density'] = np.nan
 combined_s1['Mutation Density (Non Silent)'] = np.nan
 

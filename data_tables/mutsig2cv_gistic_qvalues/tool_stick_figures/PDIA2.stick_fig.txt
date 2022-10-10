@@ -1,0 +1,16 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=PDIA2; Synonyms=PDIP;	1	525	Name=PDIA2; Synonyms=PDIP;	0.7	0.9	0.9	-	-
+domain	Protein disulfide-isomerase A2.	22	525	Protein disulfide-isomerase A2.	0.52	0.23	0.66	-	-
+domain	Prevents secretion from ER. {ECO:0000255|PROSITE-ProRule:PRU10138}.	522	525	Prevents secretion from ER. {ECO:0000255|PROSITE-ProRule:PRU10138}.	0.62	0.24	0.37	-	-
+mutation	Missense_Mutation	106	106	p.R106C	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Ins	9	9	p.9_9L>LL	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	249	249	p.R249L	1.0	1.0	0.0	circle	up
+mutation	Silent	416	416	p.P416P	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	257	257	p.R257H	1.0	1.0	0.0	circle	up
+mutation	Silent	503	503	p.P503P	0.8	0.8	0.8	circle	up
+mutation	Silent	7	7	p.P7P	0.8	0.8	0.8	circle	up
+mutation	Silent	271	271	p.F271F	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	206	206	p.D206H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	128	128	p.R128H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	249	249	p.R249P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	382	382	p.P382A	1.0	1.0	0.0	circle	up

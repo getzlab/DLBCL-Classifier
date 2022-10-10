@@ -1,0 +1,9 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=GPR34;	1	381	Name=GPR34;	0.7	0.9	0.9	-	-
+mutation	Missense_Mutation	262	262	p.A262V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	264	264	p.T264A	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Ins	349	349	p.E349fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	347	347	p.Q347*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	354	354	p.E354*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	130	130	p.V130M	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	152	152	p.R152H	1.0	1.0	0.0	circle	up

@@ -1,0 +1,25 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=TNIP1; Synonyms=KIAA0113, NAF1;	1	636	Name=TNIP1; Synonyms=KIAA0113, NAF1;	0.7	0.9	0.9	-	-
+domain	Interaction with Nef.	94	412	Interaction with Nef.	0.63	0.58	0.32	-	-
+domain	Interaction with Shigella flexneri ipah9.8.	351	367	Interaction with Shigella flexneri ipah9.8.	0.29	0.73	0.72	-	-
+domain	Required for inhibitory activity of TNF- induced NF-kappa-B activation. {ECO:0000250}.	431	588	Required for inhibitory activity of TNF- induced NF-kappa-B activation. {ECO:0000250}.	0.24	0.75	0.3	-	-
+domain	Ubiquitin-binding domain (UBD).	452	510	Ubiquitin-binding domain (UBD).	0.28	0.44	0.24	-	-
+domain	Nuclear localization signal. {ECO:0000255}.	524	530	Nuclear localization signal. {ECO:0000255}.	0.49	0.25	0.55	-	-
+mutation	Missense_Mutation	632	632	p.R632C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	298	298	p.A298T	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	211	211	p.L211fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	462	462	p.L462R	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	461	461	p.L461*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	439	439	p.A439E	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Ins	425	425	p.E425fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	235	235	p.Q235*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	472	472	p.D472Y	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	462	462	p.L462P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	204	204	p.R204C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	163	163	p.R163H	1.0	1.0	0.0	circle	up
+mutation	Silent	477	477	p.R477R	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	477	477	p.R477L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	482	482	p.R482H	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	193	193	p.R193*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Del	315	315	p.E315fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	472	472	p.D472V	1.0	1.0	0.0	circle	up

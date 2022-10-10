@@ -1,0 +1,27 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=CTDP1; Synonyms=FCP1;	1	961	Name=CTDP1; Synonyms=FCP1;	0.7	0.9	0.9	-	-
+mutation	Missense_Mutation	106	106	p.A106V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	784	784	p.T784M	1.0	1.0	0.0	circle	up
+mutation	Silent	398	398	p.P398P	0.8	0.8	0.8	circle	up
+mutation	In_Frame_Ins	582	582	p.582_583insE	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	582	582	p.582_583insE	0.0	0.0	1.0	square	up
+mutation	Silent	681	681	p.A681A	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	241	241	p.E241K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	164	164	p.E164K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	870	870	p.D870N	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	133	133	p.Q133R	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	955	955	p.A955V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	10	10	p.P10S	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Ins	582	582	p.582_583insE	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	582	582	p.582_583insE	0.0	0.0	1.0	square	up
+mutation	Silent	236	236	p.I236I	0.8	0.8	0.8	circle	up
+mutation	In_Frame_Ins	582	582	p.582_583insE	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	582	582	p.582_583insE	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	582	582	p.582_583insE	0.0	0.0	1.0	square	up
+mutation	Silent	616	616	p.I616I	0.8	0.8	0.8	circle	up
+mutation	Silent	262	262	p.P262P	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	873	873	p.D873N	1.0	1.0	0.0	circle	up
+mutation	Silent	71	71	p.G71G	0.8	0.8	0.8	circle	up
+mutation	In_Frame_Ins	582	582	p.582_583insE	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	582	582	p.582_583insE	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	484	484	p.R484Q	1.0	1.0	0.0	circle	up

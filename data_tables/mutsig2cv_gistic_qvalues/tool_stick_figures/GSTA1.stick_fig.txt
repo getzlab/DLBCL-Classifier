@@ -1,0 +1,10 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=GSTA1;	1	222	Name=GSTA1;	0.7	0.9	0.9	-	-
+domain	Glutathione S-transferase A1, N- terminally processed.	2	222	Glutathione S-transferase A1, N- terminally processed.	0.78	0.79	0.65	-	-
+domain	Glutathione binding. {ECO:0000269|PubMed:16421451, ECO:0000269|PubMed:19618965}.	54	55	Glutathione binding. {ECO:0000269|PubMed:16421451, ECO:0000269|PubMed:19618965}.	0.52	0.57	0.77	-	-
+domain	Glutathione binding. {ECO:0000269|PubMed:16421451, ECO:0000269|PubMed:19618965}.	67	68	Glutathione binding. {ECO:0000269|PubMed:16421451, ECO:0000269|PubMed:19618965}.	0.52	0.57	0.77	-	-
+mutation	Missense_Mutation	48	48	p.G48V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	75	75	p.I75S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	48	48	p.G48V	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	21	21	p.W21*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	181	181	p.L181Q	1.0	1.0	0.0	circle	up

@@ -1,0 +1,16 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=IRF1;	1	325	Name=IRF1;	0.7	0.9	0.9	-	-
+domain	IRF tryptophan pentad repeat. {ECO:0000255|PROSITE-ProRule:PRU00840}.	5	113	IRF tryptophan pentad repeat. {ECO:0000255|PROSITE-ProRule:PRU00840}.	0.66	0.37	0.7	-	-
+mutation	Missense_Mutation	12	12	p.L12P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	41	41	p.A41V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	216	216	p.P216S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	316	316	p.P316S	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	123	123	p.R123fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	7	7	p.R7fs	1.0	0.0	0.0	square	up
+mutation	Silent	91	91	p.I91I	0.8	0.8	0.8	circle	up
+mutation	Silent	299	299	p.K299K	0.8	0.8	0.8	circle	up
+mutation	Silent	244	244	p.S244S	0.8	0.8	0.8	circle	up
+mutation	Silent	241	241	p.L241L	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	28	28	p.N28T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	18	18	p.S18Y	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	167	167	p.P167fs	1.0	0.0	0.0	square	up

@@ -1,0 +1,14 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=IKBKB; Synonyms=IKKB;	1	756	Name=IKBKB; Synonyms=IKKB;	0.7	0.9	0.9	-	-
+domain	ATP. {ECO:0000255|PROSITE- ProRule:PRU00159}.	21	29	ATP. {ECO:0000255|PROSITE- ProRule:PRU00159}.	0.7	0.51	0.69	-	-
+domain	Leucine-zipper.	458	479	Leucine-zipper.	0.65	0.78	0.39	-	-
+domain	NEMO-binding.	737	742	NEMO-binding.	0.32	0.63	0.21	-	-
+mutation	Missense_Mutation	203	203	p.V203I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	645	645	p.R645W	1.0	1.0	0.0	circle	up
+mutation	Silent	489	489	p.S489S	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	698	698	p.L698F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	599	599	p.Q599E	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	68	68	p.L68V	0.6	0.0	0.6	inv_triangle	up
+mutation	Silent	610	610	p.T610T	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	171	171	p.K171T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	171	171	p.K171R	1.0	1.0	0.0	circle	up

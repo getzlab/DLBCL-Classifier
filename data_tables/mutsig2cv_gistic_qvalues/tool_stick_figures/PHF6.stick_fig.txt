@@ -1,0 +1,14 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=PHF6; Synonyms=CENP-31, KIAA1823;	1	365	Name=PHF6; Synonyms=CENP-31, KIAA1823;	0.7	0.9	0.9	-	-
+domain	PHD finger protein 6.	2	365	PHD finger protein 6.	0.25	0.76	0.37	-	-
+domain	Extended PHD1 domain (ePHD1). {ECO:0000255|PROSITE-ProRule:PRU01146}.	14	132	Extended PHD1 domain (ePHD1). {ECO:0000255|PROSITE-ProRule:PRU01146}.	0.5	0.46	0.24	-	-
+domain	Extended PHD2 domain (ePHD2). {ECO:0000255|PROSITE-ProRule:PRU01146}.	209	330	Extended PHD2 domain (ePHD2). {ECO:0000255|PROSITE-ProRule:PRU01146}.	0.79	0.34	0.28	-	-
+domain	Nuclear localization signal. {ECO:0000255}.	13	16	Nuclear localization signal. {ECO:0000255}.	0.2	0.47	0.36	-	-
+domain	Nuclear localization signal. {ECO:0000255}.	129	133	Nuclear localization signal. {ECO:0000255}.	0.2	0.47	0.36	-	-
+domain	Nucleolar localization signal. {ECO:0000255}.	157	169	Nucleolar localization signal. {ECO:0000255}.	0.34	0.71	0.77	-	-
+mutation	Nonsense_Mutation	342	342	p.R342*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	297	297	p.C297Y	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	31	31	p.L31*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	33	33	p.I33T	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	136	136	p.H136fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	270	270	p.Q270*	1.0	0.0	0.0	triangle	up

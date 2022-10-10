@@ -1,0 +1,34 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=COL3A1;	1	1466	Name=COL3A1;	0.7	0.9	0.9	-	-
+domain	Collagen alpha-1(III) chain.	154	1221	Collagen alpha-1(III) chain.	0.55	0.56	0.27	-	-
+domain	Nonhelical region (N-terminal).	149	167	Nonhelical region (N-terminal).	0.59	0.23	0.68	-	-
+domain	Triple-helical region.	168	1196	Triple-helical region.	0.49	0.27	0.21	-	-
+domain	Nonhelical region (C-terminal).	1197	1205	Nonhelical region (C-terminal).	0.41	0.62	0.63	-	-
+mutation	Splice_Site	779	779	p.K779T	0.6	0.0	0.6	inv_triangle	up
+mutation	Splice_Site	248	248	p.P248P	0.6	0.0	0.6	inv_triangle	up
+mutation	Silent	330	330	p.G330G	0.8	0.8	0.8	circle	up
+mutation	Splice_Site	449	449	p.R449R	0.6	0.0	0.6	inv_triangle	up
+mutation	Silent	531	531	p.G531G	0.8	0.8	0.8	circle	up
+mutation	Silent	629	629	p.K629K	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	986	986	p.N986S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1097	1097	p.T1097P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1024	1024	p.R1024Q	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	271	271	p.R271*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	1425	1425	p.S1425G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	169	169	p.L169F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	756	756	p.G756R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1315	1315	p.W1315C	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	1418	1418	p.T1418M	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	158	158	p.Y158N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1341	1341	p.G1341S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	523	523	p.E523G	1.0	1.0	0.0	circle	up
+mutation	Silent	88	88	p.C88C	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	1280	1280	p.D1280A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	951	951	p.G951V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1183	1183	p.Q1183H	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	1188	1188	p.G1188*	1.0	0.0	0.0	triangle	up
+mutation	Silent	576	576	p.G576G	0.8	0.8	0.8	circle	up
+mutation	Silent	785	785	p.P785P	0.8	0.8	0.8	circle	up
+mutation	Silent	618	618	p.G618G	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	602	602	p.P602L	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	30	30	p.G30*	1.0	0.0	0.0	triangle	up

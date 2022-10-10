@@ -1,0 +1,24 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=ZFR2; Synonyms=KIAA1086;	1	939	Name=ZFR2; Synonyms=KIAA1086;	0.7	0.9	0.9	-	-
+mutation	Silent	337	337	p.H337H	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	226	226	p.P226R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	864	864	p.A864V	1.0	1.0	0.0	circle	up
+mutation	Silent	603	603	p.T603T	0.8	0.8	0.8	circle	up
+mutation	Silent	313	313	p.R313R	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	807	807	p.A807G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	587	587	p.S587A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	6	6	p.Y6C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	335	335	p.A335V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	488	488	p.R488M	1.0	1.0	0.0	circle	up
+mutation	Silent	449	449	p.P449P	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	6	6	p.Y6C	1.0	1.0	0.0	circle	up
+mutation	Silent	452	452	p.P452P	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	6	6	p.Y6C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	147	147	p.P147L	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	658	658	p.R658*	1.0	0.0	0.0	triangle	up
+mutation	Splice_Site	545	545	p.R545W	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	906	906	p.R906W	1.0	1.0	0.0	circle	up
+mutation	Silent	783	783	p.S783S	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	734	734	p.V734I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	147	147	p.P147L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	674	674	p.V674M	1.0	1.0	0.0	circle	up

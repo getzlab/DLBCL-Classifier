@@ -1,0 +1,21 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=EIF4A2; Synonyms=DDX2B, EIF4F;	1	407	Name=EIF4A2; Synonyms=DDX2B, EIF4F;	0.7	0.9	0.9	-	-
+domain	ATP. {ECO:0000255|PROSITE- ProRule:PRU00541}.	77	84	ATP. {ECO:0000255|PROSITE- ProRule:PRU00541}.	0.42	0.42	0.67	-	-
+domain	Q motif.	33	61	Q motif.	0.57	0.34	0.23	-	-
+domain	DEAD box.	183	186	DEAD box.	0.33	0.72	0.72	-	-
+mutation	Missense_Mutation	375	375	p.N375S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	308	308	p.D308H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	313	313	p.D313N	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Ins	60	60	p.60_61insKPSAIQ	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	61	61	p.Q61E	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	27	27	p.N27K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	56	56	p.P56S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	106	106	p.V106I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	369	369	p.R369G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	63	63	p.A63V	1.0	1.0	0.0	circle	up
+mutation	Silent	26	26	p.S26S	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	77	77	p.A77T	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	116	116	p.Q116Q	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	77	77	p.A77V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	68	68	p.I68F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	63	63	p.A63G	1.0	1.0	0.0	circle	up

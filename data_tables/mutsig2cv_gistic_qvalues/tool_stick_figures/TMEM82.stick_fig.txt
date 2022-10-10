@@ -1,0 +1,11 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=TMEM82;	1	343	Name=TMEM82;	0.7	0.9	0.9	-	-
+mutation	Silent	185	185	p.R185R	0.8	0.8	0.8	circle	up
+mutation	In_Frame_Ins	307	307	p.307_308TL>TIL	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	307	307	p.307_308TL>TIL	0.0	0.0	1.0	square	up
+mutation	Silent	161	161	p.T161T	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	17	17	p.L17R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	17	17	p.L17R	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Ins	307	307	p.307_308TL>TIL	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	186	186	p.Y186F	1.0	1.0	0.0	circle	up
+mutation	Silent	245	245	p.T245T	0.8	0.8	0.8	circle	up

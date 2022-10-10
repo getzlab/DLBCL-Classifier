@@ -1,10 +1,10 @@
 rm(list = ls())
 source("src_R/load_libraries.R")
 
-preds_train = read.csv('evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.2_removeN5_nfeatures21_pMax0.94248563.tsv',
+preds_train = read.csv('evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.3_nfeatures21_pMax0.93344957.tsv',
                        sep='\t', row.names=1)
-preds_test = read.csv('evaluation_test_set/NN_reducedV3.2_removeN5_nfeatures21_testsetEval.tsv', sep='\t', row.names=1)
-labels = read.csv('data_tables/confidence_tables/baseline_probabilities.connectivity_based.sensitivity_power2.Aug_17_2022.tsv', 
+preds_test = read.csv('evaluation_test_set/NN_reducedV3.3_nfeatures21_testsetEval.tsv', sep='\t', row.names=1)
+labels = read.csv('data_tables/confidence_tables/baseline_probabilities.connectivity_based.sensitivity_power2.Sep_23_2022.tsv', 
                   sep='\t', row.names=1)
 
 labels_train = labels[rownames(preds_train), ]

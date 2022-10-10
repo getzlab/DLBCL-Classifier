@@ -1,0 +1,17 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=HLA-C; Synonyms=D6S204, HLA-JY3, HLAC;	1	372	Name=HLA-C; Synonyms=D6S204, HLA-JY3, HLAC;	0.7	0.9	0.9	-	-
+domain	HLA class I histocompatibility antigen, Cw-17 alpha chain.	25	372	HLA class I histocompatibility antigen, Cw-17 alpha chain.	0.33	0.47	0.4	-	-
+domain	Alpha-1.	25	114	Alpha-1.	0.74	0.52	0.21	-	-
+domain	Alpha-2.	115	206	Alpha-2.	0.54	0.65	0.55	-	-
+domain	Alpha-3.	207	298	Alpha-3.	0.72	0.46	0.75	-	-
+domain	Connecting peptide.	299	317	Connecting peptide.	0.5	0.21	0.74	-	-
+mutation	Frame_Shift_Del	183	183	p.YL183fs	1.0	0.0	0.0	square	up
+mutation	In_Frame_Del	50	50	p.GYV50del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	50	50	p.G50D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	83	83	p.Y83S	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	108	108	p.Y108*	1.0	0.0	0.0	triangle	up
+mutation	In_Frame_Del	143	143	p.143_146DGKD>D	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	121	121	p.R121S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	283	283	p.C283Y	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	147	147	p.Y147*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	50	50	p.G50D	1.0	1.0	0.0	circle	up

@@ -1,0 +1,37 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=BCOR; Synonyms=KIAA1575;	1	1755	Name=BCOR; Synonyms=KIAA1575;	0.7	0.9	0.9	-	-
+domain	Interaction with BCL6.	498	514	Interaction with BCL6.	0.4	0.51	0.45	-	-
+domain	Necessary and sufficient for interaction with PCGF1.	1634	1748	Necessary and sufficient for interaction with PCGF1.	0.8	0.2	0.73	-	-
+mutation	Missense_Mutation	1459	1459	p.N1459S	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	1698	1698	p.Y1698*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	546	546	p.R546C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1694	1694	p.E1694K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1633	1633	p.Y1633S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1544	1544	p.E1544K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1076	1076	p.E1076K	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	1732	1732	p.E1732*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	1698	1698	p.Y1698*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	291	291	p.M291I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1388	1388	p.A1388V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1459	1459	p.N1459S	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	919	919	p.E919*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Ins	551	551	p.D551fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	1104	1104	p.K1104*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	1462	1462	p.A1462V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1459	1459	p.N1459S	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	1217	1217	p.R1217*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Del	1381	1381	p.G1381fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	1720	1720	p.S1720fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	1664	1664	p.L1664P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1022	1022	p.R1022C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	311	311	p.K311T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1459	1459	p.N1459S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1375	1375	p.R1375W	1.0	1.0	0.0	circle	up
+mutation	Silent	1540	1540	p.N1540N	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	1149	1149	p.A1149V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	957	957	p.P957L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	903	903	p.P903L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1459	1459	p.N1459S	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	213	213	p.Y213*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	316	316	p.P316S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	54	54	p.N54T	1.0	1.0	0.0	circle	up

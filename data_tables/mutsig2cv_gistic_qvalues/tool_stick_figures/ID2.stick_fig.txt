@@ -1,0 +1,17 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=ID2; Synonyms=BHLHB26;	1	134	Name=ID2; Synonyms=BHLHB26;	0.7	0.9	0.9	-	-
+domain	Nuclear export signal. {ECO:0000250}.	106	115	Nuclear export signal. {ECO:0000250}.	0.39	0.73	0.67	-	-
+mutation	Missense_Mutation	103	103	p.L103P	1.0	1.0	0.0	circle	up
+mutation	Silent	36	36	p.L36L	0.8	0.8	0.8	circle	up
+mutation	Silent	58	58	p.K58K	0.8	0.8	0.8	circle	up
+mutation	Nonsense_Mutation	73	73	p.L73*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	78	78	p.A78D	1.0	1.0	0.0	circle	up
+mutation	Silent	45	45	p.K45K	0.8	0.8	0.8	circle	up
+mutation	Nonsense_Mutation	61	61	p.K61*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	60	60	p.S60I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	47	47	p.K47N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	60	60	p.S60R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	45	45	p.K45N	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	37	37	p.Y37*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	58	58	p.K58N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	59	59	p.V59M	1.0	1.0	0.0	circle	up

@@ -1,0 +1,13 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=PRSS21; Synonyms=ESP1, TEST1; ORFNames=UNQ266/PRO303;	1	314	Name=PRSS21; Synonyms=ESP1, TEST1; ORFNames=UNQ266/PRO303;	0.7	0.9	0.9	-	-
+domain	Testisin.	42	288	Testisin.	0.4	0.33	0.58	-	-
+mutation	Missense_Mutation	202	202	p.S202P	1.0	1.0	0.0	circle	up
+mutation	Silent	101	101	p.G101G	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	54	54	p.P54S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	54	54	p.P54S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	121	121	p.V121I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	115	115	p.Y115D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	115	115	p.Y115S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	15	15	p.R15W	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	121	121	p.V121I	1.0	1.0	0.0	circle	up
+mutation	Silent	230	230	p.G230G	0.8	0.8	0.8	circle	up

@@ -1,0 +1,12 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=SRSF7; Synonyms=SFRS7;	1	238	Name=SRSF7; Synonyms=SFRS7;	0.7	0.9	0.9	-	-
+domain	Sufficient for interaction with NXF1.	81	98	Sufficient for interaction with NXF1.	0.74	0.76	0.41	-	-
+domain	6 X 8 AA repeats of R-R-S-R-S-X-S-X.	153	226	6 X 8 AA repeats of R-R-S-R-S-X-S-X.	0.69	0.53	0.63	-	-
+mutation	Missense_Mutation	106	106	p.C106W	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	17	17	p.N17Y	1.0	1.0	0.0	circle	up
+mutation	Silent	201	201	p.R201R	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	115	115	p.Y115H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	119	119	p.C119F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	113	113	p.G113E	1.0	1.0	0.0	circle	up
+mutation	Silent	165	165	p.S165S	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	109	109	p.C109G	1.0	1.0	0.0	circle	up

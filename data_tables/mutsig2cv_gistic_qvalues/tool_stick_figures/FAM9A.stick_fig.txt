@@ -1,0 +1,10 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=FAM9A;	1	332	Name=FAM9A;	0.7	0.9	0.9	-	-
+mutation	In_Frame_Del	251	251	p.E251del	0.0	0.0	1.0	square	up
+mutation	Silent	269	269	p.E269E	0.8	0.8	0.8	circle	up
+mutation	In_Frame_Del	251	251	p.E251del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	204	204	p.A204T	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	251	251	p.E251del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	51	51	p.R51H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	303	303	p.P303L	1.0	1.0	0.0	circle	up
+mutation	Silent	196	196	p.A196A	0.8	0.8	0.8	circle	up

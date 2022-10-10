@@ -1,0 +1,15 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=BACH2;	1	841	Name=BACH2;	0.7	0.9	0.9	-	-
+domain	Basic motif. {ECO:0000255|PROSITE- ProRule:PRU00978}.	651	667	Basic motif. {ECO:0000255|PROSITE- ProRule:PRU00978}.	0.5	0.69	0.29	-	-
+domain	Leucine-zipper. {ECO:0000255|PROSITE- ProRule:PRU00978}.	671	678	Leucine-zipper. {ECO:0000255|PROSITE- ProRule:PRU00978}.	0.47	0.3	0.61	-	-
+domain	Nuclear export signal. {ECO:0000250}.	821	841	Nuclear export signal. {ECO:0000250}.	0.68	0.73	0.56	-	-
+mutation	Silent	540	540	p.L540L	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	291	291	p.L291V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	830	830	p.C830Y	1.0	1.0	0.0	circle	up
+mutation	Silent	778	778	p.G778G	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	830	830	p.C830Y	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	776	776	p.P776T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	291	291	p.L291V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	830	830	p.C830W	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	762	762	p.V762G	1.0	1.0	0.0	circle	up
+mutation	Silent	643	643	p.Q643Q	0.8	0.8	0.8	circle	up

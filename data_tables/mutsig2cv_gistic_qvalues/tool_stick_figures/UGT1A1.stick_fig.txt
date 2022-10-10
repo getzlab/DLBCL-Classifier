@@ -1,0 +1,12 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=UGT1A1; Synonyms=GNT1, UGT1;	1	533	Name=UGT1A1; Synonyms=GNT1, UGT1;	0.7	0.9	0.9	-	-
+domain	UDP-glucuronosyltransferase 1-1.	26	533	UDP-glucuronosyltransferase 1-1.	0.69	0.61	0.69	-	-
+mutation	Missense_Mutation	363	363	p.P363L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	209	209	p.R209Q	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	497	497	p.V497A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	363	363	p.P363L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	470	470	p.A470T	1.0	1.0	0.0	circle	up
+mutation	Silent	489	489	p.D489D	0.8	0.8	0.8	circle	up
+mutation	Silent	20	20	p.L20L	0.8	0.8	0.8	circle	up
+mutation	Silent	229	229	p.P229P	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	250	250	p.S250P	1.0	1.0	0.0	circle	up

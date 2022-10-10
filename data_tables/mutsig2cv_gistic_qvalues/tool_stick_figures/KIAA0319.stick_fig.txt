@@ -1,0 +1,20 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=KIAA0319;	1	1072	Name=KIAA0319;	0.7	0.9	0.9	-	-
+domain	Dyslexia-associated protein KIAA0319.	21	1072	Dyslexia-associated protein KIAA0319.	0.29	0.8	0.39	-	-
+domain	Endocytosis signal.	995	998	Endocytosis signal.	0.46	0.48	0.31	-	-
+mutation	Missense_Mutation	71	71	p.W71R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	488	488	p.V488I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	774	774	p.V774A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	773	773	p.S773G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1023	1023	p.N1023S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	75	75	p.G75D	1.0	1.0	0.0	circle	up
+mutation	Silent	360	360	p.P360P	0.8	0.8	0.8	circle	up
+mutation	Silent	189	189	p.P189P	0.8	0.8	0.8	circle	up
+mutation	Silent	180	180	p.A180A	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	488	488	p.V488I	1.0	1.0	0.0	circle	up
+mutation	Silent	189	189	p.P189P	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	774	774	p.V774A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	944	944	p.Y944C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	724	724	p.G724D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	722	722	p.R722P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	774	774	p.V774A	1.0	1.0	0.0	circle	up

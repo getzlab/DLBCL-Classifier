@@ -1,0 +1,8 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=KRTAP5-1; Synonyms=KAP5.1, KRN1L, KRTAP5.1;	1	278	Name=KRTAP5-1; Synonyms=KAP5.1, KRN1L, KRTAP5.1;	0.7	0.9	0.9	-	-
+domain	8 X 4 AA repeats of C-C-X-P.	42	271	8 X 4 AA repeats of C-C-X-P.	0.33	0.69	0.73	-	-
+mutation	Missense_Mutation	170	170	p.C170F	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	110	110	p.110_120GSCGGSKGGCG>G	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	110	110	p.110_120GSCGGSKGGCG>G	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	110	110	p.110_120GSCGGSKGGCG>G	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	26	26	p.26_33SGCGGCGS>S	0.0	0.0	1.0	square	up

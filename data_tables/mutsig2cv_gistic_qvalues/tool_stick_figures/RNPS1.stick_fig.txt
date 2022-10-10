@@ -1,0 +1,17 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=RNPS1; Synonyms=LDC2;	1	305	Name=RNPS1; Synonyms=LDC2;	0.7	0.9	0.9	-	-
+domain	Necessary for interaction with the cleaved p110 isoform of CDC2L1.	1	220	Necessary for interaction with the cleaved p110 isoform of CDC2L1.	0.46	0.44	0.3	-	-
+domain	Necessary for interaction with SRP54, nuclear localization and exon-skipping. {ECO:0000269|PubMed:14729963}.	1	161	Necessary for interaction with SRP54, nuclear localization and exon-skipping. {ECO:0000269|PubMed:14729963}.	0.64	0.76	0.58	-	-
+domain	Necessary for interactions with UPF2 and UPF3B and UPF2-dependent NMD.	69	121	Necessary for interactions with UPF2 and UPF3B and UPF2-dependent NMD.	0.49	0.23	0.49	-	-
+domain	Necessary for interaction with PNN and exon-skipping.	156	242	Necessary for interaction with PNN and exon-skipping.	0.26	0.58	0.53	-	-
+domain	Interaction with SAP18 and ACIN1. {ECO:0000269|PubMed:20966198}.	159	244	Interaction with SAP18 and ACIN1. {ECO:0000269|PubMed:20966198}.	0.55	0.45	0.67	-	-
+domain	Necessary for interaction with TRA2B, nuclear localization and exon-skipping. {ECO:0000269|PubMed:14729963}.	238	305	Necessary for interaction with TRA2B, nuclear localization and exon-skipping. {ECO:0000269|PubMed:14729963}.	0.56	0.71	0.24	-	-
+mutation	In_Frame_Del	127	127	p.S127del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	127	127	p.S127del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	127	127	p.S127del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	170	170	p.R170Q	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	127	127	p.S127del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	127	127	p.S127del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	298	298	p.R298C	1.0	1.0	0.0	circle	up
+mutation	Silent	258	258	p.P258P	0.8	0.8	0.8	circle	up
+mutation	In_Frame_Del	127	127	p.S127del	0.0	0.0	1.0	square	up

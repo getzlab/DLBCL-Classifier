@@ -1,0 +1,19 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=HIST1H2BD; Synonyms=H2BFB, HIRIP2;	1	126	Name=HIST1H2BD; Synonyms=H2BFB, HIRIP2;	0.7	0.9	0.9	-	-
+domain	Histone H2B type 1-D.	2	126	Histone H2B type 1-D.	0.7	0.6	0.38	-	-
+mutation	Missense_Mutation	106	106	p.E106A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	21	21	p.K21R	1.0	1.0	0.0	circle	up
+mutation	Silent	127	127	p.*127*	0.8	0.8	0.8	circle	up
+mutation	Silent	87	87	p.R87R	0.8	0.8	0.8	circle	up
+mutation	Silent	65	65	p.S65S	0.8	0.8	0.8	circle	up
+mutation	Silent	106	106	p.E106E	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	37	37	p.S37N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	75	75	p.A75V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	80	80	p.R80P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	124	124	p.S124N	1.0	1.0	0.0	circle	up
+mutation	Silent	109	109	p.K109K	0.8	0.8	0.8	circle	up
+mutation	Silent	45	45	p.V45V	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	73	73	p.R73C	1.0	1.0	0.0	circle	up
+mutation	Silent	42	42	p.V42V	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	72	72	p.E72D	1.0	1.0	0.0	circle	up
+mutation	Silent	117	117	p.K117K	0.8	0.8	0.8	circle	up

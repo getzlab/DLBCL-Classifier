@@ -1,0 +1,7 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=CXCL11; Synonyms=ITAC, SCYB11, SCYB9B;	1	94	Name=CXCL11; Synonyms=ITAC, SCYB11, SCYB9B;	0.7	0.9	0.9	-	-
+domain	C-X-C motif chemokine 11.	22	94	C-X-C motif chemokine 11.	0.22	0.59	0.56	-	-
+mutation	Nonstop_Mutation	95	95	p.*95K	0.92	0	0.72	circle	up
+mutation	Missense_Mutation	25	25	p.F25L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	61	61	p.E61K	1.0	1.0	0.0	circle	up
+mutation	Nonstop_Mutation	95	95	p.*95K	0.92	0	0.72	circle	up

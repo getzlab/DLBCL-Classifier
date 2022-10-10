@@ -1,0 +1,12 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=SLAMF6; Synonyms=KALI; ORFNames=UNQ6123/PRO20080;	1	332	Name=SLAMF6; Synonyms=KALI; ORFNames=UNQ6123/PRO20080;	0.7	0.9	0.9	-	-
+domain	SLAM family member 6.	22	332	SLAM family member 6.	0.26	0.59	0.77	-	-
+domain	ITSM 1. {ECO:0000250|UniProtKB:Q13291}.	283	288	ITSM 1. {ECO:0000250|UniProtKB:Q13291}.	0.69	0.27	0.28	-	-
+domain	ITSM 2. {ECO:0000250|UniProtKB:Q13291}.	307	312	ITSM 2. {ECO:0000250|UniProtKB:Q13291}.	0.62	0.54	0.51	-	-
+mutation	Missense_Mutation	139	139	p.S139G	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	17	17	p.G17R	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	105	105	p.G105D	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	3	3	p.W3*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	280	280	p.T280M	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Ins	107	107	p.Y107fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	236	236	p.I236M	1.0	1.0	0.0	circle	up

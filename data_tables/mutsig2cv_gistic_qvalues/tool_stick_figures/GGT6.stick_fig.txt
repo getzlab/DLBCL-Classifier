@@ -1,0 +1,10 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=GGT6;	1	493	Name=GGT6;	0.7	0.9	0.9	-	-
+mutation	Missense_Mutation	246	246	p.G246E	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	34	34	p.A34V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	34	34	p.A34V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	35	35	p.L35P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	34	34	p.A34V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	35	35	p.L35P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	34	34	p.A34V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	35	35	p.L35P	1.0	1.0	0.0	circle	up

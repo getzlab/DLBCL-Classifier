@@ -1,0 +1,18 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=STK33;	1	514	Name=STK33;	0.7	0.9	0.9	-	-
+domain	ATP. {ECO:0000255|PROSITE- ProRule:PRU00159}.	122	130	ATP. {ECO:0000255|PROSITE- ProRule:PRU00159}.	0.53	0.22	0.32	-	-
+mutation	Silent	14	14	p.P14P	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	228	228	p.Y228H	1.0	1.0	0.0	circle	up
+mutation	Silent	138	138	p.T138T	0.8	0.8	0.8	circle	up
+mutation	Frame_Shift_Del	139	139	p.E139fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	93	93	p.R93W	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Ins	505	505	p.505_505G>GSG	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	295	295	p.I295V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	254	254	p.N254K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	49	49	p.G49D	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Ins	505	505	p.505_505G>GSG	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	505	505	p.505_505G>GSG	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	505	505	p.505_505G>GSG	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	505	505	p.505_505G>GSG	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	398	398	p.M398I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	131	131	p.I131T	1.0	1.0	0.0	circle	up

@@ -1,0 +1,7 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=CD3G; Synonyms=T3G;	1	182	Name=CD3G; Synonyms=T3G;	0.7	0.9	0.9	-	-
+domain	T-cell surface glycoprotein CD3 gamma chain.	23	182	T-cell surface glycoprotein CD3 gamma chain.	0.66	0.21	0.36	-	-
+domain	Di-leucine motif. {ECO:0000269|PubMed:8187769}.	153	154	Di-leucine motif. {ECO:0000269|PubMed:8187769}.	0.79	0.79	0.58	-	-
+mutation	Frame_Shift_Del	71	71	p.K71fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	69	69	p.K69*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Del	71	71	p.K71fs	1.0	0.0	0.0	square	up

@@ -1,0 +1,11 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=TIMM44; Synonyms=MIMT44, TIM44;	1	452	Name=TIMM44; Synonyms=MIMT44, TIM44;	0.7	0.9	0.9	-	-
+domain	ATP. {ECO:0000255}.	166	173	ATP. {ECO:0000255}.	0.57	0.38	0.75	-	-
+mutation	Missense_Mutation	386	386	p.G386R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	116	116	p.E116K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	68	68	p.K68R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	251	251	p.N251K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	372	372	p.I372V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	202	202	p.R202W	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	372	372	p.I372V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	68	68	p.K68R	1.0	1.0	0.0	circle	up

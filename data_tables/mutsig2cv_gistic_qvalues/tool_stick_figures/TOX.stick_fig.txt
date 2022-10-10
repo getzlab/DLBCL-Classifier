@@ -1,0 +1,24 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=TOX; Synonyms=KIAA0808;	1	526	Name=TOX; Synonyms=KIAA0808;	0.7	0.9	0.9	-	-
+domain	HMG box. {ECO:0000255|PROSITE- ProRule:PRU00267}.	261	329	HMG box. {ECO:0000255|PROSITE- ProRule:PRU00267}.	0.58	0.67	0.41	-	-
+domain	Nuclear localization signal. {ECO:0000255}.	237	256	Nuclear localization signal. {ECO:0000255}.	0.38	0.33	0.35	-	-
+mutation	Frame_Shift_Del	307	307	p.K307fs	1.0	0.0	0.0	square	up
+mutation	Splice_Site	34	34	p.K34R	0.6	0.0	0.6	inv_triangle	up
+mutation	Splice_Site	34	34	p.K34R	0.6	0.0	0.6	inv_triangle	up
+mutation	Silent	3	3	p.V3V	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	10	10	p.A10V	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	34	34	p.K34K	0.6	0.0	0.6	inv_triangle	up
+mutation	Splice_Site	34	34	p.K34K	0.6	0.0	0.6	inv_triangle	up
+mutation	Silent	518	518	p.Q518Q	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	491	491	p.E491D	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	30	30	p.Y30*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	10	10	p.A10V	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	34	34	p.K34R	0.6	0.0	0.6	inv_triangle	up
+mutation	Frame_Shift_Del	31	31	p.Y31fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	6	6	p.Y6S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	514	514	p.S514G	1.0	1.0	0.0	circle	up
+mutation	Silent	30	30	p.Y30Y	0.8	0.8	0.8	circle	up
+mutation	Frame_Shift_Del	25	25	p.PCL25fs	1.0	0.0	0.0	square	up
+mutation	Splice_Site	34	34	p.K34K	0.6	0.0	0.6	inv_triangle	up
+mutation	Silent	448	448	p.Q448Q	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	30	30	p.Y30N	1.0	1.0	0.0	circle	up

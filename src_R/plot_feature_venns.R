@@ -15,8 +15,9 @@ nm_c3_sig = toupper(make.names(nm_c3_sig))
 nm_c4_sig = toupper(make.names(nm_c4_sig))
 nm_c5_sig = toupper(make.names(nm_c5_sig))
 
-new_qval_df =  read.csv('data_tables/qval_dfs/fisher_exact_5x2_17-Aug-2022.combined.tsv',
-               sep='\t')
+new_qval_df =  read.csv('data_tables/qval_dfs/fisher_exact_5x2.Sep_23_2022.combined.tsv',
+               sep='\t', row.names=1)
+new_qval_df$gene = rownames(new_qval_df)
 
 new_c1_sig = new_qval_df[((new_qval_df$C1_nf >= 0.30) & (new_qval_df$q < 0.10)) | 
                            ((new_qval_df$q < 0.10) & (new_qval_df$cluster == 'C1')), 'gene']
@@ -32,7 +33,6 @@ new_c5_sig = new_qval_df[((new_qval_df$C5_nf >= 0.30) & (new_qval_df$q < 0.10)) 
 # Manually add in a couple edge cases/exceptions
 new_c2_sig = c(new_c2_sig, 'X10Q23.31.DEL')
 new_c3_sig = c(new_c3_sig, 'X12P.AMP')
-new_c5_sig = c(new_c5_sig, 'ETS1')
 
 pdf("./plots/paper_figures/c1_venn.pdf", height = 11, width = 8.5, paper = "letter")
 grid.newpage()

@@ -1,0 +1,6 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=SASH3; Synonyms=CXorf9, SLY;	1	380	Name=SASH3; Synonyms=CXorf9, SLY;	0.7	0.9	0.9	-	-
+mutation	Missense_Mutation	348	348	p.D348G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	71	71	p.K71R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	348	348	p.D348E	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	348	348	p.D348G	1.0	1.0	0.0	circle	up

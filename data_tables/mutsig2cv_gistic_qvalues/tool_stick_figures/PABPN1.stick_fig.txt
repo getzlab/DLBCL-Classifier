@@ -1,0 +1,11 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=PABPN1; Synonyms=PAB2, PABP2;	1	306	Name=PABPN1; Synonyms=PAB2, PABP2;	0.7	0.9	0.9	-	-
+domain	Polyadenylate-binding protein 2.	2	306	Polyadenylate-binding protein 2.	0.73	0.25	0.41	-	-
+domain	Interaction with SKIP. {ECO:0000269|PubMed:11371506}.	2	145	Interaction with SKIP. {ECO:0000269|PubMed:11371506}.	0.67	0.44	0.71	-	-
+domain	Stimulates PAPOLA. {ECO:0000250}.	119	147	Stimulates PAPOLA. {ECO:0000250}.	0.46	0.32	0.26	-	-
+domain	Necessary for homooligomerization.	155	306	Necessary for homooligomerization.	0.73	0.69	0.25	-	-
+domain	Interaction with PAPOLA. {ECO:0000250}.	286	306	Interaction with PAPOLA. {ECO:0000250}.	0.51	0.75	0.74	-	-
+mutation	Missense_Mutation	167	167	p.M167I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	167	167	p.M167I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	167	167	p.M167I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	11	11	p.A11P	1.0	1.0	0.0	circle	up

@@ -1,0 +1,51 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=FASN; Synonyms=FAS;	1	2511	Name=FASN; Synonyms=FAS;	0.7	0.9	0.9	-	-
+domain	NADP (ER). {ECO:0000250}.	1671	1688	NADP (ER). {ECO:0000250}.	0.34	0.24	0.44	-	-
+domain	NADP (KR). {ECO:0000250}.	1886	1901	NADP (KR). {ECO:0000250}.	0.39	0.73	0.51	-	-
+domain	Beta-ketoacyl synthase. {ECO:0000250}.	1	414	Beta-ketoacyl synthase. {ECO:0000250}.	0.72	0.77	0.46	-	-
+domain	Acyl and malonyl transferases. {ECO:0000250}.	429	817	Acyl and malonyl transferases. {ECO:0000250}.	0.35	0.42	0.73	-	-
+domain	Enoyl reductase. {ECO:0000250}.	1635	1863	Enoyl reductase. {ECO:0000250}.	0.74	0.22	0.59	-	-
+domain	Beta-ketoacyl reductase. {ECO:0000250}.	1864	2118	Beta-ketoacyl reductase. {ECO:0000250}.	0.64	0.53	0.73	-	-
+domain	Thioesterase. {ECO:0000250}.	2207	2511	Thioesterase. {ECO:0000250}.	0.62	0.52	0.23	-	-
+mutation	Missense_Mutation	264	264	p.N264K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	284	284	p.L284P	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Ins	299	299	p.K299fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	259	259	p.I259T	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	213	213	p.PT213fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	231	231	p.K231*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Ins	231	231	p.K231fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	260	260	p.D260N	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	250	250	p.R250*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	262	262	p.I262N	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	276	276	p.Q276*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Del	233	233	p.C233fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	250	250	p.R250*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	264	264	p.N264D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	233	233	p.I233V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	248	248	p.F248C	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	220	220	p.V220fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	276	276	p.Q276*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Del	220	220	p.V220fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	244	244	p.Q244*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	231	231	p.K231*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	260	260	p.D260G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	273	273	p.Q273E	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	225	225	p.S225fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	250	250	p.R250Q	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	134	134	p.F134fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	143	143	p.C143*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Del	220	220	p.V220fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	103	103	p.R103T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	85	85	p.C85Y	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	199	199	p.C199*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	203	203	p.R203*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	232	232	p.Y232*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	242	242	p.L242P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	254	254	p.V254G	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Ins	258	258	p.K258fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	232	232	p.Y232*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Del	230	230	p.SKYITTIAG230fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	134	134	p.F134L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	223	223	p.N223H	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	276	276	p.Q276*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	232	232	p.Y232*	1.0	0.0	0.0	triangle	up

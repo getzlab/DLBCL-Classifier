@@ -1,0 +1,8 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=DERL1 {ECO:0000312|HGNC:HGNC:28454}; Synonyms=DER1; ORFNames=UNQ243/PRO276 {ECO:0000312|EMBL:AAQ89177.1};	1	251	Name=DERL1 {ECO:0000312|HGNC:HGNC:28454}; Synonyms=DER1; ORFNames=UNQ243/PRO276 {ECO:0000312|EMBL:AAQ89177.1};	0.7	0.9	0.9	-	-
+domain	Derlin-1.	2	251	Derlin-1.	0.76	0.5	0.66	-	-
+mutation	Missense_Mutation	29	29	p.G29D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	29	29	p.G29D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	84	84	p.T84A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	29	29	p.G29D	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	145	145	p.W145*	1.0	0.0	0.0	triangle	up

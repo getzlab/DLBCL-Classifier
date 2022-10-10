@@ -1,0 +1,30 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=BCL11A; Synonyms=CTIP1, EVI9, KIAA1809, ZNF856;	1	835	Name=BCL11A; Synonyms=CTIP1, EVI9, KIAA1809, ZNF856;	0.7	0.9	0.9	-	-
+domain	Required for nuclear body formation and for SUMO1 recruitment. {ECO:0000250}.	1	210	Required for nuclear body formation and for SUMO1 recruitment. {ECO:0000250}.	0.28	0.74	0.7	-	-
+mutation	Missense_Mutation	305	305	p.P305L	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	6	6	p.Q6*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	6	6	p.Q6*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	6	6	p.Q6E	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	462	462	p.A462T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	11	11	p.H11Y	1.0	1.0	0.0	circle	up
+mutation	Silent	5	5	p.K5K	0.8	0.8	0.8	circle	up
+mutation	Nonsense_Mutation	6	6	p.Q6*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	9	9	p.P9S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	7	7	p.G7D	1.0	1.0	0.0	circle	up
+mutation	Silent	319	319	p.L319L	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	9	9	p.P9L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	9	9	p.P9S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	132	132	p.L132M	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	5	5	p.K5N	1.0	1.0	0.0	circle	up
+mutation	Silent	9	9	p.P9P	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	545	545	p.D545N	1.0	1.0	0.0	circle	up
+mutation	Silent	410	410	p.C410C	0.8	0.8	0.8	circle	up
+mutation	Silent	396	396	p.R396R	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	542	542	p.A542T	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	12	12	p.L12*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	6	6	p.Q6*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	5	5	p.K5N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	59	59	p.D59G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	66	66	p.H66Y	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	13	13	p.S13R	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	134	134	p.W134*	1.0	0.0	0.0	triangle	up

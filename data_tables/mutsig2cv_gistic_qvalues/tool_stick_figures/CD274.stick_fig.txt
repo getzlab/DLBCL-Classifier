@@ -1,0 +1,10 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=CD274; Synonyms=B7H1, PDCD1L1, PDCD1LG1, PDL1;	1	290	Name=CD274; Synonyms=B7H1, PDCD1L1, PDCD1LG1, PDL1;	0.7	0.9	0.9	-	-
+domain	Programmed cell death 1 ligand 1.	19	290	Programmed cell death 1 ligand 1.	0.49	0.68	0.79	-	-
+mutation	Frame_Shift_Del	141	141	p.I141fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	80	80	p.S80N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	20	20	p.T20N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	238	238	p.R238S	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Ins	200	200	p.N200fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	28	28	p.Y28*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	167	167	p.W167R	1.0	1.0	0.0	circle	up

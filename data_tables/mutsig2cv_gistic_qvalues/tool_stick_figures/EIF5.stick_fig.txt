@@ -1,0 +1,11 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=EIF5;	1	431	Name=EIF5;	0.7	0.9	0.9	-	-
+domain	GTP. {ECO:0000255}.	27	34	GTP. {ECO:0000255}.	0.39	0.76	0.29	-	-
+mutation	In_Frame_Ins	185	185	p.185_186insP	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	185	185	p.185_186insP	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	185	185	p.185_186insP	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	185	185	p.185_186insP	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	185	185	p.185_186insP	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	286	286	p.N286S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	197	197	p.E197D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	186	186	p.N186I	1.0	1.0	0.0	circle	up

@@ -1,0 +1,43 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=GNAI2; Synonyms=GNAI2B;	1	355	Name=GNAI2; Synonyms=GNAI2B;	0.7	0.9	0.9	-	-
+domain	Guanine nucleotide-binding protein G(i) subunit alpha-2.	2	355	Guanine nucleotide-binding protein G(i) subunit alpha-2.	0.21	0.62	0.53	-	-
+domain	GTP. {ECO:0000250|UniProtKB:P63096}.	40	47	GTP. {ECO:0000250|UniProtKB:P63096}.	0.61	0.67	0.56	-	-
+domain	GTP. {ECO:0000250}.	176	182	GTP. {ECO:0000250}.	0.6	0.22	0.24	-	-
+domain	GTP. {ECO:0000250|UniProtKB:P63096}.	201	205	GTP. {ECO:0000250|UniProtKB:P63096}.	0.61	0.67	0.56	-	-
+domain	GTP. {ECO:0000250|UniProtKB:P63096}.	270	273	GTP. {ECO:0000250|UniProtKB:P63096}.	0.61	0.67	0.56	-	-
+mutation	In_Frame_Del	272	272	p.K272del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	61	61	p.Y61N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	209	209	p.R209W	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	177	177	p.R177P	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	272	272	p.K272del	0.0	0.0	1.0	square	up
+mutation	Splice_Site	101	101	p.A101V	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	208	208	p.E208K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	203	203	p.G203D	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	272	272	p.K272del	0.0	0.0	1.0	square	up
+mutation	Splice_Site	41	41	p.41_42insA	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	52	52	p.Q52R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	274	274	p.L274P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	52	52	p.Q52P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	206	206	p.R206W	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	94	94	p.D94N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	270	270	p.N270D	1.0	1.0	0.0	circle	up
+mutation	Silent	67	67	p.R67R	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	340	340	p.V340I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	179	179	p.R179H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	212	212	p.W212C	1.0	1.0	0.0	circle	up
+mutation	Silent	322	322	p.T322T	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	45	45	p.G45W	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	45	45	p.G45E	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	179	179	p.R179H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	282	282	p.S282R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	291	291	p.Y291N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	182	182	p.T182A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	182	182	p.T182A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	48	48	p.T48P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	179	179	p.R179H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	47	47	p.S47N	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	272	272	p.K272del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	272	272	p.K272del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	327	327	p.A327G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	44	44	p.S44L	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	40	40	p.G40D	0.6	0.0	0.6	inv_triangle	up

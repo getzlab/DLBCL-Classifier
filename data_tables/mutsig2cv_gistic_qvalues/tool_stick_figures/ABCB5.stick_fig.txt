@@ -1,0 +1,31 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=ABCB5;	1	1257	Name=ABCB5;	0.7	0.9	0.9	-	-
+domain	ATP. {ECO:0000255|PROSITE- ProRule:PRU00434}.	421	428	ATP. {ECO:0000255|PROSITE- ProRule:PRU00434}.	0.62	0.41	0.77	-	-
+domain	ATP. {ECO:0000255|PROSITE- ProRule:PRU00434}.	1050	1057	ATP. {ECO:0000255|PROSITE- ProRule:PRU00434}.	0.62	0.41	0.77	-	-
+mutation	Silent	284	284	p.T284T	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	1146	1146	p.N1146S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	601	601	p.A601E	1.0	1.0	0.0	circle	up
+mutation	Silent	757	757	p.Y757Y	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	889	889	p.S889L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	889	889	p.S889L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	381	381	p.S381P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1086	1086	p.V1086A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1172	1172	p.Q1172R	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	1246	1246	p.I1246fs	1.0	0.0	0.0	square	up
+mutation	Silent	1183	1183	p.T1183T	0.8	0.8	0.8	circle	up
+mutation	Silent	986	986	p.A986A	0.8	0.8	0.8	circle	up
+mutation	Frame_Shift_Ins	1192	1192	p.K1192fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	378	378	p.K378E	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1122	1122	p.L1122V	1.0	1.0	0.0	circle	up
+mutation	Silent	663	663	p.E663E	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	1129	1129	p.A1129T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	969	969	p.G969R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	436	436	p.R436K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	931	931	p.F931L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	38	38	p.R38C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	815	815	p.V815I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1053	1053	p.G1053S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1135	1135	p.H1135N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	390	390	p.N390H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	740	740	p.V740F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1027	1027	p.R1027H	1.0	1.0	0.0	circle	up

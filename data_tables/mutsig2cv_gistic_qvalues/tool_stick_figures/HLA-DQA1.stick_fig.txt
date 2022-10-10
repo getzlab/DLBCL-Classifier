@@ -1,0 +1,8 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=HLA-DQA1;	1	254	Name=HLA-DQA1;	0.7	0.9	0.9	-	-
+domain	HLA class II histocompatibility antigen, DQ alpha 1 chain.	24	254	HLA class II histocompatibility antigen, DQ alpha 1 chain.	0.67	0.63	0.34	-	-
+domain	Alpha-1.	24	119	Alpha-1.	0.21	0.32	0.39	-	-
+domain	Alpha-2.	120	203	Alpha-2.	0.75	0.44	0.71	-	-
+domain	Connecting peptide.	204	216	Connecting peptide.	0.21	0.75	0.54	-	-
+mutation	Frame_Shift_Ins	139	139	p.F139fs	1.0	0.0	0.0	square	up
+mutation	Splice_Site	205	205	p.E205G	0.6	0.0	0.6	inv_triangle	up

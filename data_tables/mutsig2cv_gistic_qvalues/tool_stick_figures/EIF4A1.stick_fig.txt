@@ -1,0 +1,13 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=EIF4A1; Synonyms=DDX2A, EIF4A;	1	406	Name=EIF4A1; Synonyms=DDX2A, EIF4A;	0.7	0.9	0.9	-	-
+domain	Eukaryotic initiation factor 4A-I.	2	406	Eukaryotic initiation factor 4A-I.	0.38	0.44	0.74	-	-
+domain	ATP. {ECO:0000255|PROSITE- ProRule:PRU00541}.	76	83	ATP. {ECO:0000255|PROSITE- ProRule:PRU00541}.	0.43	0.68	0.32	-	-
+domain	Q motif.	32	60	Q motif.	0.61	0.37	0.25	-	-
+domain	DEAD box.	182	185	DEAD box.	0.69	0.69	0.69	-	-
+mutation	Missense_Mutation	74	74	p.A74V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	399	399	p.P399S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	292	292	p.M292I	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	274	274	p.Q274*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	160	160	p.G160D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	374	374	p.N374Y	1.0	1.0	0.0	circle	up
+mutation	Silent	180	180	p.V180V	0.8	0.8	0.8	circle	up

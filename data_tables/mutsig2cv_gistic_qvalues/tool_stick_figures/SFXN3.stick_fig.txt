@@ -1,0 +1,7 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=SFXN3;	1	321	Name=SFXN3;	0.7	0.9	0.9	-	-
+mutation	Missense_Mutation	253	253	p.T253I	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	213	213	p.E213fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	213	213	p.E213fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	213	213	p.E213fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	17	17	p.P17R	1.0	1.0	0.0	circle	up

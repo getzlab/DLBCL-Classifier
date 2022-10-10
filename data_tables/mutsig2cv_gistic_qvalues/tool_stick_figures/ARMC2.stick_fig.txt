@@ -1,0 +1,9 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=ARMC2;	1	867	Name=ARMC2;	0.7	0.9	0.9	-	-
+mutation	Splice_Site	816	816	p.D816D	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	266	266	p.E266K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	505	505	p.R505H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	751	751	p.R751C	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	282	282	p.K282fs	0.6	0.0	0.6	inv_triangle	up
+mutation	Nonsense_Mutation	444	444	p.S444*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	572	572	p.T572M	1.0	1.0	0.0	circle	up

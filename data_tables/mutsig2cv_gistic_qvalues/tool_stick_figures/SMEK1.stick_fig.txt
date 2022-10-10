@@ -1,0 +1,15 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=PPP4R3A {ECO:0000312|HGNC:HGNC:20219}; Synonyms=KIAA2010, PP4R3A, SMEK1; ORFNames=MSTP033;	1	833	Name=PPP4R3A {ECO:0000312|HGNC:HGNC:20219}; Synonyms=KIAA2010, PP4R3A, SMEK1; ORFNames=MSTP033;	0.7	0.9	0.9	-	-
+mutation	Missense_Mutation	11	11	p.Y11S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	537	537	p.L537P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	272	272	p.D272G	1.0	1.0	0.0	circle	up
+mutation	Silent	169	169	p.Y169Y	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	54	54	p.S54L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	161	161	p.A161E	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	11	11	p.Y11*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	378	378	p.R378Q	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	542	542	p.V542fs	1.0	0.0	0.0	square	up
+mutation	Nonstop_Mutation	834	834	p.*834S	0.97	0	0.82	circle	up
+mutation	Missense_Mutation	604	604	p.M604R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	19	19	p.W19R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	811	811	p.E811D	1.0	1.0	0.0	circle	up

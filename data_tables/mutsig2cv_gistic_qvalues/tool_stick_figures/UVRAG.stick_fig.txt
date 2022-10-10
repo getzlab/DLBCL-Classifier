@@ -1,0 +1,12 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=UVRAG;	1	699	Name=UVRAG;	0.7	0.9	0.9	-	-
+domain	Sufficient for interaction with STX7; VTI1B AND STX8. {ECO:0000269|PubMed:24550300}.	200	269	Sufficient for interaction with STX7; VTI1B AND STX8. {ECO:0000269|PubMed:24550300}.	0.26	0.46	0.77	-	-
+domain	Sufficient for interaction with VPS16, required for interaction with CEP63. {ECO:0000269|PubMed:18552835, ECO:0000269|PubMed:22542840}.	270	442	Sufficient for interaction with VPS16, required for interaction with CEP63. {ECO:0000269|PubMed:18552835, ECO:0000269|PubMed:22542840}.	0.76	0.24	0.2	-	-
+domain	Required for interaction with PRKDC, XRCC6 and XRCC5. {ECO:0000269|PubMed:22542840}.	443	699	Required for interaction with PRKDC, XRCC6 and XRCC5. {ECO:0000269|PubMed:22542840}.	0.46	0.59	0.6	-	-
+mutation	Splice_Site	236	236	p.K236fs	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	403	403	p.L403R	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	234	234	p.KK234fs	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	641	641	p.T641I	1.0	1.0	0.0	circle	up
+mutation	Silent	618	618	p.H618H	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	641	641	p.T641I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	404	404	p.T404M	1.0	1.0	0.0	circle	up

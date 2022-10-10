@@ -1,0 +1,12 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=MSL2; Synonyms=KIAA1585, MSL2L1, RNF184;	1	577	Name=MSL2; Synonyms=KIAA1585, MSL2L1, RNF184;	0.7	0.9	0.9	-	-
+domain	Sufficient for interaction with MSL1. {ECO:0000269|PubMed:23084835}.	1	116	Sufficient for interaction with MSL1. {ECO:0000269|PubMed:23084835}.	0.79	0.7	0.65	-	-
+mutation	Frame_Shift_Ins	456	456	p.P456fs	1.0	0.0	0.0	square	up
+mutation	Silent	477	477	p.R477R	0.8	0.8	0.8	circle	up
+mutation	Nonsense_Mutation	507	507	p.E507*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Ins	456	456	p.P456fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	109	109	p.Y109H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	120	120	p.I120T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	10	10	p.Y10H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	177	177	p.M177V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	480	480	p.R480H	1.0	1.0	0.0	circle	up

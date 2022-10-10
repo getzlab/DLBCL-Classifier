@@ -1,0 +1,9 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=CD74; Synonyms=DHLAG;	1	296	Name=CD74; Synonyms=DHLAG;	0.7	0.9	0.9	-	-
+domain	CLIP.	103	117	CLIP.	0.34	0.5	0.36	-	-
+mutation	Missense_Mutation	99	99	p.K99T	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	159	159	p.K159*	1.0	0.0	0.0	triangle	up
+mutation	Silent	57	57	p.V57V	0.8	0.8	0.8	circle	up
+mutation	Splice_Site	42	42	p.S42N	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	108	108	p.R108H	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	42	42	p.S42N	0.6	0.0	0.6	inv_triangle	up

@@ -1,0 +1,14 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=PGGHG {ECO:0000303|PubMed:26682924, ECO:0000312|HGNC:HGNC:26210}; Synonyms=ATHL1 {ECO:0000312|HGNC:HGNC:26210};	1	737	Name=PGGHG {ECO:0000303|PubMed:26682924, ECO:0000312|HGNC:HGNC:26210}; Synonyms=ATHL1 {ECO:0000312|HGNC:HGNC:26210};	0.7	0.9	0.9	-	-
+domain	Substrate binding. {ECO:0000305|PubMed:26682924}.	300	301	Substrate binding. {ECO:0000305|PubMed:26682924}.	0.55	0.46	0.53	-	-
+domain	Substrate binding. {ECO:0000250|UniProtKB:D6XZ22}.	498	499	Substrate binding. {ECO:0000250|UniProtKB:D6XZ22}.	0.39	0.63	0.3	-	-
+mutation	Silent	335	335	p.N335N	0.8	0.8	0.8	circle	up
+mutation	Splice_Site	387	387	p.D387G	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	327	327	p.R327H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	526	526	p.E526K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	267	267	p.L267M	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	327	327	p.R327H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	581	581	p.A581T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	440	440	p.Y440H	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	387	387	p.D387G	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	600	600	p.T600M	1.0	1.0	0.0	circle	up

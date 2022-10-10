@@ -1,0 +1,28 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=TET2; Synonyms=KIAA1546; ORFNames=Nbla00191;	1	2002	Name=TET2; Synonyms=KIAA1546; ORFNames=Nbla00191;	0.7	0.9	0.9	-	-
+domain	Interaction with DNA.	1290	1303	Interaction with DNA.	0.65	0.56	0.24	-	-
+domain	2-oxoglutarate binding.	1896	1898	2-oxoglutarate binding.	0.35	0.75	0.25	-	-
+domain	Substrate binding.	1902	1904	Substrate binding.	0.61	0.29	0.38	-	-
+mutation	Frame_Shift_Del	1051	1051	p.QKQV1051fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	1322	1322	p.L1322fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	1035	1035	p.F1035fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	906	906	p.M906V	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	1057	1057	p.E1057*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Ins	819	819	p.Y819fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	694	694	p.L694R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1066	1066	p.T1066N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	29	29	p.P29R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	772	772	p.E772G	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	774	774	p.S774*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	1039	1039	p.S1039*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	716	716	p.S716*	1.0	0.0	0.0	triangle	up
+mutation	Silent	156	156	p.Q156Q	0.8	0.8	0.8	circle	up
+mutation	In_Frame_Del	919	919	p.919_920YL>*	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	29	29	p.P29R	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	385	385	p.S385*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	724	724	p.H724N	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	292	292	p.VS292fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	1057	1057	p.E1057*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	962	962	p.Q962*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	414	414	p.Q414*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Del	738	738	p.L738fs	1.0	0.0	0.0	square	up

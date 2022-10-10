@@ -1,0 +1,17 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=NFATC4; Synonyms=NFAT3;	1	902	Name=NFATC4; Synonyms=NFAT3;	0.7	0.9	0.9	-	-
+domain	DNA-binding (experimentally determined)	430	437	DNA-binding (experimentally determined)	0.6	0.56	0.59	-	-
+domain	Calcineurin-binding.	114	119	Calcineurin-binding.	0.64	0.23	0.59	-	-
+domain	2 approximate SP repeats.	213	293	2 approximate SP repeats.	0.36	0.36	0.57	-	-
+domain	Nuclear localization signal.	268	270	Nuclear localization signal.	0.33	0.66	0.62	-	-
+domain	Nuclear localization signal.	672	674	Nuclear localization signal.	0.33	0.66	0.62	-	-
+mutation	In_Frame_Ins	100	100	p.100_100G>GGAG	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	100	100	p.100_100G>GGAG	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	100	100	p.100_100G>GGAG	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	100	100	p.100_100G>GGAG	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	100	100	p.100_100G>GGAG	0.0	0.0	1.0	square	up
+mutation	Silent	523	523	p.C523C	0.8	0.8	0.8	circle	up
+mutation	Silent	196	196	p.D196D	0.8	0.8	0.8	circle	up
+mutation	In_Frame_Ins	100	100	p.100_100G>GGAG	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	813	813	p.P813L	1.0	1.0	0.0	circle	up
+mutation	Silent	220	220	p.A220A	0.8	0.8	0.8	circle	up

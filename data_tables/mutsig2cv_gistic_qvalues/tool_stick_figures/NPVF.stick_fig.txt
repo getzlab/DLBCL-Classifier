@@ -1,0 +1,8 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=NPVF; Synonyms=C7orf9, RFRP;	1	196	Name=NPVF; Synonyms=C7orf9, RFRP;	0.7	0.9	0.9	-	-
+mutation	Frame_Shift_Ins	185	185	p.K185fs	1.0	0.0	0.0	square	up
+mutation	In_Frame_Del	183	183	p.LF183del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	175	175	p.D175G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	157	157	p.A157V	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Ins	185	185	p.K185fs	1.0	0.0	0.0	square	up
+mutation	In_Frame_Del	183	183	p.LF183del	0.0	0.0	1.0	square	up

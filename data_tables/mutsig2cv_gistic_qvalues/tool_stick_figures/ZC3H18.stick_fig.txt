@@ -1,0 +1,27 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=ZC3H18; Synonyms=NHN1;	1	953	Name=ZC3H18; Synonyms=NHN1;	0.7	0.9	0.9	-	-
+mutation	Missense_Mutation	913	913	p.G913S	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	677	677	p.T677fs	1.0	0.0	0.0	square	up
+mutation	Silent	939	939	p.E939E	0.8	0.8	0.8	circle	up
+mutation	Nonsense_Mutation	122	122	p.E122*	1.0	0.0	0.0	triangle	up
+mutation	Silent	901	901	p.K901K	0.8	0.8	0.8	circle	up
+mutation	Silent	604	604	p.S604S	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	455	455	p.R455C	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	677	677	p.T677fs	1.0	0.0	0.0	square	up
+mutation	In_Frame_Del	422	422	p.ER422del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	30	30	p.R30T	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	422	422	p.ER422del	0.0	0.0	1.0	square	up
+mutation	Frame_Shift_Del	360	360	p.R360fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	251	251	p.Y251*	1.0	0.0	0.0	triangle	up
+mutation	In_Frame_Del	422	422	p.ER422del	0.0	0.0	1.0	square	up
+mutation	Frame_Shift_Ins	677	677	p.T677fs	1.0	0.0	0.0	square	up
+mutation	Silent	706	706	p.S706S	0.8	0.8	0.8	circle	up
+mutation	Nonsense_Mutation	777	777	p.Q777*	1.0	0.0	0.0	triangle	up
+mutation	In_Frame_Del	422	422	p.ER422del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	142	142	p.V142I	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	422	422	p.ER422del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	422	422	p.ER422del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	462	462	p.E462K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	338	338	p.E338D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	143	143	p.Q143L	1.0	1.0	0.0	circle	up
+mutation	Silent	34	34	p.S34S	0.8	0.8	0.8	circle	up

@@ -1,0 +1,23 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=BRAF; Synonyms=BRAF1, RAFB1;	1	766	Name=BRAF; Synonyms=BRAF1, RAFB1;	0.7	0.9	0.9	-	-
+domain	Serine/threonine-protein kinase B-raf.	2	766	Serine/threonine-protein kinase B-raf.	0.56	0.78	0.64	-	-
+domain	ATP. {ECO:0000255|PROSITE- ProRule:PRU00159}.	463	471	ATP. {ECO:0000255|PROSITE- ProRule:PRU00159}.	0.36	0.56	0.75	-	-
+mutation	Missense_Mutation	597	597	p.L597R	1.0	1.0	0.0	circle	up
+mutation	Silent	589	589	p.T589T	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	223	223	p.H223P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	600	600	p.V600E	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	600	600	p.V600E	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	597	597	p.L597Q	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	581	581	p.N581S	0.6	0.0	0.6	inv_triangle	up
+mutation	Silent	694	694	p.A694A	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	719	719	p.R719C	1.0	1.0	0.0	circle	up
+mutation	Silent	489	489	p.A489A	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	326	326	p.I326V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	485	485	p.L485F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	601	601	p.K601N	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	581	581	p.N581S	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	120	120	p.V120I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	469	469	p.G469A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	594	594	p.D594G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	466	466	p.G466R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	597	597	p.L597Q	1.0	1.0	0.0	circle	up

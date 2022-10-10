@@ -1,0 +1,27 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=EEF1A1; Synonyms=EEF1A, EF1A, LENG7;	1	462	Name=EEF1A1; Synonyms=EEF1A, EF1A, LENG7;	0.7	0.9	0.9	-	-
+domain	Elongation factor 1-alpha 1.	2	462	Elongation factor 1-alpha 1.	0.27	0.65	0.72	-	-
+domain	GTP. {ECO:0000250}.	14	21	GTP. {ECO:0000250}.	0.62	0.33	0.77	-	-
+domain	GTP. {ECO:0000250}.	91	95	GTP. {ECO:0000250}.	0.62	0.33	0.77	-	-
+domain	GTP. {ECO:0000250}.	153	156	GTP. {ECO:0000250}.	0.62	0.33	0.77	-	-
+domain	G1. {ECO:0000250}.	14	21	G1. {ECO:0000250}.	0.33	0.75	0.36	-	-
+domain	G2. {ECO:0000250}.	70	74	G2. {ECO:0000250}.	0.43	0.33	0.3	-	-
+domain	G3. {ECO:0000250}.	91	94	G3. {ECO:0000250}.	0.74	0.23	0.26	-	-
+domain	G4. {ECO:0000250}.	153	156	G4. {ECO:0000250}.	0.78	0.62	0.47	-	-
+domain	G5. {ECO:0000250}.	194	196	G5. {ECO:0000250}.	0.33	0.39	0.59	-	-
+mutation	Frame_Shift_Del	114	114	p.L114fs	1.0	0.0	0.0	square	up
+mutation	Splice_Site	258	258	p.G258A	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	31	31	p.C31W	1.0	1.0	0.0	circle	up
+mutation	Silent	139	139	p.L139L	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	407	407	p.G407D	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	9	9	p.N9S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	97	97	p.D97N	1.0	1.0	0.0	circle	up
+mutation	Silent	261	261	p.T261T	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	118	118	p.A118V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	97	97	p.D97N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	50	50	p.G50R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	112	112	p.A112T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	252	252	p.D252N	1.0	1.0	0.0	circle	up
+mutation	Silent	339	339	p.G339G	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	97	97	p.D97V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	92	92	p.A92T	1.0	1.0	0.0	circle	up

@@ -1,0 +1,11 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=TRAF6; Synonyms=RNF85;	1	522	Name=TRAF6; Synonyms=RNF85;	0.7	0.9	0.9	-	-
+domain	Interaction with TAX1BP1. {ECO:0000269|PubMed:10920205}.	1	354	Interaction with TAX1BP1. {ECO:0000269|PubMed:10920205}.	0.56	0.28	0.22	-	-
+domain	Interaction with TANK. {ECO:0000269|PubMed:25861989}.	355	522	Interaction with TANK. {ECO:0000269|PubMed:25861989}.	0.33	0.72	0.63	-	-
+mutation	Nonsense_Mutation	345	345	p.E345*	1.0	0.0	0.0	triangle	up
+mutation	Silent	281	281	p.S281S	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	78	78	p.R78G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	227	227	p.M227I	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	355	355	p.W355*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	355	355	p.W355*	1.0	0.0	0.0	triangle	up
+mutation	Nonsense_Mutation	355	355	p.W355*	1.0	0.0	0.0	triangle	up

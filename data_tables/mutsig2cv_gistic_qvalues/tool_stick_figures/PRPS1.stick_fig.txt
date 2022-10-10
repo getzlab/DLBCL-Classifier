@@ -1,0 +1,7 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=PRPS1;	1	318	Name=PRPS1;	0.7	0.9	0.9	-	-
+domain	Ribose-phosphate pyrophosphokinase 1.	2	318	Ribose-phosphate pyrophosphokinase 1.	0.71	0.48	0.29	-	-
+domain	ATP.	96	101	ATP.	0.61	0.29	0.71	-	-
+domain	Binding of phosphoribosylpyrophosphate. {ECO:0000255}.	212	227	Binding of phosphoribosylpyrophosphate. {ECO:0000255}.	0.36	0.34	0.54	-	-
+mutation	Missense_Mutation	225	225	p.T225I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	118	118	p.V118I	1.0	1.0	0.0	circle	up

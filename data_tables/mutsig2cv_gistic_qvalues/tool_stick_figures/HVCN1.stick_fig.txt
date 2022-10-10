@@ -1,0 +1,10 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=HVCN1; Synonyms=VSOP; ORFNames=UNQ578/PRO1140;	1	273	Name=HVCN1; Synonyms=VSOP; ORFNames=UNQ578/PRO1140;	0.7	0.9	0.9	-	-
+mutation	Missense_Mutation	208	208	p.R208Q	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	42	42	p.Y42C	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	106	106	p.I106del	0.0	0.0	1.0	square	up
+mutation	Nonsense_Mutation	38	38	p.W38*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	170	170	p.F170S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	5	5	p.D5N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	42	42	p.Y42C	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	168	168	p.H168del	0.0	0.0	1.0	square	up

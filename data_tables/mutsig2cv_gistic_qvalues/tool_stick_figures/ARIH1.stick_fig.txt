@@ -1,0 +1,19 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=ARIH1 {ECO:0000312|HGNC:HGNC:689}; Synonyms=ARI, MOP6 {ECO:0000303|Ref.10}, UBCH7BP {ECO:0000303|PubMed:11278816}; ORFNames=HUSSY-27 {ECO:0000303|PubMed:11124703};	1	557	Name=ARIH1 {ECO:0000312|HGNC:HGNC:689}; Synonyms=ARI, MOP6 {ECO:0000303|Ref.10}, UBCH7BP {ECO:0000303|PubMed:11278816}; ORFNames=HUSSY-27 {ECO:0000303|PubMed:11124703};	0.7	0.9	0.9	-	-
+domain	UBA-like. {ECO:0000305|PubMed:23707686}.	105	153	UBA-like. {ECO:0000305|PubMed:23707686}.	0.51	0.73	0.61	-	-
+domain	Ariadne domain. {ECO:0000305|PubMed:23707686}.	408	557	Ariadne domain. {ECO:0000305|PubMed:23707686}.	0.37	0.21	0.57	-	-
+mutation	In_Frame_Ins	79	79	p.79_79G>GG	0.0	0.0	1.0	square	up
+mutation	Silent	162	162	p.H162H	0.8	0.8	0.8	circle	up
+mutation	In_Frame_Ins	79	79	p.79_79G>GG	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	79	79	p.79_79G>GG	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	363	363	p.R363C	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Ins	79	79	p.79_79G>GG	0.0	0.0	1.0	square	up
+mutation	Silent	2	2	p.D2D	0.8	0.8	0.8	circle	up
+mutation	In_Frame_Ins	79	79	p.79_79G>GG	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	79	79	p.79_79G>GG	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	79	79	p.79_79G>GG	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	79	79	p.79_79G>GG	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	79	79	p.79_79G>GG	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	79	79	p.79_79G>GG	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	79	79	p.79_79G>GG	0.0	0.0	1.0	square	up
+mutation	Silent	390	390	p.N390N	0.8	0.8	0.8	circle	up

@@ -1,0 +1,14 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=SCAF8; Synonyms=CCAP7, KIAA1116, RBM16;	1	1271	Name=SCAF8; Synonyms=CCAP7, KIAA1116, RBM16;	0.7	0.9	0.9	-	-
+mutation	Missense_Mutation	267	267	p.F267S	1.0	1.0	0.0	circle	up
+mutation	Silent	849	849	p.L849L	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	487	487	p.K487R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	353	353	p.Q353L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	353	353	p.Q353L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	476	476	p.S476R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	353	353	p.Q353L	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	597	597	p.T597T	0.6	0.0	0.6	inv_triangle	up
+mutation	Silent	963	963	p.H963H	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	901	901	p.P901A	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	903	903	p.A903V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1032	1032	p.P1032S	1.0	1.0	0.0	circle	up

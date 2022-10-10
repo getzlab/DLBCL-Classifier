@@ -1,0 +1,14 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=SLC22A16; Synonyms=OCT6;	1	577	Name=SLC22A16; Synonyms=OCT6;	0.7	0.9	0.9	-	-
+mutation	Missense_Mutation	61	61	p.V61I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	487	487	p.L487P	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	232	232	p.E232G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	200	200	p.A200V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	232	232	p.E232G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	191	191	p.S191N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	181	181	p.R181C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	480	480	p.S480R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	181	181	p.R181C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	232	232	p.E232G	1.0	1.0	0.0	circle	up
+mutation	Silent	6	6	p.F6F	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	200	200	p.A200V	1.0	1.0	0.0	circle	up

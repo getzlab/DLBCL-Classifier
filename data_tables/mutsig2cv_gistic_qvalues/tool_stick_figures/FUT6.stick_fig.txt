@@ -1,0 +1,13 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=FUT6; Synonyms=FCT3A;	1	359	Name=FUT6; Synonyms=FCT3A;	0.7	0.9	0.9	-	-
+mutation	Missense_Mutation	7	7	p.A7T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	35	35	p.R35C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	180	180	p.H180Y	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	7	7	p.A7T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	77	77	p.L77P	1.0	1.0	0.0	circle	up
+mutation	Silent	314	314	p.R314R	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	340	340	p.C340Y	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	176	176	p.G176S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	7	7	p.A7T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	110	110	p.R110Q	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	320	320	p.R320H	1.0	1.0	0.0	circle	up

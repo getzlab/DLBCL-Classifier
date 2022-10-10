@@ -1,0 +1,13 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=TRAP1; Synonyms=HSP75;	1	704	Name=TRAP1; Synonyms=HSP75;	0.7	0.9	0.9	-	-
+domain	Heat shock protein 75 kDa, mitochondrial.	60	704	Heat shock protein 75 kDa, mitochondrial.	0.56	0.24	0.54	-	-
+mutation	Splice_Site	598	598	p.K598K	0.6	0.0	0.6	inv_triangle	up
+mutation	Silent	275	275	p.T275T	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	128	128	p.R128H	1.0	1.0	0.0	circle	up
+mutation	Silent	477	477	p.S477S	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	380	380	p.L380P	1.0	1.0	0.0	circle	up
+mutation	Silent	16	16	p.R16R	0.8	0.8	0.8	circle	up
+mutation	In_Frame_Ins	477	477	p.477_478insA	0.0	0.0	1.0	square	up
+mutation	In_Frame_Ins	477	477	p.477_478insA	0.0	0.0	1.0	square	up
+mutation	Silent	634	634	p.R634R	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	292	292	p.M292T	1.0	1.0	0.0	circle	up

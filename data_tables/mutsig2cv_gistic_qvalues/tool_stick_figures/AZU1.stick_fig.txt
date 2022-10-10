@@ -1,0 +1,9 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=AZU1 {ECO:0000312|HGNC:HGNC:913};	1	251	Name=AZU1 {ECO:0000312|HGNC:HGNC:913};	0.7	0.9	0.9	-	-
+domain	Azurocidin. {ECO:0000269|PubMed:2026172, ECO:0000269|PubMed:2226832}.	27	248	Azurocidin. {ECO:0000269|PubMed:2026172, ECO:0000269|PubMed:2226832}.	0.59	0.41	0.59	-	-
+domain	Possesses antibiotic activity. {ECO:0000269|PubMed:8506327}.	46	70	Possesses antibiotic activity. {ECO:0000269|PubMed:8506327}.	0.24	0.31	0.24	-	-
+mutation	Frame_Shift_Del	232	232	p.V232fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	28	28	p.V28I	1.0	1.0	0.0	circle	up
+mutation	Silent	212	212	p.H212H	0.8	0.8	0.8	circle	up
+mutation	Frame_Shift_Del	232	232	p.V232fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	232	232	p.V232fs	1.0	0.0	0.0	square	up

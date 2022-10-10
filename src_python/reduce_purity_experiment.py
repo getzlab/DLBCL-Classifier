@@ -18,19 +18,25 @@ np.random.seed(DEFAULT_SEED)
 
 CLUSTER_LABELS = ['C' + str(x) for x in range(1, 6)]
 
-GSM = "../data_tables/gsm/DLBCL_Staudt_Shipp_CL.for_classifier_training.classifier_subset.fix_sv.fix_ploidy.17-Aug-2022.txt"
-targetfile = "../data_tables/confidence_tables/baseline_probabilities.connectivity_based.sensitivity_power2.Aug_17_2022.tsv"
+GSM = "../data_tables/gsm/DLBCL.699.fullGSM.Sep_23_2022.tsv"
+targetfile = "../data_tables/confidence_tables/baseline_probabilities.connectivity_based.sensitivity_power2.Sep_23_2022.tsv"
 training_file = '../data_tables/train_test_sets/TrainingSet_550Subset_May2021.txt'
-qval_file = '../data_tables/qval_dfs/fisher_exact_5x2_17-Aug-2022.combined.tsv'
-purity_file = '../data_tables/purities_ploidies/PurityDataFrame.txt'
+qval_file = '../data_tables/qval_dfs/fisher_exact_5x2.Sep_23_2022.combined.tsv'
+purity_file = '../data_tables/purities_ploidies/ALLPurities_fixednames.tsv'
 ploidy_file = '../data_tables/purities_ploidies/PloidyDataFrame.txt'
 sample_set_file = '../data_tables/sample_sets/ShippStaudtSets.purity0.2.txt'
-preds_file = '../evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.2_removeN5_nfeatures21_pMax0.94248563.tsv'
-alt_counts_file = '../data_tables/gsm/gsm_17-Aug-2022_altcounts.tsv'
+preds_file = '../evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.3_nfeatures21_pMax0.93344957.tsv'
+alt_counts_file = '../reduce_purity_experiment/gsm_alt_counts.tsv'
+sv_alt_counts_file = '../reduce_purity_experiment/sv_alt_counts.tsv'
 cn_file = '../reduce_purity_experiment/copy_ratio_mat.tsv'
 
 
 alt_counts = pd.read_csv(alt_counts_file, sep='\t', index_col=0)
+alt_counts.index = alt_counts.index.str.replace('-', '.')
+
+sv_alt_counts = pd.read_csv(sv_alt_counts_file, sep='\t', index_col=0)
+
+alt_counts = pd.concat([alt_counts, sv_alt_counts])
 
 cr_0s = pd.read_csv(cn_file, sep='\t', index_col=0, low_memory=False)
 cr_0s.index = 'X' + cr_0s.index.str.replace(':', '.').str.replace('_', '.').str.upper()
@@ -38,7 +44,8 @@ cr_0s = cr_0s + 1
 
 purities = pd.read_csv(purity_file, sep='\t', index_col=0, header=None)
 purities.columns = ['purity']
-ploidies = pd.read_csv(ploidy_file, sep='\t', index_col=0)
+ploidies = pd.read_csv(ploidy_file, sep='\t', index_col=0, header=None)
+ploidies.columns = ['ploidy']
 
 purities = purities.astype(float)
 ploidies = ploidies.astype(float)
@@ -69,7 +76,7 @@ for file in files:
     netnum = int(file.split('_')[-1]) - 1
     curriter = int(np.floor(netnum/5))
     currfold = (netnum % 5)
-    validationfile = '../all_validation_sets/NN_evaluation_seeds1_100_folds5_reducedV3.2_removeN5/NN_evaluation_seeds1_100_folds5_reducedV3.2_removeN5' \
+    validationfile = '../all_validation_sets/NN_evaluation_seeds1_100_folds5_reducedV3.3/NN_evaluation_seeds1_100_folds5_reducedV3.3' \
                      + '_' + str(curriter + 1) + '_' + str(currfold)
     validationSamples = list(pd.read_csv(validationfile, sep='\t', index_col=0, header=None).index)
     validation_sets[netnum] = validationSamples
@@ -113,7 +120,7 @@ def power_calc(CR_0s, purity_sim):
     event = CR_0s.name
     samples = CR_0s.index
     purities_vec = purities.loc[samples, 'purity']
-    ploidies_vec = ploidies.loc[samples, 'PLOIDY']
+    ploidies_vec = ploidies.loc[samples, 'ploidy']
 
     Q_vec = (CR_0s * (purities_vec * ploidies_vec + 2*(1-purities_vec)) - 2*(1-purities_vec)) / purities_vec
 
@@ -195,7 +202,7 @@ for step in steps:
     datafile = '../reduce_purity_experiment/experiment_gsms/reducepurity_fullfeatures_step' + str(step) + '.txt'
     df_power.to_csv(datafile, sep='\t', header=True, index=True)
     data, targets = format_data.format_inputs(datafile, targetfile, all_starting_samples,
-                                              reduced_version='3.2', remove_largest_n=5,
+                                              reduced_version='3.3',
                                               drop_empty_vectors=False)
 
     targets = targets.loc[data.index]

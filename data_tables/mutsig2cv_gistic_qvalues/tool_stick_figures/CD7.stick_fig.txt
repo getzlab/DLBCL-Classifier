@@ -1,0 +1,19 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=CD7;	1	240	Name=CD7;	0.7	0.9	0.9	-	-
+domain	T-cell antigen CD7.	26	240	T-cell antigen CD7.	0.3	0.73	0.33	-	-
+domain	4 X 9 AA tandem repeats, potential spacer function.	145	180	4 X 9 AA tandem repeats, potential spacer function.	0.8	0.59	0.25	-	-
+mutation	In_Frame_Del	172	172	p.DPPAASALP172del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	172	172	p.DPPAASALP172del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	172	172	p.DPPAASALP172del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	172	172	p.DPPAASALP172del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	172	172	p.DPPAASALP172del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	172	172	p.DPPAASALP172del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	172	172	p.DPPAASALP172del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	172	172	p.DPPAASALP172del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	172	172	p.DPPAASALP172del	0.0	0.0	1.0	square	up
+mutation	In_Frame_Del	172	172	p.DPPAASALP172del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	126	126	p.G126S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	210	210	p.S210L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	201	201	p.A201V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	201	201	p.A201V	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	172	172	p.DPPAASALP172del	0.0	0.0	1.0	square	up

@@ -1,0 +1,15 @@
+	Full Cohort	Schmitz et al.	Chapuy et al.	p value (Schmitz vs Chapuy)	Tumor Only (TO)	Tumor Normal (TN)	p value (TO vs TN)	test
+Number of Mutations (Median)	227.0	289.5	142.0	2.100E-40	252.5	104.0	3.480E-37	Mann-Whitney U
+Fraction Genome Deleted (Median)	0.0420130852339051	0.0387173723561893	0.0466613152204904	1.020E-01	0.0396017591685896	0.0517733030920336	1.300E-01	Mann-Whitney U
+Fraction Genome Amplified (Median)	0.1104676539786573	0.1060142072367693	0.1215088967909354	5.310E-02	0.10824044823549339	0.1228503347184798	6.030E-02	Mann-Whitney U
+Mean Target Coverage (Median)	110.28	127.18	80.39	6.620E-79	117.56	91.93	1.280E-15	Mann-Whitney U
+Purity (Median)	0.58	0.58	0.58	3.690E-01	0.59	0.57	5.000E-01	Mann-Whitney U
+Ploidy (Median)	2.07	2.09	2.05	5.610E-06	2.07	2.06	6.020E-01	Mann-Whitney U
+Genome Doubling (Fraction Doubled > 3.0)	False=607;True=92	False=363(86.0%);True=59(14.0%)	False=244(88.1%);True=33(11.9%)	4.930E-01	False=492(86.6%);True=76(13.4%)	False=115(87.8%);True=16(12.2%)	7.760E-01	Fisher Exact (2x2)
+Mutation Density (Median)	6.940E-06	8.380E-06	4.920E-06	6.770E-20	7.700E-06	3.690E-06	6.630E-23	Mann-Whitney U
+Mutation Density (Non Silent, Median)	4.300E-06	4.850E-06	3.570E-06	1.360E-09	4.810E-06	2.700E-06	4.130E-16	Mann-Whitney U
+Driver Count (Mutations, GSM)	V=6232;WT=62969	V=4093;WT=37685	V=2139;WT=25284	1.630E-19	V=5298;WT=50934	V=934;WT=12035	3.860E-16	Fisher Exact (2x2)
+Driver Count (SCNAs, GSM)	V=6693;WT=35946	V=3817;WT=21925	V=2876;WT=14021	1.380E-09	V=5274;WT=29374	V=1419;WT=6572	2.920E-08	Fisher Exact (2x2)
+Driver Count (Deletions, GSM)	V=3012;WT=17958	V=1734;WT=10926	V=1278;WT=7032	7.200E-04	V=2393;WT=14647	V=619;WT=3311	6.430E-03	Fisher Exact (2x2)
+Driver Count (Amplifications, GSM)	V=3681;WT=17988	V=2083;WT=10999	V=1598;WT=6989	2.980E-07	V=2881;WT=14727	V=800;WT=3261	4.830E-07	Fisher Exact (2x2)
+Driver Count (SVs, GSM)	V=301;WT=1796	V=161;WT=1105	V=140;WT=691	9.030E-03	V=234;WT=1470	V=67;WT=326	9.410E-02	Fisher Exact (2x2)

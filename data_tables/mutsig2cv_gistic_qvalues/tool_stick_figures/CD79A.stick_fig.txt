@@ -1,0 +1,14 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=CD79A; Synonyms=IGA, MB1;	1	226	Name=CD79A; Synonyms=IGA, MB1;	0.7	0.9	0.9	-	-
+domain	B-cell antigen receptor complex- associated protein alpha chain.	33	226	B-cell antigen receptor complex- associated protein alpha chain.	0.68	0.26	0.28	-	-
+mutation	Nonsense_Mutation	222	222	p.Q222*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Del	171	171	p.N171fs	1.0	0.0	0.0	square	up
+mutation	Frame_Shift_Del	180	180	p.D180fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	182	182	p.Y182N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	199	199	p.Y199C	1.0	1.0	0.0	circle	up
+mutation	Silent	20	20	p.L20L	0.8	0.8	0.8	circle	up
+mutation	Frame_Shift_Del	180	180	p.DEY180fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	176	176	p.L176*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	10	10	p.A10T	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	176	176	p.L176*	1.0	0.0	0.0	triangle	up
+mutation	Frame_Shift_Del	178	178	p.A178fs	1.0	0.0	0.0	square	up

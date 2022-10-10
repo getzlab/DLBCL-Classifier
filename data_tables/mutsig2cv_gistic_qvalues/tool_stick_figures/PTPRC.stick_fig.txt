@@ -1,0 +1,23 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=PTPRC; Synonyms=CD45;	1	1304	Name=PTPRC; Synonyms=CD45;	0.7	0.9	0.9	-	-
+domain	Receptor-type tyrosine-protein phosphatase C.	24	1304	Receptor-type tyrosine-protein phosphatase C.	0.53	0.63	0.29	-	-
+domain	Substrate binding. {ECO:0000250}.	851	857	Substrate binding. {ECO:0000250}.	0.27	0.45	0.26	-	-
+mutation	Frame_Shift_Del	744	744	p.TVIV744fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	1126	1126	p.E1126G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	576	576	p.A576V	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	544	544	p.Y544*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	319	319	p.I319L	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	2	2	p.Y2*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	20	20	p.F20L	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	515	515	p.R515fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	658	658	p.I658S	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	3	3	p.L3*	1.0	0.0	0.0	triangle	up
+mutation	Silent	140	140	p.S140S	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	489	489	p.M489I	1.0	1.0	0.0	circle	up
+mutation	Silent	128	128	p.S128S	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	1255	1255	p.Q1255K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	124	124	p.T124I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	226	226	p.C226R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	720	720	p.Y720H	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	75	75	p.SP75fs	1.0	0.0	0.0	square	up
+mutation	Nonsense_Mutation	909	909	p.E909*	1.0	0.0	0.0	triangle	up

@@ -1,0 +1,19 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=SYCP2; Synonyms=SCP2;	1	1530	Name=SYCP2; Synonyms=SCP2;	0.7	0.9	0.9	-	-
+mutation	Frame_Shift_Del	788	788	p.M788fs	1.0	0.0	0.0	square	up
+mutation	Silent	85	85	p.Q85Q	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	3	3	p.I3V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1175	1175	p.S1175G	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	788	788	p.M788fs	1.0	0.0	0.0	square	up
+mutation	Silent	591	591	p.A591A	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	1285	1285	p.R1285H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	822	822	p.R822I	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1403	1403	p.S1403R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	858	858	p.F858V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	88	88	p.L88R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1242	1242	p.I1242V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	1241	1241	p.Y1241C	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Del	788	788	p.M788fs	1.0	0.0	0.0	square	up
+mutation	Silent	591	591	p.A591A	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	1175	1175	p.S1175R	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	675	675	p.E675Q	1.0	1.0	0.0	circle	up

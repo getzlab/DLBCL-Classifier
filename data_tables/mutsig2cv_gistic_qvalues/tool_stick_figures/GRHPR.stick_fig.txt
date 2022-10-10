@@ -1,0 +1,49 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=GRHPR; Synonyms=GLXR; ORFNames=MSTP035;	1	328	Name=GRHPR; Synonyms=GLXR; ORFNames=MSTP035;	0.7	0.9	0.9	-	-
+domain	NADP. {ECO:0000269|PubMed:16756993}.	162	164	NADP. {ECO:0000269|PubMed:16756993}.	0.58	0.56	0.76	-	-
+domain	NADP. {ECO:0000269|PubMed:16756993}.	185	188	NADP. {ECO:0000269|PubMed:16756993}.	0.58	0.56	0.76	-	-
+domain	Substrate binding. {ECO:0000269|PubMed:16756993}.	83	84	Substrate binding. {ECO:0000269|PubMed:16756993}.	0.8	0.75	0.42	-	-
+domain	Substrate binding. {ECO:0000269|PubMed:16756993}.	293	296	Substrate binding. {ECO:0000269|PubMed:16756993}.	0.8	0.75	0.42	-	-
+mutation	Missense_Mutation	34	34	p.W34C	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	48	48	p.G48R	1.0	1.0	0.0	circle	up
+mutation	Silent	45	45	p.L45L	0.8	0.8	0.8	circle	up
+mutation	Nonsense_Mutation	33	33	p.Q33*	1.0	0.0	0.0	triangle	up
+mutation	Silent	44	44	p.E44E	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	56	56	p.L56F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	71	71	p.A71T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	39	39	p.P39S	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	165	165	p.G165D	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	64	64	p.D64H	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	65	65	p.K65N	1.0	1.0	0.0	circle	up
+mutation	Silent	30	30	p.E30E	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	41	41	p.P41S	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	37	37	p.D37N	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	32	32	p.E32K	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	42	42	p.A42D	1.0	1.0	0.0	circle	up
+mutation	Silent	45	45	p.L45L	0.8	0.8	0.8	circle	up
+mutation	Silent	44	44	p.E44E	0.8	0.8	0.8	circle	up
+mutation	Splice_Site	28	28	p.D28D	0.6	0.0	0.6	inv_triangle	up
+mutation	Missense_Mutation	42	42	p.A42G	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	45	45	p.L45V	1.0	1.0	0.0	circle	up
+mutation	Silent	118	118	p.L118L	0.8	0.8	0.8	circle	up
+mutation	Frame_Shift_Del	85	85	p.IDH85fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	60	60	p.S60F	1.0	1.0	0.0	circle	up
+mutation	Silent	63	63	p.V63V	0.8	0.8	0.8	circle	up
+mutation	Frame_Shift_Del	46	46	p.ER46fs	1.0	0.0	0.0	square	up
+mutation	Missense_Mutation	41	41	p.P41S	1.0	1.0	0.0	circle	up
+mutation	Nonsense_Mutation	34	34	p.W34*	1.0	0.0	0.0	triangle	up
+mutation	Missense_Mutation	60	60	p.S60F	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	163	163	p.R163H	1.0	1.0	0.0	circle	up
+mutation	Frame_Shift_Ins	44	44	p.-44fs	1.0	0.0	0.0	square	up
+mutation	Silent	9	9	p.V9V	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	60	60	p.S60Y	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	71	71	p.A71T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	71	71	p.A71V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	103	103	p.T103I	1.0	1.0	0.0	circle	up
+mutation	Silent	131	131	p.E131E	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	115	115	p.A115V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	89	89	p.A89V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	144	144	p.L144V	1.0	1.0	0.0	circle	up
+mutation	Silent	45	45	p.L45L	0.8	0.8	0.8	circle	up
+mutation	Silent	61	61	p.D61D	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	18	18	p.E18D	1.0	1.0	0.0	circle	up

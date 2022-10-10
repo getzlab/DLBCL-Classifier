@@ -1,0 +1,27 @@
+feature	type	start	end	label	R	G	B	shape	direction
+protein	Name=ESX1; Synonyms=ESX1L, ESX1R;	1	406	Name=ESX1; Synonyms=ESX1L, ESX1R;	0.7	0.9	0.9	-	-
+domain	Homeobox. {ECO:0000255|PROSITE- ProRule:PRU00108}.	139	198	Homeobox. {ECO:0000255|PROSITE- ProRule:PRU00108}.	0.34	0.38	0.72	-	-
+domain	15 X 9 AA tandem repeats of P-P-x-x-P-x- P-P-x.	244	378	15 X 9 AA tandem repeats of P-P-x-x-P-x- P-P-x.	0.68	0.36	0.52	-	-
+domain	Nuclear localization signal. {ECO:0000255}.	138	143	Nuclear localization signal. {ECO:0000255}.	0.42	0.29	0.42	-	-
+mutation	Missense_Mutation	332	332	p.P332T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	339	339	p.V339L	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	338	338	p.R338P	1.0	1.0	0.0	circle	up
+mutation	Silent	407	407	p.*407*	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	323	323	p.P323T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	292	292	p.A292V	1.0	1.0	0.0	circle	up
+mutation	Silent	352	352	p.P352P	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	323	323	p.P323T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	323	323	p.P323T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	323	323	p.P323T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	323	323	p.P323T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	323	323	p.P323T	1.0	1.0	0.0	circle	up
+mutation	In_Frame_Del	110	110	p.QEEPPQ110del	0.0	0.0	1.0	square	up
+mutation	Missense_Mutation	323	323	p.P323T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	212	212	p.A212V	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	373	373	p.A373V	1.0	1.0	0.0	circle	up
+mutation	Splice_Site	169	169	p.R169*	0.6	0.0	0.6	inv_triangle	up
+mutation	Silent	117	117	p.T117T	0.8	0.8	0.8	circle	up
+mutation	Silent	19	19	p.V19V	0.8	0.8	0.8	circle	up
+mutation	Missense_Mutation	323	323	p.P323T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	323	323	p.P323T	1.0	1.0	0.0	circle	up
+mutation	Missense_Mutation	366	366	p.L366V	1.0	1.0	0.0	circle	up
