@@ -12,11 +12,11 @@ seed = 1234
 random.seed(seed)
 np.random.seed(seed)
 
-targetfile = '../data_tables/confidence_tables/baseline_probabilities.connectivity_based.sensitivity_power2.Aug_17_2022.tsv'
-datafile = '../data_tables/gsm/DLBCL_Staudt_Shipp_CL.for_classifier_training.classifier_subset.fix_sv.fix_ploidy.17-Aug-2022.txt'
+targetfile = '../data_tables/confidence_tables/baseline_probabilities.connectivity_based.sensitivity_power2.Sep_23_2022.tsv'
+datafile = '../data_tables/gsm/DLBCL.699.fullGSM.Sep_23_2022.tsv'
 training_set = list(pd.read_csv('../data_tables/train_test_sets/TrainingSet_550Subset_May2021.txt', sep='\t', header=None, index_col=0).index)
-qval_file = '../data_tables/qval_dfs/fisher_exact_5x2_17-Aug-2022.combined.tsv'
-lng_file = '../data_tables/gsm/Quality_Longitudinals.01-Sep-2021.txt'
+qval_file = '../data_tables/qval_dfs/fisher_exact_5x2.Sep_23_2022.combined.tsv'
+lng_file = '../data_tables/gsm/Quality_Longitudinals.Sep_23_2022.txt'
 
 targets = pd.read_csv(targetfile, sep='\t', index_col=0)
 lng_preds = pd.read_csv('../evaluation_longitudinals/longitudinals_predictions.tsv', sep='\t', index_col=0)
@@ -25,16 +25,11 @@ qval_df = pd.read_csv(qval_file, delimiter='\t', index_col=0)
 train_df = pd.read_csv(datafile, sep='\t', index_col=0).T
 lng_df = pd.read_csv(lng_file, sep='\t', index_col=0).T
 
-# Fix up longitudinals gsm
-lng_df = lng_df.drop('cohort')
-lng_df = lng_df.loc[lng_preds.index]
-lng_df.columns = ['X' + x if '.AMP' in x or '.DEL' in x else x for x in lng_df.columns]
-lng_df.columns = lng_df.columns.str.replace('_', '.').str.replace('-', '.')
-lng_df['MYD88'] = lng_df[['MYD88.OTHER', 'MYD88.L265P']].max(axis=1)
-
-
 reduced_train = fd.construct_reduced_winning_version(train_df)
 reduced_lng = fd.construct_reduced_winning_version(lng_df)
+reduced_lng = reduced_lng.loc[lng_preds.index]
+
+
 
 targets_train = targets.loc[training_set]
 preds_lng = lng_preds.loc[reduced_lng.index]
@@ -44,7 +39,7 @@ reduced_train = reduced_train.loc[training_set]
 reduced_train['cluster'] = targets_train['cluster']
 reduced_lng['cluster'] = preds_lng['PredictedCluster']
 
-next_sample_map = {'DFCIDL001_DT': 'DFCIDL001_R1',
+tmp = {'DFCIDL001_DT': 'DFCIDL001_R1',
                    'DFCIDL003_DT': 'DFCIDL003_R1',
                    'DFCIDL004_DT': 'DFCIDL004_R1',
                    'DFCIDL007_DT': 'DFCIDL007_R1',
@@ -60,6 +55,10 @@ next_sample_map = {'DFCIDL001_DT': 'DFCIDL001_R1',
                    'DLBCL_c_D_pair5': 'DLBCL_c_D_pair5_R1',
                    'DLBCL_c_D_pair8': 'DLBCL_c_D_pair8_R1'}
 
+next_sample_map = {}
+# fix casing
+for k, v in tmp.items():
+    next_sample_map[k.upper()] = v.upper()
 
 reduced_train['set'] = 'Train Set'
 reduced_lng['set'] = 'Relapse'
@@ -162,9 +161,9 @@ for g in grps:
             ax.scatter(sub_sub_df['U1'], sub_sub_df['U2'], c=[pallet[clus]], label='C' + str(int(clus)), s=75, marker=shapes[g])
             for idx, row in sub_sub_df.iterrows():
                 currtext = idx
-                if 'R1' in currtext and currtext != 'DLBCL_c_D_pair10_R1':
+                if '_R1' in currtext and currtext != 'DLBCL_c_D_pair10_R1':
                     currtext = 'R1'
-                if 'R2' in currtext:
+                if '_R2' in currtext:
                     currtext = 'R2'
                 ax.annotate(currtext, [sub_sub_df.loc[idx, 'U1'] + 0.02, sub_sub_df.loc[idx, 'U2'] + 0.02], fontsize=6)
         else:
@@ -192,8 +191,8 @@ legend_elements = [Line2D([0], [0], marker='o', color='w', markerfacecolor=palle
                    Line2D([0], [0], marker='s', color='w', markerfacecolor='black', label='Relapse High Confidence', markersize=12)]
 
 ax.legend(handles=legend_elements, bbox_to_anchor=(1, 1))
-plt.savefig('../plots/umap/umap_longitudinals_hcmarker_trainset.jpeg', bbox_inches='tight')
-plt.savefig('../plots/umap/umap_longitudinals_hcmarker_trainset.pdf', bbox_inches='tight')
+plt.savefig('../plots/umap/umap_longitudinals_90conf_trainset.jpeg', bbox_inches='tight')
+plt.savefig('../plots/umap/umap_longitudinals_90conf_trainset.pdf', bbox_inches='tight')
 plt.clf()
 
 # ##########################
@@ -230,9 +229,9 @@ for g in grps:
             ax.scatter(sub_sub_df['U1'], sub_sub_df['U2'], c=[pallet[clus]], label='C' + str(int(clus)), s=75, marker=shapes[g])
             for idx, row in sub_sub_df.iterrows():
                 currtext = idx
-                if 'R1' in currtext and currtext != 'DLBCL_c_D_pair10_R1':
+                if '_R1' in currtext and currtext != 'DLBCL_C_D_PAIR10_R1':
                     currtext = 'R1'
-                if 'R2' in currtext:
+                if '_R2' in currtext:
                     currtext = 'R2'
                 ax.annotate(currtext, [sub_sub_df.loc[idx, 'U1'] + 0.02, sub_sub_df.loc[idx, 'U2'] + 0.02], fontsize=6)
         else:

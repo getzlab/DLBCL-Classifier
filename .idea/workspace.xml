@@ -2,27 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b092fab0-8de1-4ee0-9187-ec88de6d843d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src_python/update_gsm_longitudinals.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_tables/gsm/DLBCL.699.fullGSM.Sep_23_2022.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/data_tables/gsm/DLBCL.699.fullGSM.Sep_23_2022.tsv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_tables/gsm/DLBCL.699.mutationsGSM.Sep_23_2022.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/data_tables/gsm/DLBCL.699.mutationsGSM.Sep_23_2022.tsv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_tables/gsm/DLBCL.699.svGSM.Sep_23_2022.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/data_tables/gsm/DLBCL.699.svGSM.Sep_23_2022.tsv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evaluation_test_set/NN_reducedV3.3_removeN5_nfeatures21_testsetEval.tsv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reduce_purity_experiment/copy_ratio_mat.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/reduce_purity_experiment/copy_ratio_mat.tsv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_R/plot_accuracy_integ.R" beforeDir="false" afterPath="$PROJECT_DIR$/src_R/plot_accuracy_integ.R" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_R/plot_cluster_alluvials.R" beforeDir="false" afterPath="$PROJECT_DIR$/src_R/plot_cluster_alluvials.R" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_R/plot_confidences_gaddygrams.R" beforeDir="false" afterPath="$PROJECT_DIR$/src_R/plot_confidences_gaddygrams.R" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_R/plot_feature_venns.R" beforeDir="false" afterPath="$PROJECT_DIR$/src_R/plot_feature_venns.R" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_R/plot_puritysim_experiment.R" beforeDir="false" afterPath="$PROJECT_DIR$/src_R/plot_puritysim_experiment.R" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_R/plot_s1_stats.R" beforeDir="false" afterPath="$PROJECT_DIR$/src_R/plot_s1_stats.R" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/gsm_generation_scripts/call_mutations.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/gsm_generation_scripts/call_mutations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/gsm_generation_scripts/call_svs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/gsm_generation_scripts/call_svs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/gsm_generation_scripts/concatenate_gsms.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/gsm_generation_scripts/concatenate_gsms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/notebooks/.ipynb_checkpoints/scratch-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/notebooks/.ipynb_checkpoints/scratch-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/notebooks/scratch.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/notebooks/scratch.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/publication_scripts/createS1Table_partial_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/publication_scripts/createS1Table_partial_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/publication_scripts/fix_tableS1.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/publication_scripts/fix_tableS1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/publication_scripts/subset_gsm_for_paper.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/publication_scripts/subset_gsm_for_paper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/reduce_purity_experiment.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/reduce_purity_experiment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_tables/gsm/Quality_Longitudinals.01-Sep-2021.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_tables/gsm/Quality_Longitudinals.01-Sep-2021.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_python/classify_ccgd.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/classify_ccgd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_python/classify_depmap.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/classify_depmap.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_python/classify_longitudinals.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/classify_longitudinals.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_python/umap_plots_all.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/umap_plots_all.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_python/umap_plots_cl.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/umap_plots_cl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_python/umap_plots_longitudinals.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/umap_plots_longitudinals.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_python/umap_plots_traintest.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/umap_plots_traintest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_python/update_may27gsm_CCGD_CellLines.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/update_gsm_CCGD_CellLines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_python/update_may27gsm_CCLE_CellLines.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/update_gsm_CCLE_CellLines.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,71 +176,8 @@
       <recent name="$PROJECT_DIR$/data_tables/gsm/old_matrices" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.reduce_purity_experiment">
-    <configuration name="call_mutations" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DLBCL-Classifier" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src_python/gsm_generation_scripts" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src_python/gsm_generation_scripts/call_mutations.py" />
-      <option name="PARAMETERS" value="--maf ../../data_tables/maf_files/DLBCL_combined_699.hg38B.noPDE4DIP.noHISTartifacts.maf --mutsig_sig_genes ../../data_tables/mutsig2cv_gistic_qvalues/DLBCL_550_training_noPDE4DIP_noHISTartifacts.sig_genes.txt --mutsig_q_thresh 0.10 --output_fn ../../data_tables/gsm/DLBCL.699.mutationsGSM.Sep_23_2022.tsv --alt_count_fn ../../reduce_purity_experiment/gsm_alt_counts.tsv --additional_sig_genes ../../data_tables/additional_gsm_inputs/NatMed_104_sig_genes.tableS3.tsv --include_myd88_L265P --include_ccf CCF_hat --blacklist ../../data_tables/additional_gsm_inputs/dlbclass_blacklist.tsv --ploidy ../../data_tables/purities_ploidies/PloidyDataFrame.txt --purity ../../data_tables/purities_ploidies/ALLPurities_fixednames.tsv --coo ../../data_tables/phenotypes/COO_and_genetic_lables.txt" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="call_svs" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DLBCL-Classifier" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src_python/gsm_generation_scripts" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src_python/gsm_generation_scripts/call_svs.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="concatenate_gsms" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DLBCL-Classifier" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src_python/gsm_generation_scripts" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src_python/gsm_generation_scripts/concatenate_gsms.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="reduce_purity_experiment" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.umap_plots_all">
+    <configuration name="classify_longitudinals" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DLBCL-Classifier" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -261,7 +189,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src_python/reduce_purity_experiment.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src_python/classify_longitudinals.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -270,7 +198,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="subset_gsm_for_paper" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="umap_plots_all" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DLBCL-Classifier" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -278,11 +206,74 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src_python/publication_scripts" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src_python" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src_python/publication_scripts/subset_gsm_for_paper.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src_python/umap_plots_all.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="umap_plots_longitudinals" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DLBCL-Classifier" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src_python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src_python/umap_plots_longitudinals.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="umap_plots_traintest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DLBCL-Classifier" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src_python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src_python/umap_plots_traintest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="update_gsm_longitudinals" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DLBCL-Classifier" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src_python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src_python/update_gsm_longitudinals.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -292,19 +283,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.call_svs" />
-      <item itemvalue="Python.concatenate_gsms" />
-      <item itemvalue="Python.reduce_purity_experiment" />
-      <item itemvalue="Python.call_mutations" />
-      <item itemvalue="Python.subset_gsm_for_paper" />
+      <item itemvalue="Python.classify_longitudinals" />
+      <item itemvalue="Python.umap_plots_all" />
+      <item itemvalue="Python.umap_plots_longitudinals" />
+      <item itemvalue="Python.umap_plots_traintest" />
+      <item itemvalue="Python.update_gsm_longitudinals" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.reduce_purity_experiment" />
-        <item itemvalue="Python.concatenate_gsms" />
-        <item itemvalue="Python.call_svs" />
-        <item itemvalue="Python.call_mutations" />
-        <item itemvalue="Python.subset_gsm_for_paper" />
+        <item itemvalue="Python.umap_plots_all" />
+        <item itemvalue="Python.umap_plots_longitudinals" />
+        <item itemvalue="Python.classify_longitudinals" />
+        <item itemvalue="Python.umap_plots_traintest" />
+        <item itemvalue="Python.update_gsm_longitudinals" />
       </list>
     </recent_temporary>
   </component>
@@ -354,16 +345,6 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src_python/classify_ccgd.py</url>
-          <line>15</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src_python/classify_generic.py</url>
-          <line>65</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src_python/evaluate_test_set_step1.py</url>
           <line>41</line>
           <option name="timeStamp" value="21" />
@@ -384,9 +365,19 @@
           <option name="timeStamp" value="123" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src_python/reduce_purity_experiment.py</url>
-          <line>38</line>
-          <option name="timeStamp" value="128" />
+          <url>file://$PROJECT_DIR$/src_python/update_gsm_longitudinals.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src_python/classify_longitudinals.py</url>
+          <line>45</line>
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src_python/umap_plots_longitudinals.py</url>
+          <line>224</line>
+          <option name="timeStamp" value="135" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

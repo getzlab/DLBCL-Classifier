@@ -5,10 +5,10 @@ import re
 GSM = pd.read_csv('../data_tables/gsm/GSM.depmap.lymphoma.20Jun2020.tsv', sep='\t', index_col=0)
 GSM.drop('Driver_Discovery', axis=1, inplace=True)
 
-dlbcl_mat = pd.read_csv("../data_tables/gsm/old_matrices/DLBCL_Staudt_Shipp_CL.for_classifier_training.classifier_subset.fix_sv.fix_ploidy.17-Aug-2022.txt",
+dlbcl_mat = pd.read_csv("../data_tables/gsm/DLBCL.699.fullGSM.Sep_23_2022.tsv",
                         sep='\t', index_col=0)
 
-qval_file = '../data_tables/qval_dfs/fisher_exact_5x2_17-Aug-2022.combined.tsv'
+qval_file = '../data_tables/qval_dfs/fisher_exact_5x2.Sep_23_2022.combined.tsv'
 qval_df = pd.read_csv(qval_file, sep='\t', index_col=0)
 qval_df = qval_df.loc[qval_df['q'] <= 0.10]
 
@@ -72,5 +72,5 @@ GSM.index = [x.replace('-', '.') for x in GSM.index]
 GSM.loc['MYD88'] = GSM.loc[['MYD88.L265P', 'MYD88.OTHER']].max(axis=0)
 
 print(GSM.sum(axis=0).sort_values())
-GSM.to_csv('../data_tables/gsm/GSM.Depmap.updated.Aug-17-2022.tsv', sep='\t')
+GSM.to_csv('../data_tables/gsm/GSM.Depmap.updated.Sep_23_2022.tsv', sep='\t')
 

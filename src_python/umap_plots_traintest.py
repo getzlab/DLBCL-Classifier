@@ -82,12 +82,12 @@ pallet = {1: sns.color_palette()[4],        # purple, C1
           5: sns.color_palette()[3],        # red, C5
           }
 
-preds = '../evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.2_removeN5_nfeatures21_pMax0.94248563.tsv'
-preds_test = '../evaluation_test_set/NN_reducedV3.2_removeN5_nfeatures21_testsetEval.tsv'
-datafile = '../data_tables/gsm/DLBCL_Staudt_Shipp_CL.for_classifier_training.classifier_subset.fix_sv.fix_ploidy.17-Aug-2022.txt'
+preds = '../evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.3_nfeatures21_pMax0.93344957.tsv'
+preds_test = '../evaluation_test_set/NN_reducedV3.3_nfeatures21_testsetEval.tsv'
+datafile = '../data_tables/gsm/DLBCL.699.fullGSM.Sep_23_2022.tsv'
 training_set = list(pd.read_csv('../data_tables/train_test_sets/TrainingSet_550Subset_May2021.txt', sep='\t', header=None, index_col=0).index)
 testing_set = list(pd.read_csv('../data_tables/train_test_sets/TestingSet_149Subset_May2021.txt', sep='\t', header=None, index_col=0).index)
-sig_genes_file = '../data_tables/qval_dfs/fisher_exact_5x2_17-Aug-2022.combined.tsv'
+sig_genes_file = '../data_tables/qval_dfs/fisher_exact_5x2.Sep_23_2022.combined.tsv'
 
 df = pd.read_csv(datafile, sep='\t', index_col=0).T
 sig_genes = pd.read_csv(sig_genes_file, sep='\t', index_col=0)
@@ -452,3 +452,4 @@ def umap_custom():
 
 
 umap_hc()
+training_umap_only()

@@ -11,13 +11,12 @@ np.random.seed(seed)
 
 umap = pd.read_csv('../data_tables/umap/umap_70conf.tsv', sep='\t', index_col=0)
 
-preds = '../evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.2_removeN5_nfeatures21_pMax0.94248563.tsv'
-preds_test = '../evaluation_test_set/NN_reducedV3.2_removeN5_nfeatures21_testsetEval.tsv'
-gsm_file = '../data_tables/gsm/old_matrices/DLBCL_Staudt_Shipp_CL.for_classifier_training.classifier_subset.fix_sv.fix_ploidy.17-Aug-2022.txt'
+preds = "../evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.3_nfeatures21_pMax0.93344957.tsv"
+preds_test = '../evaluation_test_set/NN_reducedV3.3_nfeatures21_testsetEval.tsv'
+gsm_file = '../data_tables/gsm/DLBCL.699.fullGSM.Sep_23_2022.tsv'
 training_set = list(pd.read_csv('../data_tables/train_test_sets/TrainingSet_550Subset_May2021.txt', sep='\t', header=None, index_col=0).index)
 testing_set = list(pd.read_csv('../data_tables/train_test_sets/TestingSet_149Subset_May2021.txt', sep='\t', header=None, index_col=0).index)
-sig_genes_file = '../data_tables/qval_dfs/fisher_exact_5x2_17-Aug-2022.combined.tsv'
-coo_file = '../data_tables/phenotypes/'
+sig_genes_file = '../data_tables/qval_dfs/fisher_exact_5x2.Sep_23_2022.combined.tsv'
 set_file = '../data_tables/sample_sets/ShippStaudtSets.purity0.2.txt'
 
 preds = pd.read_csv(preds, index_col=0, sep='\t')
@@ -107,4 +106,8 @@ def annotate_umap_confidence():
     plt.clf()
 
 
+annotate_umap_genes()
+annotate_umap_coo()
+annotate_umap_traintest()
+annotate_umap_cohort()
 annotate_umap_confidence()

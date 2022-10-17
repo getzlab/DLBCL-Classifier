@@ -59,7 +59,7 @@ mappedCLs = {'Balm3_L_156272': 'BALM3',
 
 
 datafile = '../data_tables/gsm/CellLines_addedgenesTET2.20-Apr-2020.tsv'
-qval_file = '../data_tables/qval_dfs/fisher_exact_5x2_17-Aug-2022.combined.tsv'
+qval_file = '../data_tables/qval_dfs/fisher_exact_5x2.Sep_23_2022.combined.tsv'
 
 cl_maf = '../data_tables/maf_files/CCGD_Lymphoma_Cell_Lines_53.with_noncoding.maf.annotated.trimmed'
 cl_maf = pd.read_csv(cl_maf, sep='\t', low_memory=False)
@@ -126,7 +126,7 @@ for idx, row in cl_maf.iterrows():
 
 cell_lines_matrix.index = [x.replace('-', '.') for x in cell_lines_matrix.index]
 cell_lines_matrix.loc['MYD88'] = cell_lines_matrix.loc[['MYD88.L265P', 'MYD88.OTHER']].max(axis=0)
-cell_lines_matrix.to_csv('../data_tables/gsm/GSM.CCGD.updated.Aug-17-2022.tsv', sep='\t')
+cell_lines_matrix.to_csv('../data_tables/gsm/GSM.CCGD.updated.Sep_23_2022.tsv', sep='\t')
 with open('../data_tables/gsm/CCGD_Cell_lines.txt', 'w+') as f:
     for cl in cell_lines:
         f.write(cl+'\n')
