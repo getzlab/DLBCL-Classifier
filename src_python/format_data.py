@@ -112,7 +112,7 @@ def construct_reduced_winning_version(data, add_missing_features=False):
                         "IGLL5", "TMSB4X", "GRHPR", "HLA.C", "MYD88", "TOX", "LYN",
                         "POU2F2", "IKZF3", "HLA.A", "ZFP36L1", "CARD11", "SF3B1",
                         "HLA.B", "IRF2BP2", "OSBPL10", "ATP2A2", "PIM2", "IRF4", "BCL11A",
-                        "METAP1D", "ETS1", "CCDC27", "MYD88.OTHER"]
+                        "METAP1D", "ETS1", "CCDC27"]
     TBL1XR1_vec = data[list_TBL1XR1_vec].sum(axis=1)
 
     MYD88_L265P_CD79B = data["MYD88.L265P"] + data["CD79B"]
@@ -431,7 +431,7 @@ def format_inputs(datafile, target_file, training_set,
                             "IGLL5", "TMSB4X", "GRHPR", "HLA.C", "MYD88", "TOX", "LYN",
                             "POU2F2", "IKZF3", "HLA.A", "ZFP36L1", "CARD11", "SF3B1",
                             "HLA.B", "IRF2BP2", "OSBPL10", "ATP2A2", "PIM2", "IRF4", "BCL11A",
-                            "METAP1D", "ETS1", "CCDC27", "MYD88.OTHER"]
+                            "METAP1D", "ETS1", "CCDC27"]
         TBL1XR1_vec = data[list_TBL1XR1_vec].sum(axis=1)
 
         MYD88_L265P_CD79B = data["MYD88.L265P"] + data["CD79B"]
