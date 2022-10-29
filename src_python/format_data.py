@@ -45,9 +45,9 @@ def construct_reduced_winning_version(data, add_missing_features=False):
     list_M88O_vec = ["MYD88.OTHER", "TNFAIP3", "TNIP1", "BCL10", "NFKBIE"]
     M88O_vec = data[list_M88O_vec].sum(axis=1)
 
-    list_C1_vec4 = ["UBE2A", "TMEM30A", "ZEB2", "GNAI2", "X5P.AMP",
-                    "X5Q.AMP", "POU2F2", "IKZF3", "X3Q28.DEL", "EBF1",
-                    "LYN", "BCL7A", "CXCR4", "CCDC27", "TUBGCP5", "SMG7", "RHOA", "BTG2"]
+    list_C1_vec4 = ["UBE2A", "TMEM30A", "ZEB2", "GNAI2", "X5P.AMP", "X5Q.AMP",
+                    "POU2F2", "IKZF3", "X3Q28.DEL", "EBF1", "LYN", "BCL7A", "CXCR4",
+                    "CCDC27", "TUBGCP5", "SMG7", "RHOA", "BTG2"]
     C1_vec4 = data[list_C1_vec4].sum(axis=1)
 
     list_CD70_vec = ["CD70", "FAS", "CD58", "B2M", "FADD", "HLA.B"]
@@ -60,22 +60,20 @@ def construct_reduced_winning_version(data, add_missing_features=False):
 
     X21Q_AMP = data["X21Q.AMP"]
 
-    list_C2_sum_arm = ["X17P.DEL", "X21Q.AMP", "X11Q.AMP", "X6P.AMP",
-                       "X11P.AMP", "X6Q.DEL", "X7P.AMP", "X13Q.AMP", "X7Q.AMP",
-                       "X3Q.AMP", "X5P.AMP", "X5Q.AMP", "X18P.AMP", "X3P.AMP",
-                       "X19Q.AMP", "X9Q.AMP", "X1Q.AMP", "X12P.AMP", "X12Q.AMP"]
+    list_C2_sum_arm = ["X17P.DEL", "X21Q.AMP", "X11Q.AMP", "X6P.AMP", "X11P.AMP",
+                       "X6Q.DEL", "X7P.AMP", "X13Q.AMP", "X7Q.AMP", "X3Q.AMP", "X5P.AMP",
+                       "X5Q.AMP", "X18P.AMP", "X3P.AMP", "X19Q.AMP", "X9Q.AMP", "X1Q.AMP",
+                       "X12P.AMP", "X12Q.AMP"]
     Sum_C2_ARM = data[list_C2_sum_arm].sum(axis=1)
 
-    list_C2_sum_focal = ["X1P36.11.DEL", "X1P31.1.DEL", "X1P13.1.DEL", "X2Q22.2.DEL",
-                         "X16Q12.1.DEL", "X14Q32.31.DEL", "X1P36.32.DEL", "X4Q35.1.DEL",
-                         "X9Q21.13.DEL", "X15Q15.3.DEL", "X4Q21.22.DEL", "X9P21.3.DEL",
-                         "X8Q24.22.AMP", "X12P13.2.DEL", "X2P16.1.AMP", "X8Q12.1.DEL",
-                         "X19P13.2.DEL", "X17Q25.1.DEL", "X1Q42.12.DEL", "X3P21.31.DEL",
-                         "X18Q23.DEL", "X19P13.3.DEL", "X13Q34.DEL", "X7Q22.1.AMP",
-                         "X10Q23.31.DEL", "X9P24.1.AMP", "X1Q23.3.AMP", "X3Q28.AMP",
-                         "X11Q23.3.AMP", "X17Q24.3.AMP", "X3Q28.DEL", "X13Q14.2.DEL",
-                         "X18Q21.32.AMP", "X19Q13.32.DEL", "X6P21.1.AMP", "X18Q22.2.AMP",
-                         "EP300", "ZNF423"]
+    list_C2_sum_focal = ["X1P36.11.DEL", "X1P31.1.DEL", "X1P13.1.DEL", "X2Q22.2.DEL", "X16Q12.1.DEL",
+                         "X14Q32.31.DEL", "X1P36.32.DEL", "X4Q35.1.DEL", "X9Q21.13.DEL", "X15Q15.3.DEL",
+                         "X4Q21.22.DEL", "X9P21.3.DEL", "X8Q24.22.AMP", "X12P13.2.DEL", "X2P16.1.AMP",
+                         "X8Q12.1.DEL", "X19P13.2.DEL", "X17Q25.1.DEL", "X1Q42.12.DEL", "X3P21.31.DEL",
+                         "X18Q23.DEL", "X19P13.3.DEL", "X13Q34.DEL", "X7Q22.1.AMP", "X10Q23.31.DEL",
+                         "X9P24.1.AMP", "X1Q23.3.AMP", "X3Q28.AMP", "X11Q23.3.AMP", "X17Q24.3.AMP", "X3Q28.DEL",
+                         "X13Q14.2.DEL", "X18Q21.32.AMP", "X19Q13.32.DEL", "X6P21.1.AMP", "X18Q22.2.AMP",
+                         "EP300", "ZNF423", "CD274"]
     Sum_C2_FOCAL = data[list_C2_sum_focal].sum(axis=1)
 
     # C3 ##############
@@ -87,8 +85,8 @@ def construct_reduced_winning_version(data, add_missing_features=False):
     CREBBP_vec = data[list_CREBBP].sum(axis=1)
 
     list_GNA13 = ["GNA13", "TNFRSF14", "MAP2K1", "MEF2B", "IRF8", "HVCN1",
-                  "GNAI2", "MEF2C", "SOCS1", "EEF1A1", "RAC2",
-                  "X12Q.AMP", "POU2AF1"]
+                  "GNAI2", "MEF2C", "SOCS1", "EEF1A1", "RAC2", "X12Q.AMP",
+                  "POU2AF1", "X6Q14.1.DEL"]
     GNA13_vec = data[list_GNA13].sum(axis=1)
 
     PTEN = data["PTEN"] + data["X10Q23.31.DEL"] + data["X13Q14.2.DEL"]
@@ -97,13 +95,12 @@ def construct_reduced_winning_version(data, add_missing_features=False):
 
     # C4 ##############
 
-    list_Hist_comp = ["HIST1H2AC", "HIST1H1E", "HIST1H1B", "HIST1H2AM",
-                      "HIST1H1C", "HIST1H1D", "HIST1H2BC"]
+    list_Hist_comp = ["HIST1H2AC", "HIST1H1E", "HIST1H1B", "HIST1H2AM", "HIST1H1C", "HIST1H1D", "HIST1H2BC"]
     Hist_comp = data[list_Hist_comp].sum(axis=1)
 
-    list_SGK1_vec = ["SGK1", "TET2", "NFKBIA", "STAT3", "PTPN6", "BRAF",
-                     "KRAS", "CD83", "SF3B1", "CD274", "MEF2C", "KLHL6",
-                     "CXCR4", "PTEN", "RAC2", "SESN3", "SOCS1", "METAP1D"]
+    list_SGK1_vec = ["SGK1", "TET2", "NFKBIA", "STAT3", "PTPN6", "BRAF", "KRAS",
+                     "CD83", "SF3B1", "CD274", "MEF2C", "KLHL6", "CXCR4", "PTEN",
+                     "RAC2", "SESN3", "SOCS1", "METAP1D"]
     SGK1_vec = data[list_SGK1_vec].sum(axis=1)
 
     list_DUSP2_vec = ["DUSP2", "ZFP36L1", "CRIP1", "ACTB", "LTB", "YY1", "PABPC1"]
@@ -111,23 +108,21 @@ def construct_reduced_winning_version(data, add_missing_features=False):
 
     # C5 ##############
 
-    list_TBL1XR1_vec = ["TBL1XR1", "PIM1", "PRDM1", "ETV6", "ZC3H12A",
-                        "BTG1", "BTG2", "IGLL5", "TMSB4X", "GRHPR",
-                        "HLA.C", "MYD88", "TOX", "LYN", "POU2F2", "IKZF3",
-                        "HLA.A", "ZFP36L1", "CARD11", "SF3B1", "HLA.B",
-                        "IRF2BP2", "OSBPL10", "ATP2A2", "PIM2", "IRF4", "BCL11A", "METAP1D"]
+    list_TBL1XR1_vec = ["TBL1XR1", "PIM1", "PRDM1", "ETV6", "ZC3H12A", "BTG1", "BTG2",
+                        "IGLL5", "TMSB4X", "GRHPR", "HLA.C", "MYD88", "TOX", "LYN",
+                        "POU2F2", "IKZF3", "HLA.A", "ZFP36L1", "CARD11", "SF3B1",
+                        "HLA.B", "IRF2BP2", "OSBPL10", "ATP2A2", "PIM2", "IRF4", "BCL11A",
+                        "METAP1D", "ETS1", "CCDC27", "MYD88.OTHER"]
     TBL1XR1_vec = data[list_TBL1XR1_vec].sum(axis=1)
 
     MYD88_L265P_CD79B = data["MYD88.L265P"] + data["CD79B"]
 
-    list_Sum_C5_sig = ["X18Q.AMP", "X3Q.AMP", "X3P.AMP", "X19Q13.42.AMP",
-                       "X6Q21.DEL", "X18P.AMP", "X19Q.AMP", "X8Q12.1.DEL",
-                       "X6Q14.1.DEL", "X19P13.2.DEL", "X9P21.3.DEL", "X18Q21.32.AMP",
-                       "X18Q22.2.AMP", "X1Q42.12.DEL", "X1Q32.1.AMP", "X6P21.33.DEL"]
+    list_Sum_C5_sig = ["X18Q.AMP", "X3Q.AMP", "X3P.AMP", "X19Q13.42.AMP", "X6Q21.DEL",
+                       "X18P.AMP", "X19Q.AMP", "X8Q12.1.DEL", "X6Q14.1.DEL", "X19P13.2.DEL",
+                       "X9P21.3.DEL", "X18Q21.32.AMP", "X18Q22.2.AMP", "X1Q42.12.DEL", "X1Q32.1.AMP", "X6P21.33.DEL"]
     Sum_C5_CNA = data[list_Sum_C5_sig].sum(axis=1)
 
     # MISC ############
-
     CN_2P16_1_AMP = data["X2P16.1.AMP"]
 
     reduced_feature_dict = \
@@ -177,8 +172,8 @@ def format_inputs(datafile, target_file, training_set,
                   remove_largest_n=None,
                   nosvbcl6=False):
 
-    if reduced_version == '3.2':
-        print('Wrong version (3.2), should be 3.3. Exiting.')
+    if reduced_version and reduced_version != '3.4':
+        print('Wrong version, should be reduced 3.4. Exiting.')
         exit()
 
     data = pd.read_csv(datafile, delimiter='\t', index_col=0, low_memory=False)
@@ -343,7 +338,7 @@ def format_inputs(datafile, target_file, training_set,
         p_components.index = data.index
         data = p_components
 
-    if reduced_version == '3.3':
+    if reduced_version == '3.4':
         if qval <= 0.10:
             genes_to_drop = list(qval_df.loc[qval_df['q'] > qval].index)
             genes_to_drop = [x for x in genes_to_drop if x in data.columns]
@@ -369,9 +364,9 @@ def format_inputs(datafile, target_file, training_set,
         list_M88O_vec = ["MYD88.OTHER", "TNFAIP3", "TNIP1", "BCL10", "NFKBIE"]
         M88O_vec = data[list_M88O_vec].sum(axis=1)
 
-        list_C1_vec4 = ["UBE2A", "TMEM30A", "ZEB2", "GNAI2", "X5P.AMP",
-                        "X5Q.AMP", "POU2F2", "IKZF3", "X3Q28.DEL", "EBF1",
-                        "LYN", "BCL7A", "CXCR4", "CCDC27", "TUBGCP5", "SMG7", "RHOA", "BTG2"]
+        list_C1_vec4 = ["UBE2A", "TMEM30A", "ZEB2", "GNAI2", "X5P.AMP", "X5Q.AMP",
+                        "POU2F2", "IKZF3", "X3Q28.DEL", "EBF1", "LYN", "BCL7A", "CXCR4",
+                        "CCDC27", "TUBGCP5", "SMG7", "RHOA", "BTG2"]
         C1_vec4 = data[list_C1_vec4].sum(axis=1)
 
         list_CD70_vec = ["CD70", "FAS", "CD58", "B2M", "FADD", "HLA.B"]
@@ -384,22 +379,20 @@ def format_inputs(datafile, target_file, training_set,
 
         X21Q_AMP = data["X21Q.AMP"]
 
-        list_C2_sum_arm = ["X17P.DEL", "X21Q.AMP", "X11Q.AMP", "X6P.AMP",
-                           "X11P.AMP", "X6Q.DEL", "X7P.AMP", "X13Q.AMP", "X7Q.AMP",
-                           "X3Q.AMP", "X5P.AMP", "X5Q.AMP", "X18P.AMP", "X3P.AMP",
-                           "X19Q.AMP", "X9Q.AMP", "X1Q.AMP", "X12P.AMP", "X12Q.AMP"]
+        list_C2_sum_arm = ["X17P.DEL", "X21Q.AMP", "X11Q.AMP", "X6P.AMP", "X11P.AMP",
+                           "X6Q.DEL", "X7P.AMP", "X13Q.AMP", "X7Q.AMP", "X3Q.AMP", "X5P.AMP",
+                           "X5Q.AMP", "X18P.AMP", "X3P.AMP", "X19Q.AMP", "X9Q.AMP", "X1Q.AMP",
+                           "X12P.AMP", "X12Q.AMP"]
         Sum_C2_ARM = data[list_C2_sum_arm].sum(axis=1)
 
-        list_C2_sum_focal = ["X1P36.11.DEL", "X1P31.1.DEL", "X1P13.1.DEL", "X2Q22.2.DEL",
-                             "X16Q12.1.DEL", "X14Q32.31.DEL", "X1P36.32.DEL", "X4Q35.1.DEL",
-                             "X9Q21.13.DEL", "X15Q15.3.DEL", "X4Q21.22.DEL", "X9P21.3.DEL",
-                             "X8Q24.22.AMP", "X12P13.2.DEL", "X2P16.1.AMP", "X8Q12.1.DEL",
-                             "X19P13.2.DEL", "X17Q25.1.DEL", "X1Q42.12.DEL", "X3P21.31.DEL",
-                             "X18Q23.DEL", "X19P13.3.DEL", "X13Q34.DEL", "X7Q22.1.AMP",
-                             "X10Q23.31.DEL", "X9P24.1.AMP", "X1Q23.3.AMP", "X3Q28.AMP",
-                             "X11Q23.3.AMP", "X17Q24.3.AMP", "X3Q28.DEL", "X13Q14.2.DEL",
-                             "X18Q21.32.AMP", "X19Q13.32.DEL", "X6P21.1.AMP", "X18Q22.2.AMP",
-                             "EP300", "ZNF423"]
+        list_C2_sum_focal = ["X1P36.11.DEL", "X1P31.1.DEL", "X1P13.1.DEL", "X2Q22.2.DEL", "X16Q12.1.DEL",
+                             "X14Q32.31.DEL", "X1P36.32.DEL", "X4Q35.1.DEL", "X9Q21.13.DEL", "X15Q15.3.DEL",
+                             "X4Q21.22.DEL", "X9P21.3.DEL", "X8Q24.22.AMP", "X12P13.2.DEL", "X2P16.1.AMP",
+                             "X8Q12.1.DEL", "X19P13.2.DEL", "X17Q25.1.DEL", "X1Q42.12.DEL", "X3P21.31.DEL",
+                             "X18Q23.DEL", "X19P13.3.DEL", "X13Q34.DEL", "X7Q22.1.AMP", "X10Q23.31.DEL",
+                             "X9P24.1.AMP", "X1Q23.3.AMP", "X3Q28.AMP", "X11Q23.3.AMP", "X17Q24.3.AMP", "X3Q28.DEL",
+                             "X13Q14.2.DEL", "X18Q21.32.AMP", "X19Q13.32.DEL", "X6P21.1.AMP", "X18Q22.2.AMP",
+                             "EP300", "ZNF423", "CD274"]
         Sum_C2_FOCAL = data[list_C2_sum_focal].sum(axis=1)
 
         # C3 ##############
@@ -411,8 +404,8 @@ def format_inputs(datafile, target_file, training_set,
         CREBBP_vec = data[list_CREBBP].sum(axis=1)
 
         list_GNA13 = ["GNA13", "TNFRSF14", "MAP2K1", "MEF2B", "IRF8", "HVCN1",
-                      "GNAI2", "MEF2C", "SOCS1", "EEF1A1", "RAC2",
-                      "X12Q.AMP", "POU2AF1"]
+                      "GNAI2", "MEF2C", "SOCS1", "EEF1A1", "RAC2", "X12Q.AMP",
+                      "POU2AF1", "X6Q14.1.DEL"]
         GNA13_vec = data[list_GNA13].sum(axis=1)
 
         PTEN = data["PTEN"] + data["X10Q23.31.DEL"] + data["X13Q14.2.DEL"]
@@ -421,13 +414,12 @@ def format_inputs(datafile, target_file, training_set,
 
         # C4 ##############
 
-        list_Hist_comp = ["HIST1H2AC", "HIST1H1E", "HIST1H1B", "HIST1H2AM",
-                          "HIST1H1C", "HIST1H1D", "HIST1H2BC"]
+        list_Hist_comp = ["HIST1H2AC", "HIST1H1E", "HIST1H1B", "HIST1H2AM", "HIST1H1C", "HIST1H1D", "HIST1H2BC"]
         Hist_comp = data[list_Hist_comp].sum(axis=1)
 
-        list_SGK1_vec = ["SGK1", "TET2", "NFKBIA", "STAT3", "PTPN6", "BRAF",
-                         "KRAS", "CD83", "SF3B1", "CD274", "MEF2C", "KLHL6",
-                         "CXCR4", "PTEN", "RAC2", "SESN3", "SOCS1", "METAP1D"]
+        list_SGK1_vec = ["SGK1", "TET2", "NFKBIA", "STAT3", "PTPN6", "BRAF", "KRAS",
+                         "CD83", "SF3B1", "CD274", "MEF2C", "KLHL6", "CXCR4", "PTEN",
+                         "RAC2", "SESN3", "SOCS1", "METAP1D"]
         SGK1_vec = data[list_SGK1_vec].sum(axis=1)
 
         list_DUSP2_vec = ["DUSP2", "ZFP36L1", "CRIP1", "ACTB", "LTB", "YY1", "PABPC1"]
@@ -435,23 +427,21 @@ def format_inputs(datafile, target_file, training_set,
 
         # C5 ##############
 
-        list_TBL1XR1_vec = ["TBL1XR1", "PIM1", "PRDM1", "ETV6", "ZC3H12A",
-                            "BTG1", "BTG2", "IGLL5", "TMSB4X", "GRHPR",
-                            "HLA.C", "MYD88", "TOX", "LYN", "POU2F2", "IKZF3",
-                            "HLA.A", "ZFP36L1", "CARD11", "SF3B1", "HLA.B",
-                            "IRF2BP2", "OSBPL10", "ATP2A2", "PIM2", "IRF4", "BCL11A", "METAP1D"]
+        list_TBL1XR1_vec = ["TBL1XR1", "PIM1", "PRDM1", "ETV6", "ZC3H12A", "BTG1", "BTG2",
+                            "IGLL5", "TMSB4X", "GRHPR", "HLA.C", "MYD88", "TOX", "LYN",
+                            "POU2F2", "IKZF3", "HLA.A", "ZFP36L1", "CARD11", "SF3B1",
+                            "HLA.B", "IRF2BP2", "OSBPL10", "ATP2A2", "PIM2", "IRF4", "BCL11A",
+                            "METAP1D", "ETS1", "CCDC27", "MYD88.OTHER"]
         TBL1XR1_vec = data[list_TBL1XR1_vec].sum(axis=1)
 
         MYD88_L265P_CD79B = data["MYD88.L265P"] + data["CD79B"]
 
-        list_Sum_C5_sig = ["X18Q.AMP", "X3Q.AMP", "X3P.AMP", "X19Q13.42.AMP",
-                           "X6Q21.DEL", "X18P.AMP", "X19Q.AMP", "X8Q12.1.DEL",
-                           "X6Q14.1.DEL", "X19P13.2.DEL", "X9P21.3.DEL", "X18Q21.32.AMP",
-                           "X18Q22.2.AMP", "X1Q42.12.DEL", "X1Q32.1.AMP", "X6P21.33.DEL"]
+        list_Sum_C5_sig = ["X18Q.AMP", "X3Q.AMP", "X3P.AMP", "X19Q13.42.AMP", "X6Q21.DEL",
+                           "X18P.AMP", "X19Q.AMP", "X8Q12.1.DEL", "X6Q14.1.DEL", "X19P13.2.DEL",
+                           "X9P21.3.DEL", "X18Q21.32.AMP", "X18Q22.2.AMP", "X1Q42.12.DEL", "X1Q32.1.AMP", "X6P21.33.DEL"]
         Sum_C5_CNA = data[list_Sum_C5_sig].sum(axis=1)
 
         # MISC ############
-
         CN_2P16_1_AMP = data["X2P16.1.AMP"]
 
         reduced_feature_dict = \
