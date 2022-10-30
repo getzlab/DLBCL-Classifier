@@ -20,10 +20,10 @@ performancetable$experiment <-
   factor(performancetable$experiment, levels = performancetable$experiment[order(performancetable$performance)])
 
 step2B_models = rownames(performancetable)[grep('no', rownames(performancetable))]
-step2B_models = c(step2B_models, 'NN_reducedV3.3_nfeatures21')
+step2B_models = c(step2B_models, 'NN_reducedV3.4_removeN5_nfeatures21')
 
 current_table = performancetable[step2B_models, ]
-current_table['NN_reducedV3.3_nfeatures21', 'Model'] = 'Step2A winner'
+current_table['NN_reducedV3.4_removeN5_nfeatures21', 'Model'] = 'Step2A winner'
 
 rownames(current_table) = gsub('reducedV...', 'R', rownames(current_table))
 rownames(current_table) = gsub('nfeatures', '', rownames(current_table))

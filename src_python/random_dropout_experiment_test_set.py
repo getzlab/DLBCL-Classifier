@@ -98,7 +98,8 @@ for step in steps:
         datafile = '../random_dropout_experiment/experiment_gsms/tmpRandomDroppedGSM_fullfeatures_step' + str(1-step) + '_testset.txt'
     df.to_csv(datafile, sep='\t', header=True, index=True)
     data, targets = format_data.format_inputs(datafile, targetfile, test_set,
-                                              reduced_version='3.3', drop_empty_vectors=False)
+                                              reduced_version='3.4', remove_largest_n=5,
+                                              drop_empty_vectors=False)
 
     mut_count_new = (df.loc[mut_events] != 0).sum().sum()
     mut_count_dropped = mut_counts - mut_count_new

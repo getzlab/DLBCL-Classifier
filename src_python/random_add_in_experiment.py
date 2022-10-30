@@ -34,7 +34,7 @@ for file in files:
     netnum = int(file.split('_')[-1]) - 1
     curriter = int(np.floor(netnum/5))
     currfold = (netnum % 5)
-    validationfile = '../all_validation_sets/NN_evaluation_seeds1_100_folds5_reducedV3.3/NN_evaluation_seeds1_100_folds5_reducedV3.3' \
+    validationfile = '../all_validation_sets/NN_evaluation_seeds1_100_folds5_reducedV3.4_removeN5/NN_evaluation_seeds1_100_folds5_reducedV3.4_removeN5' \
                      + '_' + str(curriter + 1) + '_' + str(currfold)
     validation_samples = list(pd.read_csv(validationfile, sep='\t', index_col=0, header=None).index)
     validation_sets[netnum] = validation_samples
@@ -131,7 +131,8 @@ for step in steps:
     datafile = '../random_add_in_experiment/experiment_gsms/RandomAddInGSM_fullfeatures_step' + str(round(step, 2)) + '.txt'
     df.to_csv(datafile, sep='\t', header=True, index=True)
     data, targets = format_data.format_inputs(datafile, targetfile, training_set,
-                                              reduced_version='3.3',
+                                              reduced_version='3.4',
+                                              remove_largest_n=5,
                                               drop_empty_vectors=False)
 
     targets = targets.loc[data.index]

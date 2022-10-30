@@ -120,7 +120,8 @@ for step in steps:
     datafile = '../random_add_in_experiment/tmpAddInGSM_fullfeatures_testset.txt'
     df.to_csv(datafile, sep='\t', header=True, index=True)
     data, targets = format_data.format_inputs(datafile, targetfile, test_set,
-                                              reduced_version='3.3', drop_empty_vectors=False)
+                                              reduced_version='3.4', remove_largest_n=5,
+                                              drop_empty_vectors=False)
 
     targets = targets.loc[data.index]
     targets['cluster'] = targets.iloc[:, 0:5].idxmax(axis=1)

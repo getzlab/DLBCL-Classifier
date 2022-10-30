@@ -25,7 +25,7 @@ qval_file = '../data_tables/qval_dfs/fisher_exact_5x2.Sep_23_2022.combined.tsv'
 purity_file = '../data_tables/purities_ploidies/ALLPurities_fixednames.tsv'
 ploidy_file = '../data_tables/purities_ploidies/PloidyDataFrame.txt'
 sample_set_file = '../data_tables/sample_sets/ShippStaudtSets.purity0.2.txt'
-preds_file = '../evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.3_nfeatures21_pMax0.93344957.tsv'
+preds_file = '../evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_removeN5'
 alt_counts_file = '../reduce_purity_experiment/gsm_alt_counts.tsv'
 sv_alt_counts_file = '../reduce_purity_experiment/sv_alt_counts.tsv'
 cn_file = '../reduce_purity_experiment/copy_ratio_mat.tsv'
@@ -76,7 +76,7 @@ for file in files:
     netnum = int(file.split('_')[-1]) - 1
     curriter = int(np.floor(netnum/5))
     currfold = (netnum % 5)
-    validationfile = '../all_validation_sets/NN_evaluation_seeds1_100_folds5_reducedV3.3/NN_evaluation_seeds1_100_folds5_reducedV3.3' \
+    validationfile = '../all_validation_sets/NN_evaluation_seeds1_100_folds5_reducedV3.4_removeN5/NN_evaluation_seeds1_100_folds5_reducedV3.4_removeN5' \
                      + '_' + str(curriter + 1) + '_' + str(currfold)
     validationSamples = list(pd.read_csv(validationfile, sep='\t', index_col=0, header=None).index)
     validation_sets[netnum] = validationSamples
@@ -202,7 +202,7 @@ for step in steps:
     datafile = '../reduce_purity_experiment/experiment_gsms/reducepurity_fullfeatures_step' + str(step) + '.txt'
     df_power.to_csv(datafile, sep='\t', header=True, index=True)
     data, targets = format_data.format_inputs(datafile, targetfile, all_starting_samples,
-                                              reduced_version='3.3',
+                                              reduced_version='3.4', remove_largest_n=5,
                                               drop_empty_vectors=False)
 
     targets = targets.loc[data.index]
