@@ -2,11 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b092fab0-8de1-4ee0-9187-ec88de6d843d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/evaluation_test_set/NN_reducedV3.4_removeN5_nfeatures21_testsetEval.tsv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluation_test_set/preds_NN_reducedV3.4_removeN5_coo_nfeatures22_testsetEval.tsv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluation_test_set/preds_NN_reducedV3.4_removeN5_coo_ploidy_nfeatures23_testsetEval.tsv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluation_test_set/preds_NN_reducedV3.4_removeN5_no.arms_nfeatures21_testsetEval.tsv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluation_test_set/preds_NN_reducedV3.4_removeN5_no.focals_nfeatures21_testsetEval.tsv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluation_test_set/preds_NN_reducedV3.4_removeN5_no.muts_nfeatures21_testsetEval.tsv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluation_test_set/preds_NN_reducedV3.4_removeN5_no.scnas_nfeatures21_testsetEval.tsv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluation_test_set/preds_NN_reducedV3.4_removeN5_no.sv_nfeatures21_testsetEval.tsv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluation_test_set/preds_NN_reducedV3.4_removeN5_ploidy_nfeatures22_testsetEval.tsv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluation_test_set/test_set_metric_evaluations.tsv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluation_test_set/test_set_reducedGSM.tsv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/combined_performance_step1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/combined_performance_step1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/combined_performance_step2A.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/combined_performance_step2A.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/combined_performance_step2B.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/combined_performance_step2B.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/combined_performance_step2C.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/combined_performance_step2C.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/test_set/NN_reducedV3.4_removeN5_nfeatures21_testset.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/test_set/NN_reducedV3.4_removeN5_nfeatures21_testset.pdf_withcorrectness.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/test_set/NN_reducedV3.4_removeN5_nfeatures21_testset.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/test_set/NN_reducedV3.4_removeN5_nfeatures21_testset.png_withcorrectness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/test_set/combined_performance_step2B_testset.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/test_set/combined_performance_step2B_testset.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/test_set/combined_performance_step2C_testset.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/test_set/combined_performance_step2C_testset.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/combined_performance_step1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/plots/combined_performance_step1.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/combined_performance_step1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/combined_performance_step1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/combined_performance_step2A.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/plots/combined_performance_step2A.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/combined_performance_step2A.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/combined_performance_step2A.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/saved_models/NN_evaluation_seeds1_100_folds5_reducedV3.4_removeN5/NN_evaluation_seeds1_100_folds5_reducedV3.4_removeN5_1" beforeDir="false" afterPath="$PROJECT_DIR$/saved_models/FINALMODEL_NN_evaluation_seeds1_100_folds5_reducedV3.4_removeN5/NN_evaluation_seeds1_100_folds5_reducedV3.4_removeN5_1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/saved_models/NN_evaluation_seeds1_100_folds5_reducedV3.4_removeN5/NN_evaluation_seeds1_100_folds5_reducedV3.4_removeN5_10" beforeDir="false" afterPath="$PROJECT_DIR$/saved_models/FINALMODEL_NN_evaluation_seeds1_100_folds5_reducedV3.4_removeN5/NN_evaluation_seeds1_100_folds5_reducedV3.4_removeN5_10" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/saved_models/NN_evaluation_seeds1_100_folds5_reducedV3.4_removeN5/NN_evaluation_seeds1_100_folds5_reducedV3.4_removeN5_100" beforeDir="false" afterPath="$PROJECT_DIR$/saved_models/FINALMODEL_NN_evaluation_seeds1_100_folds5_reducedV3.4_removeN5/NN_evaluation_seeds1_100_folds5_reducedV3.4_removeN5_100" afterDir="false" />
@@ -507,15 +530,9 @@
       <change beforePath="$PROJECT_DIR$/saved_models/NN_evaluation_seeds1_100_folds5_reducedV3.4_removeN5/NN_evaluation_seeds1_100_folds5_reducedV3.4_removeN5_97" beforeDir="false" afterPath="$PROJECT_DIR$/saved_models/FINALMODEL_NN_evaluation_seeds1_100_folds5_reducedV3.4_removeN5/NN_evaluation_seeds1_100_folds5_reducedV3.4_removeN5_97" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/saved_models/NN_evaluation_seeds1_100_folds5_reducedV3.4_removeN5/NN_evaluation_seeds1_100_folds5_reducedV3.4_removeN5_98" beforeDir="false" afterPath="$PROJECT_DIR$/saved_models/FINALMODEL_NN_evaluation_seeds1_100_folds5_reducedV3.4_removeN5/NN_evaluation_seeds1_100_folds5_reducedV3.4_removeN5_98" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/saved_models/NN_evaluation_seeds1_100_folds5_reducedV3.4_removeN5/NN_evaluation_seeds1_100_folds5_reducedV3.4_removeN5_99" beforeDir="false" afterPath="$PROJECT_DIR$/saved_models/FINALMODEL_NN_evaluation_seeds1_100_folds5_reducedV3.4_removeN5/NN_evaluation_seeds1_100_folds5_reducedV3.4_removeN5_99" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_R/plot_step2B.R" beforeDir="false" afterPath="$PROJECT_DIR$/src_R/plot_step2B.R" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_R/plot_step2C.R" beforeDir="false" afterPath="$PROJECT_DIR$/src_R/plot_step2C.R" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/ccf_threshold_experiment.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/ccf_threshold_experiment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/ccf_threshold_experiment_test_set.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/ccf_threshold_experiment_test_set.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/evaluate_test_set_step1.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/evaluate_test_set_step1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/random_add_in_experiment.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/random_add_in_experiment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/random_add_in_experiment_test_set.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/random_add_in_experiment_test_set.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_R/plot_step2B_testset.R" beforeDir="false" afterPath="$PROJECT_DIR$/src_R/plot_step2B_testset.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_R/plot_step2C_testset.R" beforeDir="false" afterPath="$PROJECT_DIR$/src_R/plot_step2C_testset.R" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src_python/random_dropout_experiment.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/random_dropout_experiment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/random_dropout_experiment_test_set.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/random_dropout_experiment_test_set.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src_python/reduce_purity_experiment.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/reduce_purity_experiment.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

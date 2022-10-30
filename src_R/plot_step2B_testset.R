@@ -19,15 +19,15 @@ performancetable$Model = gsub('RF', 'Random Forest', performancetable$Model)
 performancetable$experiment <- 
   factor(performancetable$experiment, levels = performancetable$experiment[order(performancetable$Performance)])
 
-step2A_models = c('NN_reducedV3.3_nfeatures21_testsetEval', 
-                  'NN_reducedV3.3_no.arms_nfeatures21_testsetEval',
-                  'NN_reducedV3.3_no.focals_nfeatures21_testsetEval', 
-                  'NN_reducedV3.3_no.scnas_nfeatures21_testsetEval',
-                  'NN_reducedV3.3_no.sv_nfeatures21_testsetEval',
-                  'NN_reducedV3.3_no.muts_nfeatures21_testsetEval')
+step2A_models = c('NN_reducedV3.4_removeN5_nfeatures21_testsetEval', 
+                  'NN_reducedV3.4_removeN5_no.arms_nfeatures21_testsetEval',
+                  'NN_reducedV3.4_removeN5_no.focals_nfeatures21_testsetEval', 
+                  'NN_reducedV3.4_removeN5_no.scnas_nfeatures21_testsetEval',
+                  'NN_reducedV3.4_removeN5_no.sv_nfeatures21_testsetEval',
+                  'NN_reducedV3.4_removeN5_no.muts_nfeatures21_testsetEval')
       
 current_table = performancetable[step2A_models, ]
-current_table['NN_reducedV3.3_nfeatures21_testsetEval', 'Model'] = 'Final Model'
+current_table['NN_reducedV3.4_removeN5_nfeatures21_testsetEval', 'Model'] = 'Final Model'
 
 rownames(current_table) = gsub('reducedV...', 'R', rownames(current_table))
 rownames(current_table) = gsub('nfeatures', '', rownames(current_table))

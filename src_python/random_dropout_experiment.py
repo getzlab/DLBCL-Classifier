@@ -34,7 +34,7 @@ for file in files:
     netnum = int(file.split('_')[-1]) - 1
     curriter = int(np.floor(netnum/5))
     currfold = (netnum % 5)
-    validationfile = '../all_validation_sets/NN_evaluation_seeds1_100_folds5_reducedV3.3_removeN5/NN_evaluation_seeds1_100_folds5_reducedV3.3_removeN5' \
+    validationfile = '../all_validation_sets/NN_evaluation_seeds1_100_folds5_reducedV3.4_removeN5/NN_evaluation_seeds1_100_folds5_reducedV3.4_removeN5' \
                      + '_' + str(curriter + 1) + '_' + str(currfold)
     validationSamples = list(pd.read_csv(validationfile, sep='\t', index_col=0, header=None).index)
     validation_sets[netnum] = validationSamples
