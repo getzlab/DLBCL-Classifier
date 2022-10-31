@@ -175,7 +175,7 @@ for c_cutoff in confidences:
     ax.legend(handles=legend_elements)
     plt.title('Confidence >= ' + str(c_cutoff))
     plt.savefig('../plots/umap/umap_cl_trainset_conf' + str(c_cutoff) + '.jpeg')
-    plt.savefig('../plots/umap/umap_cl_trainset_high' + str(c_cutoff) + '.pdf')
+    plt.savefig('../plots/umap/umap_cl_trainset_conf' + str(c_cutoff) + '.pdf')
     plt.clf()
 
 #####################################################

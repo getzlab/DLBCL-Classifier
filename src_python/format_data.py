@@ -45,7 +45,7 @@ def construct_reduced_winning_version(data, add_missing_features=False):
     list_M88O_vec = ["MYD88.OTHER", "TNFAIP3", "TNIP1", "BCL10", "NFKBIE"]
     M88O_vec = data[list_M88O_vec].sum(axis=1)
 
-    list_C1_vec4 = ["UBE2A", "TMEM30A", "ZEB2", "GNAI2", "X5P.AMP", "X5Q.AMP",
+    list_C1_vec4 = ["UBE2A", "TMEM30A", "ZEB2", "GNAI2", "X5P.AMP",
                     "POU2F2", "IKZF3", "X3Q28.DEL", "EBF1", "LYN", "BCL7A", "CXCR4",
                     "CCDC27", "TUBGCP5", "SMG7", "RHOA", "BTG2"]
     C1_vec4 = data[list_C1_vec4].sum(axis=1)
@@ -62,16 +62,16 @@ def construct_reduced_winning_version(data, add_missing_features=False):
 
     list_C2_sum_arm = ["X17P.DEL", "X21Q.AMP", "X11Q.AMP", "X6P.AMP", "X11P.AMP",
                        "X6Q.DEL", "X7P.AMP", "X13Q.AMP", "X7Q.AMP", "X3Q.AMP", "X5P.AMP",
-                       "X5Q.AMP", "X18P.AMP", "X3P.AMP", "X19Q.AMP", "X9Q.AMP", "X1Q.AMP",
+                       "X18P.AMP", "X3P.AMP", "X19Q.AMP", "X9Q.AMP",
                        "X12P.AMP", "X12Q.AMP"]
     Sum_C2_ARM = data[list_C2_sum_arm].sum(axis=1)
 
     list_C2_sum_focal = ["X1P36.11.DEL", "X1P31.1.DEL", "X1P13.1.DEL", "X2Q22.2.DEL", "X16Q12.1.DEL",
-                         "X14Q32.31.DEL", "X1P36.32.DEL", "X4Q35.1.DEL", "X9Q21.13.DEL", "X15Q15.3.DEL",
+                         "X14Q32.31.DEL", "X1P36.32.DEL", "X15Q15.3.DEL",
                          "X4Q21.22.DEL", "X9P21.3.DEL", "X8Q24.22.AMP", "X12P13.2.DEL", "X2P16.1.AMP",
                          "X8Q12.1.DEL", "X19P13.2.DEL", "X17Q25.1.DEL", "X1Q42.12.DEL", "X3P21.31.DEL",
                          "X18Q23.DEL", "X19P13.3.DEL", "X13Q34.DEL", "X7Q22.1.AMP", "X10Q23.31.DEL",
-                         "X9P24.1.AMP", "X1Q23.3.AMP", "X3Q28.AMP", "X11Q23.3.AMP", "X17Q24.3.AMP", "X3Q28.DEL",
+                         "X9P24.1.AMP", "X3Q28.AMP", "X11Q23.3.AMP", "X17Q24.3.AMP", "X3Q28.DEL",
                          "X13Q14.2.DEL", "X18Q21.32.AMP", "X19Q13.32.DEL", "X6P21.1.AMP", "X18Q22.2.AMP",
                          "EP300", "ZNF423", "CD274"]
     Sum_C2_FOCAL = data[list_C2_sum_focal].sum(axis=1)

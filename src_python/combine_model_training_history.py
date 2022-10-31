@@ -3,7 +3,7 @@ import pandas as pd
 from operator import itemgetter
 import numpy as np
 
-files = glob.glob('../model_training_history/NN_evaluation_seeds1_100_folds5_reducedV3.2_removeN5/*')
+files = glob.glob('../model_training_history/NN_evaluation_seeds1_100_folds5_reducedV3.4_removeN5/*')
 print(files)
 trainingprogress = {}
 validationprogress = {}

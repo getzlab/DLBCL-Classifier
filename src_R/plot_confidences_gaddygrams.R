@@ -1,7 +1,7 @@
 rm(list = ls())
 source('src_R/load_libraries.R')
 
-conf_table = read.csv('evaluation_test_set/NN_reducedV3.3_nfeatures21_testsetEval.tsv', 
+conf_table = read.csv('evaluation_test_set/NN_reducedV3.4_removeN5_nfeatures21_testsetEval.tsv', 
                       sep='\t', row.names=1)
 conf_table = conf_table[order(conf_table$PredictedCluster, conf_table$Confidence), ]
 cohorts = read.csv('data_tables/sample_sets/ShippStaudtSets.purity0.2.txt', sep='\t', row.names=1)
@@ -42,7 +42,7 @@ ggsave(paste(output_fn, '.pdf', sep=''), p_test, width=8, height=8)
 # Training set
 ##############
 
-conf_table_train = read.csv('evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.3_nfeatures21_pMax0.93344957.tsv', 
+conf_table_train = read.csv('evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_removeN5_nfeatures21_pMax0.93856484.tsv', 
                       sep='\t', row.names=1)
 conf_table_train$Confidence = apply(conf_table_train, 1, max)
 conf_table_train$PredictedCluster = apply(conf_table_train[,1:5], 1, which.max)

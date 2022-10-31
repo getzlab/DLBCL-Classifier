@@ -27,10 +27,10 @@ training_set = list(pd.read_csv('../../data_tables/train_test_sets/TrainingSet_5
 test_set = list(pd.read_csv('../../data_tables/train_test_sets/TestingSet_149Subset_May2021.txt',
                             sep='\t', index_col=0, header=None).index)
 
-train_preds = pd.read_csv('../../evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.3_nfeatures21_pMax0.93344957.tsv',
+train_preds = pd.read_csv('../../evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_removeN5_nfeatures21_pMax0.93856484.tsv',
                           sep='\t', index_col=0)
 
-test_preds = pd.read_csv('../../evaluation_test_set/NN_reducedV3.3_nfeatures21_testsetEval.tsv',
+test_preds = pd.read_csv('../../evaluation_test_set/NN_reducedV3.4_removeN5_nfeatures21_testsetEval.tsv',
                           sep='\t', index_col=0)
 
 raw_counts = pd.read_csv('../../data_tables/raw_muts_cnas_counts.tsv', sep='\t', index_col=0)

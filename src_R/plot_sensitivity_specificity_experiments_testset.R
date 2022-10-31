@@ -4,8 +4,6 @@ source("src_R/load_libraries.R")
 resultsDropout = read.csv('random_dropout_experiment/resultstable_random_dropout_testset.txt', sep='\t')
 resultsAddIn = read.csv('random_add_in_experiment/resultstable_random_add_in_testset.txt', sep='\t')
 
-#resultsDropout$dropout_probability = rev(resultsDropout$dropout_probability)
-
 #####
 # Add-in experiment limits: As FP -> 1, TN -> 0, FP/FP = 1. x-axis scale 0->1.
 # Alternatively, specificity also mathematically works, but scale must be reversed:
@@ -45,14 +43,14 @@ p = ggplot(resultsDropout_2, aes(x=1-dropout_probability, y=Performance)) +
   geom_point() +
   theme_bw() +
   geom_errorbar(aes(ymax = resultsDropout_2$upperPerformance, ymin = resultsDropout_2$lowerPerformance), width=0.01) +
-  labs(x=dropout_label, y='Performance') + 
+  labs(x=dropout_label, y='Performance') +
   theme(axis.title.x = element_text(size=22),
         axis.title.y = element_text(size=22),
         axis.text.x = element_text(size=18),
         axis.text.y = element_text(size=18)) +
   ylim(c(0, 1)) +
   ggtitle('Dropout') +
-  scale_x_reverse(expand = c(0.01, 0), limits=c(0,1), breaks=seq(0, 1, 0.1))
+  scale_x_reverse(breaks=seq(0, 1, 0.1), expand = c(0.01, 0), limits=c(1, 0))
 
 p2 = ggplot(data=melted_df, aes(x=dropout_probability, y=value, color=MarkerType)) +
   geom_point() +

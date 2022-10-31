@@ -82,8 +82,8 @@ pallet = {1: sns.color_palette()[4],        # purple, C1
           5: sns.color_palette()[3],        # red, C5
           }
 
-preds = '../evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.3_nfeatures21_pMax0.93344957.tsv'
-preds_test = '../evaluation_test_set/NN_reducedV3.3_nfeatures21_testsetEval.tsv'
+preds = '../evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_removeN5_nfeatures21_pMax0.93856484.tsv'
+preds_test = '../evaluation_test_set/NN_reducedV3.4_removeN5_nfeatures21_testsetEval.tsv'
 datafile = '../data_tables/gsm/DLBCL.699.fullGSM.Sep_23_2022.tsv'
 training_set = list(pd.read_csv('../data_tables/train_test_sets/TrainingSet_550Subset_May2021.txt', sep='\t', header=None, index_col=0).index)
 testing_set = list(pd.read_csv('../data_tables/train_test_sets/TestingSet_149Subset_May2021.txt', sep='\t', header=None, index_col=0).index)

@@ -20,16 +20,10 @@ GSM = '../data_tables/gsm/DLBCL.699.fullGSM.Sep_23_2022.tsv'
 targetfile = '../data_tables/confidence_tables/baseline_probabilities.connectivity_based.sensitivity_power2.Sep_23_2022.tsv'
 samples_file = '../data_tables/sample_sets/ShippStaudtSets.purity0.2.txt'
 qval_file = '../data_tables/qval_dfs/fisher_exact_5x2.Sep_23_2022.combined.tsv'
-ccf_file = '../data_tables/gsm/DLBCL_700.17-Dec-2021.txt'
 
 # need to fix
-exit()
-ccf_gsm = pd.read_csv(ccf_file, sep='\t', index_col=0)
-
-ccf_gsm.index = ['X' + driver if ('.AMP' in driver or '.DEL' in driver) else driver for driver in ccf_gsm.index]
-ccf_gsm.index = ccf_gsm.index.str.replace('_', '.').str.replace('-', '.')
-
-ccf_gsm.loc['MYD88.CCF'] = ccf_gsm.loc[['MYD88.L265P.CCF', 'MYD88.OTHER.CCF']].max(axis=0)
+ccf_gsm = pd.read_csv(GSM, sep='\t', index_col=0)
+ccf_gsm = ccf_gsm.loc[ccf_gsm.index.str.contains('.CCF')]
 
 ccf_gsm = ccf_gsm.fillna(0)
 
@@ -75,7 +69,7 @@ results_df = pd.DataFrame(columns=['ccf_threshold', 'accuracyAll', 'accuracyTop'
                                    'amp_count_dropped', 'amp_count_kept',
                                    'sv_count_dropped', 'sv_count_kept'])
 
-ccf_gsm = ccf_gsm.loc[df_original.index + '.CCF', testing_set]
+ccf_gsm = ccf_gsm.loc[df_original.index + '.CCF', testing_set].astype(float)
 
 sv_events = df_original.index[df_original.index.str.contains('SV.', regex=False)]
 amp_events = df_original.index[df_original.index.str.contains('.AMP', regex=False)]
