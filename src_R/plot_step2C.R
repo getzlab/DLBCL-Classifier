@@ -94,7 +94,7 @@ p3 = ggplot(data=current_table, aes(x=experiment, y=performance, color=Model)) +
         axis.text.y = element_blank(),  
         axis.title.x = element_text(colour="grey20",size=15,angle=0,hjust=.5,vjust=0,face="plain"),
         axis.title.y = element_blank(),
-        legend.position = c(.30, 0.80),
+        legend.position = c(.10, 0.80),
         legend.title = element_text(size=9)) +
   scale_colour_manual(values=current_colors) +
   geom_hline(yintercept=max(current_table$performance) - 

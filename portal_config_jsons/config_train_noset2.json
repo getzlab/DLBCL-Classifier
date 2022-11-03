@@ -1,0 +1,155 @@
+{
+    "autoAddPadding": true,
+    "initialSort": [
+        {
+            "panel": "Cluster",
+            "order": 1
+        },
+        {
+            "panel": "Set",
+            "order": 1
+        },
+        {
+            "panel": "Confidence",
+            "order": 1
+        }
+    ],
+    "grid": {
+        "cellHeight": 15,
+        "plotHeight": 50,
+        "columnSizes": {
+            "0": {
+                "size": 0.05,
+                "padding": {
+                    "left": 0,
+                    "right": 0
+                }
+            },
+            "1": {
+                "size": 0.05,
+                "padding": {
+                    "left": 30,
+                    "right": 0
+                }
+            },
+            "2": {
+                "size": 0.89,
+                "padding": {
+                    "left": 80,
+                    "right": 0
+                }
+            },
+            "3": {
+                "size": 0.01,
+                "padding": {
+                    "left": 10,
+                    "right": 10
+                }
+            }
+        }
+    },
+    "panels": [
+        {
+            "type": "strip",
+            "id": "Cluster",
+            "label": "Cluster",
+            "dataPrefix": "cluster",
+            "row": 0,
+            "colors": [
+                "#9467bd",
+                "#17becf",
+                "#ff7f0e",
+                "#2ca02c",
+                "#d62728"
+            ],
+            "plots": {
+                "center": {
+                    "yAxisTitle": "Cluster"
+                }
+            },
+            "displayLegend": false
+        },
+        {
+            "type": "strip",
+            "id": "Set",
+            "label": "Set",
+            "dataPrefix": "set",
+            "row": 1,
+            "colors": [
+                "#000000",
+                "#f5f242"
+            ],
+            "plots": {
+                "center": {
+                    "yAxisTitle": "Set"
+                }
+            },
+            "displayLegend": true
+        },
+        {
+            "type": "continuousstrip",
+            "id": "Confidence",
+            "label": "Confidence",
+            "dataPrefix": "confidence",
+            "row": 2,
+            "colors": [
+                "#ff1900",
+                "#00fa08"
+            ],
+            "plots": {
+                "center": {
+                    "yAxisTitle": "Confidence",
+                    "dataOptions": {
+                        "colorRange": {
+                            "min": 0.2,
+                            "max": 1.0
+                        }
+                    }
+                }
+            },
+            "displayLegend": true
+        },
+        {
+            "type": "categoricalheatmap",
+            "id": "GeneMutation",
+            "label": "Gene Mutation",
+            "dataPrefix": "hmap_",
+            "row": 3,
+            "panelOptions": {
+                "sort": "test2",
+                "limit": 200,
+                "categoryKey": {
+                    "0": "No Mutation",
+                    "1": "Silent Mutation",
+                    "2": "Non-Silent Mutation",
+                    "3": "SV",
+                    "4": "Low Level Amp",
+                    "5": "High Level Amp",
+                    "6": "Low Level Del",
+                    "7": "High Level Del"
+                }
+            },
+            "colors": [
+                "#FFF",
+                "#858585",
+                "#000000",
+                "#5EA157",
+                "#FF8080",
+                "#F70000",
+                "#8adeff",
+                "#00b1f7"
+            ],
+            "plots": {
+                "center": {
+                    "yAxisTitle": "",
+                    "dataOptions": {
+                        "hideCategory": [
+                            0
+                        ]
+                    }
+                }
+            },
+            "displayLegend": true
+        }
+    ]
+}

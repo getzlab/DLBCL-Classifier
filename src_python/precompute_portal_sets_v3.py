@@ -70,8 +70,8 @@ datafile = "../data_tables/gsm/DLBCL.699.fullGSM.Sep_23_2022.tsv"
 qval_file = '../data_tables/qval_dfs/fisher_exact_5x2.Sep_23_2022.combined.tsv'
 targetfile = "../data_tables/confidence_tables/baseline_probabilities.connectivity_based.sensitivity_power2.Sep_23_2022.tsv"
 setfile = '../data_tables/sample_sets/sample_inclusion_table.tsv'
-train_preds = '../evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.3_nfeatures21_pMax0.93344957.tsv'
-test_preds = '../evaluation_test_set/NN_reducedV3.3_nfeatures21_testsetEval.tsv'
+train_preds = '../evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_removeN5_nfeatures21_pMax0.93856484.tsv'
+test_preds = '../evaluation_test_set/NN_reducedV3.4_removeN5_nfeatures21_testsetEval.tsv'
 
 test_samples = list(pd.read_csv("../data_tables/train_test_sets/TestingSet_149Subset_May2021.txt",
                                     sep='\t', header=None, index_col=0).index)
@@ -157,10 +157,10 @@ full_preds = pd.concat([train_confs, test_confs])
 
 ccle_full_gsm = pd.read_csv('../data_tables/gsm/GSM.Depmap.updated.Sep_23_2022.tsv', sep='\t', index_col=0)
 ccle_preds = pd.read_csv('../evaluation_cell_lines/CCLE_predictions.tsv', sep='\t', index_col=0)
-ccle_reduced_gsm = pd.read_csv('../evaluation_cell_lines/CCLE_reducedV3.3_gsm.tsv', sep='\t', index_col=0)
+ccle_reduced_gsm = pd.read_csv('../evaluation_cell_lines/CCLE_reducedV3.4_removeN5_gsm.tsv', sep='\t', index_col=0)
 ccgd_full_gsm = pd.read_csv('../data_tables/gsm/GSM.CCGD.updated.Sep_23_2022.tsv', sep='\t', index_col=0)
 ccgd_preds = pd.read_csv('../evaluation_cell_lines/CCGD_predictions.tsv', sep='\t', index_col=0)
-ccgd_reduced_gsm = pd.read_csv('../evaluation_cell_lines/ccgd_lines_reducedV3.3_gsm.tsv', sep='\t', index_col=0)
+ccgd_reduced_gsm = pd.read_csv('../evaluation_cell_lines/CCGD_reducedV3.4_removeN5_gsm.tsv', sep='\t', index_col=0)
 false_neg_50_gsm = '../random_dropout_experiment/experiment_gsms/tmpRandomDroppedGSM_fullfeatures_step0.5.txt'
 false_pos_50_gsm = '../random_add_in_experiment/experiment_gsms/RandomAddInGSM_fullfeatures_step0.5.txt'
 false_neg_50_preds = '../random_dropout_experiment/preds/dropout_preds_0.5.txt'

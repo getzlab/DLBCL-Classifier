@@ -208,13 +208,13 @@ def evaluate_model(file):
 
     _, _, _, _ = CP.xyresiduals_window_weighted_fractionPerWindow(lrx, lry, name, seed=1, bootstrapwindows=False,
                                                                   windowsize=WINDOW_SIZE, step=STEP_SIZE, computeplots=True,
-                                                                  saveFileName='../plots/xyresiduals/' + name,
+                                                                  saveFileName='../plots/xyresiduals/' + name, jiggle=0.05,
                                                                   format='pdf')
 
     meankappa_val, cdfs_val, residuals_val, weightedkappas_val = \
         CP.xyresiduals_window_weighted_fractionPerWindow(lrx, lry, name, seed=1, bootstrapwindows=False,
                                                          windowsize=WINDOW_SIZE, step=STEP_SIZE, computeplots=True,
-                                                         saveFileName='../plots/xyresiduals/' + name,
+                                                         saveFileName='../plots/xyresiduals/' + name, jiggle=0.05,
                                                          format='png')
     ########### y = x residual evaluation ############
     kappas = []

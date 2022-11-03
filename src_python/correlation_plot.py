@@ -74,14 +74,14 @@ def xyresiduals_window_weighted_fractionPerWindow(X, Y, name, jiggle=None, seed=
     weighted_meankappa = ((sum((window_weightedkappas)) / sum(allweights)) + 1) / 2
 
     if computeplots:
-        xticks_all = np.linspace(0,1,11)
+        xticks_all = np.linspace(0, 1, 11)
         fig, axs = plt.subplots(3, gridspec_kw={'height_ratios': [1, 3, 1]})
         for i in range(len(windowAverages_X)):
             x = [windowAverages_X[i]]
             y = [windowAverages_Y[i]]
             xerr = [[lowerBin[i]], [upperBin[i]]]
             yerr = [[lowerErrors[i]], [upperErrors[i]]]
-            axs[1].errorbar(x, y, xerr=xerr, yerr=yerr, c='black', ls='none', marker='o', capsize=0, ms=3, alpha=max([allweights[i] - 0.15, 0.20]))
+            axs[1].errorbar(x, y, xerr=xerr, yerr=yerr, c='black', ls='none', marker='o', capsize=0, ms=3)
         # axs[1].errorbar(windowAverages_X, windowAverages_Y, xerr=[lowerBin, upperBin], yerr=[lowerErrors, upperErrors],
         #                 c='black', ls='none', marker='o', capsize=0, ms=3)
         axs[1].text(0, 0.80, 'Kappa = ' + str(np.round(weighted_meankappa, 4)), color='blue', size=10)
@@ -133,12 +133,12 @@ def xyresiduals_window_weighted_fractionPerWindow(X, Y, name, jiggle=None, seed=
                 saveFileName = saveFileName + '.' + format
                 plt.savefig(saveFileName, format=format)
         if jiggle is not None:
-            Y_jiggle = Y + jiggle
-            axs[1].scatter(X[Y.astype(bool)], Y_jiggle[Y.astype(bool)], c='green', s=50, alpha=0.3)
-            axs[1].scatter(X[~Y.astype(bool)], Y_jiggle[~Y.astype(bool)], c='red', s=50, alpha=0.3)
+            axs[1].scatter(X[Y.astype(bool)], Y[Y.astype(bool)] + jiggle, c='green', s=30, alpha=0.3)
+            axs[1].scatter(X[~Y.astype(bool)], Y[~Y.astype(bool)] - jiggle, c='red', s=30, alpha=0.3)
+            axs[1].set_ylim((0 - jiggle - 0.03, 1 + jiggle + 0.03))
         else:
-            axs[1].scatter(X[Y.astype(bool)], Y[Y.astype(bool)], c='green', s=50, alpha=0.5)
-            axs[1].scatter(X[~Y.astype(bool)], Y[~Y.astype(bool)], c='red', s=50, alpha=0.5)
+            axs[1].scatter(X[Y.astype(bool)], Y[Y.astype(bool)], c='green', s=30, alpha=0.5)
+            axs[1].scatter(X[~Y.astype(bool)], Y[~Y.astype(bool)], c='red', s=30, alpha=0.5)
         if showplots:
             plt.show()
         if saveFileName is not None:
@@ -148,3 +148,17 @@ def xyresiduals_window_weighted_fractionPerWindow(X, Y, name, jiggle=None, seed=
         plt.close()
 
     return weighted_meankappa, cdfs, residuals, window_weightedkappas
+
+import pandas as pd
+supp_t1 = pd.read_csv("../data_tables/tableS1_classifier_merged.tsv", sep='\t')
+
+confs = supp_t1['Confidence']
+cluster = supp_t1[['Target C1', 'Target C2', 'Target C3', 'Target C4', 'Target C5']].idxmax(axis=1).str.replace('Target ', '', regex=False)
+correctness = np.equal('C' + supp_t1['PredictedCluster'].astype(int).astype(str), cluster).astype(int)
+
+vals = pd.DataFrame([confs.values, correctness.values]).T
+vals.columns = ['conf', 'correctness']
+vals = vals.sort_values(by='conf', ascending=True)
+
+xyresiduals_window_weighted_fractionPerWindow(vals['conf'], vals['correctness'], 'tmp', saveFileName='tmp', computeplots=True,
+                                              windowsize=10, step=10, jiggle=0.05)

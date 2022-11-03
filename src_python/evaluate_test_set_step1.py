@@ -162,12 +162,12 @@ _, _, _, _ = CP.xyresiduals_window_weighted_fractionPerWindow(  lrx, lry, 'None'
                                                                  windowsize=WINDOW_SIZE, step=STEP_SIZE, computeplots=True,
                                                                  saveFileName='../plots/test_set/NN_reducedV3.4_removeN5_nfeatures21_testset',
                                                                  format='png',
-                                                                 y_ticks_top=10, y_ticks_bot=5)
+                                                                 y_ticks_top=10, y_ticks_bot=5, jiggle=0.05)
 _, _, _, _ = CP.xyresiduals_window_weighted_fractionPerWindow(  lrx, lry, 'None', seed=123, bootstrapwindows=False,
                                                                 windowsize=WINDOW_SIZE, step=STEP_SIZE, computeplots=True,
                                                                 saveFileName='../plots/test_set/NN_reducedV3.4_removeN5_nfeatures21_testset',
                                                                 format='pdf',
-                                                                y_ticks_top=10, y_ticks_bot=5)
+                                                                y_ticks_top=10, y_ticks_bot=5, jiggle=0.05)
 
 
 print('Final Metrics\n Accuracy:', allAccuracy, '\n',
