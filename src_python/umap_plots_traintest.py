@@ -361,8 +361,8 @@ def umap_hc():
         clus_samples_train = clus_samples[clus_samples.isin(training_set)]
         clus_samples_test = clus_samples[clus_samples.isin(testing_set)]
 
-        plt.scatter(u.loc[clus_samples_train, 'u1'], u.loc[clus_samples_train, 'u2'], color=pallet[clus], marker='o', s=40)
-        plt.scatter(u.loc[clus_samples_test, 'u1'], u.loc[clus_samples_test, 'u2'], color=pallet[clus], marker='x', s=40)
+        plt.scatter(u.loc[clus_samples_train, 'u1'], u.loc[clus_samples_train, 'u2'], color=pallet[clus], marker='o', s=60)
+        plt.scatter(u.loc[clus_samples_test, 'u1'], u.loc[clus_samples_test, 'u2'], color=pallet[clus], marker='x', s=60)
 
     legend_elements = [Line2D([0], [0], marker='_', color=pallet[1], markerfacecolor=pallet[1], label='C1_DLBclass', markersize=12),
                        Line2D([0], [0], marker='_', color=pallet[2], markerfacecolor=pallet[2], label='C2_DLBclass', markersize=12),

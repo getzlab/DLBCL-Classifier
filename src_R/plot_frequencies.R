@@ -183,6 +183,85 @@ p3 <- ggplot(plotDF_natmed, aes(x=diff, y=logq_fisher, color=AlterationType, sha
   scale_colour_manual(values = alteration.colors) +
   scale_shape_manual(values = c(19, 4))
 
+### No downsample
+
+NCI_DF = fullDF[rownames(cohorts)[cohorts$cohort == 'Staudt'],]
+TCGA_DF = fullDF[rownames(fullDF) %in% rownames(cohorts)[cohorts$cohort == 'TCGA'],]
+
+Staudt_DF = rbind(NCI_DF, TCGA_DF)
+Our_DF = fullDF[rownames(fullDF) %in% rownames(cohorts)[cohorts$cohort == 'Shipp'], ]
+
+plotDF = data.frame(cbind(colSums(Staudt_DF != 0) / nrow(Staudt_DF), colSums(Our_DF != 0) / nrow(Our_DF)))
+colnames(plotDF) = c('Schmitz_F', 'Chapuy_F')
+plotDF$diff = plotDF$Schmitz_F - plotDF$Chapuy_F
+plotDF$absDiff = abs(plotDF$Schmitz_F - plotDF$Chapuy_F)
+
+plotDF$counts_wt_schmitz = colSums(Staudt_DF == 0)
+plotDF$counts_var_schmitz = colSums(Staudt_DF != 0)
+plotDF$counts_wt_chapuy = colSums(Our_DF == 0)
+plotDF$counts_var_chapuy = colSums(Our_DF != 0)
+
+plotDF$pval_fisher = -1
+
+plotDF$AlterationType = 'SNP'
+plotDF[grepl('SV', rownames(plotDF)), 'AlterationType'] = 'SV'
+plotDF[grepl('\\.AMP', rownames(plotDF)), 'AlterationType'] = 'SCNA - AMP'
+plotDF[grepl('\\.DEL', rownames(plotDF)), 'AlterationType'] = 'SCNA - DEL'
+
+for(i in rownames(plotDF)){
+  
+  fisher_mat = matrix(0, 2, 2)
+  fisher_mat[1,1] = plotDF[i, 'counts_wt_schmitz']
+  fisher_mat[1,2] = plotDF[i, 'counts_var_schmitz']
+  fisher_mat[2,1] = plotDF[i, 'counts_wt_chapuy']
+  fisher_mat[2,2] = plotDF[i, 'counts_var_chapuy']
+  
+  pval_fisher = fisher.test(fisher_mat, alternative = 'two.sided')[1]
+  
+  plotDF[i, 'pval_fisher'] = pval_fisher
+  if (i == 'X21Q22.3.AMP'){
+    print(fisher_mat)
+  }
+}
+
+plotDF$X = rownames(plotDF)
+plotDF = plotDF[rownames(plotDF) %in% rownames(qvalDF),]
+plotDF$qval_fisher = p.adjust(plotDF$pval_fisher, method='BH')
+plotDF$logq_fisher = -log10(plotDF$qval_fisher)
+plotDF$significant_fisher = plotDF$qval_fisher <= 0.10
+
+p_full <- ggplot(plotDF, aes(x=Chapuy_F, y=Schmitz_F, color=AlterationType, shape=significant_fisher)) + 
+  geom_point() +
+  xlim(0, 0.4) +
+  ylim(0, 0.4) +
+  theme_bw() +
+  ggtitle(paste('Cohort Frequencies - All Drivers', '(N=', nrow(plotDF) ,')', sep='')) +
+  ylab('Schmitz et al. Driver Frequencies') +
+  xlab('Chapuy et al. Driver Frequencies') +
+  theme(axis.text.x = element_text(colour="grey20",size=10,angle=0,hjust=.5,vjust=.5,face="plain"),
+        axis.text.y = element_text(colour="grey20",size=10,hjust=.5,vjust=.5,face="plain"),  
+        axis.title.x = element_text(colour="grey20",size=15,angle=0,hjust=.5,vjust=0,face="plain"),
+        axis.title.y = element_text(colour="grey20",size=15,hjust=.5,vjust=.5,face="plain")) +
+  geom_text(aes(label=ifelse(qval_fisher <= 0.10, as.character(X),'')), vjust=-0.4, size=2) +
+  geom_abline() +
+  #geom_abline(slope=1, intercept=0.10, linetype='dashed', color='black', show.legend=TRUE) +
+  #geom_abline(slope=1, intercept=-0.10, linetype='dashed', show.legend = TRUE) +
+  geom_text(x=0.2, y=0.4, 
+            label=paste("Fraction significant (qval <= 0.10) = ", 
+                        round(sum(plotDF$qval_fisher <= 0.10) / nrow(plotDF), 3), sep=''),
+            color='blue') +
+  geom_text(x=0.2, y=0.4-0.03, 
+            label=paste('pearson correlation:', round(as.numeric(cor.test(plotDF$Chapuy_F, plotDF$Schmitz_F)[4]), 3), '\n',
+                        'p =', format(as.numeric(cor.test(plotDF$Chapuy_F, plotDF$Schmitz_F)[3]), scientific=TRUE)),
+            color='blue') +
+  scale_colour_manual(values = alteration.colors) +
+  scale_shape_manual(values = c(19, 4))
+
+### Clinical cohort
+
+table_s1 = read.csv('data_tables/tableS1_classifier_merged.tsv', sep='\t')
+
+
 ### Train vs Test frequencies
 
 fullDF = fullDF[, colnames(fullDF) %in% rownames(qvalDF)]

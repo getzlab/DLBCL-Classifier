@@ -14,8 +14,8 @@ p_perf = ggplot(resultsCCF, aes(x=ccf_threshold, y=Performance)) +
         axis.title.y = element_text(size=22),
         axis.text.x = element_text(size=18),
         axis.text.y = element_text(size=18)) +
-  scale_x_continuous(expand = c(0.01, 0), breaks = seq(0, 1, 0.10), limits=c(0,1)) +
-  scale_y_continuous(expand = c(0.01, 0), breaks = seq(0, 1, 0.10), limits=c(0,1))
+  scale_x_continuous(expand = c(0.01, 0), breaks = seq(0, 1, 0.10), limits=c(-0.01,1.01)) +
+  scale_y_continuous(expand = c(0.01, 0), breaks = seq(0, 1, 0.10), limits=c(-0.01,1.01))
 
 p_conf = ggplot(resultsCCF, aes(x=ccf_threshold, y=meanconfidence)) +
   geom_point() +

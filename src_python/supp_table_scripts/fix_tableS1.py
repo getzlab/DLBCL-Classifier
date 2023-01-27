@@ -4,6 +4,7 @@ import numpy as np
 table_s1_bjoern = pd.read_csv('../../data_tables/tableS1_bjoern.tsv', sep='\t', index_col=2)
 current_s1 = pd.read_csv('../../data_tables/tableS1_classifier.tsv', sep='\t', index_col=0)
 staudt_s9 = pd.read_csv('../../data_tables/Tab S9 Characteristics DLBCL-Table 1.tsv', sep='\t', index_col=0)
+downsample_status = pd.read_csv('../../data_tables/phenotypes/staudt_coo_downsample.tsv', sep='\t', index_col=0)
 
 cols_to_keep = ['OriginalCluster [chapuy et al Nature Med 2018]', 'Above85', 'Above80',
                 'order', 'Witin.700', 'MatchID', 'Gender', 'Age-at first diagnosis',
@@ -30,27 +31,6 @@ combined_s1 = combined_s1.rename({'Cluster': 'Cluster [NMF new]'}, axis=1)
 combined_s1.index.name = 'ID'
 
 combined_s1.isna().sum(axis=0).sort_values().to_csv('../../data_tables/na_counts_tables1.tsv', sep='\t')
-
-# Index(['Cohort', 'COO', 'Sample Preparation', 'Mean Target Coverage',
-#        'Median Target Coverage', 'Ploidy (ABSOLUTE)', 'Purity (ABSOLUTE)',
-#        'Pair Status (Tumor Only/Normal)', 'Number of Mutations',
-#        'Fraction Genome Deleted', 'Fraction Genome Amplified',
-#        'Number of Drivers - Mutations',
-#        'Number of Drivers - Non-Silent Mutations', 'Number of Drivers - SCNAs',
-#        'Test/Train Set Membership', 'Cluster [NMF new]', 'Target C1',
-#        'Target C2', 'Target C3', 'Target C4', 'Target C5', 'Predicted C1',
-#        'Predicted C2', 'Predicted C3', 'Predicted C4', 'Predicted C5',
-#        'PredictedCluster', 'Confidence', 'Above90', 'Top70 Perc. Confident',
-#        'Staudt Only Cluster (k=5)', 'Staudt Only Cluster (k=4)',
-#        'Shipp Only Cluster', 'OriginalCluster [chapuy et al Nature Med 2018]',
-#        'Above85', 'Above80',
-#        'Age-at first diagnosis', 'IPI_AGE', 'IPI_ECOG', 'IPI_STAGE', 'IPI_LDH',
-#        'IPI_EXBM', 'IPI', 'Biopsy Type', 'R-CHOp-like\nChemo', 'PFS-years',
-#        'PFS_STAT', 'OS.time', 'OS.status (1=dead)',
-#        'LymphGenClass [Schmitz]\ncall', 'LymphGenClass [Wright]\ncall',
-#        'Dbl.Hit\nCall', 'ob24z (CNS involvment)',
-#        'hodz (Testicular invovlement)'],
-#       dtype='object')
 
 # add mut density
 
@@ -81,7 +61,7 @@ col_order = ['order', 'MatchID', 'Gender', 'Cohort', 'COO', 'Sample Preparation'
              'Predicted C2', 'Predicted C3', 'Predicted C4', 'Predicted C5',
              'PredictedCluster', 'Confidence', 'Above90', 'Above85', 'Above80',
              'Top70 Perc. Confident', 'Staudt Only Cluster',
-             'Shipp Only Cluster', 'OriginalCluster [chapuy et al Nature Med 2018]'
+             'Shipp Only Cluster', 'OriginalCluster [chapuy et al Nature Med 2018]', 'downsample_status'
              ]
 
 staudt_s9 = staudt_s9.loc[staudt_s9.index.isin(combined_s1.index)]
@@ -108,6 +88,8 @@ combined_s1.loc[aa_bool.index, 'IPI_STAGE'] = aa_bool
 combined_s1.loc[ldh_bool.index, 'IPI_LDH'] = ldh_bool
 combined_s1.loc[en_bool.index, 'IPI_EXBM'] = en_bool
 
-
+combined_s1['downsample_status'] = np.nan
+combined_s1.loc[downsample_status.index, 'downsample_status'] = downsample_status.loc[downsample_status.index, 'coo']
 combined_s1 = combined_s1[col_order]
+exit()
 combined_s1.to_csv('../../data_tables/tableS1_classifier_merged.tsv', sep='\t')

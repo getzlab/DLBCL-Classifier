@@ -39,7 +39,7 @@ for file in files:
     nets.append(net)
 
 stepsize = 0.05
-steps = np.arange(0, 1 + stepsize, stepsize)
+steps = np.arange(0.05, 1 + stepsize, stepsize)
 steps = steps[::-1]
 
 # Mask strategy still works because each roll for each cell is independent
@@ -86,9 +86,6 @@ for step in steps:
     df = df.transpose()
     mask = masks.pop(0)
     df = df * mask
-    if step < 0.10:
-        random_events = np.random.binomial(1, 0.01, (df.shape[0], df.shape[1]))
-        df = df + random_events
     if TEST_MODE:
         datafile = '../random_dropout_experiment/tmpRandomDroppedGSM_fullfeatures_test_step' + str(1-step) + '_testset.txt'
         maskfile = '../random_dropout_experiment/mask_test_step' + str(1-step) + '_testset.txt'
