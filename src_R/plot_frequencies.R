@@ -225,6 +225,7 @@ for(i in rownames(plotDF)){
 }
 
 plotDF$X = rownames(plotDF)
+plotDF_natmed_full = plotDF[rownames(plotDF) %in% rownames(plotDF_natmed),]
 plotDF = plotDF[rownames(plotDF) %in% rownames(qvalDF),]
 plotDF$qval_fisher = p.adjust(plotDF$pval_fisher, method='BH')
 plotDF$logq_fisher = -log10(plotDF$qval_fisher)
@@ -253,6 +254,39 @@ p_full <- ggplot(plotDF, aes(x=Chapuy_F, y=Schmitz_F, color=AlterationType, shap
   geom_text(x=0.2, y=0.4-0.03, 
             label=paste('pearson correlation:', round(as.numeric(cor.test(plotDF$Chapuy_F, plotDF$Schmitz_F)[4]), 3), '\n',
                         'p =', format(as.numeric(cor.test(plotDF$Chapuy_F, plotDF$Schmitz_F)[3]), scientific=TRUE)),
+            color='blue') +
+  scale_colour_manual(values = alteration.colors) +
+  scale_shape_manual(values = c(19, 4))
+
+### No downsample - nat med drivers
+plotDF_natmed_full = plotDF_natmed_full[!rownames(plotDF_natmed_full) %in% c("HIST1H2BK", "HIST2H2BE"), ]
+plotDF_natmed_full$qval_natmed_fisher = p.adjust(plotDF_natmed_full$pval_fisher, method='BH')
+plotDF_natmed_full$significant_fisher = plotDF_natmed_full$qval_natmed_fisher <= 0.10
+plotDF_natmed_full$logq_fisher = -log10(plotDF_natmed_full$qval_natmed_fisher)
+
+p_full_nm <- ggplot(plotDF_natmed_full, aes(x=Chapuy_F, y=Schmitz_F, color=AlterationType, shape=significant_fisher)) + 
+  geom_point() +
+  xlim(0, 0.4) +
+  ylim(0, 0.4) +
+  theme_bw() +
+  ggtitle(paste('Cohort Frequencies - Nat Med Drivers', '(N=', nrow(plotDF_natmed_full) ,')', sep='')) +
+  ylab('Schmitz et al. Driver Frequencies') +
+  xlab('Chapuy et al. Driver Frequencies') +
+  theme(axis.text.x = element_text(colour="grey20",size=10,angle=0,hjust=.5,vjust=.5,face="plain"),
+        axis.text.y = element_text(colour="grey20",size=10,hjust=.5,vjust=.5,face="plain"),  
+        axis.title.x = element_text(colour="grey20",size=15,angle=0,hjust=.5,vjust=0,face="plain"),
+        axis.title.y = element_text(colour="grey20",size=15,hjust=.5,vjust=.5,face="plain")) +
+  geom_text(aes(label=ifelse(qval_natmed_fisher <= 0.10, as.character(X),'')), vjust=-0.4, size=2) +
+  geom_abline() +
+  geom_abline(slope=1, intercept=0.10, linetype='dashed') +
+  geom_abline(slope=1, intercept=-0.10, linetype='dashed') +
+  geom_text(x=0.2, y=0.4, 
+            label=paste("Fraction significant (qval <= 0.10) = ", 
+                        round(sum(plotDF_natmed_full$qval_natmed_fisher <= 0.10) / nrow(plotDF_natmed_full), 3), sep=''),
+            color='blue') +
+  geom_text(x=0.2, y=0.4-0.03, 
+            label=paste('pearson correlation:', round(as.numeric(cor.test(plotDF_natmed_full$Chapuy_F, plotDF_natmed_full$Schmitz_F)[4]), 3), '\n',
+                        'p =', format(as.numeric(cor.test(plotDF_natmed_full$Chapuy_F, plotDF_natmed_full$Schmitz_F)[3]), scientific=TRUE)),
             color='blue') +
   scale_colour_manual(values = alteration.colors) +
   scale_shape_manual(values = c(19, 4))
@@ -347,6 +381,12 @@ plotwidth = 7
 
 ggsave('plots/paper_figures/frequency_plots/cohort_frequency_scatter.pdf', p, height = plotheight, width = plotwidth)
 ggsave('plots/frequency_plots/cohort_frequency_scatter.png', p, height = plotheight, width = plotwidth)
+
+ggsave('plots/paper_figures/frequency_plots/cohort_frequency_scatter_nodownsample.pdf', p_full, height = plotheight, width = plotwidth)
+ggsave('plots/frequency_plots/cohort_frequency_scatter_nodownsample.png', p_full, height = plotheight, width = plotwidth)
+
+ggsave('plots/paper_figures/frequency_plots/cohort_frequency_scatter_natmed_nodownsample.pdf', p_full_nm, height = plotheight, width = plotwidth)
+ggsave('plots/frequency_plots/cohort_frequency_scatter_natmed_nodownsample.png', p_full_nm, height = plotheight, width = plotwidth)
 
 ggsave('plots/paper_figures/frequency_plots/cohort_frequency_scatter_natmed.pdf', p1, height = plotheight, width = plotwidth)
 ggsave('plots/frequency_plots/cohort_frequency_scatter_natmed.png', p1, height = plotheight, width = plotwidth)

@@ -3,263 +3,36 @@
   <component name="ChangeListManager">
     <list default="true" id="b092fab0-8de1-4ee0-9187-ec88de6d843d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_tables/qval_dfs/predictedC3_staudt_vs_shipp.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/data_tables/qval_dfs/predictedC3_staudt_vs_shipp.tsv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_tables/tableS1_classifier_merged.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/data_tables/tableS1_classifier_merged.tsv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/driver_frequencies/frequency_df_staudt_ours.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/driver_frequencies/frequency_df_staudt_ours.tsv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/accuracy_dropout.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/plots/accuracy_dropout.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/confidence_dropout.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/plots/confidence_dropout.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/frequency_plots/cohort_frequency_natmed_volcano.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/frequency_plots/cohort_frequency_natmed_volcano.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/frequency_plots/cohort_frequency_scatter.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/frequency_plots/cohort_frequency_scatter.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/frequency_plots/cohort_frequency_scatter_natmed.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/frequency_plots/cohort_frequency_scatter_natmed.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/frequency_plots/cohort_frequency_volcano.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/frequency_plots/cohort_frequency_volcano.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/frequency_plots/traintest_frequency_scatter.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/frequency_plots/traintest_frequency_scatter.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plots/heatmaps/k2_connectivity_heatmap.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/heatmaps/k2_connectivity_heatmap.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/heatmaps/k2_connectivity_heatmap.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/heatmaps/k2_connectivity_heatmap.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plots/heatmaps/k3_connectivity_heatmap.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/heatmaps/k3_connectivity_heatmap.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/heatmaps/k3_connectivity_heatmap.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/heatmaps/k3_connectivity_heatmap.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plots/heatmaps/k4_connectivity_heatmap.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/heatmaps/k4_connectivity_heatmap.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/heatmaps/k4_connectivity_heatmap.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/heatmaps/k4_connectivity_heatmap.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/heatmaps/k5_SHIPP_connectivity_heatmap.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/heatmaps/k5_SHIPP_connectivity_heatmap.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/heatmaps/k5_SHIPP_connectivity_heatmap.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/heatmaps/k5_SHIPP_connectivity_heatmap.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/heatmaps/k5_STAUDT_connectivity_heatmap.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/heatmaps/k5_STAUDT_connectivity_heatmap.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/heatmaps/k5_STAUDT_connectivity_heatmap.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/heatmaps/k5_STAUDT_connectivity_heatmap.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plots/heatmaps/k5_connectivity_heatmap.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/heatmaps/k5_connectivity_heatmap.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/heatmaps/k5_connectivity_heatmap.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/heatmaps/k5_connectivity_heatmap.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plots/heatmaps/k6_connectivity_heatmap.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/heatmaps/k6_connectivity_heatmap.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/heatmaps/k6_connectivity_heatmap.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/heatmaps/k6_connectivity_heatmap.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plots/heatmaps/k7_connectivity_heatmap.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/heatmaps/k7_connectivity_heatmap.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/heatmaps/k7_connectivity_heatmap.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/heatmaps/k7_connectivity_heatmap.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plots/heatmaps/k8_connectivity_heatmap.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/heatmaps/k8_connectivity_heatmap.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/kappa_dropout.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/plots/kappa_dropout.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/paper_figures/accuracy_addIn.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/accuracy_addIn.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/paper_figures/accuracy_ccf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/accuracy_ccf.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/paper_figures/accuracy_dropout.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/accuracy_dropout.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/paper_figures/confidence_addIn.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/confidence_addIn.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/paper_figures/confidence_ccf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/confidence_ccf.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/paper_figures/confidence_dropout.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/confidence_dropout.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/paper_figures/kappa_addIn.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/kappa_addIn.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/paper_figures/kappa_ccf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/kappa_ccf.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/paper_figures/kappa_dropout.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/kappa_dropout.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/paper_figures/performance_addIn.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/performance_addIn.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/paper_figures/performance_ccf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/performance_ccf.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/paper_figures/performance_dropout.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/performance_dropout.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/performance_addIn.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/plots/performance_addIn.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/performance_ccf.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/plots/performance_ccf.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/performance_dropout.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/plots/performance_dropout.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/test_set/accuracy_addIn_testset.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/test_set/accuracy_addIn_testset.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/test_set/accuracy_ccf_testset.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/test_set/accuracy_ccf_testset.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/test_set/accuracy_dropout_testset.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/plots/test_set/accuracy_dropout_testset.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/test_set/accuracy_dropout_testset.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/test_set/accuracy_dropout_testset.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/test_set/confidence_addIn_testset.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/test_set/confidence_addIn_testset.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/test_set/confidence_ccf_testset.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/test_set/confidence_ccf_testset.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/test_set/confidence_dropout_testset.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/plots/test_set/confidence_dropout_testset.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/test_set/confidence_dropout_testset.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/test_set/confidence_dropout_testset.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/test_set/kappa_addIn_testset.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/test_set/kappa_addIn_testset.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/test_set/kappa_ccf_testset.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/test_set/kappa_ccf_testset.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/test_set/kappa_dropout_testset.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/plots/test_set/kappa_dropout_testset.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/test_set/kappa_dropout_testset.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/test_set/kappa_dropout_testset.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/test_set/performance_addIn_testset.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/plots/test_set/performance_addIn_testset.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/test_set/performance_addIn_testset.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/test_set/performance_addIn_testset.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/test_set/performance_ccf_testset.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/plots/test_set/performance_ccf_testset.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/test_set/performance_ccf_testset.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/test_set/performance_ccf_testset.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/test_set/performance_dropout_testset.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/plots/test_set/performance_dropout_testset.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/test_set/performance_dropout_testset.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/test_set/performance_dropout_testset.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/test_train_70conf_umap.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/test_train_70conf_umap.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/test_train_70conf_umap.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/test_train_70conf_umap.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/train_umap.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/train_umap.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_ACTB.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_ACTB.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_ATP2A2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_ATP2A2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_B2M.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_B2M.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_BCL10.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_BCL10.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_BCL11A.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_BCL11A.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_BCL2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_BCL2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_BCL6.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_BCL6.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_BCL7A.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_BCL7A.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_BRAF.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_BRAF.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_BTG1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_BTG1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_BTG2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_BTG2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_CARD11.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_CARD11.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_CCDC27.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_CCDC27.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_CD274.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_CD274.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_CD58.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_CD58.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_CD70.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_CD70.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_CD79B.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_CD79B.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_CD83.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_CD83.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_CREBBP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_CREBBP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_CRIP1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_CRIP1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_CXCR4.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_CXCR4.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_DTX1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_DTX1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_DUSP2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_DUSP2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_EBF1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_EBF1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_EEF1A1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_EEF1A1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_EP300.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_EP300.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_ETS1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_ETS1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_ETV6.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_ETV6.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_EZH2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_EZH2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_FADD.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_FADD.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_FAS.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_FAS.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_GNA13.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_GNA13.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_GNAI2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_GNAI2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_GRHPR.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_GRHPR.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_HIST1H1B.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_HIST1H1B.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_HIST1H1C.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_HIST1H1C.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_HIST1H1D.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_HIST1H1D.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_HIST1H1E.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_HIST1H1E.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_HIST1H2AC.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_HIST1H2AC.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_HIST1H2AM.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_HIST1H2AM.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_HIST1H2BC.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_HIST1H2BC.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_HLA.A.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_HLA.A.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_HLA.B.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_HLA.B.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_HLA.C.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_HLA.C.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_HVCN1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_HVCN1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_IGLL5.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_IGLL5.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_IKZF3.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_IKZF3.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_IRF2BP2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_IRF2BP2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_IRF4.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_IRF4.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_IRF8.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_IRF8.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_KLHL6.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_KLHL6.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_KMT2D.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_KMT2D.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_KRAS.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_KRAS.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_LTB.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_LTB.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_LYN.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_LYN.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_MAP2K1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_MAP2K1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_MEF2B.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_MEF2B.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_MEF2C.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_MEF2C.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_METAP1D.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_METAP1D.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_MYD88.L265P.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_MYD88.L265P.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_MYD88.OTHER.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_MYD88.OTHER.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_MYD88.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_MYD88.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_NFKBIA.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_NFKBIA.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_NFKBIE.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_NFKBIE.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_NOTCH2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_NOTCH2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_OSBPL10.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_OSBPL10.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_PABPC1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_PABPC1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_PIM1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_PIM1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_PIM2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_PIM2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_POU2AF1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_POU2AF1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_POU2F2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_POU2F2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_PRDM1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_PRDM1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_PTEN.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_PTEN.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_PTPN6.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_PTPN6.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_RAC2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_RAC2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_RHOA.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_RHOA.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_SESN3.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_SESN3.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_SF3B1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_SF3B1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_SGK1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_SGK1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_SMG7.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_SMG7.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_SOCS1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_SOCS1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_SPEN.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_SPEN.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_STAT3.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_STAT3.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_SV.BCL2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_SV.BCL2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_SV.BCL6.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_SV.BCL6.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_SV.MYC.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_SV.MYC.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_TBL1XR1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_TBL1XR1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_TET2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_TET2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_TMEM30A.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_TMEM30A.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_TMSB4X.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_TMSB4X.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_TNFAIP3.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_TNFAIP3.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_TNFRSF14.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_TNFRSF14.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_TNIP1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_TNIP1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_TOX.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_TOX.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_TP53.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_TP53.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_TUBGCP5.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_TUBGCP5.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_UBE2A.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_UBE2A.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X10Q23.31.DEL.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X10Q23.31.DEL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X11P.AMP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X11P.AMP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X11Q.AMP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X11Q.AMP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X11Q23.3.AMP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X11Q23.3.AMP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X12P.AMP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X12P.AMP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X12P13.2.DEL.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X12P13.2.DEL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X12Q.AMP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X12Q.AMP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X13Q.AMP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X13Q.AMP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X13Q14.2.DEL.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X13Q14.2.DEL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X13Q34.DEL.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X13Q34.DEL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X14Q32.31.DEL.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X14Q32.31.DEL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X15Q15.3.DEL.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X15Q15.3.DEL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X16Q12.1.DEL.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X16Q12.1.DEL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X17P.DEL.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X17P.DEL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X17Q24.3.AMP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X17Q24.3.AMP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X17Q25.1.DEL.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X17Q25.1.DEL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X18P.AMP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X18P.AMP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X18Q.AMP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X18Q.AMP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X18Q21.32.AMP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X18Q21.32.AMP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X18Q22.2.AMP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X18Q22.2.AMP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X18Q23.DEL.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X18Q23.DEL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X19P13.2.DEL.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X19P13.2.DEL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X19P13.3.DEL.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X19P13.3.DEL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X19Q.AMP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X19Q.AMP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X19Q13.32.DEL.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X19Q13.32.DEL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X19Q13.42.AMP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X19Q13.42.AMP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X1P13.1.DEL.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X1P13.1.DEL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X1P31.1.DEL.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X1P31.1.DEL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X1P36.11.DEL.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X1P36.11.DEL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X1P36.32.DEL.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X1P36.32.DEL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X1Q.AMP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X1Q.AMP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X1Q23.3.AMP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X1Q23.3.AMP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X1Q32.1.AMP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X1Q32.1.AMP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X1Q42.12.DEL.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X1Q42.12.DEL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X21Q.AMP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X21Q.AMP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X2P16.1.AMP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X2P16.1.AMP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X2Q22.2.DEL.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X2Q22.2.DEL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X3P.AMP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X3P.AMP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X3P21.31.DEL.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X3P21.31.DEL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X3Q.AMP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X3Q.AMP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X3Q28.AMP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X3Q28.AMP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X3Q28.DEL.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X3Q28.DEL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X4Q21.22.DEL.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X4Q21.22.DEL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X4Q35.1.DEL.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X4Q35.1.DEL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X5P.AMP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X5P.AMP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X5Q.AMP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X5Q.AMP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X6P.AMP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X6P.AMP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X6P21.1.AMP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X6P21.1.AMP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X6P21.33.DEL.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X6P21.33.DEL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X6Q.DEL.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X6Q.DEL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X6Q14.1.DEL.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X6Q14.1.DEL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X6Q21.DEL.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X6Q21.DEL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X7P.AMP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X7P.AMP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X7Q.AMP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X7Q.AMP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X7Q22.1.AMP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X7Q22.1.AMP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X8Q12.1.DEL.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X8Q12.1.DEL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X8Q24.22.AMP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X8Q24.22.AMP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X9P21.3.DEL.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X9P21.3.DEL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X9P24.1.AMP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X9P24.1.AMP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X9Q.AMP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X9Q.AMP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X9Q21.13.DEL.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_X9Q21.13.DEL.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_YY1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_YY1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_ZC3H12A.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_ZC3H12A.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_ZEB2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_ZEB2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_ZFP36L1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_ZFP36L1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_ZNF423.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/genes/umap_ZNF423.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/umap_cohort.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/umap_cohort.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/umap_confidences.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/umap_confidences.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/umap_coo.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/umap_coo.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/umap_traintest.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/umap_traintest.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_dropout_experiment/experiment_gsms/tmpRandomDroppedGSM_fullfeatures_step0.95.txt" beforeDir="false" afterPath="$PROJECT_DIR$/random_dropout_experiment/experiment_gsms/tmpRandomDroppedGSM_fullfeatures_step0.95.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_dropout_experiment/experiment_gsms/tmpRandomDroppedGSM_fullfeatures_step0.95_testset.txt" beforeDir="false" afterPath="$PROJECT_DIR$/random_dropout_experiment/experiment_gsms/tmpRandomDroppedGSM_fullfeatures_step0.95_testset.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.05.txt" beforeDir="false" afterPath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.05.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.15.txt" beforeDir="false" afterPath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.15.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.25.txt" beforeDir="false" afterPath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.25.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.35.txt" beforeDir="false" afterPath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.35.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.45.txt" beforeDir="false" afterPath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.45.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.55.txt" beforeDir="false" afterPath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.55.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.6.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.65.txt" beforeDir="false" afterPath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.65.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.7.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.75.txt" beforeDir="false" afterPath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.75.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.8.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.85.txt" beforeDir="false" afterPath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.85.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.9.txt" beforeDir="false" afterPath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.9.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.95.txt" beforeDir="false" afterPath="$PROJECT_DIR$/random_dropout_experiment/preds/dropout_preds_0.95.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_dropout_experiment/resultstable_random_dropout.txt" beforeDir="false" afterPath="$PROJECT_DIR$/random_dropout_experiment/resultstable_random_dropout.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_dropout_experiment/resultstable_random_dropout_testset.txt" beforeDir="false" afterPath="$PROJECT_DIR$/random_dropout_experiment/resultstable_random_dropout_testset.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_R/plot_ccf_experiment.R" beforeDir="false" afterPath="$PROJECT_DIR$/src_R/plot_ccf_experiment.R" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_R/plot_ccf_experiment_testset.R" beforeDir="false" afterPath="$PROJECT_DIR$/src_R/plot_ccf_experiment_testset.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/heatmaps/k8_connectivity_heatmap.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/heatmaps/k8_connectivity_heatmap.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/paper_figures/frequency_plots/cohort_frequency_natmed_volcano.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/frequency_plots/cohort_frequency_natmed_volcano.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/paper_figures/frequency_plots/cohort_frequency_scatter.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/frequency_plots/cohort_frequency_scatter.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/paper_figures/frequency_plots/cohort_frequency_scatter_natmed.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/frequency_plots/cohort_frequency_scatter_natmed.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/paper_figures/frequency_plots/traintest_frequency_scatter.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/frequency_plots/traintest_frequency_scatter.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src_R/plot_frequencies.R" beforeDir="false" afterPath="$PROJECT_DIR$/src_R/plot_frequencies.R" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_R/plot_sensitivity_specificity_experiment.R" beforeDir="false" afterPath="$PROJECT_DIR$/src_R/plot_sensitivity_specificity_experiment.R" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_R/plot_sensitivity_specificity_experiments_testset.R" beforeDir="false" afterPath="$PROJECT_DIR$/src_R/plot_sensitivity_specificity_experiments_testset.R" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src_python/connectivity_heatmaps.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/connectivity_heatmaps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/notebooks/.ipynb_checkpoints/c3_fishertests-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/notebooks/.ipynb_checkpoints/scratch-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/notebooks/.ipynb_checkpoints/scratch-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/notebooks/c3_fishertests.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/notebooks/scratch.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/notebooks/scratch.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/random_dropout_experiment.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/random_dropout_experiment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/random_dropout_experiment_test_set.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/random_dropout_experiment_test_set.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/supp_table_scripts/fix_tableS1.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/supp_table_scripts/fix_tableS1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/tmp.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/tmp.pdf_withcorrectness.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/umap_plots_all.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/umap_plots_all.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/umap_plots_traintest.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/umap_plots_traintest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_python/fisher_5x2_parallel.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/fisher_5x2_parallel.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -444,6 +217,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="fisher_5x2_parallel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DLBCL-Classifier" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src_python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src_python/fisher_5x2_parallel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="fix_tableS1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DLBCL-Classifier" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -457,27 +251,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src_python/supp_table_scripts/fix_tableS1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="random_dropout_experiment_test_set" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DLBCL-Classifier" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src_python" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src_python/random_dropout_experiment_test_set.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -530,7 +303,7 @@
     </configuration>
     <list>
       <item itemvalue="Python.connectivity_heatmaps" />
-      <item itemvalue="Python.random_dropout_experiment_test_set" />
+      <item itemvalue="Python.fisher_5x2_parallel" />
       <item itemvalue="Python.umap_plots_all" />
       <item itemvalue="Python.umap_plots_traintest" />
       <item itemvalue="Python.fix_tableS1" />
@@ -538,10 +311,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.connectivity_heatmaps" />
+        <item itemvalue="Python.fisher_5x2_parallel" />
         <item itemvalue="Python.fix_tableS1" />
         <item itemvalue="Python.umap_plots_all" />
         <item itemvalue="Python.umap_plots_traintest" />
-        <item itemvalue="Python.random_dropout_experiment_test_set" />
       </list>
     </recent_temporary>
   </component>
@@ -644,6 +417,21 @@
           <url>file://$PROJECT_DIR$/src_python/correlation_plot.py</url>
           <line>86</line>
           <option name="timeStamp" value="149" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src_python/fisher_5x2_parallel.py</url>
+          <line>159</line>
+          <option name="timeStamp" value="153" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src_python/fisher_5x2_parallel.py</url>
+          <line>94</line>
+          <option name="timeStamp" value="154" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src_python/fisher_5x2_parallel.py</url>
+          <line>68</line>
+          <option name="timeStamp" value="155" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

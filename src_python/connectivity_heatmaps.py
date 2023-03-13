@@ -12,7 +12,7 @@ for k in range(2, 9):
     k_conn = k_conn.loc[k_labels.index, k_labels.index]
 
     ax = plt.gca()
-    im = ax.imshow(k_conn, cmap='gray', interpolation='nearest')
+    im = ax.imshow(k_conn, cmap='Purples', interpolation='nearest')
     ax.set_title('k = ' + curr_k)
     cbar = ax.figure.colorbar(im, ax=ax)
     cbar.ax.set_ylabel('connectivity', rotation=-90, va="bottom")
@@ -31,7 +31,7 @@ for k in range(5, 6):
     k_conn = k_conn.loc[k_labels.index, k_labels.index]
 
     ax = plt.gca()
-    im = ax.imshow(k_conn, cmap='gray', interpolation='nearest')
+    im = ax.imshow(k_conn, cmap='Purples', interpolation='nearest')
     ax.set_title('k = ' + curr_k)
     cbar = ax.figure.colorbar(im, ax=ax)
     cbar.ax.set_ylabel('connectivity', rotation=-90, va="bottom")
@@ -50,7 +50,7 @@ for k in range(5, 6):
     k_conn = k_conn.loc[k_labels.index, k_labels.index]
 
     ax = plt.gca()
-    im = ax.imshow(k_conn, cmap='gray', interpolation='nearest')
+    im = ax.imshow(k_conn, cmap='Purples', interpolation='nearest')
     ax.set_title('k = ' + curr_k)
     cbar = ax.figure.colorbar(im, ax=ax)
     cbar.ax.set_ylabel('connectivity', rotation=-90, va="bottom")

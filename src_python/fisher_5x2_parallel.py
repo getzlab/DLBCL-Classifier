@@ -18,7 +18,7 @@ BLACKLIST = ['MUC6', 'HIST1H2BK', 'HIST2H2BE', 'OR51B6', 'OR10V1']
 VERSION_DATE = 'Sep_23_2022'
 
 MODE = ['combined', 'staudtonly', 'shipponly']
-MODE = MODE[0]
+MODE = MODE[2]
 
 
 def fisher_exact_2x2(matrix, alt):
@@ -43,7 +43,7 @@ shipp_samples = cohorts.loc[cohorts['cohort'] == 'Shipp'].index
 
 if MODE == 'staudtonly':
     gsm = gsm[gsm.columns.intersection(staudt_samples)]
-    clusters = pd.read_csv('../data_tables/clustering_labels/GSM699_cluster_Sep_23_2022_STAUDT.bestclus.txt', sep='\t', index_col=0)
+    clusters = pd.read_csv('../data_tables/clustering_labels/GSM699_cluster_Sep_23_2022_STAUDT.bestclus.txt', sep='\t', index_col=0, skiprows=1)
 if MODE == 'shipponly':
     gsm = gsm[gsm.columns.intersection(shipp_samples)]
     clusters = pd.read_csv('../data_tables/clustering_labels/GSM699_cluster_Sep_23_2022_SHIPP.bestclus.remapped.txt', sep='\t', index_col=0)
