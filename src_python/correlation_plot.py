@@ -112,7 +112,7 @@ def xyresiduals_window_weighted_fractionPerWindow(X, Y, name, jiggle=None, seed=
         axs[2].set_xlim([0, 1])
         y_h, x_h, _ = axs[2].hist(X[~Y.astype(bool)], bins=25, color='red', alpha=0.5, range=(0.0, 1.0))
         upper_y = y_h.max() + round(y_h.max() * 0.30)
-        upper_y = int(round(upper_y / 5.0) * 5.0)
+        upper_y = int(round(upper_y / 5.0) * 5.0) * 5.0
         axs[2].set_ylim([0, upper_y])
         axs[2].set_yticks(np.arange(0, upper_y + 1, y_ticks_bot))
         axs[2].invert_yaxis()

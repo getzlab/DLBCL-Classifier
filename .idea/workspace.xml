@@ -32,6 +32,7 @@
       <change beforePath="$PROJECT_DIR$/plots/paper_figures/frequency_plots/traintest_frequency_scatter.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/frequency_plots/traintest_frequency_scatter.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src_R/plot_frequencies.R" beforeDir="false" afterPath="$PROJECT_DIR$/src_R/plot_frequencies.R" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src_python/connectivity_heatmaps.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/connectivity_heatmaps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_python/correlation_plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/correlation_plot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src_python/fisher_5x2_parallel.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/fisher_5x2_parallel.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -304,9 +305,9 @@
     <list>
       <item itemvalue="Python.connectivity_heatmaps" />
       <item itemvalue="Python.fisher_5x2_parallel" />
+      <item itemvalue="Python.fix_tableS1" />
       <item itemvalue="Python.umap_plots_all" />
       <item itemvalue="Python.umap_plots_traintest" />
-      <item itemvalue="Python.fix_tableS1" />
     </list>
     <recent_temporary>
       <list>
@@ -405,18 +406,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src_python/correlation_plot.py</url>
-          <line>162</line>
-          <option name="timeStamp" value="143" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src_python/correlation_plot.py</url>
           <line>75</line>
           <option name="timeStamp" value="145" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src_python/correlation_plot.py</url>
-          <line>86</line>
-          <option name="timeStamp" value="149" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src_python/fisher_5x2_parallel.py</url>
