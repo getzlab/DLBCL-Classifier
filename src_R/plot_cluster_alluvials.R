@@ -10,6 +10,12 @@ preds_train = read.csv('evaluation_validation_set/confidence_adjusted_tables/NN_
                        sep='\t', row.names=1)
 preds_test = read.csv('evaluation_test_set/NN_reducedV3.4_removeN5_nfeatures21_testsetEval.tsv', sep='\t', row.names=1)
 coo = read.csv('data_tables/phenotypes/COO_and_genetic_lables.txt', sep='\t', row.names=1)
+cohorts = read.csv('data_tables/sample_sets/ShippStaudtSets.purity0.2.txt', row.names=1, sep='\t')
+cohorts$dlbclass_cohort = 'Chapuy'
+cohorts[cohorts$cohort != 'Shipp', 'dlbclass_cohort'] = 'Schmitz'
+
+schmitz_s = rownames(cohorts)[cohorts$dlbclass_cohort == 'Schmitz']
+chapuy_s = rownames(cohorts)[cohorts$dlbclass_cohort == 'Chapuy']
 
 lymphgen = read.csv('data_tables/phenotypes/lymphgenclasses.tsv', sep='\t', row.names=1)
 colnames(lymphgen)[4] = 'LymphGen_Class'
@@ -87,6 +93,7 @@ p_nm_new_2 = ggplot(data = nm_new_lodes_2,
         axis.title.x = element_blank(),
         plot.title = element_text(hjust = 0.5, size=20)
   ) +
+  geom_text(stat = "stratum", aes(label = after_stat(count), vjust='top')) +
   ggtitle(paste('NM vs Combined_Clustering (n=', nrow(nm_labels) ,')', sep=''))
 
 p_nm_new_2_table = ggplot(data = tb, mapping = aes(x = Var2, y = Var1)) +
@@ -189,6 +196,7 @@ p_nm_new_2 = ggplot(data = nm_new_lodes_2,
         axis.title.x = element_blank(),
         plot.title = element_text(hjust = 0.5, size=20)
   ) +
+  geom_text(stat = "stratum", aes(label = after_stat(count), vjust='top')) +
   ggtitle(paste('Combined_Clustering vs DLBclass (n=', nrow(all_preds) ,')', sep=''))
 
 p_nm_new_2_table_2 = ggplot(data = tb_2, mapping = aes(x = Var2, y = Var1)) +
@@ -274,6 +282,7 @@ p_train = ggplot(data = train_lodes,
         axis.title.x = element_blank(),
         plot.title = element_text(hjust = 0.5, size=20)
   ) +
+  geom_text(stat = "stratum", aes(label = after_stat(count), vjust='top')) +
   ggtitle(paste('Cluster Labels vs DLBclass (Train Set n=', nrow(train_df) ,')', sep=''))
 
 p_test = ggplot(data = test_lodes,
@@ -296,6 +305,7 @@ p_test = ggplot(data = test_lodes,
         axis.title.x = element_blank(),
         plot.title = element_text(hjust = 0.5, size=20)
   ) +
+  geom_text(stat = "stratum", aes(label = after_stat(count), vjust='top')) +
   ggtitle(paste('Cluster Labels vs DLBclass (Test Set n=', nrow(test_df) ,')', sep=''))
 
 p_train_table = ggplot(data = tb, mapping = aes(x = Var1, y = Var2)) +
@@ -334,30 +344,64 @@ cf_preds_train$coo = coo[rownames(cf_preds_train), 'COO']
 cf_preds_test = cf_preds_test[cf_preds_test$coo != "na", ]
 cf_preds_train = cf_preds_train[cf_preds_train$coo != "na", ]
 
+cf_preds_test$HC = ifelse(cf_preds_test$Confidence > 0.70, 'HC', 'LC')
+cf_preds_train$HC = ifelse(cf_preds_train$Confidence > 0.70, 'HC', 'LC')
+
+cf_preds_test$TrueCluster = paste('C', cf_preds_test$TrueCluster, sep='')
+cf_preds_train$TrueCluster = paste('C', cf_preds_train$TrueCluster, sep='')
+
 cf_preds_train$PredictedCluster = paste('C', cf_preds_train$PredictedCluster, sep='')
 cf_preds_test$PredictedCluster = paste(cf_preds_test$PredictedCluster, sep='')
 
+cf_preds_test_conf = cf_preds_test
+cf_preds_train_conf = cf_preds_train
+
+cf_preds_train_conf$PredictedCluster = paste(cf_preds_train_conf$PredictedCluster, '_', cf_preds_train_conf$HC, sep='')
+cf_preds_test_conf$PredictedCluster = paste(cf_preds_test_conf$PredictedCluster, '_', cf_preds_test_conf$HC, sep='')
+
+conf_coo_df = rbind(cf_preds_train_conf[, c('PredictedCluster', 'coo', 'HC')], cf_preds_test_conf[, c('PredictedCluster', 'coo', 'HC')])
+
 test_train_df = rbind(cf_preds_test[, c('PredictedCluster', 'coo')], cf_preds_train[, c('PredictedCluster', 'coo')])
+test_train_df_2 = test_train_df
+test_train_df_2$alpha = 'Schmitz'
+test_train_df_2[rownames(test_train_df_2) %in% chapuy_s, 'alpha'] = 'Chapuy'
+test_train_df_2$PredictedCluster = paste(test_train_df_2$PredictedCluster, '_', test_train_df_2$alpha, sep='')
 colnames(test_train_df) = c('DLBclass', 'COO')
+colnames(test_train_df_2) = c('DLBclass', 'COO', 'alpha')
+colnames(conf_coo_df) = c('DLBclass', 'COO', 'alpha')
 
 #test_train_df$Set = gsub('C\\w_', '', test_train_df$ClusterLabel)
 #test_train_counts = test_train_df %>% count(ClusterLabel, DLBclass, Set)
 
 test_train_counts = test_train_df %>% count(DLBclass, COO)
 test_train_counts_2 = test_train_df %>% count(COO, DLBclass)
+test_train_counts_3 = test_train_df_2 %>% count(DLBclass, COO)
+conf_counts = conf_coo_df %>% count(DLBclass, COO)
 
 test_train_lodes = to_lodes_form(test_train_counts,
                                  key = "Xaxis",
                                  axes = 1:(ncol(test_train_counts) - 1))
 test_train_lodes_2 = to_lodes_form(test_train_counts_2,
-                                 key = "Xaxis",
-                                 axes = 1:(ncol(test_train_counts_2) - 1))
+                                   key = "Xaxis",
+                                   axes = 1:(ncol(test_train_counts_2) - 1))
+test_train_lodes_3 = to_lodes_form(test_train_counts_3,
+                                   key = "Xaxis",
+                                   axes = 1:(ncol(test_train_counts_3) - 1))
+conf_lodes = to_lodes_form(conf_counts,
+                           key = "Xaxis",
+                           axes = 1:(ncol(conf_counts) - 1))
 
 test_train_lodes$alpha = gsub('C\\w_', '', test_train_lodes$stratum)
 test_train_lodes[30:nrow(test_train_lodes), 'alpha'] = 'Train'
 
 #test_train_lodes_2$alpha = gsub('C\\w_', '', test_train_lodes_2$stratum)
 test_train_lodes_2$alpha = "Train"
+
+test_train_lodes_3$alpha = gsub('C\\w_', '', test_train_lodes_3$stratum)
+test_train_lodes_3[test_train_lodes_3$Xaxis == 'COO', 'alpha'] = 'none'
+
+conf_lodes$alpha = gsub('C\\w_', '', conf_lodes$stratum)
+conf_lodes[conf_lodes$Xaxis == 'COO', 'alpha'] = 'none'
 
 tb = table(paste(test_train_df$DLBclass, '_DLBclass', sep=''), test_train_df$COO)
 tb = melt(tb)
@@ -383,7 +427,8 @@ p_coo = ggplot(data = test_train_lodes,
         axis.title.x = element_blank(),
         plot.title = element_text(hjust = 0.5, size=20)
   ) +
-  ggtitle('DLBclass vs COO')
+  geom_text(stat = "stratum", aes(label = after_stat(count), vjust='top')) +
+  ggtitle(paste('DLBclass vs COO (n=', nrow(test_train_df),')', sep=''))
 
 p_coo_2 = ggplot(data = test_train_lodes_2,
                aes(x = Xaxis, stratum = stratum, alluvium = alluvium,
@@ -406,6 +451,7 @@ p_coo_2 = ggplot(data = test_train_lodes_2,
         axis.title.x = element_blank(),
         plot.title = element_text(hjust = 0.5, size=20)
   ) +
+  geom_text(stat = "stratum", aes(label = after_stat(count), vjust='top')) +
   ggtitle(paste('DLBclass vs COO (n=', nrow(test_train_df) ,')', sep=''))
 
 p_coo_2_table = ggplot(data = tb, mapping = aes(x = Var1, y = Var2)) +
@@ -415,6 +461,68 @@ p_coo_2_table = ggplot(data = tb, mapping = aes(x = Var1, y = Var2)) +
                      axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + 
   scale_y_discrete(limits=rev)
 
+p_coo_3 = ggplot(data = test_train_lodes_3,
+              aes(x = Xaxis, stratum = stratum, alluvium = alluvium,
+                  y = n, label = stratum, alpha=alpha)) +
+  geom_flow(aes(fill = stratum)) +
+  scale_alpha_discrete(range=c(0.9, 0.3, 1.0)) +
+  geom_stratum(color = "black", size = 0.3,
+               fill = c(rev(c("#803e98", "#803e98",
+                              "#00a4d1", "#00a4d1",
+                              "#f29123", "#f29123", 
+                              "#4d872d", "#4d872d",
+                              "#dd2929", "#dd2929")), 
+                        rev(c("#fca59d", "#194bff", "#f5fc72"))),
+               alpha=c(rep(c(0.5, 1.0), 5), rep(1.0, 3))) +
+  geom_text(stat = "stratum") +
+  scale_fill_manual(values = c(c("#803e98", "#803e98",
+                                 "#00a4d1", "#00a4d1",
+                                 "#f29123", "#f29123",
+                                 "#4d872d", "#4d872d",
+                                 "#dd2929", "#dd2929"), 
+                               rep("#FFFFFF", 3)), name="Cluster Label") +
+  theme_bw() +
+  theme(axis.text.y=element_blank(),
+        axis.text.x = element_text(size=20),
+        axis.ticks.y=element_blank(),
+        axis.title.y = element_blank(),
+        axis.title.x = element_blank(),
+        plot.title = element_text(hjust = 0.5, size=20)
+  ) +
+  geom_text(stat = "stratum", aes(label = after_stat(count), vjust='top')) +
+  ggtitle(paste('DLBclass (Cohort) vs COO Predictions (n=', nrow(test_train_df_2) ,')', sep=''))
+
+p_coo_conf = ggplot(data = conf_lodes,
+                 aes(x = Xaxis, stratum = stratum, alluvium = alluvium,
+                     y = n, label = stratum, alpha=alpha)) +
+  geom_flow(aes(fill = stratum)) +
+  scale_alpha_discrete(range=c(0.9, 0.3, 1.0)) +
+  geom_stratum(color = "black", size = 0.3,
+               fill = c(rev(c("#803e98", "#803e98",
+                              "#00a4d1", "#00a4d1",
+                              "#f29123", "#f29123", 
+                              "#4d872d", "#4d872d",
+                              "#dd2929", "#dd2929")), 
+                        rev(c("#fca59d", "#194bff", "#f5fc72"))),
+               alpha=c(rep(c(0.5, 1.0), 5), rep(1.0, 3))) +
+  geom_text(stat = "stratum") +
+  scale_fill_manual(values = c(c("#803e98", "#803e98",
+                                 "#00a4d1", "#00a4d1",
+                                 "#f29123", "#f29123",
+                                 "#4d872d", "#4d872d",
+                                 "#dd2929", "#dd2929"), 
+                               rep("#FFFFFF", 3)), name="Cluster Label") +
+  theme_bw() +
+  theme(axis.text.y=element_blank(),
+        axis.text.x = element_text(size=20),
+        axis.ticks.y=element_blank(),
+        axis.title.y = element_blank(),
+        axis.title.x = element_blank(),
+        plot.title = element_text(hjust = 0.5, size=20)
+  ) +
+  geom_text(stat = "stratum", aes(label = after_stat(count), vjust='top')) +
+  ggtitle(paste('DLBclass (Confidence) vs COO Predictions (n=', nrow(conf_coo_df) ,')', sep=''))
+
 comb_2 = plot_grid(p_coo_2, p_coo_2_table, rel_heights = c(0.50, 0.50), nrow = 2)
 
 ggsave('plots/initpred_coo_alluvial.png', p_coo, width = 12, height=8)
@@ -422,6 +530,12 @@ ggsave('plots/paper_figures/initpred_coo_alluvial.pdf', p_coo, width = 12, heigh
 
 ggsave('plots/initpred_coo_alluvial_2.png', comb_2, width = 12, height=8)
 ggsave('plots/paper_figures/initpred_coo_alluvial_2.pdf', comb_2, width = 12, height=8)
+
+ggsave('plots/initpred_coo_alluvial_cohort.png', p_coo_3, width = 12, height=8)
+ggsave('plots/paper_figures/initpred_coo_alluvial_cohort.pdf', p_coo_3, width = 12, height=8)
+
+ggsave('plots/initpred_coo_alluvial_conf.png', p_coo_conf, width = 12, height=8)
+ggsave('plots/paper_figures/initpred_coo_alluvial_conf.pdf', p_coo_conf, width = 12, height=8)
 
 ######################################
 # initial pred vs true cluster w/ conf
@@ -457,7 +571,7 @@ test_train_lodes_2 = to_lodes_form(test_train_counts_2,
                                  axes = 1:(ncol(test_train_counts_2) - 1))
 
 test_train_lodes$alpha = gsub('C\\w_', '', test_train_lodes$stratum)
-test_train_lodes[36:nrow(test_train_lodes), 'alpha'] = 'Train'
+test_train_lodes[38:nrow(test_train_lodes), 'alpha'] = 'Train'
 
 tb = table(paste(test_train_df$DLBclass, '_DLBclass', sep=''), paste(test_train_df$ClusterLabel, '_ClusLabel', sep=''))
 tb = melt(tb)
@@ -483,6 +597,7 @@ p_hc_lc = ggplot(data = test_train_lodes,
         axis.title.x = element_blank(),
         plot.title = element_text(hjust = 0.5, size=20)
   ) +
+  geom_text(stat = "stratum", aes(label = after_stat(count), vjust='top')) +
   ggtitle('Cluster Labels vs DLBclass')
 
 p_hc_lc_2 = ggplot(data = test_train_lodes_2,
@@ -505,7 +620,7 @@ p_hc_lc_2 = ggplot(data = test_train_lodes_2,
         axis.title.x = element_blank(),
         plot.title = element_text(hjust = 0.5, size=20)
   ) +
-  ggtitle('Cluster Labels vs DLBclass') +
+  geom_text(stat = "stratum", aes(label = after_stat(count), vjust='top')) +
   ggtitle(paste('Cluster Labels vs DLBclass (n=', nrow(test_train_df) ,')', sep=''))
 
 p_hc_lc_2_table = ggplot(data = tb, mapping = aes(x = Var1, y = Var2)) +
@@ -531,47 +646,68 @@ HC_THRESH = 0.70
 
 lg_preds_train = preds_train
 lg_preds_train$HC = ifelse(lg_preds_train$Confidence > HC_THRESH, 'HC', 'LC')
-lg_preds_train$PredictedCluster = paste('C', lg_preds_train$PredictedCluster, '_', lg_preds_train$HC, sep='')
+lg_preds_train$PredictedCluster = paste('C', lg_preds_train$PredictedCluster, sep='')
 
 lg_preds_test = preds_test
 lg_preds_test$HC = ifelse(lg_preds_test$Confidence > HC_THRESH, 'HC', 'LC')
-lg_preds_test$PredictedCluster = paste(lg_preds_test$PredictedCluster, '_', lg_preds_test$HC, sep='')
+#lg_preds_test$PredictedCluster = paste(lg_preds_test$PredictedCluster, '_', lg_preds_test$HC, sep='')
 
-all_preds = rbind(lg_preds_test[,'PredictedCluster',drop=FALSE], lg_preds_train[, 'PredictedCluster', drop=FALSE])
+all_preds = rbind(lg_preds_test[,c('PredictedCluster', 'HC'),drop=FALSE], lg_preds_train[, c('PredictedCluster', 'HC'), drop=FALSE])
 lymphgen = lymphgen[rownames(all_preds), ]
 
 preds_lg_df = data.frame(all_preds$PredictedCluster)
 preds_lg_df$LymphgenClass = lymphgen$LymphGen_Class
-colnames(preds_lg_df) = c('DLBclass', 'Lymphgen_Class')
+preds_lg_df$HC = all_preds$HC
+colnames(preds_lg_df) = c('DLBclass', 'Lymphgen_Class', 'HC')
 rownames(preds_lg_df) = rownames(all_preds)
+preds_lg_df[grepl('/', preds_lg_df$Lymphgen_Class), 'Lymphgen_Class'] = 'Ambiguous' 
+preds_lg_df$Lymphgen_Class = factor(preds_lg_df$Lymphgen_Class, levels = c('BN2', 'A53', 'EZB', 'ST2', 'MCD', 'N1', 'Ambiguous', 'Other'))
+preds_lg_df = preds_lg_df[order(preds_lg_df$Lymphgen_Class), ]
 
-preds_lg_df_hc = preds_lg_df[grepl('_HC', preds_lg_df$DLBclass), ]
+preds_lg_df_hc = preds_lg_df[preds_lg_df$HC == 'HC', ]
+preds_lg_df_lc = preds_lg_df[preds_lg_df$HC == 'LC', ]
+
+preds_lg_df$DLBclass = paste(preds_lg_df$DLBclass, '_', preds_lg_df$HC, sep='')
 
 preds_lg_counts = preds_lg_df %>% count(DLBclass, Lymphgen_Class)
 preds_lg_counts_2 = preds_lg_df_hc %>% count(DLBclass, Lymphgen_Class)
+preds_lg_counts_3 = preds_lg_df_lc %>% count(DLBclass, Lymphgen_Class)
 
 preds_lg_lodes = to_lodes_form(preds_lg_counts,
                                  key = "Xaxis",
                                  axes = 1:(ncol(preds_lg_counts) - 1))
 
 preds_lg_lodes_2 = to_lodes_form(preds_lg_counts_2,
-                                   key = "Xaxis",
-                                   axes = 1:(ncol(preds_lg_counts_2) - 1))
+                                 key = "Xaxis",
+                                 axes = 1:(ncol(preds_lg_counts_2) - 1))
+
+preds_lg_lodes_3 = to_lodes_form(preds_lg_counts_3,
+                                 key = "Xaxis",
+                                 axes = 1:(ncol(preds_lg_counts_3) - 1))
 
 tb = table(paste(preds_lg_df_hc$DLBclass, '_DLBclass', sep=''), preds_lg_df_hc$Lymphgen_Class)
 tb = melt(tb)
 
+preds_lg_lodes$alpha = gsub('C\\w_', '', preds_lg_lodes$stratum)
+preds_lg_lodes[preds_lg_lodes$Xaxis == 'Lymphgen_Class', 'alpha'] = 'none'
+
 p_lg = ggplot(data = preds_lg_lodes,
                  aes(x = Xaxis, stratum = stratum, alluvium = alluvium,
-                     y = n, label = stratum)) +
+                     y = n, label = stratum, alpha=alpha)) +
   geom_flow(aes(fill = stratum)) +
-  scale_alpha_discrete(range=c(0.9, 0.3)) +
+  scale_alpha_discrete(range=c(0.9, 0.3, 1.0)) +
   geom_stratum(color = "black", size = 0.3,
-               alpha=1.0) +
+               fill = c(rev(c("#803e98", "#803e98",
+                              "#00a4d1", "#00a4d1",
+                              "#f29123", "#f29123", 
+                              "#4d872d", "#4d872d",
+                              "#dd2929", "#dd2929")), 
+                        rep("#FFFFFF", 8)),
+               alpha=c(rep(c(0.5, 1.0), 5), rep(1.0, 8))) +
   geom_text(stat = "stratum") +
-  scale_fill_manual(values = c(c("#803e98", "#803e98", 
-                                 "#00a4d1", "#00a4d1", 
-                                 "#f29123", "#f29123", 
+  scale_fill_manual(values = c(c("#803e98", "#803e98",
+                                 "#00a4d1", "#00a4d1",
+                                 "#f29123", "#f29123",
                                  "#4d872d", "#4d872d",
                                  "#dd2929", "#dd2929"), 
                                rep("#FFFFFF", 20)), name="Cluster Label") +
@@ -583,13 +719,20 @@ p_lg = ggplot(data = preds_lg_lodes,
         axis.title.x = element_blank(),
         plot.title = element_text(hjust = 0.5, size=20)
   ) +
-  ggtitle('DLBclass vs LymphGen Predictions')
+  geom_text(stat = "stratum", aes(label = after_stat(count), vjust='top')) +
+  ggtitle(paste('DLBclass vs LymphGen Predictions (n=', nrow(preds_lg_df) ,')', sep=''))
 
 p_lg_hc_only = ggplot(data = preds_lg_lodes_2,
-                   aes(x = Xaxis, stratum = stratum, alluvium = alluvium,
-                       y = n, label = stratum)) +
+                      aes(x = Xaxis, stratum = stratum, alluvium = alluvium,
+                          y = n, label = stratum)) +
   geom_flow(aes(fill = stratum)) +
   geom_stratum(color = "black", size = 0.3,
+               fill = c(rev(c("#803e98", 
+                              "#00a4d1", 
+                              "#f29123", 
+                              "#4d872d",
+                              "#dd2929")), 
+                        rep("#FFFFFF", 8)),
                alpha=1.0) +
   geom_text(stat = "stratum") +
   scale_fill_manual(values = c(c("#803e98", 
@@ -597,7 +740,7 @@ p_lg_hc_only = ggplot(data = preds_lg_lodes_2,
                                  "#f29123", 
                                  "#4d872d",
                                  "#dd2929"), 
-                               rep("#FFFFFF", 20)), name="Cluster Label") +
+                               rep("#FFFFFF", 8)), name="Cluster Label") +
   theme_bw() +
   theme(axis.text.y=element_blank(),
         axis.text.x = element_text(size=20),
@@ -606,7 +749,38 @@ p_lg_hc_only = ggplot(data = preds_lg_lodes_2,
         axis.title.x = element_blank(),
         plot.title = element_text(hjust = 0.5, size=20)
   ) +
-  ggtitle(paste('DLBclass vs LymphGen Predictions (n=', nrow(preds_lg_df_hc) ,')', sep=''))
+  geom_text(stat = "stratum", aes(label = after_stat(count), vjust='top')) +
+  ggtitle(paste('DLBclass vs LymphGen Predictions (HC>=0.7 n=', nrow(preds_lg_df_hc) ,')', sep=''))
+
+p_lg_lc_only = ggplot(data = preds_lg_lodes_3,
+                      aes(x = Xaxis, stratum = stratum, alluvium = alluvium,
+                          y = n, label = stratum)) +
+  geom_flow(aes(fill = stratum)) +
+  geom_stratum(color = "black", size = 0.3,
+               fill = c(rev(c("#803e98", 
+                              "#00a4d1", 
+                              "#f29123", 
+                              "#4d872d",
+                              "#dd2929")), 
+                        rep("#FFFFFF", 8)),
+               alpha=1.0) +
+  geom_text(stat = "stratum") +
+  scale_fill_manual(values = c(c("#803e98", 
+                                 "#00a4d1", 
+                                 "#f29123", 
+                                 "#4d872d",
+                                 "#dd2929"), 
+                               rep("#FFFFFF", 8)), name="Cluster Label") +
+  theme_bw() +
+  theme(axis.text.y=element_blank(),
+        axis.text.x = element_text(size=20),
+        axis.ticks.y=element_blank(),
+        axis.title.y = element_blank(),
+        axis.title.x = element_blank(),
+        plot.title = element_text(hjust = 0.5, size=20)
+  ) +
+  geom_text(stat = "stratum", aes(label = after_stat(count), vjust='top')) +
+  ggtitle(paste('DLBclass vs LymphGen Predictions (LC<0.7 n=', nrow(preds_lg_df_lc) ,')', sep=''))
 
 p_lg_hc_only_table = ggplot(data = tb, mapping = aes(x = Var1, y = Var2)) +
   geom_tile(aes(fill = value)) +
@@ -617,12 +791,15 @@ p_lg_hc_only_table = ggplot(data = tb, mapping = aes(x = Var1, y = Var2)) +
 
 comb_2 = plot_grid(p_lg_hc_only, p_lg_hc_only_table, rel_heights = c(0.50, 0.50), nrow = 2)
 
-ggsave(paste('plots/initpred_lg_alluvial_hconly_', HC_THRESH ,'.png', sep=''), comb_2, width = 8, height=12)
-ggsave(paste('plots/paper_figures/initpred_lg_alluvial_hconly_', HC_THRESH ,'.pdf', sep=''), comb_2, width = 8, height=12)
+ggsave(paste('plots/initpred_lg_alluvial_hconly_', HC_THRESH ,'.png', sep=''), comb_2, width =10, height=10)
+ggsave(paste('plots/paper_figures/initpred_lg_alluvial_hconly_', HC_THRESH ,'.pdf', sep=''), comb_2, width = 10, height=10)
 
-ggsave(paste('plots/initpred_lg_alluvial_hconly_', HC_THRESH ,'_notable.png', sep=''), p_lg_hc_only, width = 8, height=12)
-ggsave(paste('plots/paper_figures/initpred_lg_alluvial_hconly_', HC_THRESH ,'_notable.pdf', sep=''), p_lg_hc_only, width = 8, height=12)
+ggsave(paste('plots/initpred_lg_alluvial_hconly_', HC_THRESH ,'_notable.png', sep=''), p_lg_hc_only, width = 10, height=10)
+ggsave(paste('plots/paper_figures/initpred_lg_alluvial_hconly_', HC_THRESH ,'_notable.pdf', sep=''), p_lg_hc_only, width = 10, height=10)
 
-ggsave('plots/initpred_lg_alluvial.png', p_lg, width = 8, height=12)
-ggsave('plots/paper_figures/initpred_lg_alluvial.pdf', p_lg, width = 8, height=12)
+ggsave(paste('plots/initpred_lg_alluvial_lconly_', HC_THRESH ,'_notable.png', sep=''), p_lg_lc_only, width = 10, height=10)
+ggsave(paste('plots/paper_figures/initpred_lg_alluvial_lconly_', HC_THRESH ,'_notable.pdf', sep=''), p_lg_lc_only, width = 10, height=10)
+
+ggsave('plots/initpred_lg_alluvial.png', p_lg, width = 10, height=10)
+ggsave('plots/paper_figures/initpred_lg_alluvial.pdf', p_lg, width = 10, height=10)
 

@@ -34,6 +34,8 @@ def construct_reduced_winning_version(data, add_missing_features=False):
 
     data = data.astype(float).astype(int)
 
+    # largest 5 removed manually from the vectors below
+    # 'X1Q.AMP', 'X5Q.AMP', 'X4Q35.1.DEL', 'X1Q23.3.AMP', 'X9Q21.13.DEL'
     # C1 ##############
 
     list_bcl6 = ["SV.BCL6", "BCL6"]

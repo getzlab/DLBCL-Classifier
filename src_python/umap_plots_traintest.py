@@ -318,7 +318,6 @@ def umap_rings():
     plt.clf()
 
 # > 70% conf
-
 def umap_hc():
     p_train = pd.read_csv(preds, sep='\t', index_col=0)
     p_test = pd.read_csv(preds_test, sep='\t', index_col=0)
@@ -362,15 +361,15 @@ def umap_hc():
         clus_samples_test = clus_samples[clus_samples.isin(testing_set)]
 
         plt.scatter(u.loc[clus_samples_train, 'u1'], u.loc[clus_samples_train, 'u2'], color=pallet[clus], marker='o', s=60)
-        plt.scatter(u.loc[clus_samples_test, 'u1'], u.loc[clus_samples_test, 'u2'], color=pallet[clus], marker='x', s=60)
+        plt.scatter(u.loc[clus_samples_test, 'u1'], u.loc[clus_samples_test, 'u2'], color=pallet[clus], marker='o', s=60)
 
     legend_elements = [Line2D([0], [0], marker='_', color=pallet[1], markerfacecolor=pallet[1], label='C1_DLBclass', markersize=12),
                        Line2D([0], [0], marker='_', color=pallet[2], markerfacecolor=pallet[2], label='C2_DLBclass', markersize=12),
                        Line2D([0], [0], marker='_', color=pallet[3], markerfacecolor=pallet[3], label='C3_DLBclass', markersize=12),
                        Line2D([0], [0], marker='_', color=pallet[4], markerfacecolor=pallet[4], label='C4_DLBclass', markersize=12),
-                       Line2D([0], [0], marker='_', color=pallet[5], markerfacecolor=pallet[5], label='C5_DLBclass', markersize=12),
-                       Line2D([0], [0], marker='o', color='w', markerfacecolor='black', label='Train', markersize=10),
-                       Line2D([0], [0], marker='X', color='w', markerfacecolor='black', label='Test', markersize=15)]
+                       Line2D([0], [0], marker='_', color=pallet[5], markerfacecolor=pallet[5], label='C5_DLBclass', markersize=12)]
+                       # Line2D([0], [0], marker='o', color='w', markerfacecolor='black', label='Train', markersize=10),
+                       # Line2D([0], [0], marker='X', color='w', markerfacecolor='black', label='Test', markersize=15)]
 
     plt.title('Train / Test > 0.70 Confidence')
     plt.legend(handles=legend_elements, loc='center left', bbox_to_anchor=(1, 0.5))
@@ -450,6 +449,57 @@ def umap_custom():
     plt.savefig('../plots/umap/test_train_umap_customDis.pdf', bbox_inches='tight')
     plt.clf()
 
+def umap_all():
+    p_train = pd.read_csv(preds, sep='\t', index_col=0)
+    p_test = pd.read_csv(preds_test, sep='\t', index_col=0)
 
-umap_hc()
-training_umap_only()
+    sig_genes = pd.read_csv(sig_genes_file, sep='\t', index_col=0)
+    sig_genes = sig_genes.loc[sig_genes['q'] <= 0.10].index
+
+    p_train['cluster'] = p_train.idxmax(axis=1).astype(int) + 1
+    p_test['PredictedCluster'] = p_test['PredictedCluster'].astype(int)
+
+    p_train = pd.concat([p_train,
+                         pd.DataFrame(p_test[['C1', 'C2', 'C3', 'C4', 'C5', 'PredictedCluster']].values, columns=p_train.columns, index=p_test.index)])
+    #reduced_df = df[sig_genes]
+
+    reduced_df = fd.construct_reduced_winning_version(df)
+    reduced_df = reduced_df.loc[p_train.index]
+    reduced_df.loc[:, 'cluster'] = p_train['cluster']
+
+    reduced_df.loc[:, 'set'] = 'Train'
+    reduced_df.loc[reduced_df.index.isin(testing_set), 'set'] = 'Test'
+
+    to_drop_umap = ['set', 'cluster']
+
+    fit = umap.UMAP(n_components=2, n_neighbors=10, min_dist=0.05, metric='euclidean', random_state=seed)
+    u = pd.DataFrame(fit.fit_transform(reduced_df.drop(to_drop_umap, axis=1)))
+    u.index = reduced_df.index
+    u.columns = ['u1', 'u2']
+
+    u.to_csv('../data_tables/umap/umap_all.tsv', sep='\t')
+
+    plt.figure(figsize=(14, 12))
+
+    for clus in range(1, 6):
+        clus_samples = reduced_df.loc[reduced_df['cluster'] == clus].index
+        clus_samples_train = clus_samples[clus_samples.isin(training_set)]
+        clus_samples_test = clus_samples[clus_samples.isin(testing_set)]
+
+        plt.scatter(u.loc[clus_samples_train, 'u1'], u.loc[clus_samples_train, 'u2'], color=pallet[clus], marker='o', s=60)
+        plt.scatter(u.loc[clus_samples_test, 'u1'], u.loc[clus_samples_test, 'u2'], color=pallet[clus], marker='o', s=60)
+
+    legend_elements = [Line2D([0], [0], marker='_', color=pallet[1], markerfacecolor=pallet[1], label='C1_DLBclass', markersize=12),
+                       Line2D([0], [0], marker='_', color=pallet[2], markerfacecolor=pallet[2], label='C2_DLBclass', markersize=12),
+                       Line2D([0], [0], marker='_', color=pallet[3], markerfacecolor=pallet[3], label='C3_DLBclass', markersize=12),
+                       Line2D([0], [0], marker='_', color=pallet[4], markerfacecolor=pallet[4], label='C4_DLBclass', markersize=12),
+                       Line2D([0], [0], marker='_', color=pallet[5], markerfacecolor=pallet[5], label='C5_DLBclass', markersize=12)]
+                       # Line2D([0], [0], marker='o', color='w', markerfacecolor='black', label='Train', markersize=10),
+                       # Line2D([0], [0], marker='X', color='w', markerfacecolor='black', label='Test', markersize=15)]
+
+    plt.title('Train / Test All')
+    plt.legend(handles=legend_elements, loc='center left', bbox_to_anchor=(1, 0.5))
+    plt.savefig('../plots/umap/test_train_all_umap.png', bbox_inches='tight')
+    plt.savefig('../plots/umap/test_train_all_umap.pdf', bbox_inches='tight')
+
+umap_all()

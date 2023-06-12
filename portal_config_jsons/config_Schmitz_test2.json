@@ -1,0 +1,309 @@
+{
+    "autoAddPadding": true,
+    "initialSort": [
+        {
+            "panel": "Cluster",
+            "order": 1
+        },
+        {
+            "panel": "Set",
+            "order": 1
+        },
+        {
+            "panel": "Confidence",
+            "order": 1
+        }
+    ],
+    "grid": {
+        "cellHeight": 15,
+        "plotHeight": 50,
+        "columnSizes": {
+            "0": {
+                "size": 0.05,
+                "padding": {
+                    "left": 0,
+                    "right": 0
+                }
+            },
+            "1": {
+                "size": 0.05,
+                "padding": {
+                    "left": 30,
+                    "right": 0
+                }
+            },
+            "2": {
+                "size": 0.89,
+                "padding": {
+                    "left": 80,
+                    "right": 0
+                }
+            },
+            "3": {
+                "size": 0.01,
+                "padding": {
+                    "left": 10,
+                    "right": 10
+                }
+            }
+        }
+    },
+    "panels": [
+        {
+            "type": "strip",
+            "id": "Cluster",
+            "label": "Cluster",
+            "dataPrefix": "cluster",
+            "row": 0,
+            "colors": [
+                "#9467bd",
+                "#17becf",
+                "#ff7f0e",
+                "#2ca02c",
+                "#d62728"
+            ],
+            "plots": {
+                "center": {
+                    "yAxisTitle": "Cluster"
+                }
+            },
+            "displayLegend": false
+        },
+        {
+            "type": "strip",
+            "id": "Set",
+            "label": "Set",
+            "dataPrefix": "set",
+            "row": 1,
+            "colors": [
+                "#000000",
+                "#f5f242"
+            ],
+            "plots": {
+                "center": {
+                    "yAxisTitle": "Set"
+                }
+            },
+            "displayLegend": true
+        },
+        {
+            "type": "continuousstrip",
+            "id": "Confidence",
+            "label": "Confidence",
+            "dataPrefix": "confidence",
+            "row": 2,
+            "colors": [
+                "#ff1900",
+                "#00fa08"
+            ],
+            "plots": {
+                "center": {
+                    "yAxisTitle": "Confidence",
+                    "dataOptions": {
+                        "colorRange": {
+                            "min": 0.2,
+                            "max": 1.0
+                        }
+                    }
+                }
+            },
+            "displayLegend": true
+        },
+        {
+            "type": "categoricalheatmap",
+            "id": "GeneMutation",
+            "label": "Gene Mutation",
+            "dataPrefix": "hmap_",
+            "row": 3,
+            "panelOptions": {
+                "sort": "test2",
+                "limit": 200,
+                "categoryKey": {
+                    "0": "No Mutation",
+                    "1": "Silent Mutation",
+                    "2": "Non-Silent Mutation",
+                    "3": "SV",
+                    "4": "Low Level Amp",
+                    "5": "High Level Amp",
+                    "6": "Low Level Del",
+                    "7": "High Level Del"
+                }
+            },
+            "colors": [
+                "#FFF",
+                "#858585",
+                "#000000",
+                "#5EA157",
+                "#FF8080",
+                "#F70000",
+                "#8adeff",
+                "#00b1f7"
+            ],
+            "plots": {
+                "center": {
+                    "yAxisTitle": "",
+                    "dataOptions": {
+                        "hideCategory": [
+                            0
+                        ]
+                    }
+                }
+            },
+            "displayLegend": true
+        }
+    ],
+    "highlight": {
+        "color": "#fdffde",
+        "samples": [
+            "DLBCL_LS3866_2",
+            "DLBCL10531_2",
+            "DLBCL11578_2",
+            "DLBCL10545_2",
+            "DLBCL_C_D_1107_NULLPAIR_2",
+            "DLBCL11445_2",
+            "DLBCL_MC_F300_TBF_2",
+            "DFCIDL001_DT_2",
+            "DLBCL10942_2",
+            "DLBCL_RICOVER_694_2",
+            "DLBCL10998_2",
+            "DLBCL10506_2",
+            "DLBCL10953_2",
+            "DLBCL_RICOVER_181_2",
+            "DLBCL_C_D_1155_NULLPAIR_2",
+            "DLBCL11586_2",
+            "DLBCL11452_2",
+            "DLBCL_LS2978_2",
+            "DLBCL11508_2",
+            "DLBCL_RICOVER_1144_2",
+            "DLBCL11506_2",
+            "DLBCL_RICOVER_290_2",
+            "DLBCL10546_2",
+            "DLBCL_RICOVER_865_2",
+            "DLBCL_LS4394_2",
+            "DLBCL_MC_F648_JKW_2",
+            "DLBCL10948_2",
+            "DLBCL_RICOVER_208_2",
+            "DLBCL10524_2",
+            "DLBCL_C_D_1142_NULLPAIR_2",
+            "DLBCL_C_D_PAIR23_2",
+            "DLBCL_LS4323_2",
+            "DLBCL11180_2",
+            "DLBCL_MC_F990_MNA_2",
+            "DLBCL_LS1546_2",
+            "DLBCL_C_D_PAIR9_2",
+            "DLBCL_C_D_1158_NULLPAIR_2",
+            "DLBCL_RICOVER_763_2",
+            "DLBCL_C_D_PAIR22_2",
+            "DLBCL11531_2",
+            "DLBCL10493_2",
+            "DLBCL11684_2",
+            "DLBCL10500_2",
+            "DLBCL_C_D_PAIR2_2",
+            "DLBCL10538_2",
+            "DLBCL_LS3309_2",
+            "DLBCL10470_2",
+            "DLBCL11530_2",
+            "DLBCL11562_2",
+            "DLBCL_RICOVER_822_2",
+            "DLBCL_RICOVER_126_2",
+            "DLBCL11503_2",
+            "DLBCL10926_2",
+            "DLBCL_C_D_PAIR5_2",
+            "DLBCL10528_2",
+            "DLBCL_MC_F959_ERM_2",
+            "DLBCL_RICOVER_266_2",
+            "DLBCL_RICOVER_1169_2",
+            "DLBCL10507_2",
+            "DLBCL_LS2258_2",
+            "DLBCL_RICOVER_623_2",
+            "DLBCL10933_2",
+            "DLBCL_RICOVER_107_2",
+            "DLBCL11193_2",
+            "DLBCL10477_2",
+            "DLBCL_LS88_2",
+            "DLBCL11579_2",
+            "DLBCL11438_2",
+            "DLBCL10473_2",
+            "DLBCL11577_2",
+            "DLBCL11532_2",
+            "DLBCL11559_2",
+            "DLBCL_LS3387_2",
+            "DLBCL_RICOVER_1013_2",
+            "DLBCL_RICOVER_463_2",
+            "DLBCL_RICOVER_269_2",
+            "DLBCL_LS3615_2",
+            "DLBCL11563_2",
+            "DLBCL_C_D_1110_NULLPAIR_2",
+            "DLBCL10537_2",
+            "DLBCL_RICOVER_384_2",
+            "DLBCL_MC_F344_CJS_2",
+            "DLBCL11584_2",
+            "DLBCL_LS4618_2",
+            "DLBCL11575_2",
+            "DLBCL_LS2305_2",
+            "DLBCL_MC_F358_WDS_2",
+            "DLBCL11572_2",
+            "DLBCL11585_2",
+            "DLBCL10481_2",
+            "DLBCL_LS1620_2",
+            "DLBCL_C_D_1127_NULLPAIR_2",
+            "DLBCL10478_2",
+            "DLBCL_LS1899_2",
+            "DLBCL_RICOVER_197_2",
+            "DLBCL11182_2",
+            "DLBCL11665_2",
+            "DLBCL_C_D_1132_NULLPAIR_2",
+            "DLBCL_RICOVER_1199_2",
+            "DLBCL10476_2",
+            "DLBCL_C_D_1146_NULLPAIR_2",
+            "DLBCL_RICOVER_336_2",
+            "DLBCL_C_D_1121_NULLPAIR_2",
+            "DLBCL11005_2",
+            "DLBCL10505_2",
+            "DLBCL_RICOVER_1138_2",
+            "DLBCL_RICOVER_692_2",
+            "DLBCL_RICOVER_148_2",
+            "DLBCL11560_2",
+            "DLBCL_RICOVER_1072_2",
+            "DLBCL11453_2",
+            "DLBCL11571_2",
+            "DLBCL11660_2",
+            "DLBCL_RICOVER_1247_2",
+            "DLBCL_RICOVER_105_2",
+            "DLBCL_RICOVER_150_2",
+            "DLBCL_C_D_PAIR20_2",
+            "DLBCL11540_2",
+            "DLBCL_C_D_1162_NULLPAIR_2",
+            "DLBCL_RICOVER_597_2",
+            "DLBCL_C_D_1145_NULLPAIR_2",
+            "DLBCL_RICOVER_224_2",
+            "DLBCL10516_2",
+            "DLBCL_C_D_1124_NULLPAIR_2",
+            "DLBCL_LS3808_2",
+            "DLBCL10504_2",
+            "DLBCL_RICOVER_431_2",
+            "DLBCL_C_D_1120_NULLPAIR_2",
+            "DLBCL_MC_F339_JPS2_2",
+            "DLBCL_LS1583_2",
+            "DLBCL10938_2",
+            "DLBCL11514_2",
+            "DLBCL_MC_F089_MLB_2",
+            "DLBCL10508_2",
+            "DLBCL10533_2",
+            "DLBCL10540_2",
+            "DLBCL_RICOVER_1237_2",
+            "DLBCL10943_2",
+            "DLBCL_LS2596_2",
+            "DLBCL_RICOVER_1257_2",
+            "DLBCL_RICOVER_585_2",
+            "DLBCL_LS148_2",
+            "DLBCL_C_D_1104_NULLPAIR_2",
+            "DLBCL_LS4085_2",
+            "DLBCL11451_2",
+            "DLBCL_RICOVER_704_2",
+            "DLBCL10499_2",
+            "DLBCL_RICOVER_543_2",
+            "DLBCL_RICOVER_99_2"
+        ]
+    }
+}

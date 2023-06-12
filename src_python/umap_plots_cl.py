@@ -31,6 +31,10 @@ train_df = pd.read_csv(datafile, sep='\t', index_col=0).T
 ccgd_df = pd.read_csv(ccgd_file, sep='\t', index_col=0)
 ccle_df = pd.read_csv(ccle_file, sep='\t', index_col=0)
 
+dlbcl_lines = ['DHL2', 'U2932', 'LY4', 'LY7', 'K422', 'BALM3', 'LY19', 'DB', 'WSU_DLBCL2',
+               'LY8', 'DHL6', 'WSU_NHL', 'DHL10', 'LY18', 'LY1', 'DHL7', 'DHL16', 'DHL4',
+               'PFEIFFER', 'TOLEDO', 'DHL5', 'CTB_1', 'HT', 'DHL8', 'TMD8', 'LY10', 'LY3', 'HBL1']
+
 reduced_train = fd.construct_reduced_winning_version(train_df)
 reduced_ccgd = fd.construct_reduced_winning_version(ccgd_df)
 reduced_ccle = fd.construct_reduced_winning_version(ccle_df)
@@ -105,6 +109,42 @@ legend_elements = [Line2D([0], [0], marker='o', color='w', markerfacecolor=palle
 ax.legend(handles=legend_elements)
 plt.savefig('../plots/umap/umap_cl_trainset.jpeg')
 plt.savefig('../plots/umap/umap_cl_trainset.pdf')
+plt.clf()
+
+########################
+# DLBCL lines only     #
+########################
+
+fig, ax = plt.subplots()
+fig.set_size_inches(10, 8)
+clusters = set(data_all['cluster'])
+grps = set(data_all['set'])
+grps.remove('CCLE')
+for g in grps:
+    sub_df = u.loc[u['set'] == g]
+    for clus in clusters:
+        sub_sub_df = sub_df.loc[sub_df['cluster'] == clus]
+        if g == 'CCGD':
+            sub_sub_df = sub_sub_df.loc[sub_sub_df.index.isin(dlbcl_lines)]
+            ax.scatter(sub_sub_df['U1'], sub_sub_df['U2'], c=[pallet[clus]], label='C' + str(int(clus)), s=20, marker=shapes[g])
+            for idx, row in sub_sub_df.iterrows():
+                currtext = idx
+                if len(idx) > 8:
+                    currtext = idx[0:9]
+                ax.annotate(currtext, [sub_sub_df.loc[idx, 'U1'], sub_sub_df.loc[idx, 'U2']])
+        else:
+            ax.scatter(sub_sub_df['U1'], sub_sub_df['U2'], c=[pallet[clus]], label='C' + str(int(clus)), s=15, marker=shapes[g])
+
+legend_elements = [Line2D([0], [0], marker='o', color='w', markerfacecolor=pallet[1], label='C1', markersize=12),
+                   Line2D([0], [0], marker='o', color='w', markerfacecolor=pallet[2], label='C2', markersize=12),
+                   Line2D([0], [0], marker='o', color='w', markerfacecolor=pallet[3], label='C3', markersize=12),
+                   Line2D([0], [0], marker='o', color='w', markerfacecolor=pallet[4], label='C4', markersize=12),
+                   Line2D([0], [0], marker='o', color='w', markerfacecolor=pallet[5], label='C5', markersize=12),
+                   Line2D([0], [0], marker='D', color='w', markerfacecolor='black', label='CCGD', markersize=12)]
+
+ax.legend(handles=legend_elements)
+plt.savefig('../plots/umap/umap_dlbclLines_trainset.jpeg')
+plt.savefig('../plots/umap/umap_dlbclLines_trainset.pdf')
 plt.clf()
 
 ########################

@@ -1,16 +1,22 @@
 import pandas as pd
 from matplotlib import pyplot as plt
-from matplotlib.lines import Line2D
 import numpy as np
 import random
 import format_data as fd
+from matplotlib.colors import LinearSegmentedColormap
+import seaborn as sns
 
 seed = 1234
 random.seed(seed)
 np.random.seed(seed)
 
+colors = [(0, 0, 0), (1, 0, 0)]  # first color is black, last is red
+cm = LinearSegmentedColormap.from_list("Custom", colors, N=20)
+
 
 umap = pd.read_csv('../data_tables/umap/umap_70conf.tsv', sep='\t', index_col=0)
+umap_full = pd.read_csv('../data_tables/umap/umap_all.tsv', sep='\t', index_col=0)
+umap_full.columns = ['u1_full', 'u2_full']
 
 preds = "../evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_removeN5_nfeatures21_pMax0.93856484.tsv"
 preds_test = '../evaluation_test_set/NN_reducedV3.4_removeN5_nfeatures21_testsetEval.tsv'
@@ -23,8 +29,8 @@ set_file = '../data_tables/sample_sets/ShippStaudtSets.purity0.2.txt'
 preds = pd.read_csv(preds, index_col=0, sep='\t')
 preds_test = pd.read_csv(preds_test, index_col=0, sep='\t')
 preds['Confidence'] = preds.max(axis=1)
-confidences = pd.concat([preds_test['Confidence'], preds['Confidence']])
-confidences = confidences.loc[umap.index]
+confidences2 = pd.concat([preds_test['Confidence'], preds['Confidence']])
+confidences = confidences2.loc[umap.index]
 
 sample_cohorts = pd.read_csv(set_file, sep='\t', index_col=0)
 
@@ -39,15 +45,20 @@ gsm_b['PLOIDY'] = gsm['PLOIDY'].astype(float).round(2)
 gsm_b = gsm_b.loc[umap.index]
 
 full_df = pd.concat([umap, gsm_b], axis=1)
+full_df2 = pd.concat([umap_full, gsm_b], axis=1)
 
 full_df['set'] = 'Train'
 full_df.loc[full_df.index.isin(testing_set), 'set'] = 'Test'
+full_df2['set'] = 'Train'
+full_df2.loc[full_df2.index.isin(testing_set), 'set'] = 'Test'
 
 full_df['cohort'] = sample_cohorts.loc[full_df.index, 'cohort']
 full_df['Confidence'] = confidences
+full_df2['cohort'] = sample_cohorts.loc[full_df2.index, 'cohort']
+full_df2['Confidence'] = confidences2
 
-reduced_df = fd.construct_reduced_winning_version(gsm)
-reduced_df = reduced_df.loc[full_df.index]
+reduced_df2 = fd.construct_reduced_winning_version(gsm)
+reduced_df = reduced_df2.loc[full_df.index]
 
 
 def annotate_umap_genes():
@@ -74,7 +85,7 @@ def annotate_umap_coo():
 
     plt.scatter(abc_s['u1'], abc_s['u2'], c='#d13328', label='ABC', s=60)
     plt.scatter(gcb_s['u1'], gcb_s['u2'], c='#194bff', label='GCB', s=60)
-    plt.scatter(unc_s['u1'], unc_s['u2'], c='#cae310', label='Unclassified', s=60)
+    plt.scatter(unc_s['u1'], unc_s['u2'], c='#f5fc72', label='Unclassified', s=60)
 
     plt.legend()
     plt.savefig('../plots/umap/umap_annotations/umap_coo.pdf')
@@ -108,12 +119,22 @@ def annotate_umap_cohort():
 
 
 def annotate_umap_confidence():
+    colors = [(1, 0, 0), (0, 0, 0)]
+    cm = LinearSegmentedColormap.from_list("Custom", colors, N=20)
     plt.figure(figsize=(14, 12))
-    plt.scatter(full_df['u1'], full_df['u2'], c=full_df['Confidence'], cmap='Reds', s=60)
+    plt.scatter(full_df['u1'], full_df['u2'], c=full_df['Confidence'], cmap=cm, s=60)
     cbar = plt.colorbar()
     cbar.set_label('Confidence', rotation=270, size=50, labelpad=70)
     plt.clim((0.70, 1.0))
     plt.savefig('../plots/umap/umap_annotations/umap_confidences.pdf')
+    plt.clf()
+
+    plt.figure(figsize=(14, 12))
+    plt.scatter(full_df2['u1_full'], full_df2['u2_full'], c=full_df2['Confidence'], cmap=cm, s=60)
+    cbar = plt.colorbar()
+    cbar.set_label('Confidence', rotation=270, size=50, labelpad=70)
+    plt.clim((0.2, 1.0))
+    plt.savefig('../plots/umap/umap_annotations/umap_confidences_full.pdf')
     plt.clf()
 
 
@@ -135,9 +156,19 @@ def umap_reduced_features():
     plot_list = [(sum_c1, 'C1'), (sum_c2, 'C2'), (sum_c3, 'C3'),
                  (sum_c4, 'C4'), (sum_c5, 'C5'), (sum_misc1, '2P16.1.AMP')]
 
-    for p in plot_list:
+    pallete = {1: sns.color_palette()[4],  # purple, C1
+              2: sns.color_palette()[9],  # blue, C2
+              3: sns.color_palette()[1],  # orange, C3
+              4: sns.color_palette()[2],  # green, C4
+              5: sns.color_palette()[3],  # red, C5
+              6: (0, 0, 1)
+              }
+
+    for i, p in enumerate(plot_list):
+        clus_color = [(1, 1, 1), pallete[i + 1]]
         plt.figure(figsize=(14, 12))
-        plt.scatter(full_df['u1'], full_df['u2'], c=p[0], cmap='Reds', s=60)
+        cm_clus = LinearSegmentedColormap.from_list("Custom", clus_color, N=20)
+        plt.scatter(full_df['u1'], full_df['u2'], c=p[0], cmap=cm_clus, s=60)
         cbar = plt.colorbar()
         cbar.set_label('Reduced Cluster Sum', rotation=270, size=50, labelpad=70)
         plt.title(p[1], size=50)
@@ -150,5 +181,5 @@ def umap_reduced_features():
 #annotate_umap_coo()
 #annotate_umap_traintest()
 #annotate_umap_cohort()
-#annotate_umap_confidence()
-umap_reduced_features()
+annotate_umap_confidence()
+#umap_reduced_features()

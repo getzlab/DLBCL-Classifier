@@ -15,8 +15,8 @@ output_fn = 'plots/test_set/confidences_gaddygram_testset'
 
 conf_table$breaks = seq(1,nrow(conf_table))
 
-p_test <- ggplot(conf_table, aes(x=factor(seq(1,nrow(conf_table))),y=Confidence, group=cohort)) +
-  geom_point(aes(shape=Correctness, color=cohort), size=3, alpha=0.5) +
+p_test <- ggplot(conf_table, aes(x=factor(seq(1,nrow(conf_table))),y=Confidence)) +
+  geom_point(aes(shape=Correctness), size=3, alpha=0.5) +
   ggtitle('Cluster-Sorted Confidences (Test Set)') +
   theme_bw() +
   ylim(0,1) +
@@ -31,9 +31,9 @@ p_test <- ggplot(conf_table, aes(x=factor(seq(1,nrow(conf_table))),y=Confidence,
                    labels=c("C1", "C2", "C3", 'C4', 'C5')) +
   expand_limits(x=c(-10, 159)) +
   scale_colour_manual(values = group.colors[1:2]) +
-  scale_shape_manual(values = c(19,4)) +
+  scale_shape_manual(values = c(17,4)) +
   guides(colour = guide_legend(override.aes = list(shape = 13))) +
-  guides(shape = guide_legend(override.aes = list(shape = c(1, 4))))
+  guides(shape = guide_legend(override.aes = list(shape = c(17, 4))))
 
 ggsave(paste(output_fn, '.jpeg', sep=''), p_test, width=8, height=8)
 ggsave(paste(output_fn, '.pdf', sep=''), p_test, width=8, height=8)
@@ -75,8 +75,8 @@ group.colors = c("#000000","#E3140F")
 
 conf_table_train$breaks = seq(1,nrow(conf_table_train))
 
-p_train <- ggplot(conf_table_train, aes(x=factor(seq(1,nrow(conf_table_train))),y=Confidence, group=cohort)) +
-  geom_point(aes(shape=Correctness, color=cohort), size=3, alpha=0.5) +
+p_train <- ggplot(conf_table_train, aes(x=factor(seq(1,nrow(conf_table_train))),y=Confidence)) +
+  geom_point(aes(shape=Correctness), size=3, alpha=0.6) +
   ggtitle('Cluster-Sorted Confidences (Train Set)') +
   theme_bw() +
   ylim(0,1) +
@@ -91,9 +91,44 @@ p_train <- ggplot(conf_table_train, aes(x=factor(seq(1,nrow(conf_table_train))),
                    labels=c("C1", "C2", "C3", 'C4', 'C5')) +
   expand_limits(x=c(-10, 159)) +
   scale_colour_manual(values = group.colors[1:2]) +
-  scale_shape_manual(values = c(19,4)) +
+  scale_shape_manual(values = c(17,4)) +
   guides(colour = guide_legend(override.aes = list(shape = 13))) +
-  guides(shape = guide_legend(override.aes = list(shape = c(1, 4))))
+  guides(shape = guide_legend(override.aes = list(shape = c(17, 4))))
 
 ggsave(paste('plots/confidences_gaddygram_trainset', '.jpeg', sep=''), p_train, width=8, height=8)
 ggsave(paste('plots/paper_figures/confidences_gaddygram_trainset', '.pdf', sep=''), p_train, width=8, height=8)
+
+##############
+# All samples
+##############
+
+conf_table_all = rbind(conf_table[, c('Confidence', 'PredictedCluster', 'TrueCluster')])
+conf_table_all$PredictedCluster = paste('C', conf_table_all$PredictedCluster, sep='')
+conf_table_all$TrueCluster = paste('C', conf_table_all$TrueCluster, sep='')
+conf_table_all = rbind(conf_table_all, conf_table_train[, c('Confidence', 'PredictedCluster', 'TrueCluster')])
+conf_table_all = conf_table_all[order(conf_table_all$PredictedCluster, conf_table_all$Confidence), ]
+conf_table_all$Correctness = conf_table_all$PredictedCluster == conf_table_all$TrueCluster
+
+p_all <- ggplot(conf_table_all, aes(x=factor(seq(1,nrow(conf_table_all))),y=Confidence)) +
+  geom_point(aes(shape=Correctness), size=3, alpha=0.6) +
+  ggtitle('Cluster-Sorted Confidences (All Samples)') +
+  theme_bw() +
+  ylim(0,1) +
+  xlab('Sample') +
+  ylab('Confidence') + 
+  theme(axis.text.x = element_text(colour="grey20",size=10,hjust=.5,vjust=.5,face="plain"),
+        axis.text.y = element_text(colour="grey20",size=10,hjust=.5,vjust=.5,face="plain"),
+        axis.title.x = element_text(colour="grey20",size=20,angle=0,hjust=.5,vjust=0,face="plain"),
+        axis.title.y = element_text(colour="grey20",size=20,hjust=.5,vjust=.5,face="plain"),
+        plot.title = element_text(hjust=0.50, size=15)) +
+  scale_x_discrete(breaks=c(1,114,240,330,403),
+                   labels=c("C1", "C2", "C3", 'C4', 'C5')) +
+  expand_limits(x=c(-10, 159)) +
+  scale_colour_manual(values = group.colors[1:2]) +
+  scale_shape_manual(values = c(17,4)) +
+  guides(colour = guide_legend(override.aes = list(shape = 13))) +
+  guides(shape = guide_legend(override.aes = list(shape = c(17, 4))))
+
+ggsave(paste('plots/confidences_gaddygram_allsamples', '.jpeg', sep=''), p_all, width=8, height=8)
+ggsave(paste('plots/paper_figures/confidences_gaddygram_allsamples', '.pdf', sep=''), p_all, width=8, height=8)
+

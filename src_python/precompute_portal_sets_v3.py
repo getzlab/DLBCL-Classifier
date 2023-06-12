@@ -125,7 +125,7 @@ df_train = df.loc[labels_train.index].T
 
 qv = qval_df.loc[df.columns, 'q']
 
-df_shipp.loc['set'] = 'Shipp'
+df_shipp.loc['set'] = 'Chapuy'
 df_staudt.loc['set'] = 'Schmitz'
 df_test.loc['set'] = 'Test'
 df_train.loc['set'] = 'Train'
@@ -217,17 +217,22 @@ dropout_preds.index = dropout_preds.index + '_dropout'
 
 # m x n precomputes
 
-base_sets = [(df_shipp, 'shipp', shipp_preds), (df_staudt, 'staudt', staudt_preds), (df_full, 'full', full_preds),
-             (df_test, 'test', test_confs), (df_train, 'train', train_confs)]
+base_sets = [(df_shipp, 'Chapuy', shipp_preds), (df_staudt, 'Schmitz', staudt_preds), (df_full, 'Full', full_preds),
+             (df_test, 'Test', test_confs), (df_train, 'Train', train_confs)]
 
 df_test_2 = df_test.copy(deep=True)
 df_test_2.columns = df_test_2.columns + '_2'
 test_confs_2 = test_confs.copy(deep=True)
 test_confs_2.index = test_confs_2.index + '_2'
 
-added_sets = [(df_ccle, 'ccle', ccle_preds), (df_ccgd, 'ccgd', ccgd_preds),
-              (df_added_sub, 'addin', addin_preds), (df_dropped_sub, 'dropout', dropout_preds),
-              (df_test_2, 'test2', test_confs_2)]
+df_staudt_2 = df_staudt.copy(deep=True)
+df_staudt_2.columns = df_staudt_2.columns + '_2'
+staudt_preds_2 = staudt_preds.copy(deep=True)
+staudt_preds_2.index = staudt_preds_2.index + '_2'
+
+added_sets = [(df_ccle, 'CCLE', ccle_preds), (df_ccgd, 'CCGD', ccgd_preds),
+              (df_added_sub, 'Add-In', addin_preds), (df_dropped_sub, 'Drop-out', dropout_preds),
+              (df_test_2, 'Test2', test_confs_2), (df_staudt_2, 'Schmitz2', staudt_preds_2)]
 
 for bset, name, bpreds in base_sets:
     for aset, name2, apreds in added_sets:
@@ -477,10 +482,10 @@ for bset, name, bpreds in base_sets:
     cfg_file['panels'].insert(2, confidence_panel)
     cfg_file['panels'][3]['row'] = 3
 
-    if name == 'shipp':
+    if name == 'Chapuy':
         cfg_file['panels'][0]['colors'] = ["#17becf", "#d62728", "#ff7f0e", "#2ca02c", "#9467bd"]
 
-    if name == 'staudt':
+    if name == 'Schmitz':
         cfg_file['panels'][0]['colors'] = ["#9467bd", "#ff7f0e", "#d62728", "#2ca02c", "#17becf",]
 
     for i in range(0, len(cfg_file['panels'])):
