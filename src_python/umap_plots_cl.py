@@ -15,6 +15,7 @@ np.random.seed(seed)
 targetfile = '../data_tables/confidence_tables/baseline_probabilities.connectivity_based.sensitivity_power2.Sep_23_2022.tsv'
 datafile = '../data_tables/gsm/DLBCL.699.fullGSM.Sep_23_2022.tsv'
 training_set = list(pd.read_csv('../data_tables/train_test_sets/TrainingSet_550Subset_May2021.txt', sep='\t', header=None, index_col=0).index)
+test_set = list(pd.read_csv('../data_tables/train_test_sets/TestingSet_149Subset_May2021.txt', sep='\t', header=None, index_col=0).index)
 qval_file = '../data_tables/qval_dfs/fisher_exact_5x2.Sep_23_2022.combined.tsv'
 ccgd_file = '../data_tables/gsm/GSM.CCGD.updated.Sep_23_2022.tsv'
 ccle_file = '../data_tables/gsm/GSM.Depmap.updated.Sep_23_2022.tsv'
@@ -28,6 +29,7 @@ ccgd_mappings = pd.read_csv(cl_mapping_file, sep='\t', index_col=1)
 
 qval_df = pd.read_csv(qval_file, delimiter='\t', index_col=0)
 train_df = pd.read_csv(datafile, sep='\t', index_col=0).T
+test_df = pd.read_csv(datafile, sep='\t', index_col=0).T
 ccgd_df = pd.read_csv(ccgd_file, sep='\t', index_col=0)
 ccle_df = pd.read_csv(ccle_file, sep='\t', index_col=0)
 
@@ -38,16 +40,20 @@ dlbcl_lines = ['DHL2', 'U2932', 'LY4', 'LY7', 'K422', 'BALM3', 'LY19', 'DB', 'WS
 reduced_train = fd.construct_reduced_winning_version(train_df)
 reduced_ccgd = fd.construct_reduced_winning_version(ccgd_df)
 reduced_ccle = fd.construct_reduced_winning_version(ccle_df)
+reduced_test = fd.construct_reduced_winning_version(test_df)
 
 targets_train = targets.loc[training_set]
+targets_test = targets.loc[test_set]
 targets_ccgd = ccgd_preds.loc[reduced_ccgd.index]
 targets_ccle = ccle_preds.loc[reduced_ccle.index]
 
 reduced_train = reduced_train.loc[training_set]
+reduced_test = reduced_test.loc[test_set]
 
 reduced_train['cluster'] = targets_train['cluster']
 reduced_ccgd['cluster'] = targets_ccgd['PredictedCluster']
 reduced_ccle['cluster'] = targets_ccle['PredictedCluster']
+reduced_test['cluster'] = targets_test['cluster']
 
 mappings_ccle = [ccle_mappings.loc[x, 'Ours'] if x in ccle_mappings.index else 'None' for x in targets_ccle.index]
 mappings_ccgd = [ccgd_mappings.loc[x, 'DepMap'] if x in ccgd_mappings.index else 'None' for x in targets_ccgd.index]
@@ -56,6 +62,7 @@ reduced_ccle['mapped_line'] = mappings_ccle
 reduced_train['mapped_line'] = 'None'
 reduced_ccgd['mapped_line'] = mappings_ccgd
 
+reduced_test['set'] = 'Test'
 reduced_train['set'] = 'Train'
 reduced_ccgd['set'] = 'CCGD'
 reduced_ccle['set'] = 'CCLE'
@@ -70,6 +77,7 @@ pallet = {1: sns.color_palette()[4],        # purple, C1
           }
 
 shapes = {'Train': '.',
+          'Test': '.',
           'CCLE': 'x',
           'CCGD': 'D'}
 
@@ -145,6 +153,58 @@ legend_elements = [Line2D([0], [0], marker='o', color='w', markerfacecolor=palle
 ax.legend(handles=legend_elements)
 plt.savefig('../plots/umap/umap_dlbclLines_trainset.jpeg')
 plt.savefig('../plots/umap/umap_dlbclLines_trainset.pdf')
+plt.clf()
+
+#############################################
+# DLBCL CCGD w/ train+test, HC cutoff after #
+#############################################
+data_all_2 = pd.concat([reduced_train, reduced_test, reduced_ccgd])
+dlbcl_lines = pd.read_csv('../data_tables/sample_sets/dlbcl_lines.txt', index_col=0, header=None).index
+trainset_highconf = list(targets_train.loc[targets_train['confidence'] > 0.70].index)
+testset_highconf = list(targets_test.loc[targets_test['confidence'] > 0.70].index)
+
+data_hc_ccgd = data_all_2.loc[data_all_2.index.isin(reduced_train.index) |
+                              data_all_2.index.isin(reduced_test.index) |
+                              data_all_2.index.isin(dlbcl_lines)]
+
+fit = umap.UMAP(n_components=2, n_neighbors=10, min_dist=0.05, metric='euclidean', random_state=seed)
+u = pd.DataFrame(fit.fit_transform(data_hc_ccgd.drop(to_drop_umap, axis=1)))
+u.index = data_hc_ccgd.index
+u.columns = ['U1', 'U2']
+u['cluster'] = data_hc_ccgd['cluster']
+u['set'] = data_hc_ccgd['set']
+u = u.loc[u.index.isin(trainset_highconf) | u.index.isin(testset_highconf) | u.index.isin(dlbcl_lines)]
+
+fig, ax = plt.subplots()
+fig.set_size_inches(10, 8)
+clusters = set(data_hc_ccgd['cluster'])
+grps = set(data_hc_ccgd['set'])
+
+for g in grps:
+    sub_df = u.loc[u['set'] == g]
+    for clus in clusters:
+        sub_sub_df = sub_df.loc[sub_df['cluster'] == clus]
+        if g == 'CCGD':
+            sub_sub_df = sub_sub_df.loc[sub_sub_df.index.isin(dlbcl_lines)]
+            ax.scatter(sub_sub_df['U1'], sub_sub_df['U2'], c=[pallet[clus]], label='C' + str(int(clus)), s=100, marker=shapes[g])
+            for idx, row in sub_sub_df.iterrows():
+                currtext = idx
+                if len(idx) > 8:
+                    currtext = idx[0:9]
+                ax.annotate(currtext, [sub_sub_df.loc[idx, 'U1'], sub_sub_df.loc[idx, 'U2']])
+        else:
+            ax.scatter(sub_sub_df['U1'], sub_sub_df['U2'], c=[pallet[clus]], label='C' + str(int(clus)), s=100, marker=shapes[g], alpha=0.6)
+
+legend_elements = [Line2D([0], [0], marker='o', color='w', markerfacecolor=pallet[1], label='C1', markersize=12),
+                   Line2D([0], [0], marker='o', color='w', markerfacecolor=pallet[2], label='C2', markersize=12),
+                   Line2D([0], [0], marker='o', color='w', markerfacecolor=pallet[3], label='C3', markersize=12),
+                   Line2D([0], [0], marker='o', color='w', markerfacecolor=pallet[4], label='C4', markersize=12),
+                   Line2D([0], [0], marker='o', color='w', markerfacecolor=pallet[5], label='C5', markersize=12),
+                   Line2D([0], [0], marker='D', color='w', markerfacecolor='black', label='CCGD', markersize=12)]
+
+ax.legend(handles=legend_elements)
+plt.savefig('../plots/umap/umap_MOAU_traintestccgd_hcCutoff.jpeg')
+plt.savefig('../plots/umap/umap_MOA_traintestccgd_hcCutoff.pdf')
 plt.clf()
 
 ########################

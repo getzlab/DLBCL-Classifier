@@ -803,3 +803,52 @@ ggsave(paste('plots/paper_figures/initpred_lg_alluvial_lconly_', HC_THRESH ,'_no
 ggsave('plots/initpred_lg_alluvial.png', p_lg, width = 10, height=10)
 ggsave('plots/paper_figures/initpred_lg_alluvial.pdf', p_lg, width = 10, height=10)
 
+##############################
+# Barplot for LymphGen other #
+##############################
+
+lg_other = preds_lg_df[preds_lg_df$Lymphgen_Class == 'Other', ]
+lg_other$DLBclass = gsub('_..', '', lg_other$DLBclass)
+lg_other_counts = count(lg_other, DLBclass, HC)
+lg_other_counts$fraction = -1
+
+for(i in 1:nrow(lg_other_counts)){
+  c = paste(lg_other_counts[i, 'DLBclass'], '_', lg_other_counts[i, 'HC'], sep='')
+  lg_other_counts[i, 'fraction'] = lg_other_counts[i, 'n'] / sum(preds_lg_df$DLBclass == c)
+}
+
+lg_other_counts$fillcol = c("#803e98", "#803e98",
+                          "#00a4d1", "#00a4d1",
+                          "#f29123", "#f29123",
+                          "#4d872d", "#4d872d",
+                          "#dd2929", "#dd2929")
+
+lg_other_counts$eb_lower = -1
+lg_other_counts$eb_upper = -1
+
+for(x in 1:nrow(lg_other_counts)){
+  bt = binom.test(lg_other_counts$n[x], lg_other_counts$n[x] / lg_other_counts$fraction[x], 
+                  p=lg_other_counts$fraction[x] ,conf.level = 0.68)
+  lg_other_counts$eb_lower[x] = bt[[4]][1]
+  lg_other_counts$eb_upper[x] = bt[[4]][2]
+}
+
+lg_bar = ggplot(lg_other_counts, aes(x=DLBclass, y=fraction)) +
+  geom_bar(stat='identity', position='dodge2', alpha=rep(c(1.0, 0.3), 5), fill=lg_other_counts$fillcol) +
+  theme_bw() +
+  geom_errorbar(aes(ymin=eb_lower, 
+                    ymax=eb_upper),
+                width=1,
+                position=position_dodge2(padding=0.6)) +
+  theme(axis.text.y=element_text(size=15),
+        axis.text.x = element_text(size=20),
+        axis.title.y = element_text(size=13),
+        axis.title.x = element_text(size=20),
+        plot.title = element_text(hjust = 0.5, size=20)
+  ) +
+  ylab('Percent of Samples in Confidence Group') +
+  xlab('DLBclass') +
+  ggtitle('DLBclass Breakdown of LymphGen "Other"')
+
+ggsave('plots/initpred_lg_other_bar.png', lg_bar, width = 10, height=10)
+ggsave('plots/paper_figures/initpred_lg_other_bar.pdf', lg_bar, width = 10, height=10)

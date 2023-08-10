@@ -9,7 +9,7 @@ cohorts = cohorts[rownames(cohorts) %in% rownames(conf_table),]
 cohorts = cohorts[rownames(conf_table), ]
 
 conf_table$cohort = cohorts$cohort
-group.colors = c("#000000","#E3140F")
+group.colors = c("#FF10F0","#000000")
 
 output_fn = 'plots/test_set/confidences_gaddygram_testset'
 
@@ -109,8 +109,13 @@ conf_table_all = rbind(conf_table_all, conf_table_train[, c('Confidence', 'Predi
 conf_table_all = conf_table_all[order(conf_table_all$PredictedCluster, conf_table_all$Confidence), ]
 conf_table_all$Correctness = conf_table_all$PredictedCluster == conf_table_all$TrueCluster
 
-p_all <- ggplot(conf_table_all, aes(x=factor(seq(1,nrow(conf_table_all))),y=Confidence)) +
-  geom_point(aes(shape=Correctness), size=3, alpha=0.6) +
+hc_all = conf_table_all[conf_table_all$Confidence > 0.70, ]
+acc = sum(hc_all$Correctness) / nrow(hc_all)
+
+p_all <- ggplot(conf_table_all, aes(x=factor(seq(1,nrow(conf_table_all))),y=Confidence, color=Correctness)) +
+  geom_point(aes(shape=Correctness, size=Correctness, alpha=Correctness), stroke=1) +
+  scale_size_manual(values = c(4, 6)) +
+  scale_alpha_manual(values = c(0.7, 0.1)) +
   ggtitle('Cluster-Sorted Confidences (All Samples)') +
   theme_bw() +
   ylim(0,1) +
@@ -125,9 +130,12 @@ p_all <- ggplot(conf_table_all, aes(x=factor(seq(1,nrow(conf_table_all))),y=Conf
                    labels=c("C1", "C2", "C3", 'C4', 'C5')) +
   expand_limits(x=c(-10, 159)) +
   scale_colour_manual(values = group.colors[1:2]) +
-  scale_shape_manual(values = c(17,4)) +
-  guides(colour = guide_legend(override.aes = list(shape = 13))) +
-  guides(shape = guide_legend(override.aes = list(shape = c(17, 4))))
+  scale_shape_manual(values = c(4, 20)) +
+  guides(colour = guide_legend(override.aes = list(shape = c(4, 20)))) +
+  guides(shape = guide_legend(override.aes = list(shape = c(4, 20)))) +
+  geom_hline(yintercept=0.70, color='red') +
+  geom_text(aes(670, 0.70, label=0.70, vjust=-0.5)) +
+  geom_text(aes(550, 0.25, label='509/524 (97.1%)', vjust=1.3))
 
 ggsave(paste('plots/confidences_gaddygram_allsamples', '.jpeg', sep=''), p_all, width=8, height=8)
 ggsave(paste('plots/paper_figures/confidences_gaddygram_allsamples', '.pdf', sep=''), p_all, width=8, height=8)

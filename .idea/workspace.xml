@@ -2,91 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b092fab0-8de1-4ee0-9187-ec88de6d843d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src_python/supp_scripts/TCGA_gremline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_tables/sample_sets/dlbcl_lines.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/confidences_gaddygram_trainset.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/plots/confidences_gaddygram_trainset.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/initpred_coo_alluvial.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/initpred_coo_alluvial.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/initpred_coo_alluvial_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/initpred_coo_alluvial_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/initpred_lg_alluvial.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/initpred_lg_alluvial.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/initpred_lg_alluvial_hconly_0.7.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/initpred_lg_alluvial_hconly_0.7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/initpred_lg_alluvial_hconly_0.7_notable.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/initpred_lg_alluvial_hconly_0.7_notable.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/initpred_newclus_hclc_alluvial.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/initpred_newclus_hclc_alluvial.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/initpred_newclus_hclc_alluvial_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/initpred_newclus_hclc_alluvial_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/newclus_dlbclass(t)_alluvial_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/newclus_dlbclass(t)_alluvial_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/newclus_initpred_test_alluvial.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/newclus_initpred_test_alluvial.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/newclus_initpred_train_alluvial.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/newclus_initpred_train_alluvial.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/nm_newclus_alluvial_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/nm_newclus_alluvial_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/confidences_gaddygram_allsamples.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/plots/confidences_gaddygram_allsamples.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/paper_figures/confidences_gaddygram_allsamples.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/confidences_gaddygram_allsamples.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plots/paper_figures/confidences_gaddygram_trainset.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/confidences_gaddygram_trainset.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/paper_figures/initpred_coo_alluvial.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/initpred_coo_alluvial.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/paper_figures/initpred_coo_alluvial_2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/initpred_coo_alluvial_2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/paper_figures/initpred_lg_alluvial.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/initpred_lg_alluvial.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/paper_figures/initpred_lg_alluvial_hconly_0.7.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/initpred_lg_alluvial_hconly_0.7.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/paper_figures/initpred_lg_alluvial_hconly_0.7_notable.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/initpred_lg_alluvial_hconly_0.7_notable.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/paper_figures/initpred_newclus_hclc_alluvial.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/initpred_newclus_hclc_alluvial.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/paper_figures/initpred_newclus_hclc_alluvial_2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/initpred_newclus_hclc_alluvial_2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/paper_figures/newclus_dlbclass(t)_alluvial_2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/newclus_dlbclass(t)_alluvial_2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/paper_figures/newclus_dlbclass(t)_confmats_2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/newclus_dlbclass(t)_confmats_2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/paper_figures/newclus_initpred_test_alluvial.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/newclus_initpred_test_alluvial.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/paper_figures/newclus_initpred_train_alluvial.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/newclus_initpred_train_alluvial.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/paper_figures/nm_newclus_alluvial_2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/nm_newclus_alluvial_2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/paper_figures/nm_newclus_confmats_2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/nm_newclus_confmats_2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/test_set/NN_reducedV3.4_removeN5_nfeatures21_testset.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/test_set/NN_reducedV3.4_removeN5_nfeatures21_testset.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/test_set/NN_reducedV3.4_removeN5_nfeatures21_testset.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/test_set/NN_reducedV3.4_removeN5_nfeatures21_testset.pdf_withcorrectness.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/test_set/confidences_gaddygram_testset.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/plots/test_set/confidences_gaddygram_testset.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plots/test_set/confidences_gaddygram_testset.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/test_set/confidences_gaddygram_testset.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/test_train_70conf_umap.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/test_train_70conf_umap.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/test_train_70conf_umap.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/test_train_70conf_umap.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/train_umap.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/train_umap.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/umap_confidences.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/umap_confidences.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/umap_coo.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/umap_coo.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/umap_reduced_2P16.1.AMP.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/umap_reduced_2P16.1.AMP.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/umap_reduced_C1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/umap_reduced_C1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/umap_reduced_C2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/umap_reduced_C2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/umap_reduced_C3.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/umap_reduced_C3.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/umap_reduced_C4.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/umap_reduced_C4.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_annotations/umap_reduced_C5.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_annotations/umap_reduced_C5.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plots/umap/umap_cl_trainset.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_cl_trainset.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.7.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.7.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.7.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.7.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.7_commoncl.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.7_commoncl.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.7_commoncl.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.7_commoncl.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.8.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.8.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.8.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.8.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.8_commoncl.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.8_commoncl.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.8_commoncl.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.8_commoncl.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.9.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.9.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.9.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.9.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.9_commoncl.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.9_commoncl.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.9_commoncl.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.9_commoncl.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap_plotly_full_ccgd.json" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap_plotly_full_ccgd.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap_plotly_full_ccle.json" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap_plotly_full_ccle.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap_plotly_full_noset2.json" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap_plotly_full_noset2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap_plotly_full_test2.json" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap_plotly_full_test2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap_plotly_test_ccgd.json" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap_plotly_test_ccgd.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap_plotly_test_ccle.json" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap_plotly_test_ccle.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap_plotly_test_noset2.json" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap_plotly_test_noset2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap_plotly_test_test2.json" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap_plotly_test_test2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap_plotly_train_ccgd.json" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap_plotly_train_ccgd.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap_plotly_train_ccle.json" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap_plotly_train_ccle.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap_plotly_train_noset2.json" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap_plotly_train_noset2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap_plotly_train_test2.json" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap_plotly_train_test2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/umap/umap_dlbclLines_trainset.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_dlbclLines_trainset.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src_R/plot_cluster_alluvials.R" beforeDir="false" afterPath="$PROJECT_DIR$/src_R/plot_cluster_alluvials.R" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src_R/plot_confidences_gaddygrams.R" beforeDir="false" afterPath="$PROJECT_DIR$/src_R/plot_confidences_gaddygrams.R" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/classify_generic.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/classify_generic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/format_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/format_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/notebooks/.ipynb_checkpoints/scratch-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/notebooks/.ipynb_checkpoints/scratch-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/notebooks/scratch.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/notebooks/scratch.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/precompute_portal_sets_v3.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/precompute_portal_sets_v3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/supp_table_scripts/createS1Table_partial_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/supp_scripts/createS1Table_partial_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/supp_table_scripts/createS2ABTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/supp_scripts/createS2ABTable.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/supp_table_scripts/fix_tableS1.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/supp_scripts/fix_tableS1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/supp_table_scripts/subset_gsm_for_paper.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/supp_scripts/subset_gsm_for_paper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/supp_table_scripts/tmp" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/supp_scripts/tmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/tmp.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/tmp.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/tmp.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/tmp.pdf_withcorrectness.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/umap_plots_all.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/umap_plots_all.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_python/notebooks/.ipynb_checkpoints/scratch-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_python/notebooks/scratch.ipynb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src_python/umap_plots_cl.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/umap_plots_cl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/umap_plots_traintest.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/umap_plots_traintest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,7 +169,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "last_opened_file_path": "/Users/twood/Desktop/DLBCL-Classifier/data_tables/maf_files/pre_processed"
+    "last_opened_file_path": "/Users/twood/Desktop/DLBCL-Classifier"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -251,28 +185,7 @@
       <recent name="$PROJECT_DIR$/data_tables/gsm/old_matrices" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.umap_plots_cl">
-    <configuration name="TCGA_gremline" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DLBCL-Classifier" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src_python/supp_scripts" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src_python/supp_scripts/TCGA_gremline.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.table_counts_07-15-23">
     <configuration name="precompute_portal_sets_v3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DLBCL-Classifier" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -286,6 +199,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src_python/precompute_portal_sets_v3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="table_counts_07-15-23" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DLBCL-Classifier" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src_python/supp_scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src_python/supp_scripts/table_counts_07-15-23.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -358,7 +292,7 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.TCGA_gremline" />
+      <item itemvalue="Python.table_counts_07-15-23" />
       <item itemvalue="Python.precompute_portal_sets_v3" />
       <item itemvalue="Python.umap_plots_cl" />
       <item itemvalue="Python.umap_plots_all" />
@@ -366,11 +300,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.umap_plots_cl" />
+        <item itemvalue="Python.table_counts_07-15-23" />
         <item itemvalue="Python.precompute_portal_sets_v3" />
+        <item itemvalue="Python.umap_plots_cl" />
         <item itemvalue="Python.umap_plots_all" />
         <item itemvalue="Python.umap_plots_traintest" />
-        <item itemvalue="Python.TCGA_gremline" />
       </list>
     </recent_temporary>
   </component>
@@ -493,6 +427,11 @@
           <url>file://$PROJECT_DIR$/src_python/precompute_portal_sets_v3.py</url>
           <line>236</line>
           <option name="timeStamp" value="175" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src_python/umap_plots_cl.py</url>
+          <line>160</line>
+          <option name="timeStamp" value="184" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
