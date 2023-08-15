@@ -2,25 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b092fab0-8de1-4ee0-9187-ec88de6d843d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data_tables/sample_sets/dlbcl_lines.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/confidences_gaddygram_allsamples.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/plots/confidences_gaddygram_allsamples.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/paper_figures/confidences_gaddygram_allsamples.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/confidences_gaddygram_allsamples.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/paper_figures/confidences_gaddygram_trainset.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/confidences_gaddygram_trainset.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/test_set/confidences_gaddygram_testset.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/test_set/confidences_gaddygram_testset.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_cl_trainset.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_cl_trainset.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.7.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.7.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.7_commoncl.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.7_commoncl.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.8.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.8.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.8_commoncl.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.8_commoncl.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.9.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.9.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.9_commoncl.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_cl_trainset_conf0.9_commoncl.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap/umap_dlbclLines_trainset.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap/umap_dlbclLines_trainset.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_R/plot_cluster_alluvials.R" beforeDir="false" afterPath="$PROJECT_DIR$/src_R/plot_cluster_alluvials.R" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_R/plot_confidences_gaddygrams.R" beforeDir="false" afterPath="$PROJECT_DIR$/src_R/plot_confidences_gaddygrams.R" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/notebooks/.ipynb_checkpoints/scratch-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/notebooks/scratch.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/umap_plots_cl.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/umap_plots_cl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/umap_plotly_Chapuy_ccgd.json" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap_plotly_Chapuy_ccgd.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/umap_plotly_Schmitz_ccgd.json" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap_plotly_Schmitz_ccgd.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/umap_plotly_full_ccgd.json" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap_plotly_full_ccgd.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/umap_plotly_test_ccgd.json" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap_plotly_test_ccgd.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/umap_plotly_train_ccgd.json" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap_plotly_train_ccgd.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal_config_jsons/config_Chapuy_ccgd.json" beforeDir="false" afterPath="$PROJECT_DIR$/portal_config_jsons/config_Chapuy_ccgd.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal_config_jsons/config_Schmitz_ccgd.json" beforeDir="false" afterPath="$PROJECT_DIR$/portal_config_jsons/config_Schmitz_ccgd.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal_config_jsons/config_full_ccgd.json" beforeDir="false" afterPath="$PROJECT_DIR$/portal_config_jsons/config_full_ccgd.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal_config_jsons/config_test_ccgd.json" beforeDir="false" afterPath="$PROJECT_DIR$/portal_config_jsons/config_test_ccgd.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal_config_jsons/config_train_ccgd.json" beforeDir="false" afterPath="$PROJECT_DIR$/portal_config_jsons/config_train_ccgd.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal_icomut_jsons/dlbcl_Chapuy_ccgd_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/portal_icomut_jsons/dlbcl_Chapuy_ccgd_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal_icomut_jsons/dlbcl_Schmitz_ccgd_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/portal_icomut_jsons/dlbcl_Schmitz_ccgd_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal_icomut_jsons/dlbcl_full_ccgd_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/portal_icomut_jsons/dlbcl_full_ccgd_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal_icomut_jsons/dlbcl_test_ccgd_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/portal_icomut_jsons/dlbcl_test_ccgd_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portal_icomut_jsons/dlbcl_train_ccgd_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/portal_icomut_jsons/dlbcl_train_ccgd_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_python/correlation_plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/correlation_plot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_python/fisher_5x2_parallel.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/fisher_5x2_parallel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_python/precompute_portal_sets_v3.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/precompute_portal_sets_v3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,11 +167,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "last_opened_file_path": "/Users/twood/Desktop/DLBCL-Classifier"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;last_opened_file_path&quot;: &quot;/Users/twood/Desktop/DLBCL-Classifier&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data_tables/maf_files/pre_processed" />
@@ -185,7 +185,7 @@
       <recent name="$PROJECT_DIR$/data_tables/gsm/old_matrices" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.table_counts_07-15-23">
+  <component name="RunManager" selected="Python.precompute_portal_sets_v3">
     <configuration name="precompute_portal_sets_v3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DLBCL-Classifier" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -300,8 +300,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.table_counts_07-15-23" />
         <item itemvalue="Python.precompute_portal_sets_v3" />
+        <item itemvalue="Python.table_counts_07-15-23" />
         <item itemvalue="Python.umap_plots_cl" />
         <item itemvalue="Python.umap_plots_all" />
         <item itemvalue="Python.umap_plots_traintest" />
@@ -389,11 +389,6 @@
           <option name="timeStamp" value="142" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src_python/correlation_plot.py</url>
-          <line>75</line>
-          <option name="timeStamp" value="145" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src_python/fisher_5x2_parallel.py</url>
           <line>159</line>
           <option name="timeStamp" value="153" />
@@ -425,7 +420,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src_python/precompute_portal_sets_v3.py</url>
-          <line>236</line>
+          <line>244</line>
           <option name="timeStamp" value="175" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">

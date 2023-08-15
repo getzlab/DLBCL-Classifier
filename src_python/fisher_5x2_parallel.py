@@ -14,7 +14,7 @@ import statsmodels.stats.multitest as sm
 R.r('set.seed')(1)
 
 R_STATS = importr('stats')
-BLACKLIST = ['MUC6', 'HIST1H2BK', 'HIST2H2BE', 'OR51B6', 'OR10V1']
+BLACKLIST = ['HIST1H2BK', 'MUC6', 'HIST2H2BE', 'OR51B6', 'OR10V1']
 VERSION_DATE = 'Sep_23_2022'
 
 MODE = ['combined', 'staudtonly', 'shipponly']

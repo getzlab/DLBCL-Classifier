@@ -155,6 +155,10 @@ full_preds = pd.concat([train_confs, test_confs])
 # Added sets #
 ##############
 
+dlbcl_lines = ['DHL2', 'U2932', 'LY4', 'LY7', 'K422', 'BALM3', 'LY19', 'DB', 'WSU_DLBCL2',
+               'LY8', 'DHL6', 'WSU_NHL', 'DHL10', 'LY18', 'LY1', 'DHL7', 'DHL16', 'DHL4',
+               'PFEIFFER', 'TOLEDO', 'DHL5', 'CTB_1', 'HT', 'DHL8', 'TMD8', 'LY10', 'LY3', 'HBL1']
+
 ccle_full_gsm = pd.read_csv('../data_tables/gsm/GSM.Depmap.updated.Sep_23_2022.tsv', sep='\t', index_col=0)
 ccle_preds = pd.read_csv('../evaluation_cell_lines/CCLE_predictions.tsv', sep='\t', index_col=0)
 ccle_reduced_gsm = pd.read_csv('../evaluation_cell_lines/CCLE_reducedV3.4_removeN5_gsm.tsv', sep='\t', index_col=0)
@@ -165,6 +169,10 @@ false_neg_50_gsm = '../random_dropout_experiment/experiment_gsms/tmpRandomDroppe
 false_pos_50_gsm = '../random_add_in_experiment/experiment_gsms/RandomAddInGSM_fullfeatures_step0.5.txt'
 false_neg_50_preds = '../random_dropout_experiment/preds/dropout_preds_0.5.txt'
 false_pos_50_preds = '../random_add_in_experiment/preds/addin_preds_0.5.txt'
+
+ccgd_full_gsm = ccgd_full_gsm[dlbcl_lines]
+ccgd_preds = ccgd_preds.loc[dlbcl_lines]
+ccgd_reduced_gsm = ccgd_reduced_gsm.loc[dlbcl_lines]
 
 dropout_preds = pd.read_csv(false_neg_50_preds, sep='\t', index_col=0)
 addin_preds = pd.read_csv(false_pos_50_preds, sep='\t', index_col=0)

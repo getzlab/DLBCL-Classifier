@@ -149,16 +149,16 @@ def xyresiduals_window_weighted_fractionPerWindow(X, Y, name, jiggle=None, seed=
 
     return weighted_meankappa, cdfs, residuals, window_weightedkappas
 
-import pandas as pd
-supp_t1 = pd.read_csv("../data_tables/tableS1_classifier_merged.tsv", sep='\t')
-
-confs = supp_t1['Confidence']
-cluster = supp_t1[['Target C1', 'Target C2', 'Target C3', 'Target C4', 'Target C5']].idxmax(axis=1).str.replace('Target ', '', regex=False)
-correctness = np.equal('C' + supp_t1['PredictedCluster'].astype(int).astype(str), cluster).astype(int)
-
-vals = pd.DataFrame([confs.values, correctness.values]).T
-vals.columns = ['conf', 'correctness']
-vals = vals.sort_values(by='conf', ascending=True)
-
-xyresiduals_window_weighted_fractionPerWindow(vals['conf'], vals['correctness'], 'tmp', saveFileName='tmp', computeplots=True,
-                                              windowsize=10, step=10, jiggle=0.05)
+# import pandas as pd
+# supp_t1 = pd.read_csv("../data_tables/tableS1_classifier_merged.tsv", sep='\t')
+#
+# confs = supp_t1['Confidence']
+# cluster = supp_t1[['Target C1', 'Target C2', 'Target C3', 'Target C4', 'Target C5']].idxmax(axis=1).str.replace('Target ', '', regex=False)
+# correctness = np.equal('C' + supp_t1['PredictedCluster'].astype(int).astype(str), cluster).astype(int)
+#
+# vals = pd.DataFrame([confs.values, correctness.values]).T
+# vals.columns = ['conf', 'correctness']
+# vals = vals.sort_values(by='conf', ascending=True)
+#
+# xyresiduals_window_weighted_fractionPerWindow(vals['conf'], vals['correctness'], 'tmp', saveFileName='tmp', computeplots=True,
+#                                               windowsize=10, step=10, jiggle=0.05)
