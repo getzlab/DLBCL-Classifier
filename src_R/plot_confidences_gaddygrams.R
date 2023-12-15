@@ -114,8 +114,8 @@ acc = sum(hc_all$Correctness) / nrow(hc_all)
 
 p_all <- ggplot(conf_table_all, aes(x=factor(seq(1,nrow(conf_table_all))),y=Confidence, color=Correctness)) +
   geom_point(aes(shape=Correctness, size=Correctness, alpha=Correctness), stroke=1) +
-  scale_size_manual(values = c(4, 6)) +
-  scale_alpha_manual(values = c(0.7, 0.1)) +
+  scale_size_manual(values = c(6, 7)) +
+  scale_alpha_manual(values = c(1.0, 0.05)) +
   ggtitle('Cluster-Sorted Confidences (All Samples)') +
   theme_bw() +
   ylim(0,1) +
@@ -126,10 +126,10 @@ p_all <- ggplot(conf_table_all, aes(x=factor(seq(1,nrow(conf_table_all))),y=Conf
         axis.title.x = element_text(colour="grey20",size=20,angle=0,hjust=.5,vjust=0,face="plain"),
         axis.title.y = element_text(colour="grey20",size=20,hjust=.5,vjust=.5,face="plain"),
         plot.title = element_text(hjust=0.50, size=15)) +
-  scale_x_discrete(breaks=c(1,114,240,330,403),
+  scale_x_discrete(breaks=c(1,140,308,421,520),
                    labels=c("C1", "C2", "C3", 'C4', 'C5')) +
   expand_limits(x=c(-10, 159)) +
-  scale_colour_manual(values = group.colors[1:2]) +
+  scale_colour_manual(values = rev(group.colors[1:2])) +
   scale_shape_manual(values = c(4, 20)) +
   guides(colour = guide_legend(override.aes = list(shape = c(4, 20)))) +
   guides(shape = guide_legend(override.aes = list(shape = c(4, 20)))) +

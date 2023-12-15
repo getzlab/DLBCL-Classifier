@@ -1,0 +1,9 @@
+step	tool	explanation
+1	MuTect1	Call initial mutations
+2	Funcotator	initial variant annotation
+3	Orientation Bias Filter	filter artifacts originating from FFPE and oxoG sample preparations
+4	Panel of Normals	filter out germline mutations
+5	BLAT	filter out mutations that have reads that are poorly aligned
+6	Oncotator	variant annotation
+7	Mutsig2CV	variant significance detection
+8	Consensus NMF	perform consensus NMF clustering to establish gold standard

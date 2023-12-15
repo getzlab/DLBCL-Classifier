@@ -2,25 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b092fab0-8de1-4ee0-9187-ec88de6d843d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.Rhistory" beforeDir="false" afterPath="$PROJECT_DIR$/.Rhistory" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap_plotly_Chapuy_ccgd.json" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap_plotly_Chapuy_ccgd.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap_plotly_Schmitz_ccgd.json" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap_plotly_Schmitz_ccgd.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap_plotly_full_ccgd.json" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap_plotly_full_ccgd.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap_plotly_test_ccgd.json" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap_plotly_test_ccgd.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/umap_plotly_train_ccgd.json" beforeDir="false" afterPath="$PROJECT_DIR$/plots/umap_plotly_train_ccgd.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portal_config_jsons/config_Chapuy_ccgd.json" beforeDir="false" afterPath="$PROJECT_DIR$/portal_config_jsons/config_Chapuy_ccgd.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portal_config_jsons/config_Schmitz_ccgd.json" beforeDir="false" afterPath="$PROJECT_DIR$/portal_config_jsons/config_Schmitz_ccgd.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portal_config_jsons/config_full_ccgd.json" beforeDir="false" afterPath="$PROJECT_DIR$/portal_config_jsons/config_full_ccgd.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portal_config_jsons/config_test_ccgd.json" beforeDir="false" afterPath="$PROJECT_DIR$/portal_config_jsons/config_test_ccgd.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portal_config_jsons/config_train_ccgd.json" beforeDir="false" afterPath="$PROJECT_DIR$/portal_config_jsons/config_train_ccgd.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portal_icomut_jsons/dlbcl_Chapuy_ccgd_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/portal_icomut_jsons/dlbcl_Chapuy_ccgd_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portal_icomut_jsons/dlbcl_Schmitz_ccgd_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/portal_icomut_jsons/dlbcl_Schmitz_ccgd_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portal_icomut_jsons/dlbcl_full_ccgd_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/portal_icomut_jsons/dlbcl_full_ccgd_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portal_icomut_jsons/dlbcl_test_ccgd_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/portal_icomut_jsons/dlbcl_test_ccgd_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portal_icomut_jsons/dlbcl_train_ccgd_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/portal_icomut_jsons/dlbcl_train_ccgd_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/correlation_plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/correlation_plot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/fisher_5x2_parallel.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/fisher_5x2_parallel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/precompute_portal_sets_v3.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/precompute_portal_sets_v3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_tables/panel_gene_sets/msk_impact_raw.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_tables/panel_gene_sets/msk_impact_raw.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_panel_sets/f1_cdx_predictions.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_panel_sets/f1_cdx_predictions.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_panel_sets/f1_heme_predictions.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_panel_sets/f1_heme_predictions.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_panel_sets/lacy_predictions.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_panel_sets/lacy_predictions.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_panel_sets/msk_predictions.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_panel_sets/msk_predictions.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/confidences_gaddygram_allsamples.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/plots/confidences_gaddygram_allsamples.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/paper_figures/confidences_gaddygram_allsamples.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/confidences_gaddygram_allsamples.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/paper_figures/confidences_gaddygram_trainset.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/paper_figures/confidences_gaddygram_trainset.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/test_set/confidences_gaddygram_testset.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/test_set/confidences_gaddygram_testset.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/f1_cdx.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/f1_cdx.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/f1_cdx.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/f1_cdx.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/f1_heme.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/f1_heme.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/f1_heme.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/f1_heme.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/lacy.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/lacy.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/lacy.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/lacy.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/msk.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/msk.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/msk.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/msk.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_R/plot_confidences_gaddygrams.R" beforeDir="false" afterPath="$PROJECT_DIR$/src_R/plot_confidences_gaddygrams.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_python/notebooks/.ipynb_checkpoints/classify panel sets-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/notebooks/.ipynb_checkpoints/classify panel sets-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_python/notebooks/classify panel sets.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/notebooks/classify panel sets.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
