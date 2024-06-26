@@ -1,9 +1,11 @@
-step	tool	explanation
-1	MuTect1	Call initial mutations
-2	Funcotator	initial variant annotation
-3	Orientation Bias Filter	filter artifacts originating from FFPE and oxoG sample preparations
-4	Panel of Normals	filter out germline mutations
-5	BLAT	filter out mutations that have reads that are poorly aligned
-6	Oncotator	variant annotation
-7	Mutsig2CV	variant significance detection
-8	Consensus NMF	perform consensus NMF clustering to establish gold standard
+step	tool	version	explanation
+1	MuTect1	1.1.6	Call initial mutations
+2	Funcotator	1.6	initial variant annotation
+3	Orientation Bias Filter	N/A	filter artifacts originating from FFPE and oxoG sample preparations
+4	Panel of Normals (CPTAC)	N/A	filter out germline mutations (HG38)
+5	BLAT	N/A	filter out mutations that have reads that are poorly aligned
+6	Picard Tools LiftoverVCF	2.20.2	Liftover HG38 BAM files to HG19. (intermediate temporary VCF)
+7	Panel of Normals (TCGA)	N/A	filter out germline mutations (HG19)
+8	Oncotator	1	variant annotation consistent with Chapuy et al. 2018
+9	Mutsig2CV	circa 2016	variant significance detection consistent with Chapuy et al. 2018
+10	Consensus NMF	N/A	perform consensus NMF clustering to establish gold standard
