@@ -4,6 +4,8 @@
 **/CCGD_Lymphoma_Cell_Lines_53.with_noncoding.maf.annotated
 .Rproj.user
 **/CCLE_mutations.csv
+**/*SHIPP.v1.tsv
+**/.DS_Store
 **/*.maf
 **/*.annotated
 **/*tar.gz
