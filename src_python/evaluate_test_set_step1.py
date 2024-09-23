@@ -190,6 +190,8 @@ predDF.to_csv("../evaluation_test_set/" + base_fn + app_fn + ext, sep='\t')
 # set up reduced frames
 noarms_reduced, _ = FD.format_inputs(datafile, targetfile, testSamples, reduced_version='3.4', remove_largest_n=5,
                                      no_arms=True, drop_empty_vectors=False)
+noarms_nosv_reduced, _ = FD.format_inputs(datafile, targetfile, testSamples, reduced_version='3.4', remove_largest_n=5,
+                                          no_arms=True, no_sv=True, drop_empty_vectors=False)
 nofocals_reduced, _ = FD.format_inputs(datafile, targetfile, testSamples, reduced_version='3.4', remove_largest_n=5,
                                        no_focals=True, drop_empty_vectors=False)
 noscnas_reduced, _ = FD.format_inputs(datafile, targetfile, testSamples, reduced_version='3.4', remove_largest_n=5,
@@ -208,8 +210,8 @@ coo_ploidy_reduced, _ = FD.format_inputs(datafile, targetfile, testSamples, redu
 #                                       nosvbcl6=True, drop_empty_vectors=False)
 
 
-models = [noarms_reduced, nofocals_reduced, noscnas_reduced, nosv_reduced, nomut_reduced]
-names = ['no.arms', 'no.focals', 'no.scnas', 'no.sv', 'no.muts']
+models = [noarms_reduced, nofocals_reduced, noscnas_reduced, nosv_reduced, nomut_reduced, noarms_nosv_reduced]
+names = ['no.arms', 'no.focals', 'no.scnas', 'no.sv', 'no.muts', 'no.arms_no.sv']
 
 for i in range(len(models)):
     mdl = models[i]

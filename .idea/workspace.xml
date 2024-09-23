@@ -2,13 +2,320 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b092fab0-8de1-4ee0-9187-ec88de6d843d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.RData" beforeDir="false" afterPath="$PROJECT_DIR$/.RData" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.Rhistory" beforeDir="false" afterPath="$PROJECT_DIR$/.Rhistory" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_tables/tableS3.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/data_tables/tableS3.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_tables/gsm/lacy_gsm.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/data_tables/gsm/lacy_gsm.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_tables/gsm/lacy_reduced_gsm.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/data_tables/gsm/lacy_reduced_gsm.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_panel_sets/evaluation_panels.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_panel_sets/evaluation_panels.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_panel_sets/lacy_predictions.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_panel_sets/lacy_predictions.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_test_set/test_set_metric_evaluations.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_test_set/test_set_metric_evaluations.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/allmodelsevaluated.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/allmodelsevaluated.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/MNB_full.features_nfeatures163_pMax0.9999999999999972.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/MNB_full.features_nfeatures163_pMax0.9999999999999972.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/MNB_pca20_nfeatures20_pMax0.9999946888804412.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/MNB_pca20_nfeatures20_pMax0.9999946888804412.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/MNB_pca30_nfeatures30_pMax0.9999968548945742.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/MNB_pca30_nfeatures30_pMax0.9999968548945742.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/MNB_pca40_nfeatures40_pMax0.9999996178922542.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/MNB_pca40_nfeatures40_pMax0.9999996178922542.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/MNB_reducedV3.4_nfeatures21_pMax0.999999999999957.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/MNB_reducedV3.4_nfeatures21_pMax0.999999999999957.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_full.features_nfeatures163_pMax0.97419584.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_full.features_nfeatures163_pMax0.97419584.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_no.arms_reducedV3.4_removeN5_nfeatures19_pMax0.9372847.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_no.arms_reducedV3.4_removeN5_nfeatures19_pMax0.9372847.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_no.muts_reducedV3.4_removeN5_nfeatures12_pMax0.83664596.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_no.muts_reducedV3.4_removeN5_nfeatures12_pMax0.83664596.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_no.sv_no.cna_reducedV3.4_removeN5_nfeatures16_pMax0.89960104.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_no.sv_no.cna_reducedV3.4_removeN5_nfeatures16_pMax0.89960104.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_no.sv_reducedV3.4_removeN5_nfeatures20_pMax0.92736053.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_no.sv_reducedV3.4_removeN5_nfeatures20_pMax0.92736053.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_pca20_nfeatures20_pMax0.97159404.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_pca20_nfeatures20_pMax0.97159404.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_pca2_nfeatures2_pMax0.8893534.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_pca2_nfeatures2_pMax0.8893534.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_pca40_nfeatures40_pMax0.97789156.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_pca40_nfeatures40_pMax0.97789156.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_ploidy_reducedV3.4_removeN5_nfeatures22_pMax0.93763.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_ploidy_reducedV3.4_removeN5_nfeatures22_pMax0.93763.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_coo_removeN5_nfeatures22_pMax0.9378837.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_coo_removeN5_nfeatures22_pMax0.9378837.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_nfeatures21_pMax0.93575305.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_nfeatures21_pMax0.93575305.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_no.focals_removeN5_nfeatures20_pMax0.9222345.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_no.focals_removeN5_nfeatures20_pMax0.9222345.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_qval0.001_nfeatures20_pMax0.9433179.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_qval0.001_nfeatures20_pMax0.9433179.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_qval0.001_removeN5_nfeatures20_pMax0.9438894.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_qval0.001_removeN5_nfeatures20_pMax0.9438894.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_qval0.001_removeN80_nfeatures16_pMax0.93632835.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_qval0.001_removeN80_nfeatures16_pMax0.93632835.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_qval0.01_nfeatures21_pMax0.93049777.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_qval0.01_nfeatures21_pMax0.93049777.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_qval0.01_removeN20_nfeatures21_pMax0.93683016.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_qval0.01_removeN20_nfeatures21_pMax0.93683016.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_qval0.01_removeN5_nfeatures21_pMax0.93391824.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_qval0.01_removeN5_nfeatures21_pMax0.93391824.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_qval0.05_removeN20_nfeatures21_pMax0.9413643.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_qval0.05_removeN20_nfeatures21_pMax0.9413643.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_qval0.05_removeN80_nfeatures17_pMax0.9369122.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_qval0.05_removeN80_nfeatures17_pMax0.9369122.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_removeN20_nfeatures21_pMax0.94020784.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_removeN20_nfeatures21_pMax0.94020784.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_removeN5_nfeatures21_pMax0.93856484.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_removeN5_nfeatures21_pMax0.93856484.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_removeN80_nfeatures17_pMax0.9301466.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/NN_reducedV3.4_removeN80_nfeatures17_pMax0.9301466.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/RF_full.features_nfeatures163_pMax0.9903443471608376.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/RF_full.features_nfeatures163_pMax0.9903443471608376.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/RF_pca20_nfeatures20_pMax0.9897560058119124.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/RF_pca20_nfeatures20_pMax0.9897560058119124.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/RF_pca2_nfeatures2_pMax0.9905981484552449.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/RF_pca2_nfeatures2_pMax0.9905981484552449.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/RF_pca40_nfeatures40_pMax0.9882161244748602.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/RF_pca40_nfeatures40_pMax0.9882161244748602.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/RF_reducedV3.4_nfeatures21_pMax0.990492620869019.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation_validation_set/confidence_adjusted_tables/RF_reducedV3.4_nfeatures21_pMax0.990492620869019.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/combined_performance_panels.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/plots/combined_performance_panels.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/combined_performance_panels.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/combined_performance_panels.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/combined_performance_step2B.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/plots/combined_performance_step2B.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/combined_performance_step2B.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/combined_performance_step2B.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/test_set/NN_reducedV3.4_removeN5_nfeatures21_testset.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/test_set/NN_reducedV3.4_removeN5_nfeatures21_testset.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/test_set/NN_reducedV3.4_removeN5_nfeatures21_testset.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/test_set/NN_reducedV3.4_removeN5_nfeatures21_testset.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/test_set/combined_performance_step2B_testset.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/plots/test_set/combined_performance_step2B_testset.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/test_set/combined_performance_step2B_testset.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/test_set/combined_performance_step2B_testset.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/MNB_full.features_nfeatures163.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/MNB_full.features_nfeatures163.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/MNB_full.features_nfeatures163.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/MNB_full.features_nfeatures163.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/MNB_full.features_nfeatures163.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/MNB_full.features_nfeatures163.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/MNB_full.features_nfeatures163.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/MNB_full.features_nfeatures163.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/MNB_pca20_nfeatures20.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/MNB_pca20_nfeatures20.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/MNB_pca20_nfeatures20.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/MNB_pca20_nfeatures20.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/MNB_pca20_nfeatures20.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/MNB_pca20_nfeatures20.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/MNB_pca20_nfeatures20.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/MNB_pca20_nfeatures20.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/MNB_pca2_nfeatures2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/MNB_pca2_nfeatures2.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/MNB_pca2_nfeatures2.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/MNB_pca2_nfeatures2.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/MNB_pca2_nfeatures2.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/MNB_pca2_nfeatures2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/MNB_pca2_nfeatures2.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/MNB_pca2_nfeatures2.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/MNB_pca30_nfeatures30.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/MNB_pca30_nfeatures30.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/MNB_pca30_nfeatures30.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/MNB_pca30_nfeatures30.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/MNB_pca30_nfeatures30.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/MNB_pca30_nfeatures30.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/MNB_pca30_nfeatures30.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/MNB_pca30_nfeatures30.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/MNB_pca40_nfeatures40.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/MNB_pca40_nfeatures40.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/MNB_pca40_nfeatures40.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/MNB_pca40_nfeatures40.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/MNB_pca40_nfeatures40.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/MNB_pca40_nfeatures40.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/MNB_pca40_nfeatures40.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/MNB_pca40_nfeatures40.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/MNB_reducedV3.4_nfeatures21.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/MNB_reducedV3.4_nfeatures21.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/MNB_reducedV3.4_nfeatures21.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/MNB_reducedV3.4_nfeatures21.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/MNB_reducedV3.4_nfeatures21.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/MNB_reducedV3.4_nfeatures21.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/MNB_reducedV3.4_nfeatures21.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/MNB_reducedV3.4_nfeatures21.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_full.features_nfeatures163.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_full.features_nfeatures163.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_full.features_nfeatures163.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_full.features_nfeatures163.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_full.features_nfeatures163.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_full.features_nfeatures163.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_full.features_nfeatures163.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_full.features_nfeatures163.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_no.arms_reducedV3.4_removeN5_nfeatures19.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_no.arms_reducedV3.4_removeN5_nfeatures19.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_no.arms_reducedV3.4_removeN5_nfeatures19.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_no.arms_reducedV3.4_removeN5_nfeatures19.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_no.arms_reducedV3.4_removeN5_nfeatures19.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_no.arms_reducedV3.4_removeN5_nfeatures19.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_no.arms_reducedV3.4_removeN5_nfeatures19.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_no.arms_reducedV3.4_removeN5_nfeatures19.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_no.cna_reducedV3.4_removeN5_nfeatures17.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_no.cna_reducedV3.4_removeN5_nfeatures17.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_no.cna_reducedV3.4_removeN5_nfeatures17.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_no.cna_reducedV3.4_removeN5_nfeatures17.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_no.cna_reducedV3.4_removeN5_nfeatures17.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_no.cna_reducedV3.4_removeN5_nfeatures17.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_no.cna_reducedV3.4_removeN5_nfeatures17.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_no.cna_reducedV3.4_removeN5_nfeatures17.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_no.muts_reducedV3.4_removeN5_nfeatures12.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_no.muts_reducedV3.4_removeN5_nfeatures12.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_no.muts_reducedV3.4_removeN5_nfeatures12.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_no.muts_reducedV3.4_removeN5_nfeatures12.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_no.muts_reducedV3.4_removeN5_nfeatures12.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_no.muts_reducedV3.4_removeN5_nfeatures12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_no.muts_reducedV3.4_removeN5_nfeatures12.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_no.muts_reducedV3.4_removeN5_nfeatures12.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_no.sv_no.cna_reducedV3.4_removeN5_nfeatures16.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_no.sv_no.cna_reducedV3.4_removeN5_nfeatures16.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_no.sv_no.cna_reducedV3.4_removeN5_nfeatures16.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_no.sv_no.cna_reducedV3.4_removeN5_nfeatures16.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_no.sv_no.cna_reducedV3.4_removeN5_nfeatures16.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_no.sv_no.cna_reducedV3.4_removeN5_nfeatures16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_no.sv_no.cna_reducedV3.4_removeN5_nfeatures16.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_no.sv_no.cna_reducedV3.4_removeN5_nfeatures16.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_no.sv_reducedV3.4_removeN5_nfeatures20.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_no.sv_reducedV3.4_removeN5_nfeatures20.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_no.sv_reducedV3.4_removeN5_nfeatures20.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_no.sv_reducedV3.4_removeN5_nfeatures20.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_no.sv_reducedV3.4_removeN5_nfeatures20.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_no.sv_reducedV3.4_removeN5_nfeatures20.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_no.sv_reducedV3.4_removeN5_nfeatures20.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_no.sv_reducedV3.4_removeN5_nfeatures20.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_pca20_nfeatures20.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_pca20_nfeatures20.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_pca20_nfeatures20.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_pca20_nfeatures20.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_pca20_nfeatures20.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_pca20_nfeatures20.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_pca20_nfeatures20.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_pca20_nfeatures20.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_pca2_nfeatures2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_pca2_nfeatures2.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_pca2_nfeatures2.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_pca2_nfeatures2.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_pca2_nfeatures2.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_pca2_nfeatures2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_pca2_nfeatures2.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_pca2_nfeatures2.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_pca30_nfeatures30.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_pca30_nfeatures30.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_pca30_nfeatures30.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_pca30_nfeatures30.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_pca30_nfeatures30.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_pca30_nfeatures30.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_pca30_nfeatures30.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_pca30_nfeatures30.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_pca40_nfeatures40.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_pca40_nfeatures40.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_pca40_nfeatures40.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_pca40_nfeatures40.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_pca40_nfeatures40.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_pca40_nfeatures40.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_pca40_nfeatures40.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_pca40_nfeatures40.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_ploidy_reducedV3.4_coo_removeN5_nfeatures23.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_ploidy_reducedV3.4_coo_removeN5_nfeatures23.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_ploidy_reducedV3.4_coo_removeN5_nfeatures23.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_ploidy_reducedV3.4_coo_removeN5_nfeatures23.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_ploidy_reducedV3.4_coo_removeN5_nfeatures23.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_ploidy_reducedV3.4_coo_removeN5_nfeatures23.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_ploidy_reducedV3.4_coo_removeN5_nfeatures23.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_ploidy_reducedV3.4_coo_removeN5_nfeatures23.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_ploidy_reducedV3.4_removeN5_nfeatures22.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_ploidy_reducedV3.4_removeN5_nfeatures22.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_ploidy_reducedV3.4_removeN5_nfeatures22.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_ploidy_reducedV3.4_removeN5_nfeatures22.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_ploidy_reducedV3.4_removeN5_nfeatures22.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_ploidy_reducedV3.4_removeN5_nfeatures22.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_ploidy_reducedV3.4_removeN5_nfeatures22.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_ploidy_reducedV3.4_removeN5_nfeatures22.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_coo_removeN5_nfeatures22.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_coo_removeN5_nfeatures22.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_coo_removeN5_nfeatures22.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_coo_removeN5_nfeatures22.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_coo_removeN5_nfeatures22.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_coo_removeN5_nfeatures22.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_coo_removeN5_nfeatures22.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_coo_removeN5_nfeatures22.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_nfeatures21.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_nfeatures21.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_nfeatures21.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_nfeatures21.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_nfeatures21.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_nfeatures21.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_nfeatures21.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_nfeatures21.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_no.focals_removeN5_nfeatures20.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_no.focals_removeN5_nfeatures20.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_no.focals_removeN5_nfeatures20.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_no.focals_removeN5_nfeatures20.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_no.focals_removeN5_nfeatures20.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_no.focals_removeN5_nfeatures20.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_no.focals_removeN5_nfeatures20.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_no.focals_removeN5_nfeatures20.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.001_nfeatures20.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.001_nfeatures20.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.001_nfeatures20.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.001_nfeatures20.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.001_nfeatures20.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.001_nfeatures20.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.001_nfeatures20.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.001_nfeatures20.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.001_removeN20_nfeatures20.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.001_removeN20_nfeatures20.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.001_removeN20_nfeatures20.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.001_removeN20_nfeatures20.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.001_removeN20_nfeatures20.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.001_removeN20_nfeatures20.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.001_removeN20_nfeatures20.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.001_removeN20_nfeatures20.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.001_removeN5_nfeatures20.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.001_removeN5_nfeatures20.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.001_removeN5_nfeatures20.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.001_removeN5_nfeatures20.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.001_removeN5_nfeatures20.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.001_removeN5_nfeatures20.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.001_removeN5_nfeatures20.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.001_removeN5_nfeatures20.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.001_removeN80_nfeatures16.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.001_removeN80_nfeatures16.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.001_removeN80_nfeatures16.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.001_removeN80_nfeatures16.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.001_removeN80_nfeatures16.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.001_removeN80_nfeatures16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.001_removeN80_nfeatures16.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.001_removeN80_nfeatures16.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.01_nfeatures21.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.01_nfeatures21.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.01_nfeatures21.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.01_nfeatures21.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.01_nfeatures21.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.01_nfeatures21.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.01_nfeatures21.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.01_nfeatures21.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.01_removeN20_nfeatures21.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.01_removeN20_nfeatures21.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.01_removeN20_nfeatures21.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.01_removeN20_nfeatures21.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.01_removeN20_nfeatures21.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.01_removeN20_nfeatures21.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.01_removeN20_nfeatures21.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.01_removeN20_nfeatures21.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.01_removeN5_nfeatures21.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.01_removeN5_nfeatures21.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.01_removeN5_nfeatures21.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.01_removeN5_nfeatures21.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.01_removeN5_nfeatures21.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.01_removeN5_nfeatures21.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.01_removeN5_nfeatures21.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.01_removeN5_nfeatures21.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.01_removeN80_nfeatures17.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.01_removeN80_nfeatures17.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.01_removeN80_nfeatures17.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.01_removeN80_nfeatures17.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.01_removeN80_nfeatures17.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.01_removeN80_nfeatures17.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.01_removeN80_nfeatures17.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.01_removeN80_nfeatures17.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.05_nfeatures21.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.05_nfeatures21.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.05_nfeatures21.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.05_nfeatures21.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.05_nfeatures21.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.05_nfeatures21.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.05_nfeatures21.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.05_nfeatures21.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.05_removeN20_nfeatures21.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.05_removeN20_nfeatures21.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.05_removeN20_nfeatures21.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.05_removeN20_nfeatures21.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.05_removeN20_nfeatures21.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.05_removeN20_nfeatures21.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.05_removeN20_nfeatures21.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.05_removeN20_nfeatures21.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.05_removeN5_nfeatures21.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.05_removeN5_nfeatures21.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.05_removeN5_nfeatures21.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.05_removeN5_nfeatures21.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.05_removeN5_nfeatures21.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.05_removeN5_nfeatures21.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.05_removeN5_nfeatures21.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.05_removeN5_nfeatures21.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.05_removeN80_nfeatures17.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.05_removeN80_nfeatures17.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.05_removeN80_nfeatures17.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.05_removeN80_nfeatures17.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.05_removeN80_nfeatures17.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.05_removeN80_nfeatures17.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.05_removeN80_nfeatures17.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_qval0.05_removeN80_nfeatures17.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_removeN20_nfeatures21.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_removeN20_nfeatures21.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_removeN20_nfeatures21.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_removeN20_nfeatures21.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_removeN20_nfeatures21.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_removeN20_nfeatures21.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_removeN20_nfeatures21.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_removeN20_nfeatures21.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_removeN5_nfeatures21.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_removeN5_nfeatures21.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_removeN5_nfeatures21.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_removeN5_nfeatures21.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_removeN5_nfeatures21.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_removeN5_nfeatures21.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_removeN5_nfeatures21.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_removeN5_nfeatures21.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_removeN80_nfeatures17.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_removeN80_nfeatures17.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_removeN80_nfeatures17.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_removeN80_nfeatures17.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_removeN80_nfeatures17.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_removeN80_nfeatures17.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_removeN80_nfeatures17.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/NN_reducedV3.4_removeN80_nfeatures17.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/RF_full.features_nfeatures163.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/RF_full.features_nfeatures163.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/RF_full.features_nfeatures163.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/RF_full.features_nfeatures163.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/RF_full.features_nfeatures163.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/RF_full.features_nfeatures163.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/RF_full.features_nfeatures163.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/RF_full.features_nfeatures163.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/RF_pca20_nfeatures20.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/RF_pca20_nfeatures20.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/RF_pca20_nfeatures20.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/RF_pca20_nfeatures20.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/RF_pca20_nfeatures20.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/RF_pca20_nfeatures20.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/RF_pca20_nfeatures20.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/RF_pca20_nfeatures20.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/RF_pca2_nfeatures2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/RF_pca2_nfeatures2.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/RF_pca2_nfeatures2.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/RF_pca2_nfeatures2.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/RF_pca2_nfeatures2.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/RF_pca2_nfeatures2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/RF_pca2_nfeatures2.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/RF_pca2_nfeatures2.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/RF_pca30_nfeatures30.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/RF_pca30_nfeatures30.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/RF_pca30_nfeatures30.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/RF_pca30_nfeatures30.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/RF_pca30_nfeatures30.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/RF_pca30_nfeatures30.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/RF_pca30_nfeatures30.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/RF_pca30_nfeatures30.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/RF_pca40_nfeatures40.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/RF_pca40_nfeatures40.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/RF_pca40_nfeatures40.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/RF_pca40_nfeatures40.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/RF_pca40_nfeatures40.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/RF_pca40_nfeatures40.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/RF_pca40_nfeatures40.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/RF_pca40_nfeatures40.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/RF_reducedV3.4_nfeatures21.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/RF_reducedV3.4_nfeatures21.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/RF_reducedV3.4_nfeatures21.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/RF_reducedV3.4_nfeatures21.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/RF_reducedV3.4_nfeatures21.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/RF_reducedV3.4_nfeatures21.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/RF_reducedV3.4_nfeatures21.png_withcorrectness.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/RF_reducedV3.4_nfeatures21.png_withcorrectness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/MNB_full.features_nfeatures163_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/MNB_full.features_nfeatures163_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/MNB_full.features_nfeatures163_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/MNB_full.features_nfeatures163_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/MNB_pca20_nfeatures20_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/MNB_pca20_nfeatures20_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/MNB_pca20_nfeatures20_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/MNB_pca20_nfeatures20_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/MNB_pca2_nfeatures2_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/MNB_pca2_nfeatures2_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/MNB_pca2_nfeatures2_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/MNB_pca2_nfeatures2_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/MNB_pca30_nfeatures30_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/MNB_pca30_nfeatures30_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/MNB_pca30_nfeatures30_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/MNB_pca30_nfeatures30_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/MNB_pca40_nfeatures40_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/MNB_pca40_nfeatures40_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/MNB_pca40_nfeatures40_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/MNB_pca40_nfeatures40_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/MNB_reducedV3.4_nfeatures21_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/MNB_reducedV3.4_nfeatures21_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/MNB_reducedV3.4_nfeatures21_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/MNB_reducedV3.4_nfeatures21_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_full.features_nfeatures163_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_full.features_nfeatures163_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_full.features_nfeatures163_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_full.features_nfeatures163_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_no.arms_reducedV3.4_removeN5_nfeatures19_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_no.arms_reducedV3.4_removeN5_nfeatures19_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_no.arms_reducedV3.4_removeN5_nfeatures19_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_no.arms_reducedV3.4_removeN5_nfeatures19_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_no.cna_reducedV3.4_removeN5_nfeatures17_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_no.cna_reducedV3.4_removeN5_nfeatures17_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_no.cna_reducedV3.4_removeN5_nfeatures17_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_no.cna_reducedV3.4_removeN5_nfeatures17_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_no.muts_reducedV3.4_removeN5_nfeatures12_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_no.muts_reducedV3.4_removeN5_nfeatures12_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_no.muts_reducedV3.4_removeN5_nfeatures12_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_no.muts_reducedV3.4_removeN5_nfeatures12_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_no.sv_no.cna_reducedV3.4_removeN5_nfeatures16_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_no.sv_no.cna_reducedV3.4_removeN5_nfeatures16_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_no.sv_no.cna_reducedV3.4_removeN5_nfeatures16_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_no.sv_no.cna_reducedV3.4_removeN5_nfeatures16_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_no.sv_reducedV3.4_removeN5_nfeatures20_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_no.sv_reducedV3.4_removeN5_nfeatures20_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_no.sv_reducedV3.4_removeN5_nfeatures20_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_no.sv_reducedV3.4_removeN5_nfeatures20_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_pca20_nfeatures20_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_pca20_nfeatures20_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_pca20_nfeatures20_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_pca20_nfeatures20_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_pca2_nfeatures2_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_pca2_nfeatures2_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_pca2_nfeatures2_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_pca2_nfeatures2_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_pca30_nfeatures30_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_pca30_nfeatures30_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_pca30_nfeatures30_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_pca30_nfeatures30_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_pca40_nfeatures40_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_pca40_nfeatures40_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_pca40_nfeatures40_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_pca40_nfeatures40_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_ploidy_reducedV3.4_coo_removeN5_nfeatures23_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_ploidy_reducedV3.4_coo_removeN5_nfeatures23_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_ploidy_reducedV3.4_coo_removeN5_nfeatures23_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_ploidy_reducedV3.4_coo_removeN5_nfeatures23_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_ploidy_reducedV3.4_removeN5_nfeatures22_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_ploidy_reducedV3.4_removeN5_nfeatures22_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_ploidy_reducedV3.4_removeN5_nfeatures22_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_ploidy_reducedV3.4_removeN5_nfeatures22_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_coo_removeN5_nfeatures22_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_coo_removeN5_nfeatures22_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_coo_removeN5_nfeatures22_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_coo_removeN5_nfeatures22_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_nfeatures21_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_nfeatures21_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_nfeatures21_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_nfeatures21_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_no.focals_removeN5_nfeatures20_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_no.focals_removeN5_nfeatures20_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_no.focals_removeN5_nfeatures20_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_no.focals_removeN5_nfeatures20_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.001_nfeatures20_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.001_nfeatures20_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.001_nfeatures20_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.001_nfeatures20_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.001_removeN20_nfeatures20_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.001_removeN20_nfeatures20_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.001_removeN20_nfeatures20_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.001_removeN20_nfeatures20_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.001_removeN5_nfeatures20_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.001_removeN5_nfeatures20_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.001_removeN5_nfeatures20_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.001_removeN5_nfeatures20_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.001_removeN80_nfeatures16_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.001_removeN80_nfeatures16_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.001_removeN80_nfeatures16_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.001_removeN80_nfeatures16_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.01_nfeatures21_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.01_nfeatures21_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.01_nfeatures21_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.01_nfeatures21_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.01_removeN20_nfeatures21_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.01_removeN20_nfeatures21_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.01_removeN20_nfeatures21_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.01_removeN20_nfeatures21_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.01_removeN5_nfeatures21_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.01_removeN5_nfeatures21_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.01_removeN5_nfeatures21_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.01_removeN5_nfeatures21_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.01_removeN80_nfeatures17_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.01_removeN80_nfeatures17_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.01_removeN80_nfeatures17_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.01_removeN80_nfeatures17_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.05_nfeatures21_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.05_nfeatures21_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.05_nfeatures21_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.05_nfeatures21_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.05_removeN20_nfeatures21_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.05_removeN20_nfeatures21_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.05_removeN20_nfeatures21_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.05_removeN20_nfeatures21_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.05_removeN5_nfeatures21_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.05_removeN5_nfeatures21_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.05_removeN5_nfeatures21_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.05_removeN5_nfeatures21_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.05_removeN80_nfeatures17_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.05_removeN80_nfeatures17_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.05_removeN80_nfeatures17_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_qval0.05_removeN80_nfeatures17_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_removeN20_nfeatures21_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_removeN20_nfeatures21_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_removeN20_nfeatures21_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_removeN20_nfeatures21_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_removeN5_nfeatures21_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_removeN5_nfeatures21_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_removeN5_nfeatures21_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_removeN5_nfeatures21_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_removeN80_nfeatures17_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_removeN80_nfeatures17_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_removeN80_nfeatures17_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/NN_reducedV3.4_removeN80_nfeatures17_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/RF_full.features_nfeatures163_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/RF_full.features_nfeatures163_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/RF_full.features_nfeatures163_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/RF_full.features_nfeatures163_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/RF_pca20_nfeatures20_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/RF_pca20_nfeatures20_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/RF_pca20_nfeatures20_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/RF_pca20_nfeatures20_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/RF_pca2_nfeatures2_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/RF_pca2_nfeatures2_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/RF_pca2_nfeatures2_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/RF_pca2_nfeatures2_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/RF_pca30_nfeatures30_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/RF_pca30_nfeatures30_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/RF_pca30_nfeatures30_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/RF_pca30_nfeatures30_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/RF_pca40_nfeatures40_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/RF_pca40_nfeatures40_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/RF_pca40_nfeatures40_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/RF_pca40_nfeatures40_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/RF_reducedV3.4_nfeatures21_kappas_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/RF_reducedV3.4_nfeatures21_kappas_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/RF_reducedV3.4_nfeatures21_kappas_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/bootstrap_distributions/RF_reducedV3.4_nfeatures21_kappas_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/f1_cdx.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/f1_cdx.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/f1_cdx.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/f1_cdx.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/f1_heme.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/f1_heme.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/f1_heme.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/f1_heme.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/lacy.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/lacy.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/lacy.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/lacy.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/msk.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/msk.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/xyresiduals/msk.pdf_withcorrectness.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/plots/xyresiduals/msk.pdf_withcorrectness.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_R/plot_step2B_testset.R" beforeDir="false" afterPath="$PROJECT_DIR$/src_R/plot_step2B_testset.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_python/evaluate_test_set_step1.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/evaluate_test_set_step1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_python/notebooks/.ipynb_checkpoints/classify panel sets-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/notebooks/.ipynb_checkpoints/classify panel sets-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src_python/notebooks/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/notebooks/Untitled.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/notebooks/filter_pde4dip_hist_DLBCL11493_from_maf.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/notebooks/filter_pde4dip_hist_DLBCL11493_from_maf.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_python/notebooks/gsm counts.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/notebooks/gsm counts.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_python/notebooks/classify panel sets.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/notebooks/classify panel sets.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_python/run_all_experiments_step2B.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src_python/run_all_experiments_step2B.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +480,7 @@
       <recent name="$PROJECT_DIR$/data_tables/gsm/old_matrices" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.fisher_5x2_parallel">
+  <component name="RunManager" selected="Python.evaluate_test_set_step1">
     <configuration name="call_mutations" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DLBCL-Classifier" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -216,6 +523,69 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="evaluate_test_set_step1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DLBCL-Classifier" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src_python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src_python/evaluate_test_set_step1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="evaluate_validation_ensembles" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DLBCL-Classifier" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src_python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src_python/evaluate_validation_ensembles.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="experiment_driver_nn" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="DLBCL-Classifier" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src_python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src_python/experiment_driver_nn.py" />
+      <option name="PARAMETERS" value="--numiter 100 --folds 5 --earlystopping --reduced 3.4 --remove_largest_n 5 --noarms --nosv" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="fisher_5x2_parallel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DLBCL-Classifier" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -237,62 +607,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="precompute_portal_sets_v3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DLBCL-Classifier" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src_python" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src_python/precompute_portal_sets_v3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="table_counts_07-15-23" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DLBCL-Classifier" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src_python/supp_scripts" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src_python/supp_scripts/table_counts_07-15-23.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
+      <item itemvalue="Python.experiment_driver_nn" />
+      <item itemvalue="Python.evaluate_test_set_step1" />
+      <item itemvalue="Python.evaluate_validation_ensembles" />
       <item itemvalue="Python.call_scnas" />
       <item itemvalue="Python.fisher_5x2_parallel" />
       <item itemvalue="Python.call_mutations" />
-      <item itemvalue="Python.table_counts_07-15-23" />
-      <item itemvalue="Python.precompute_portal_sets_v3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.evaluate_test_set_step1" />
+        <item itemvalue="Python.evaluate_validation_ensembles" />
         <item itemvalue="Python.fisher_5x2_parallel" />
         <item itemvalue="Python.call_scnas" />
         <item itemvalue="Python.call_mutations" />
-        <item itemvalue="Python.precompute_portal_sets_v3" />
-        <item itemvalue="Python.table_counts_07-15-23" />
       </list>
     </recent_temporary>
   </component>
@@ -420,11 +749,6 @@
           <url>file://$PROJECT_DIR$/src_python/gsm_generation_scripts/call_mutations.py</url>
           <line>192</line>
           <option name="timeStamp" value="190" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src_python/gsm_generation_scripts/call_scnas.py</url>
-          <line>52</line>
-          <option name="timeStamp" value="191" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

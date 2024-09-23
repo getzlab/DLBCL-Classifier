@@ -6,3 +6,4 @@ nohup python3 experiment_driver_nn.py --numiter 100 --folds 5 --earlystopping --
 nohup python3 experiment_driver_nn.py --numiter 100 --folds 5 --earlystopping --reduced 3.4 --remove_largest_n 5 --nofocal &
 nohup python3 experiment_driver_nn.py --numiter 100 --folds 5 --earlystopping --reduced 3.4 --remove_largest_n 5 --noarms &
 nohup python3 experiment_driver_nn.py --numiter 100 --folds 5 --earlystopping --reduced 3.4 --remove_largest_n 5 --nomuts &
+nohup python3 experiment_driver_nn.py --numiter 100 --folds 5 --earlystopping --reduced 3.4 --remove_largest_n 5 --noarms --nosv

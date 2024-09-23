@@ -21,6 +21,7 @@ performancetable$experiment <-
 
 step2A_models = c('NN_reducedV3.4_removeN5_nfeatures21_testsetEval', 
                   'NN_reducedV3.4_removeN5_no.arms_nfeatures21_testsetEval',
+                  'NN_reducedV3.4_removeN5_no.arms_no.sv_nfeatures21_testsetEval',
                   'NN_reducedV3.4_removeN5_no.focals_nfeatures21_testsetEval', 
                   'NN_reducedV3.4_removeN5_no.scnas_nfeatures21_testsetEval',
                   'NN_reducedV3.4_removeN5_no.sv_nfeatures21_testsetEval',

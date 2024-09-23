@@ -12,3 +12,4 @@
 **/*tar
 **/*gz
 clustering_runs/*/*
+data_tables/maf_files/*
