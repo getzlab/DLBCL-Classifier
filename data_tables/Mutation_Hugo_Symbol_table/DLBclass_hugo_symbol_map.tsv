@@ -1,0 +1,98 @@
+HGNC ID	Approved symbol	Approved name	Status	Previous symbols	Alias symbols	Chromosome	symbols	GSM_symbol
+HGNC:3060	DTX1	deltex E3 ubiquitin ligase 1	Approved		hDx-1, RNF140	12q24.13	['hDx-1', ' RNF140']	DTX1
+HGNC:11937	CD70	CD70 molecule	Approved	CD27LG, TNFSF7	CD27L, CD27-L	19p13.3	['CD27L', ' CD27-L', 'CD27LG', ' TNFSF7']	CD70
+HGNC:11896	TNFAIP3	TNF alpha induced protein 3	Approved		A20, OTUD7C	6q23.3	['A20', ' OTUD7C']	TNFAIP3
+HGNC:7882	NOTCH2	notch receptor 2	Approved			1p12	['']	NOTCH2
+HGNC:989	BCL10	BCL10 immune signaling adaptor	Approved		CARMEN, CIPER, mE10, c-E10, CLAP	1p22.3	['CARMEN', ' CIPER', ' mE10', ' c-E10', ' CLAP']	BCL10
+HGNC:914	B2M	beta-2-microglobulin	Approved			15q21.1	['']	B2M
+HGNC:1688	CD58	CD58 molecule	Approved	LFA3		1p13.1	['LFA3']	CD58
+HGNC:11920	FAS	Fas cell surface death receptor	Approved	FAS1, APT1, TNFRSF6	CD95, APO-1	10q23.31	['CD95', ' APO-1', 'FAS1', ' APT1', ' TNFRSF6']	FAS
+HGNC:12472	UBE2A	ubiquitin conjugating enzyme E2 A	Approved		UBC2, HHR6A, RAD6A, HR6A	Xq24	['UBC2', ' HHR6A', ' RAD6A', ' HR6A']	UBE2A
+HGNC:14881	ZEB2	zinc finger E-box binding homeobox 2	Approved	ZFHX1B	KIAA0569, SIP-1, SIP1	2q22.3	['KIAA0569', ' SIP-1', ' SIP1', 'ZFHX1B']	ZEB2
+HGNC:1004	BCL7A	BAF chromatin remodeling complex subunit BCL7A	Approved	BCL7	SMARCJ1	12q24.31	['SMARCJ1', 'BCL7']	BCL7A
+HGNC:16667	TMEM30A	transmembrane protein 30A	Approved	C6orf67	FLJ10856, CDC50A	6q14.1	['FLJ10856', ' CDC50A', 'C6orf67']	TMEM30A
+HGNC:3126	EBF1	EBF transcription factor 1	Approved	EBF	OLF1, COE1	5q33.3	['OLF1', ' COE1', 'EBF']	EBF1
+HGNC:4385	GNAI2	G protein subunit alpha i2	Approved	GNAI2B	GIP	3p21.31	['GIP', 'GNAI2B']	GNAI2
+HGNC:7799	NFKBIE	NFKB inhibitor epsilon	Approved		IKBE	6p21.1	['IKBE']	NFKBIE
+HGNC:1001	BCL6	BCL6 transcription repressor	Approved	ZNF51	ZBTB27, LAZ3, BCL5, BCL6A	3q27.3	['ZBTB27', ' LAZ3', ' BCL5', ' BCL6A', 'ZNF51']	BCL6
+HGNC:17575	SPEN	spen family transcriptional repressor	Approved		KIAA0929, MINT, SHARP, RBM15C	1p36.21-p36.13	['KIAA0929', ' MINT', ' SHARP', ' RBM15C']	SPEN
+HGNC:2561	CXCR4	C-X-C motif chemokine receptor 4	Approved		LESTR, NPY3R, HM89, NPYY3R, D2S201E, fusin, HSY3RR, NPYR, CD184	2q22.1	['LESTR', ' NPY3R', ' HM89', ' NPYY3R', ' D2S201E', ' fusin', ' HSY3RR', ' NPYR', ' CD184']	CXCR4
+HGNC:13178	IKZF3	IKAROS family zinc finger 3	Approved	ZNFN1A3	Aiolos	17q12-q21.1	['Aiolos', 'ZNFN1A3']	IKZF3
+HGNC:9213	POU2F2	POU class 2 homeobox 2	Approved	OTF2	OCT2	19q13.2	['OCT2', 'OTF2']	POU2F2
+HGNC:18600	TUBGCP5	tubulin gamma complex component 5	Approved		GCP5, KIAA1899	15q11.2	['GCP5', ' KIAA1899']	TUBGCP5
+HGNC:16792	SMG7	SMG7 nonsense mediated mRNA decay factor	Approved	C1orf16	KIAA0250, EST1C, SGA56M, SMG-7	1q25.3	['KIAA0250', ' EST1C', ' SGA56M', ' SMG-7', 'C1orf16']	SMG7
+HGNC:26546	CCDC27	coiled-coil domain containing 27	Approved		FLJ32825	1p36.32	['FLJ32825']	CCDC27
+HGNC:3573	FADD	Fas associated via death domain	Approved		MORT1, GIG3	11q13.3	['MORT1', ' GIG3']	FADD
+HGNC:667	RHOA	ras homolog family member A	Approved	ARH12, ARHA	Rho12, RHOH12	3p21.31	['Rho12', ' RHOH12', 'ARH12', ' ARHA']	RHOA
+HGNC:16903	TNIP1	TNFAIP3 interacting protein 1	Approved		NAF1, KIAA0113, ABIN-1, VAN	5q33.1	['NAF1', ' KIAA0113', ' ABIN-1', ' VAN']	TNIP1
+HGNC:11998	TP53	tumor protein p53	Approved		p53, LFS1	17p13.1	['p53', ' LFS1']	TP53
+HGNC:3373	EP300	E1A binding protein p300	Approved		p300, KAT3B	22q13.2	['p300', ' KAT3B']	EP300
+HGNC:16762	ZNF423	zinc finger protein 423	Approved		KIAA0760, OAZ, hOAZ, Ebfaz, Zfp104, NPHP14, JBTS19	16q12.1	['KIAA0760', ' OAZ', ' hOAZ', ' Ebfaz', ' Zfp104', ' NPHP14', ' JBTS19']	ZNF423
+HGNC:990	BCL2	BCL2 apoptosis regulator	Approved		Bcl-2, PPP1R50	18q21.33	['Bcl-2', ' PPP1R50']	BCL2
+HGNC:2348	CREBBP	CREB binding protein	Approved	RSTS	RTS, CBP, KAT3A	16p13.3	['RTS', ' CBP', ' KAT3A', 'RSTS']	CREBBP
+HGNC:11912	TNFRSF14	TNF receptor superfamily member 14	Approved		HVEM, ATAR, TR2, LIGHTR, HVEA, CD270	1p36.32	['HVEM', ' ATAR', ' TR2', ' LIGHTR', ' HVEA', ' CD270']	TNFRSF14
+HGNC:3527	EZH2	enhancer of zeste 2 polycomb repressive complex 2 subunit	Approved		EZH1, ENX-1, KMT6, KMT6A	7q36.1	['EZH1', ' ENX-1', ' KMT6', ' KMT6A']	EZH2
+HGNC:28240	HVCN1	hydrogen voltage gated channel 1	Approved		MGC15619, Hv1, VSOP	12q24.11	['MGC15619', ' Hv1', ' VSOP']	HVCN1
+HGNC:7133	KMT2D	lysine methyltransferase 2D	Approved	TNRC21, MLL2	ALR, MLL4, CAGL114	12q13.12	['ALR', ' MLL4', ' CAGL114', 'TNRC21', ' MLL2']	KMT2D
+HGNC:5358	IRF8	interferon regulatory factor 8	Approved	ICSBP1	IRF-8, ICSBP	16q24.1	['IRF-8', ' ICSBP', 'ICSBP1']	IRF8
+HGNC:4381	GNA13	G protein subunit alpha 13	Approved		G13, MGC46138	17q24.1	['G13', ' MGC46138']	GNA13
+HGNC:6840	MAP2K1	mitogen-activated protein kinase kinase 1	Approved	PRKMK1	MEK1, MAPKK1, MKK1	15q22.31	['MEK1', ' MAPKK1', ' MKK1', 'PRKMK1']	MAP2K1
+HGNC:19383	SOCS1	suppressor of cytokine signaling 1	Approved		SOCS-1, SSI-1, JAB, TIP3, Cish1	16p13.13	['SOCS-1', ' SSI-1', ' JAB', ' TIP3', ' Cish1']	SOCS1
+HGNC:9588	PTEN	phosphatase and tensin homolog	Approved	BZS, MHAM	MMAC1, TEP1, PTEN1	10q23.31	['MMAC1', ' TEP1', ' PTEN1', 'BZS', ' MHAM']	PTEN
+HGNC:6996	MEF2C	myocyte enhancer factor 2C	Approved			5q14.3	['']	MEF2C
+HGNC:6995	MEF2B	myocyte enhancer factor 2B	Approved		RSRFR2	19p13.11	['RSRFR2']	MEF2B
+HGNC:3189	EEF1A1	eukaryotic translation elongation factor 1 alpha 1	Approved	EF1A, EEF1A, LENG7	EE1A1, EF1A1, EF1alpha1	6q13	['EE1A1', ' EF1A1', ' EF1alpha1', 'EF1A', ' EEF1A', ' LENG7']	EEF1A1
+HGNC:9211	POU2AF1	POU class 2 homeobox associating factor 1	Approved		OBF1, BOB1, OCA-B	11q23.1	['OBF1', ' BOB1', ' OCA-B']	POU2AF1
+HGNC:4718	H1-4	H1.4 linker histone, cluster member	Approved	H1F4, HIST1H1E	H1.4, H1e, H1s-4	6p22.2	['H1.4', ' H1e', ' H1s-4', 'H1F4', ' HIST1H1E']	HIST1H1E
+HGNC:10810	SGK1	serum/glucocorticoid regulated kinase 1	Approved	SGK		6q23.2	['SGK']	SGK1
+HGNC:3068	DUSP2	dual specificity phosphatase 2	Approved		PAC-1	2q11.2	['PAC-1']	DUSP2
+HGNC:6711	LTB	lymphotoxin beta	Approved	TNFC	p33, TNFSF3	6p21.33	['p33', ' TNFSF3', 'TNFC']	LTB
+HGNC:18653	KLHL6	kelch like family member 6	Approved		FLJ00029	3q27.1	['FLJ00029']	KLHL6
+HGNC:1107	ZFP36L1	ZFP36 ring finger protein like 1	Approved	BRF1	RNF162B, Berg36, ERF1, TIS11B, cMG1	14q24.1	['RNF162B', ' Berg36', ' ERF1', ' TIS11B', ' cMG1', 'BRF1']	ZFP36L1
+HGNC:4757	H2BC4	H2B clustered histone 4	Approved	H2BFL, HIST1H2BC	H2B/l, H2B.1	6p22.2	['H2B/l', ' H2B.1', 'H2BFL', ' HIST1H2BC']	HIST1H2BC
+HGNC:1703	CD83	CD83 molecule	Approved		HB15, BL11	6p23	['HB15', ' BL11']	CD83
+HGNC:7797	NFKBIA	NFKB inhibitor alpha	Approved	NFKBI	IKBA, MAD-3, IkappaBalpha	14q13.2	['IKBA', ' MAD-3', ' IkappaBalpha', 'NFKBI']	NFKBIA
+HGNC:25941	TET2	tet methylcytosine dioxygenase 2	Approved	KIAA1546	FLJ20032	4q24	['FLJ20032', 'KIAA1546']	TET2
+HGNC:1097	BRAF	B-Raf proto-oncogene, serine/threonine kinase	Approved		BRAF1, BRAF-1	7q34	['BRAF1', ' BRAF-1']	BRAF
+HGNC:4716	H1-2	H1.2 linker histone, cluster member	Approved	H1F2, HIST1H1C	H1.2, H1s-1, H1c	6p22.2	['H1.2', ' H1s-1', ' H1c', 'H1F2', ' HIST1H1C']	HIST1H1C
+HGNC:9658	PTPN6	protein tyrosine phosphatase non-receptor type 6	Approved		HCP, HCPH, PTP-1C, SHP-1, SHP1	12p13.31	['HCP', ' HCPH', ' PTP-1C', ' SHP-1', ' SHP1']	PTPN6
+HGNC:12856	YY1	YY1 transcription factor	Approved		NF-E1, DELTA, UCRBP, YIN-YANG-1, INO80S	14q32.2	['NF-E1', ' DELTA', ' UCRBP', ' YIN-YANG-1', ' INO80S']	YY1
+HGNC:2360	CRIP1	cysteine rich protein 1	Approved		CRIP	14q32.33	['CRIP']	CRIP1
+HGNC:9802	RAC2	Rac family small GTPase 2	Approved		EN-7	22q13.1	['EN-7']	RAC2
+HGNC:4719	H1-5	H1.5 linker histone, cluster member	Approved	H1F5, HIST1H1B	H1b, H1s-3	6p22.1	['H1b', ' H1s-3', 'H1F5', ' HIST1H1B']	HIST1H1B
+HGNC:4735	H2AC17	H2A clustered histone 17	Approved	H2AFN, HIST1H2AM	H2A/n, H2A.1	6p22.1	['H2A/n', ' H2A.1', 'H2AFN', ' HIST1H2AM']	HIST1H2AM
+HGNC:11364	STAT3	signal transducer and activator of transcription 3	Approved		APRF	17q21.2	['APRF']	STAT3
+HGNC:4717	H1-3	H1.3 linker histone, cluster member	Approved	H1F3, HIST1H1D	H1.3, H1d, H1s-2	6p22.2	['H1.3', ' H1d', ' H1s-2', 'H1F3', ' HIST1H1D']	HIST1H1D
+HGNC:132	ACTB	actin beta	Approved			7p22.1	['']	ACTB
+HGNC:23060	SESN3	sestrin 3	Approved		SEST3, MGC29667	11q21	['SEST3', ' MGC29667']	SESN3
+HGNC:8554	PABPC1	poly(A) binding protein cytoplasmic 1	Approved	PAB1, PABPC2	PABP1, PABPL1	8q22.3	['PABP1', ' PABPL1', 'PAB1', ' PABPC2']	PABPC1
+HGNC:6407	KRAS	KRAS proto-oncogene, GTPase	Approved	KRAS2	KRAS1, K-Ras4B	12p12.1	['KRAS1', ' K-Ras4B', 'KRAS2']	KRAS
+HGNC:4733	H2AC6	H2A clustered histone 6	Approved	H2AFL, HIST1H2AC		6p22.2	['H2AFL', ' HIST1H2AC']	HIST1H2AC
+HGNC:17635	CD274	CD274 molecule	Approved	PDCD1LG1	B7-H, B7H1, PD-L1, PDL1, B7-H1	9p24.1	['B7-H', ' B7H1', ' PD-L1', ' PDL1', ' B7-H1', 'PDCD1LG1']	CD274
+HGNC:32583	METAP1D	methionyl aminopeptidase type 1D, mitochondrial	Approved		MAP1D, Metap1l	2q31.1	['MAP1D', ' Metap1l']	METAP1D
+HGNC:8986	PIM1	Pim-1 proto-oncogene, serine/threonine kinase	Approved	PIM		6p21.2	['PIM']	PIM1
+HGNC:7562	MYD88	MYD88 innate immune signal transduction adaptor	Approved			3p22.2	['']	MYD88
+HGNC:1130	BTG1	BTG anti-proliferation factor 1	Approved		APRO2	12q21.33	['APRO2']	BTG1
+HGNC:1699	CD79B	CD79b molecule	Approved	IGB	B29, Ig-beta, Igbeta	17q23.3	['B29', ' Ig-beta', ' Igbeta', 'IGB']	CD79B
+HGNC:38476	IGLL5	immunoglobulin lambda like polypeptide 5	Approved			22q11.22	['']	IGLL5
+HGNC:3495	ETV6	ETS variant transcription factor 6	Approved		TEL	12p13.2	['TEL']	ETV6
+HGNC:29529	TBL1XR1	TBL1X/Y related 1	Approved		IRA1, FLJ12894, TBLR1, C21, DC42	3q26.32	['IRA1', ' FLJ12894', ' TBLR1', ' C21', ' DC42']	TBL1XR1
+HGNC:1131	BTG2	BTG anti-proliferation factor 2	Approved		PC3, TIS21, MGC126063, MGC126064, APRO1	1q32.1	['PC3', ' TIS21', ' MGC126063', ' MGC126064', ' APRO1']	BTG2
+HGNC:11881	TMSB4X	thymosin beta 4 X-linked	Approved	TMSB4	TB4X	Xp22.2	['TB4X', 'TMSB4']	TMSB4X
+HGNC:9346	PRDM1	PR/SET domain 1	Approved	BLIMP1	PRDI-BF1, Blimp-1	6q21	['PRDI-BF1', ' Blimp-1', 'BLIMP1']	PRDM1
+HGNC:4570	GRHPR	glyoxylate and hydroxypyruvate reductase	Approved	GLXR, GLYD	PH2	9p13.2	['PH2', 'GLXR', ' GLYD']	GRHPR
+HGNC:4932	HLA-B	major histocompatibility complex, class I, B	Approved	AS	HLA.B	6p21.33	['HLA.B', 'AS']	HLA.B
+HGNC:16393	CARD11	caspase recruitment domain family member 11	Approved		CARMA1, BIMP3	7p22.2	['CARMA1', ' BIMP3']	CARD11
+HGNC:4931	HLA-A	major histocompatibility complex, class I, A	Approved		HLA.A	6p22.1	['HLA.A']	HLA.A
+HGNC:21729	IRF2BP2	interferon regulatory factor 2 binding protein 2	Approved		LRIR2, IRF-2BP2	1q42.3	['LRIR2', ' IRF-2BP2']	IRF2BP2
+HGNC:16395	OSBPL10	oxysterol binding protein like 10	Approved			3p23	['']	OSBPL10
+HGNC:18988	TOX	thymocyte selection associated high mobility group box	Approved		KIAA0808, TOX1	8q12.1	['KIAA0808', ' TOX1']	TOX
+HGNC:4933	HLA-C	major histocompatibility complex, class I, C	Approved	HLA-JY3, D6S204, PSORS1	HLA.C	6p21.33	['HLA.C', 'HLA-JY3', ' D6S204', ' PSORS1']	HLA.C
+HGNC:8987	PIM2	Pim-2 proto-oncogene, serine/threonine kinase	Approved			Xp11.23	['']	PIM2
+HGNC:10768	SF3B1	splicing factor 3b subunit 1	Approved		SAP155, SF3b155, PRPF10, Prp10, Hsh155	2q33.1	['SAP155', ' SF3b155', ' PRPF10', ' Prp10', ' Hsh155']	SF3B1
+HGNC:26259	ZC3H12A	zinc finger CCCH-type containing 12A	Approved		FLJ23231, MCPIP1, Regnase-1	1p34.3	['FLJ23231', ' MCPIP1', ' Regnase-1']	ZC3H12A
+HGNC:812	ATP2A2	ATPase sarcoplasmic/endoplasmic reticulum Ca2+ transporting 2	Approved	ATP2B, DAR	SERCA2	12q24.11	['SERCA2', 'ATP2B', ' DAR']	ATP2A2
+HGNC:13221	BCL11A	BCL11 transcription factor A	Approved	EVI9	BCL11A-XL, BCL11A-L, BCL11A-S, CTIP1, HBFQTL5, ZNF856, SMARCM1	2p16.1	['BCL11A-XL', ' BCL11A-L', ' BCL11A-S', ' CTIP1', ' HBFQTL5', ' ZNF856', ' SMARCM1', 'EVI9']	BCL11A
+HGNC:6119	IRF4	interferon regulatory factor 4	Approved	MUM1	LSIRF	6p25.3	['LSIRF', 'MUM1']	IRF4
+HGNC:6735	LYN	LYN proto-oncogene, Src family tyrosine kinase	Approved		JTK8	8q12.1	['JTK8']	LYN
+HGNC:3488	ETS1	ETS proto-oncogene 1, transcription factor	Approved	EWSR2	FLJ10768, ETS-1	11q24.3	['FLJ10768', ' ETS-1', 'EWSR2']	ETS1
