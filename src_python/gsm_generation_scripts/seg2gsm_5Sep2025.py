@@ -75,16 +75,17 @@ arm_level_significance = pd.read_csv(broad_significance_file, sep='\t')
 c = segs.columns
 segs.rename(columns={c[0]: 'Sample',c[1]:'Chromosome',c[2]:'Start',c[3]:'End',c[-1]:'Segment_Mean'}, inplace=True)
 
-# remove X and Y - seg file is for autosomes
+# remove X and Y - seg2gsm file is for autosomes
 segs = segs.loc[~segs['Chromosome'].isin(['X', 'Y'])].copy(deep=True)
 
-segs.loc[:, 'gstart'] = mf.xhg19(segs['Chromosome'], segs['Start'])
-segs.loc[:, 'gend'] = mf.xhg19(segs['Chromosome'], segs['End'])
+# genomic position in 1D 
+#segs.loc[:, 'gstart'] = mf.xhg19(segs['Chromosome'], segs['Start'])
+#segs.loc[:, 'gend'] = mf.xhg19(segs['Chromosome'], segs['End'])
 
 if args.genome_build == 'hg19':
     segs.loc[:, 'gstart'] = mf.xhg19(segs['Chromosome'], segs['Start'])
     segs.loc[:, 'gend'] = mf.xhg19(segs['Chromosome'], segs['End'])
-else:
+if args.genome_build == 'hg38':
     segs.loc[:, 'gstart'] = mf.xhg38(segs['Chromosome'], segs['Start'])
     segs.loc[:, 'gend'] = mf.xhg38(segs['Chromosome'], segs['End'])
 
@@ -94,15 +95,22 @@ segs.loc[:, 'length'] = segs['End'] - segs['Start']
 cnv_blacklist = pd.read_csv(cnv_blacklist_file, sep='\t')
 segs = mf.apply_cnv_blacklist(segs, cnv_blacklist, AL, arm_level_significance)
 
-segs['origninal_Segment_Mean'] = segs['Segment_Mean'].copy(deep=True)
+# Segment_Mean in log2CR units 
+segs['orignial_Segment_Mean'] = segs['Segment_Mean'].copy(deep=True)
 for samp in sorted(segs['Sample'].unique()):
     sampseg = segs.loc[segs['Sample'] == samp].copy(deep=True)
+    # sample_median in log2CR units 
     sample_median = mf.calc_region_median(sampseg, min(arm_level_significance['x1']), max(arm_level_significance['x2']), 2)
     segs.loc[segs['Sample'] == samp, 'sample_median'] = sample_median
+    # recenter Segment_Mean (=log2CR) to median 
     segs.loc[segs['Sample'] == samp, 'Segment_Mean'] - segs.loc[segs['Sample'] == samp, 'Segment_Mean']  - sample_median
 
+# save input Segment_Mean (=logCR) 
 segs['log_segment_mean'] = segs['Segment_Mean'].copy(deep=True)
-segs['Segment_Mean'] = np.power(2, (segs['Segment_Mean'] + 1)) 
+# convert Segment_Mean to 2*CR -2 units
+segs['Segment_Mean'] = np.power(2, (segs['Segment_Mean'] + 1)) - 2.0
+
+
 
 if len(debug)   > 0:
     f1 = output_dir + debug + '.segs.after_scaling.' + TODAY + '.seg'
