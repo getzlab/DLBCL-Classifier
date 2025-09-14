@@ -75,6 +75,9 @@ arm_level_significance = pd.read_csv(broad_significance_file, sep='\t')
 c = segs.columns
 segs.rename(columns={c[0]: 'Sample',c[1]:'Chromosome',c[2]:'Start',c[3]:'End',c[-1]:'Segment_Mean'}, inplace=True)
 
+# remove X and Y - seg file is for autosomes
+segs = segs.loc[~segs['Chromosome'].isin(['X', 'Y'])].copy(deep=True)
+
 segs.loc[:, 'gstart'] = mf.xhg19(segs['Chromosome'], segs['Start'])
 segs.loc[:, 'gend'] = mf.xhg19(segs['Chromosome'], segs['End'])
 
