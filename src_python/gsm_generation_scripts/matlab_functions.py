@@ -41,17 +41,38 @@ def xhg19(chromosome_v, start_positions, opt='hg19'):
 
     return global_position.values
 
+def xhg38(chromosome_v, start_positions):
+    L = [248956422, 242193529, 198295559, 190214555, 181538259, 170805979,
+         159345973, 145138636, 138394717, 133797422, 135086622, 133275309,
+         114364328, 107043718, 101991189, 90338345, 83257441, 80373285, 58617616,
+         64444167, 46709983, 50818468, 156040895, 57227415, 16569]
+    
+    L = pd.Series(L)
+    C = pd.concat([pd.Series([1]), L.cumsum()])
+    C.index = np.arange(1, len(C) + 1)
 
-def apply_cnv_blacklist(segs, cnv_blacklist, AL, arm_level_significance):
-    cnv_blacklist['gstart'] = xhg19(cnv_blacklist['Chromosome'], cnv_blacklist['Start'])
-    cnv_blacklist['gend'] = xhg19(cnv_blacklist['Chromosome'], cnv_blacklist['End'])
-    cnv_blacklist['keep_event'] = 0
+    chromosome_v = chromosome_v.replace({'M': 25, 'MT': 25, 'X': 23, 'Y': 24}).astype(int)
+    global_position = C.loc[chromosome_v] + start_positions.values
 
+    return global_position.values    
+    
+def apply_cnv_blacklist(segs, cnv_blacklist, AL, arm_level_significance, opt = 'hg19'):
+    if opt == 'hg19':
+        cnv_blacklist['gstart'] = xhg19(cnv_blacklist['Chromosome'], cnv_blacklist['Start'])
+        cnv_blacklist['gend'] = xhg19(cnv_blacklist['Chromosome'], cnv_blacklist['End'])
+        cnv_blacklist['keep_event'] = 0
+
+    elif opt == 'hg38':
+        cnv_blacklist['gstart'] = xhg38(cnv_blacklist['Chromosome'], cnv_blacklist['Start'])
+        cnv_blacklist['gend'] = xhg38(cnv_blacklist['Chromosome'], cnv_blacklist['End'])
+        cnv_blacklist['keep_event'] = 0
+        
     arm_level_significance = arm_level_significance.loc[(arm_level_significance['significant_amplification'].astype(bool)) |
                                                         (arm_level_significance['significant_deletion'].astype(bool))]
 
     AL['length'] = AL['gend'] - AL['gstart']
     cnv_blacklist['length'] = cnv_blacklist['gend'] - cnv_blacklist['gstart']
+    arm_level_significance = arm_level_significance.copy()
     arm_level_significance['length'] = arm_level_significance['x2'] - arm_level_significance['x1']
 
     # ((cnv_blacklist.gstart <= AL.gstart(i) & cnv_blacklist.gend >= AL.gstart(i)) |
