@@ -38,7 +38,7 @@ parser.add_argument('-g','--genome_build',
 
 args = parser.parse_args()
 
-segs = pd.read_csv(args.seg_file, sep='\t')
+segs = pd.read_csv(args.seg_file, sep='\t',low_memory=False) 
 # standardize seg column names 
 c = segs.columns
 segs.rename(columns={c[0]: 'Sample',c[1]:'Chromosome',c[2]:'Start',c[3]:'End',c[-1]:'Segment_Mean'}, inplace=True)        
