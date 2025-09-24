@@ -45,8 +45,8 @@ SV.loc[SV['genes'].str.contains('MYC'), 'evt'] = 'SV.MYC'
 
 SV = SV.loc[SV['evt'] != '---']
 
-S = pd.read_csv(args.sample_set, sep='\t', index_col=0)
-sample_set = list(S.index)
+S = pd.read_csv(args.sample_set, sep='\t', header=None,names=['samples']) #index_col=0)
+sample_set = list(S['samples']) # .index)
 
 sv_df = pd.DataFrame(0, columns=sample_set, index=['SV.BCL2', 'SV.BCL6', 'SV.MYC'])
 alt_counts_df = pd.DataFrame(0, columns=sample_set, index=['SV.BCL2', 'SV.BCL6', 'SV.MYC'])

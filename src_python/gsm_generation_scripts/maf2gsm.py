@@ -31,8 +31,8 @@ args = parser.parse_args()
 cols = ['Hugo_Symbol', 'Tumor_Sample_Barcode', 'Variant_Classification', 'Protein_Change']
 
 maf = pd.read_csv(args.maf, sep='\t', dtype=str, low_memory=False, usecols=cols)
-S = pd.read_csv(args.sample_set, sep='\t', index_col=0)
-sample_set = list(S.index)
+S = pd.read_csv(args.sample_set, sep='\t', header=None,names=['samples']) #index_col=0)
+sample_set = list(S['samples']) # .index)
 
 # determine which samples to call events for
 samples = set(maf['Tumor_Sample_Barcode'])
@@ -55,7 +55,7 @@ GENES = ['ACTB', 'ATP2A2', 'B2M', 'BCL10', 'BCL11A', 'BCL2', 'BCL6', 'BCL7A', 'B
 'ZFP36L1', 'ZNF423']
 
 GENE_DICT = {'HLA-A':'HLA.A','HLA-B':'HLA.B', 'HLA-C':'HLA.C'}
-maf['Hugo_Symbol'].replace(GENE_DICT,inplace=True)
+maf['Hugo_Symbol'] = maf['Hugo_Symbol'].replace(GENE_DICT) #.copy(deep=True)
 
 if len(args.gsm_genes)>0:
     GENES = pd.read_csv(args.gsm_genes, sep='\t', index_col=0)
