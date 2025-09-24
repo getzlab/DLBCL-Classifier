@@ -10,7 +10,7 @@ start = time.time()
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--id',
+parser.add_argument('-i','--id',
                     help='Cohort set name.',
                     required=True, type=str)
 parser.add_argument('-s', '--sample_set',

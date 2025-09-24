@@ -1,29 +1,43 @@
 MAF=$1
 SEG=$2
 BP=$3
-SETID="freeze_Aug14_all_248"
-SETSAMPLE="/Users/stewart/GoogleDrive/Lymphoma/DLBCL_relapse/DLBclass/freeze_Aug14_all.248.samples.txt"
+SETID="DLBclass_699"
+
+#
+# Example file paths assume that this is run from the git directory DLBCL-Classifier/src_python/gsm_generation_scripts
+# tested 24Sep2025 using python 3.12 with import pandas, numpy, and argparse 
+#
+SETSAMPLE="../../data_tables/train_test_sets/DLBclass_699_Sep2025.txt"
 OUTDIR="/tmp/"
-BP="/tmp/tsvcat_workflow_ea91634e-6af4-4349-ba3a-51cc0eb776c2_call-tsvcat_task_freeze_Aug14_all.dRanger_SvABA_forBP.txt"
-MAF="/tmp/tsvcat_workflow_0f5336b2-ef1a-4a94-bade-c90b74daf713_call-tsvcat_task_freeze_Aug14_all.maf_pon_filter_all_mutations.maf"
-SEG="/tmp/tsvcat_workflow_3096c8fd-7a39-4211-a945-f51b64dab821_call-tsvcat_task_freeze_Aug14_all.GATK4_cnv_postprocessing_tumor_acs_log2CR.seg"
-CNVBLACKLIST="/Users/stewart/Projects/DLBCL-Classifier/data_tables/additional_gsm_inputs/CNV.hg19.bypos.111213.CR1_event_added.bed"
-GISTICARMS="/Users/stewart/Projects/DLBCL-Classifier/data_tables/additional_gsm_inputs/DLBCL_broad_significance.18Aug2024.tsv"
-GISTICFOCALS="/Users/stewart/Projects/DLBCL-Classifier/data_tables/additional_gsm_inputs/DLBCL_focal_peaks.18Aug2024.tsv"
+BP="../../data_tables/additional_gsm_inputs/DLBCL_Shipp_Staudt.SVs.14-Dec-2021.txt"
+MAF="../../data_tables/maf_files/DLBCL_combined_699.hg38B.noPDE4DIP.noHISTartifacts.maf"
+SEG="../../data_tables/additional_gsm_inputs/DLBCL_699_segs.2021-12-15.ccf.seg"
+CNVBLACKLIST="../../data_tables/additional_gsm_inputs/CNV.hg19.bypos.111213.CR1_event_added.bed"
+GISTICARMS="/Users/stewart/Projects/DLBCL-Classifier/data_tables/additional_gsm_inputs/DLBCL_cHL_PMBL_broad_significance.txt"
+GISTICFOCALS="/Users/stewart/Projects/DLBCL-Classifier/data_tables/additional_gsm_inputs/all_significant_focal_peaks_with_cohort.txt"
 
 echo "python3 sv2gsm.py -i $SETID -s $SETSAMPLE -v $BP -o $OUTDIR "
-#python3 sv2gsm.py --i $SETID -s $SETSAMPLE -v $BP -o $OUTDIR
+python3 sv2gsm.py --i $SETID -s $SETSAMPLE -v $BP -o $OUTDIR
 
 echo "python3 maf2gsm.py --i $SETID -s $SETSAMPLE -m $MAF -o $OUTDIR"
-#python3 maf2gsm.py -i $SETID -s $SETSAMPLE -m $MAF -o $OUTDIR
+python3 maf2gsm.py -i $SETID -s $SETSAMPLE -m $MAF -o $OUTDIR
 
 echo "python3 seg2gsm.py -i $SETID -s $SETSAMPLE -v $SEG -x $CNVBLACKLIST -a $GISTICARMS -f $GISTICFOCALS -o $OUTDIR"
-#python3 seg2gsm.py -i $SETID -s $SETSAMPLE -v $SEG -x $CNVBLACKLIST -a $GISTICARMS -f $GISTICFOCALS -o $OUTDIR
+python3 seg2gsm.py -i $SETID -s $SETSAMPLE -v $SEG -x $CNVBLACKLIST -a $GISTICARMS -f $GISTICFOCALS -o $OUTDIR
 
 
-SVGSM="/tmp/freeze_Aug14_all_248.21Aug2024.SV.GSM.tsv"
-MAFGSM="/tmp/freeze_Aug14_all_248.21Aug2024.MAF.GSM.tsv"
-CNVGSM="/tmp/freeze_Aug14_all_248.21Aug2024.CNV.GSM.tsv"
-FEATUREORDER="/Users/stewart/Projects/DLBCL-Classifier/data_tables/gsm/feature_order.19Aug2024X.txt"
+#SVGSM="/tmp/freeze_Aug14_all_248.21Aug2024.SV.GSM.tsv"
+#MAFGSM="/tmp/freeze_Aug14_all_248.21Aug2024.MAF.GSM.tsv"
+#CNVGSM="/tmp/freeze_Aug14_all_248.21Aug2024.CNV.GSM.tsv"
+
+
+SVGSM="${$OUTDIR}${SETID}.${TODAY}.SV.GSM.tsv" # Concatenates without a space
+echo "CNVGSM: ${CNVGSM}"
+MAFGSM="${$OUTDIR}${SETID}.${TODAY}.MAF.GSM.tsv" # Concatenates without a space
+echo "CNVGSM: ${CNVGSM}"
+CNVGSM="${$OUTDIR}${SETID}.${TODAY}.CNV.GSM.tsv" # Concatenates without a space
+echo "CNVGSM: ${CNVGSM}"
+
+FEATUREORDER="../../data_tables/gsm/feature_order.19Aug2024X.txt"
 
 python3 combine2gsm.py -i $SETID -v $SEG -v $SVGSM -m $MAFGSM -c $CNVGSM -f $FEATUREORDER -o $OUTDIR

@@ -59,9 +59,9 @@ sv_myc_samples = set(SV.loc[(SV['gene1'] == 'MYC')|(SV['gene2'] == 'MYC'), 'indi
 #sv_myc_samples = set(SV.loc[SV['genes'].str.contains('MYC'), 'individual']).intersection(sample_set)
 #sv_bcl6_samples = set(SV.loc[SV['genes'].str.contains('BCL6'), 'individual']).intersection(sample_set)
 
-sv_df.loc['SV.BCL2', sv_bcl2_samples] = 3
-sv_df.loc['SV.BCL6', sv_bcl6_samples] = 3
-sv_df.loc['SV.MYC', sv_myc_samples] = 3
+sv_df.loc['SV.BCL2', list(sv_bcl2_samples)] = 3
+sv_df.loc['SV.BCL6', list(sv_bcl6_samples)] = 3
+sv_df.loc['SV.MYC', list(sv_myc_samples)] = 3
 
 for s in sv_bcl2_samples:
     vcf_talt = SV.loc[(SV['individual'] == s) &
