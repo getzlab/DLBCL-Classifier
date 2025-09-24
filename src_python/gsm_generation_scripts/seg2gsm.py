@@ -46,8 +46,8 @@ log2CR_field = segs.columns[-1]
 sample_field = segs.columns[0]
 sample_set = sorted(list(set(segs[sample_field].unique())))
 if len(args.sample_set)>0: 
-	S = pd.read_csv(args.sample_set, sep='\t', index_col=0)
-	sample_set = list(S.index)
+    S = pd.read_csv(args.sample_set, sep='\t', header=None,names=['samples']) #index_col=0)
+    sample_set = list(S['samples']) # .index)
 # remove X and Y - seg2gsm file is for autosomes
 segs = segs.loc[~segs['Chromosome'].isin(['X', 'Y'])].copy(deep=True)
 
