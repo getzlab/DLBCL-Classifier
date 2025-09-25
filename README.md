@@ -8,10 +8,11 @@ User Warning: Many of the bash scripts used to train and
 evaluate the models use nohup commands - if your CPU is not able to tolerate
 the amount of jobs, consider modifying your local version to serially run the models.
 
-# Generation of the Gene Sample Matrix (GSM, updated 24 Sep 2025)
+# Generation of the Gene Sample Matrix (GSM)
+updated 24 Sep 2025
 Four python scripts in subdirectory src_python/gsm_generation_scripts translate somatic 
-variants in common formats into a GSM with samples listed horizontally and DLBCL driver 
-variants  vertically. The GSM can then be input to the downloadable DLBclass app 
+variants from common variant formats into a GSM with samples listed horizontally and DLBCL
+driver variants vertically. The GSM can then be input to the downloadable DLBclass app 
 (https://data.broadinstitute.org/dlbclass) which assigns each sample to one of 
 five possible classes. 
 
@@ -26,6 +27,32 @@ translocation-specific GSM.
 (https://igv.org/doc/desktop/#FileFormats/DataTracks/) to a CNV-specific GSM. 
 4) combine2gsm.py: collects output from maf2gsm, sv2gsm, and seg2gsm to create a unified 
 GSM including rows for all 163 DLBCL driver variants used by DLBclass. 
+
+An example bash script in the same area variant2gsm.sh shows how each python script is run
+to produce a final combined GSM for DLBclass. In this example the GSM includes the entire 
+DLBclass training and test cohort of 699 DLBCL samples.  Note: all input files listed in the 
+example bash script are included in github repo under the data_tables directory - 
+except for the MAF file, which is under protected access since many of the samples used to
+train and test the DLBclass algorithm and app were tumor-only and potentially contain 
+identifiable germline variants. 
+
+#### Updates to python gsm_generation_scripts
+24 Sep 2025
+
+1) sv2gsm.py and maf2gsm were updated to be compatible with python 3.12, pandas 2.3.0, and 
+numpy 2.3.0. 
+2) seg2gsm.py re-normalizes the log2(copy ratio) units to be consistent with the DLBclass 
+published GSM (in this repo at data_tables/gsm/DLBCL.699.163drivers.Sep_23_2022.tsv). The 
+updated seg2gsm.py script eliminates CNV GSM discrepancies relative to the published 
+GSM for the seg file included in this repo 
+data_tables/additional_gsm_inputs/DLBCL_699_segs.2021-12-15.ccf.seg  
+Note:
+The CNV log2(CR) normalization is sensitive to the inclusion of X and Y segments in the seg 
+file.  The DLBclass convention is to use only autosome segments. seg2gsm.py also has some 
+sensitivity to the number of digits for the log2(CR) value in the last column of the input 
+seg file. The DLBclass convention is to use 3 digits for the log2(CR) value.  Seg files 
+with more digits are also fine, but there can be a small rate of discrepancies (<<1%) with the
+published GSM when attempting to reproduce the published CNV GSM. 
 
 # Terra Workflow Links
 
