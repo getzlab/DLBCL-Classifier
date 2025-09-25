@@ -42,17 +42,19 @@ identifiable germline variants.
 1) sv2gsm.py and maf2gsm were updated to be compatible with python 3.12, pandas 2.3.0, and 
 numpy 2.3.0. 
 2) seg2gsm.py re-normalizes the log2(copy ratio) units to be consistent with the DLBclass 
-published GSM (in this repo at data_tables/gsm/DLBCL.699.163drivers.Sep_23_2022.tsv). The 
-updated seg2gsm.py script eliminates CNV GSM discrepancies relative to the published 
-GSM for the seg file included in this repo 
-data_tables/additional_gsm_inputs/DLBCL_699_segs.2021-12-15.ccf.seg  
+published GSM (in this repo at data_tables/gsm/DLBCL.699.163drivers.Sep_23_2022.tsv). 
 Note:
 The CNV log2(CR) normalization is sensitive to the inclusion of X and Y segments in the seg 
 file.  The DLBclass convention is to use only autosome segments. seg2gsm.py also has some 
 sensitivity to the number of digits for the log2(CR) value in the last column of the input 
 seg file. The DLBclass convention is to use 3 digits for the log2(CR) value.  Seg files 
-with more digits are also fine, but there can be a small rate of discrepancies (<<1%) with the
-published GSM when attempting to reproduce the published CNV GSM. 
+with more digits are also fine, but there can be a small rate of discrepancies (<<1%) with
+the published GSM when attempting to reproduce the published CNV GSM. Also of note is that
+the total copy ratio data for NCI 414 samples of the DLBclass cohort (published as Schmitz et 
+al., 2018 NEJM doi: 10.1056/NEJMoa1801445.) was based on SNP arrays while the DFCI 277 
+sample cohort (Chapuy et al., 2018 Nat. Med doi: 10.1038/s41591-018-0016-8.) was entirely 
+based on whole exome sequencing data. Going forward we expect that use cases for 
+DLBclass will be based entirely on sequencing data, WGS or WES. 
 
 # Terra Workflow Links
 
