@@ -8,6 +8,25 @@ User Warning: Many of the bash scripts used to train and
 evaluate the models use nohup commands - if your CPU is not able to tolerate
 the amount of jobs, consider modifying your local version to serially run the models.
 
+# Generation of the Gene Sample Matrix (GSM, updated 24 Sep 2025)
+Four python scripts in subdirectory src_python/gsm_generation_scripts translate somatic 
+variants in common formats into a GSM with samples listed horizontally and DLBCL driver 
+variants  vertically. The GSM can then be input to the downloadable DLBclass app 
+(https://data.broadinstitute.org/dlbclass) which assigns each sample to one of 
+five possible classes. 
+
+1) maf2gsm.py: converts somatic mutations from Mutation Annotation Format (MAF) format 
+(https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format/) to a partial GSM specific to 
+mutations.  
+2) sv2gsm.py: converts translocations from a tsv format similar to bedpe 
+(https://bedtools.readthedocs.io/en/latest/content/general-usage.html). Optionally sv2gsm.py 
+can also load translocations from a simple GSM-like format to create a combined 
+translocation-specific GSM. 
+3) seg2gsm.py: converts Copy Number Variants from seg format 
+(https://igv.org/doc/desktop/#FileFormats/DataTracks/) to a CNV-specific GSM. 
+4) combine2gsm.py: collects output from maf2gsm, sv2gsm, and seg2gsm to create a unified 
+GSM including rows for all 163 DLBCL driver variants used by DLBclass. 
+
 # Terra Workflow Links
 
 #### Main pipeline (Mutect, Mutsig2CV, Strelka, & others)

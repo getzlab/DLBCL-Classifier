@@ -11,5 +11,6 @@
 **/*tar.gz
 **/*tar
 **/*gz
+**/*DS_Store
 clustering_runs/*/*
 data_tables/maf_files/*
