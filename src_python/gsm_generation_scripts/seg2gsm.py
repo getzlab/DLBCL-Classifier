@@ -273,19 +273,20 @@ CNVS = """10Q23.31.DEL 11P.AMP 11Q.AMP 11Q23.3.AMP 12P.AMP 12P13.2.DEL
 3Q28.DEL 4Q21.22.DEL 4Q35.1.DEL 5P.AMP 5Q.AMP 6P.AMP 6P21.1.AMP 6P21.33.DEL 
 6Q.DEL 6Q14.1.DEL 6Q21.DEL 7P.AMP 7Q.AMP 7Q22.1.AMP 8Q12.1.DEL 8Q24.22.AMP 
 9P21.3.DEL 9P24.1.AMP 9Q.AMP 9Q21.13.DEL"""
-CNVS = CNVS.replace('\n', '')
-CNVS = CNVS.split(' ')
-print(*CNVS)
-idxKEEP = []
-for idx1, row in scna_df.iterrows():
-   if (row["classifier_name"] in CNVS):
-   		idxKEEP = idxKEEP + [idx1]
-scna_df = scna_df.loc[idxKEEP,:]   
-scna_df = scna_df.sort_values(by='classifier_name')
-scna_df = scna_df.reset_index(drop=True)
+CNV_list = CNVS.replace('\n', ' ').split()
+
+# enable other focal events to be included in the GSM
+core_df = scna_df[scna_df['classifier_name'].isin(CNV_list)].copy()
+other_df = scna_df[~scna_df['classifier_name'].isin(CNV_list)].copy()
+
+core_df = core_df.set_index('classifier_name').reindex(CNV_list).fillna(0).reset_index()
+other_df = other_df.sort_values(by='classifier_name')
+final_df = pd.concat([core_df, other_df], ignore_index=True)
+
 
 outfile = os.path.join(args.output_dir, f"{args.id}.{TODAY}.CNV.GSM.tsv")
-scna_df.to_csv(outfile, sep='\t',index=False)
+final_df.to_csv(outfile, sep='\t', index=False)
+
 print('complete')
 
 print('output :', outfile)
