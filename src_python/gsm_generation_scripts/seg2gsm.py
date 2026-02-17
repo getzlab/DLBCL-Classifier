@@ -4,6 +4,7 @@ import numpy as np
 import argparse
 from datetime import datetime
 import time
+import os
 # record start time
 start = time.time()
 
@@ -27,7 +28,7 @@ parser.add_argument('-a', '--arm_significance_file',
                     help='CNV arm-level regions to include.',
                     required=False, type=str, default='../../data_tables/additional_gsm_inputs/DLBCL_broad_significance.19Aug2024.tsv')
 parser.add_argument('-f', '--focal_file',
-                    help='CNV foca; regions to include.',
+                    help='CNV focal regions to include.',
                     required=False, type=str,default='../../data_tables/additional_gsm_inputs/DLBCL_focal_peaks.18Aug2024.tsv')
 parser.add_argument('-o', '--output_dir',
                     help='Output directory.',
@@ -37,11 +38,16 @@ parser.add_argument('-g','--genome_build',
                     required=False, type=str, default='hg19')
 
 args = parser.parse_args()
+# check if output dir already exists, if not create it
+if not os.path.exists(args.output_dir):
+    os.makedirs(args.output_dir)
+    print('Output directory created:', args.output_dir)
 
 segs = pd.read_csv(args.seg_file, sep='\t')
 # standardize seg column names 
 c = segs.columns
 segs.rename(columns={c[0]: 'Sample',c[1]:'Chromosome',c[2]:'Start',c[3]:'End',c[-1]:'Segment_Mean'}, inplace=True)        
+
 log2CR_field = segs.columns[-1]
 sample_field = segs.columns[0]
 sample_set = sorted(list(set(segs[sample_field].unique())))
@@ -50,6 +56,15 @@ if len(args.sample_set)>0:
     sample_set = list(S['samples']) # .index)
 # remove X and Y - seg2gsm file is for autosomes
 segs = segs.loc[~segs['Chromosome'].isin(['X', 'Y'])].copy(deep=True)
+
+# check if the log2CR_field is actually log2CR or copy ratio, by checking if the values are mostly between -2 and 2 (log2CR) or all > 0 (copy ratio)
+if ((segs[log2CR_field] < -2).sum() + (segs[log2CR_field] > 2).sum()) < (0.1 * segs.shape[0]):
+    print('log2CR field is likely log2 copy ratio, proceeding')
+elif ((segs[log2CR_field] < 0 | segs[log2CR_field] == 0).sum() == 0):
+    print('log2CR field is likely copy ratio, converting to log2 copy ratio')
+    segs[log2CR_field] = np.log2(segs[log2CR_field])
+else: # make a warning and proceed with log2CR field as is
+    print('Not clearly log2 copy ratio or copy ratio, make sure your seg file is formatted correctly with log2 copy ratio in the last column')
 
 # subset to sample_set 
 segs = segs.loc[segs['Sample'].isin(sample_set)].copy(deep=True) # reset_index()
@@ -76,17 +91,24 @@ segs.loc[:, 'length'] = segs['End'] - segs['Start']
 cnv_blacklist = pd.read_csv(args.cnv_blacklist_file, sep='\t')
 segs = mf.apply_cnv_blacklist(segs, cnv_blacklist, AL, arm_level_significance)
 
-# Segment_Mean in log2CR units
-old_seg_means = segs[log2CR_field].copy(deep=True)
-segs['Segment_Mean'] = segs[log2CR_field].copy(deep=True)
+#old_seg_means = segs[log2CR_field].copy(deep=True)
+# samples in seg file:
+samples = sorted(segs['Sample'].unique())
+# check for gaps in sample_set
+if not (set(samples) == set(sample_set)):
+    print('Warning: sample in seg file not identical to input sample_set: GSM will have gaps')
+    sseg = set(samples)
+    ssegx = [x for x in sample_set if x not in sseg]
+    print(ssegx)
+
+segs['log_segment_mean'] = segs[log2CR_field].copy(deep=True)
+segs['Segment_Mean'] = np.power(2, (segs[log2CR_field] + 1)) - 2
 
 for samp in sorted(segs['Sample'].unique()):
     sampseg = segs.loc[segs['Sample'] == samp].copy(deep=True)
     sample_median = mf.calc_region_median(sampseg, min(arm_level_significance['x1']), max(arm_level_significance['x2']), 2)
     segs.loc[segs['Sample'] == samp, 'Segment_Mean'] = segs.loc[segs['Sample'] == samp, 'Segment_Mean'] - sample_median
 
-segs['log_segment_mean'] = segs['Segment_Mean'].copy(deep=True)
-segs['Segment_Mean'] = np.power(2, (segs['log_segment_mean'] + 1)) - 2
 
 
 BA = arm_level_significance.loc[(arm_level_significance['significant_amplification'] == 1) &
@@ -173,8 +195,11 @@ for sample in arm_amp_df.columns:
 focal_df = pd.DataFrame(0, index=AL['Descriptor'],columns=sorted(sample_set)) 
 
 print('Focals')
+#for sample in focal_df.columns[1::]:
 #i=1
 for sample in focal_df.columns:
+    #if (i % 10) == 0:
+    #    print('\n',i,'.',end='')
     #print(sample, end=' ')
     #i += 1
 
@@ -259,7 +284,7 @@ scna_df = scna_df.loc[idxKEEP,:]
 scna_df = scna_df.sort_values(by='classifier_name')
 scna_df = scna_df.reset_index(drop=True)
 
-outfile = args.output_dir + args.id + '.' + TODAY + '.CNV.GSM.tsv'
+outfile = os.path.join(args.output_dir, f"{args.id}.{TODAY}.CNV.GSM.tsv")
 scna_df.to_csv(outfile, sep='\t',index=False)
 print('complete')
 
