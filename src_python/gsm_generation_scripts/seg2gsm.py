@@ -43,7 +43,7 @@ if not os.path.exists(args.output_dir):
     os.makedirs(args.output_dir)
     print('Output directory created:', args.output_dir)
 
-segs = pd.read_csv(args.seg_file, sep='\t')
+segs = pd.read_csv(args.seg_file, sep='\t',low_memory=False) 
 # standardize seg column names 
 c = segs.columns
 segs.rename(columns={c[0]: 'Sample',c[1]:'Chromosome',c[2]:'Start',c[3]:'End',c[-1]:'Segment_Mean'}, inplace=True)        
